@@ -27,12 +27,20 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatly.tools/disclaimer' }] 
       loss of data, corrupted files or broken builds.
     </p>
 
+    <h2>Scanning</h2>
+    <p>
+      QR code and barcode scanning depends on your camera, lighting and image
+      quality, and may occasionally misread or fail to read a code. Always verify
+      decoded content — and be cautious before opening links or acting on data from
+      codes you do not trust.
+    </p>
+
     <h2>Third-party libraries</h2>
     <p>
       Neatly relies on well-established open-source libraries (such as Terser,
-      clean-css, html-minifier-terser, js-beautify, js-yaml, PapaParse and
-      fast-xml-parser). Those libraries are provided under their own licenses and
-      warranties, and their behaviour is outside our control.
+      clean-css, html-minifier-terser, js-beautify, js-yaml, PapaParse,
+      fast-xml-parser and @zxing/browser). Those libraries are provided under their
+      own licenses and warranties, and their behaviour is outside our control.
     </p>
 
     <h2>Related</h2>

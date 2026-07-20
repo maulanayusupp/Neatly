@@ -26,6 +26,15 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatly.tools/privacy' }] })
       content to train anything, and we never sell it.
     </p>
 
+    <h2>Camera and image scanning</h2>
+    <p>
+      The QR &amp; barcode scanner runs <strong>entirely in your browser</strong>. When
+      you scan with your camera, or upload or paste an image, the decoding happens on
+      your device — the camera video and images are <strong>never uploaded to or stored
+      by us</strong>. Using the camera requires your explicit permission, which you can
+      revoke at any time in your browser settings.
+    </p>
+
     <h2>Data stored in your browser</h2>
     <p>
       For your convenience, the Service stores a small amount of data locally in your
