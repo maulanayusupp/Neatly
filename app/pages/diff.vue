@@ -4,6 +4,11 @@ import { diffLines } from 'diff'
 const original = ref('')
 const changed = ref('')
 
+function loadExample() {
+  original.value = 'function greet(name) {\n  return "Hello, " + name\n}\nconst user = "Ann"\ngreet(user)'
+  changed.value = 'function greet(name) {\n  return `Hi, ${name}!`\n}\nconst user = "Bob"\ngreet(user)'
+}
+
 interface DiffLine { type: 'add' | 'del' | 'same', text: string }
 
 const lines = computed<DiffLine[]>(() => {
@@ -49,6 +54,9 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/diff' }
     />
 
     <section class="container tool-outlet diff">
+      <div class="diff__bar">
+        <BaseButton size="sm" variant="ghost" icon="sparkles" @click="loadExample">{{ $t('common.example') }}</BaseButton>
+      </div>
       <div class="diff__inputs">
         <label class="diff__field">
           <span class="diff__label">{{ $t('diff.original') }}</span>
@@ -91,6 +99,11 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/diff' }
   display: flex;
   flex-direction: column;
   gap: spacing(4);
+}
+
+.diff__bar {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .diff__inputs {

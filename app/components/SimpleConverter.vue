@@ -1,10 +1,13 @@
 <script setup lang="ts">
-const props = defineProps<{
+const props = withDefaults(defineProps<{
   forwardLabel: string
   backwardLabel: string
   placeholder: string
+  example?: string
   convert: (text: string, mode: 'forward' | 'backward') => string
-}>()
+}>(), {
+  example: '',
+})
 
 const toast = useToast()
 const input = ref('')
@@ -53,6 +56,16 @@ function swap() {
       <button type="button" class="conv__swap" aria-label="Swap" @click="swap">
         <BaseIcon name="refresh" :size="16" />
       </button>
+      <BaseButton
+        v-if="example"
+        size="sm"
+        variant="ghost"
+        icon="sparkles"
+        class="conv__example"
+        @click="input = example"
+      >
+        {{ $t('common.example') }}
+      </BaseButton>
     </div>
 
     <div class="conv__grid">
@@ -112,6 +125,10 @@ function swap() {
   display: inline-flex;
   padding: spacing(2);
   color: var(--color-primary);
+}
+
+.conv__example {
+  margin-left: spacing(2);
 }
 
 .conv__grid {

@@ -35,6 +35,7 @@ function convert(text: string, mode: 'forward' | 'backward') {
           forward-label="Encode"
           backward-label="Decode"
           placeholder="Type or paste text to encode…"
+          example="Hello, Neatly! 👋 Encode me to Base64."
           :convert="convert"
         />
       </div>

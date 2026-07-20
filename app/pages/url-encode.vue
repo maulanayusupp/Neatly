@@ -33,6 +33,7 @@ function convert(text: string, mode: 'forward' | 'backward') {
           forward-label="Encode"
           backward-label="Decode"
           placeholder="Type or paste text to encode…"
+          example="https://neatlyapp.vercel.app/search?q=hello world&lang=id"
           :convert="convert"
         />
       </div>

@@ -73,11 +73,14 @@ async function pasteFromClipboard() {
     </div>
 
     <footer class="panel__footer">
+      <BaseButton size="sm" variant="ghost" icon="sparkles" @click="store.loadExample">
+        {{ $t('common.example') }}
+      </BaseButton>
       <BaseButton size="sm" variant="ghost" icon="upload" @click="fileInput?.click()">
-        Upload
+        {{ $t('common.upload') }}
       </BaseButton>
       <BaseButton size="sm" variant="ghost" icon="copy" @click="pasteFromClipboard">
-        Paste
+        {{ $t('common.paste') }}
       </BaseButton>
       <BaseButton
         size="sm"
@@ -86,7 +89,7 @@ async function pasteFromClipboard() {
         :disabled="!input"
         @click="store.clear"
       >
-        Clear
+        {{ $t('common.clear') }}
       </BaseButton>
       <input
         ref="fileInput"

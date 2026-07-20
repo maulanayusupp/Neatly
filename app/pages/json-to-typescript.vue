@@ -77,6 +77,9 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/json-to
           <span>{{ $t('jsonToTs.rootName') }}</span>
           <input v-model="rootName" spellcheck="false" placeholder="Root">
         </label>
+        <BaseButton size="sm" variant="ghost" icon="sparkles" @click="input = SAMPLE">
+          {{ $t('common.example') }}
+        </BaseButton>
       </div>
 
       <div class="jtt__grid">
@@ -119,6 +122,11 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/json-to
 .jtt__bar {
   @include card;
   padding: spacing(4);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: spacing(3);
 }
 
 .jtt__root {

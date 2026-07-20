@@ -62,6 +62,11 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/hash' }
           <span class="hash__label">Text to hash</span>
           <textarea v-model="input" class="hash__input" placeholder="Type or paste text…" spellcheck="false" />
         </label>
+        <div class="hash__bar">
+          <BaseButton size="sm" variant="ghost" icon="sparkles" @click="input = 'The quick brown fox jumps over the lazy dog'">
+            {{ $t('common.example') }}
+          </BaseButton>
+        </div>
       </div>
 
       <div v-if="results.length" class="hash__results">
@@ -111,6 +116,12 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/hash' }
   resize: vertical;
 
   &:focus { outline: none; border-color: var(--color-primary); }
+}
+
+.hash__bar {
+  margin-top: spacing(3);
+  display: flex;
+  justify-content: flex-end;
 }
 
 .hash__results {

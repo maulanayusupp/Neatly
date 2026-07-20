@@ -17,6 +17,15 @@ export interface ShareState {
   c: string
 }
 
+/** Demo snippets used by the "Load example" action, per language. */
+const SAMPLES: Record<LanguageId, string> = {
+  javascript: 'const sum=(a,b)=>a+b;function greet(name){return "Hello, "+name+"!"}console.log(greet("world"),sum(2,3));',
+  css: '.btn{display:inline-flex;align-items:center;padding:8px 16px;border-radius:8px;background:#6366f1;color:#fff}.btn:hover{background:#4f46e5}',
+  html: '<!doctype html><html><head><title>Hi</title></head><body><h1>Hello</h1><p>World</p></body></html>',
+  json: '{"name":"Neatly","version":2,"tags":["dev","tools"],"author":{"name":"Ann"},"active":true}',
+  xml: '<note><to>User</to><from>Neatly</from><heading>Reminder</heading><body>Keep your code neat.</body></note>',
+}
+
 type Status = 'idle' | 'loading' | 'success' | 'error'
 
 /**
@@ -70,6 +79,12 @@ export function useTransform() {
     status.value = 'idle'
     errorMessage.value = ''
     errorLocation.value = null
+  }
+
+  /** Load a demo snippet for the current (or default) language. */
+  function loadExample() {
+    const lang = autoDetect.value ? DEFAULT_LANGUAGE : language.value
+    input.value = SAMPLES[lang]
   }
 
   /** Snapshot the shareable state. */
@@ -153,6 +168,7 @@ export function useTransform() {
     enableAutoDetect,
     setMode,
     clear,
+    loadExample,
     run,
     getShareState,
     applyShareState,
