@@ -1,0 +1,82 @@
+@use 'variables' as *;
+@use 'functions' as *;
+
+/// Media query helper: styles apply at the given breakpoint and up.
+/// @example @include respond('md') { ... }
+@mixin respond($name) {
+  @media (min-width: breakpoint($name)) {
+    @content;
+  }
+}
+
+/// Consistent, accessible keyboard focus ring.
+@mixin focus-ring($offset: 2px) {
+  outline: 2px solid var(--color-focus);
+  outline-offset: $offset;
+}
+
+/// Strip default button chrome.
+@mixin button-reset {
+  appearance: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+/// Surface card treatment.
+@mixin card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: $radius-lg;
+  box-shadow: var(--shadow-sm);
+}
+
+/// Centered page container.
+@mixin container {
+  width: 100%;
+  max-width: $container-max;
+  margin-inline: auto;
+  padding-inline: spacing(5);
+
+  @include respond('md') {
+    padding-inline: spacing(8);
+  }
+}
+
+/// Themed custom scrollbar.
+@mixin custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) transparent;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: $radius-pill;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--color-border-strong);
+    background-clip: content-box;
+  }
+}
+
+/// Visually hide an element while keeping it available to screen readers.
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

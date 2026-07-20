@@ -1,0 +1,16 @@
+@use 'sass:map';
+@use 'variables' as *;
+
+/// Convert a step count on the spacing scale into a rem value.
+/// @example spacing(4) => 1rem
+@function spacing($steps) {
+  @return $steps * $space-unit;
+}
+
+/// Retrieve a named breakpoint value from the $breakpoints map.
+@function breakpoint($name) {
+  @if not map.has-key($breakpoints, $name) {
+    @error 'Unknown breakpoint "#{$name}".';
+  }
+  @return map.get($breakpoints, $name);
+}

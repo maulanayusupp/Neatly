@@ -1,0 +1,7 @@
+// Global stylesheet entry point (loaded once via nuxt.config `css`).
+// The abstracts layer is injected automatically, so only real CSS output is
+// wired up here.
+@use 'base/tokens';
+@use 'base/reset';
+@use 'base/base';
+@use 'base/utilities';

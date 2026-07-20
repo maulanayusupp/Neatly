@@ -1,0 +1,44 @@
+// Global element defaults built on top of the reset + tokens.
+@use '../abstracts' as *;
+
+html {
+  font-family: $font-sans;
+  font-size: 100%;
+}
+
+body {
+  background-color: var(--color-bg);
+  background-image:
+    radial-gradient(circle at 1px 1px, var(--color-bg-grid) 1px, transparent 0);
+  background-size: 32px 32px;
+  color: var(--color-text);
+  font-size: $text-base;
+  transition: background-color $transition-base, color $transition-base;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: $font-mono;
+}
+
+::selection {
+  background: var(--color-brand-soft);
+  color: var(--color-text);
+}
+
+#__nuxt {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}

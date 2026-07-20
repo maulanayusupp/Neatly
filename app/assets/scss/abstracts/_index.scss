@@ -1,0 +1,7 @@
+// Single entry point for the abstracts layer. This file is injected into every
+// component <style lang="scss"> block via nuxt.config's additionalData, so
+// design tokens, functions and mixins are available everywhere without an
+// explicit @use. It emits no CSS on its own.
+@forward 'variables';
+@forward 'functions';
+@forward 'mixins';
