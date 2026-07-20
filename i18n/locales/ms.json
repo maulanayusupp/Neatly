@@ -1,0 +1,47 @@
+{
+  "nav": { "tools": "Alat", "language": "Bahasa" },
+  "groups": {
+    "format": "Format",
+    "json": "JSON",
+    "qr": "QR & kod",
+    "encode": "Encode & data",
+    "text": "Teks & web"
+  },
+  "footer": {
+    "tools": "Alat",
+    "about": "Tentang",
+    "legal": "Undang-undang",
+    "tagline": "Kemaskan kod anda, serta-merta.",
+    "rights": "Kod anda diproses secara peribadi dan tidak pernah disimpan.",
+    "linkAbout": "Tentang",
+    "linkContact": "Hubungi",
+    "linkTerms": "Terma Perkhidmatan",
+    "linkPrivacy": "Dasar Privasi",
+    "linkDisclaimer": "Penafian"
+  },
+  "home": {
+    "badge": "Beautify · Minify · Unminify · 5 bahasa",
+    "titleA": "Beautify, minify &",
+    "titleHl": "unminify",
+    "titleB": "kod anda",
+    "lead": "Tampal kod yang diminify untuk dikemaskan, atau mampatkan sumber anda supaya lebih kecil. Menyokong JavaScript, CSS, HTML, JSON, XML dan banyak lagi — pantas, percuma dan peribadi."
+  },
+  "features": {
+    "heading": "Semua yang anda perlukan untuk mengemaskan kod",
+    "sub": "Alternatif moden dan pantas untuk beautify dan minify fail kod — tanpa perlu mendaftar.",
+    "beautify": { "title": "Beautify & unminify", "text": "Tukar kod yang diminify, dipakej atau dikaburkan kembali kepada sumber yang bersih, mudah dibaca dan berindentasi kemas." },
+    "minify": { "title": "Minify & mampat", "text": "Buang ruang kosong dan komen untuk menghantar JavaScript, CSS, HTML, JSON dan XML yang lebih kecil." },
+    "languages": { "title": "Lima bahasa", "text": "JavaScript & TypeScript, CSS, HTML, JSON dan XML — dikesan secara automatik semasa anda menampal." },
+    "instant": { "title": "Segera & tepat", "text": "Dikuasakan enjin teruji untuk hasil yang boleh dipercayai setiap kali." },
+    "private": { "title": "Peribadi secara lalai", "text": "Kod anda diproses serta-merta dan tidak pernah disimpan — tiada apa disimpan atau dikongsi." },
+    "friction": { "title": "Tanpa kerumitan", "text": "Tampal, lepaskan fail atau muat naik. Salin atau muat turun hasilnya dengan satu klik." }
+  },
+  "popular": {
+    "heading": "Alat popular",
+    "minifiers": "Minifier",
+    "beautifiers": "Beautifier",
+    "more": "Lagi",
+    "convert": "Tukar JSON · YAML · CSV · XML",
+    "compare": "Bandingkan fail JSON"
+  }
+}

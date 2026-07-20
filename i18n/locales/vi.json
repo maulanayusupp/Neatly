@@ -1,0 +1,47 @@
+{
+  "nav": { "tools": "Công cụ", "language": "Ngôn ngữ" },
+  "groups": {
+    "format": "Định dạng",
+    "json": "JSON",
+    "qr": "QR & mã",
+    "encode": "Mã hoá & dữ liệu",
+    "text": "Văn bản & web"
+  },
+  "footer": {
+    "tools": "Công cụ",
+    "about": "Giới thiệu",
+    "legal": "Pháp lý",
+    "tagline": "Làm gọn mã của bạn, ngay lập tức.",
+    "rights": "Mã của bạn được xử lý riêng tư và không bao giờ được lưu trữ.",
+    "linkAbout": "Giới thiệu",
+    "linkContact": "Liên hệ",
+    "linkTerms": "Điều khoản dịch vụ",
+    "linkPrivacy": "Chính sách bảo mật",
+    "linkDisclaimer": "Tuyên bố miễn trừ"
+  },
+  "home": {
+    "badge": "Beautify · Minify · Unminify · 5 ngôn ngữ",
+    "titleA": "Beautify, minify &",
+    "titleHl": "unminify",
+    "titleB": "mã của bạn",
+    "lead": "Dán mã đã minify để giải nén và làm đẹp, hoặc nén mã nguồn để nhẹ hơn. Hỗ trợ JavaScript, CSS, HTML, JSON, XML và hơn thế — nhanh, miễn phí và riêng tư."
+  },
+  "features": {
+    "heading": "Mọi thứ bạn cần để làm gọn mã",
+    "sub": "Một lựa chọn hiện đại, nhanh chóng để beautify và minify tệp mã — không cần đăng ký.",
+    "beautify": { "title": "Beautify & unminify", "text": "Biến mã đã minify, đóng gói hoặc làm rối thành mã nguồn sạch, dễ đọc và thụt lề gọn gàng." },
+    "minify": { "title": "Minify & nén", "text": "Loại bỏ khoảng trắng và chú thích để gửi JavaScript, CSS, HTML, JSON và XML nhỏ hơn." },
+    "languages": { "title": "Năm ngôn ngữ", "text": "JavaScript & TypeScript, CSS, HTML, JSON và XML — tự động nhận diện khi bạn dán." },
+    "instant": { "title": "Tức thì & chính xác", "text": "Được hỗ trợ bởi các engine đã kiểm chứng cho kết quả đáng tin cậy mỗi lần." },
+    "private": { "title": "Riêng tư mặc định", "text": "Mã của bạn được xử lý ngay và không bao giờ được lưu — không lưu hay chia sẻ gì cả." },
+    "friction": { "title": "Không rườm rà", "text": "Dán, thả tệp hoặc tải lên. Sao chép hoặc tải kết quả chỉ với một cú nhấp." }
+  },
+  "popular": {
+    "heading": "Công cụ phổ biến",
+    "minifiers": "Minifier",
+    "beautifiers": "Beautifier",
+    "more": "Thêm",
+    "convert": "Chuyển đổi JSON · YAML · CSV · XML",
+    "compare": "So sánh tệp JSON"
+  }
+}

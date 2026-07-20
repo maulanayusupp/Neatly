@@ -94,6 +94,8 @@ export const ICONS = {
     '<path d="M8 3a2 2 0 0 0-2 2v3a2 2 0 0 1-2 2 2 2 0 0 1 2 2v3a2 2 0 0 0 2 2"/><path d="M16 3a2 2 0 0 1 2 2v3a2 2 0 0 0 2 2 2 2 0 0 0-2 2v3a2 2 0 0 1-2 2"/>',
   regex:
     '<line x1="12" y1="4" x2="12" y2="14"/><line x1="7.7" y1="6.5" x2="16.3" y2="11.5"/><line x1="16.3" y1="6.5" x2="7.7" y2="11.5"/><rect x="5" y="16" width="4" height="4" rx="1" fill="currentColor" stroke="none"/>',
+  globe:
+    '<circle cx="12" cy="12" r="9"/><line x1="3" y1="12" x2="21" y2="12"/><path d="M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18z"/>',
 } as const
 
 export type IconName = keyof typeof ICONS

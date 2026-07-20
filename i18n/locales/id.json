@@ -1,0 +1,47 @@
+{
+  "nav": { "tools": "Alat", "language": "Bahasa" },
+  "groups": {
+    "format": "Format",
+    "json": "JSON",
+    "qr": "QR & kode",
+    "encode": "Encode & data",
+    "text": "Teks & web"
+  },
+  "footer": {
+    "tools": "Alat",
+    "about": "Tentang",
+    "legal": "Legal",
+    "tagline": "Rapikan kode Anda, seketika.",
+    "rights": "Kode Anda diproses secara privat dan tidak pernah disimpan.",
+    "linkAbout": "Tentang",
+    "linkContact": "Kontak",
+    "linkTerms": "Ketentuan Layanan",
+    "linkPrivacy": "Kebijakan Privasi",
+    "linkDisclaimer": "Penafian"
+  },
+  "home": {
+    "badge": "Beautify · Minify · Unminify · 5 bahasa",
+    "titleA": "Beautify, minify &",
+    "titleHl": "unminify",
+    "titleB": "kode Anda",
+    "lead": "Tempel kode terminifikasi untuk dirapikan, atau kompres sumber Anda agar lebih kecil. Mendukung JavaScript, CSS, HTML, JSON, XML dan lainnya — cepat, gratis, dan privat."
+  },
+  "features": {
+    "heading": "Semua yang Anda butuhkan untuk merapikan kode",
+    "sub": "Alternatif modern dan cepat untuk mem-beautify dan minify berkas kode — tanpa perlu daftar.",
+    "beautify": { "title": "Beautify & unminify", "text": "Ubah kode yang terminifikasi, dipaketkan, atau di-obfuscate kembali menjadi sumber yang bersih, mudah dibaca, dan rapi indentasinya." },
+    "minify": { "title": "Minify & kompres", "text": "Hapus spasi dan komentar untuk mengirim JavaScript, CSS, HTML, JSON, dan XML yang lebih kecil." },
+    "languages": { "title": "Lima bahasa", "text": "JavaScript & TypeScript, CSS, HTML, JSON, dan XML — terdeteksi otomatis saat Anda menempel." },
+    "instant": { "title": "Instan & akurat", "text": "Didukung mesin teruji untuk hasil yang andal setiap saat." },
+    "private": { "title": "Privat secara default", "text": "Kode Anda diproses langsung dan tidak pernah disimpan — tidak ada yang disimpan atau dibagikan." },
+    "friction": { "title": "Tanpa ribet", "text": "Tempel, seret berkas, atau unggah. Salin atau unduh hasilnya dengan satu klik." }
+  },
+  "popular": {
+    "heading": "Alat populer",
+    "minifiers": "Minifier",
+    "beautifiers": "Beautifier",
+    "more": "Lainnya",
+    "convert": "Konversi JSON · YAML · CSV · XML",
+    "compare": "Bandingkan berkas JSON"
+  }
+}

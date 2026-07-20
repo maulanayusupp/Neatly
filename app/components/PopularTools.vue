@@ -8,12 +8,12 @@ const beautifiers = LANDING_PAGES.filter(page => page.mode === 'beautify')
 <template>
   <section class="popular" aria-label="Popular tools">
     <div class="container">
-      <h2 class="popular__heading">Popular tools</h2>
+      <h2 class="popular__heading">{{ $t('popular.heading') }}</h2>
 
       <div class="popular__cols">
         <div class="popular__col">
           <h3 class="popular__col-title">
-            <BaseIcon name="minify" :size="16" /> Minifiers
+            <BaseIcon name="minify" :size="16" /> {{ $t('popular.minifiers') }}
           </h3>
           <ul class="popular__links" role="list">
             <li v-for="page in minifiers" :key="page.slug">
@@ -24,7 +24,7 @@ const beautifiers = LANDING_PAGES.filter(page => page.mode === 'beautify')
 
         <div class="popular__col">
           <h3 class="popular__col-title">
-            <BaseIcon name="beautify" :size="16" /> Beautifiers
+            <BaseIcon name="beautify" :size="16" /> {{ $t('popular.beautifiers') }}
           </h3>
           <ul class="popular__links" role="list">
             <li v-for="page in beautifiers" :key="page.slug">
@@ -35,11 +35,11 @@ const beautifiers = LANDING_PAGES.filter(page => page.mode === 'beautify')
 
         <div class="popular__col">
           <h3 class="popular__col-title">
-            <BaseIcon name="layers" :size="16" /> More
+            <BaseIcon name="layers" :size="16" /> {{ $t('popular.more') }}
           </h3>
           <ul class="popular__links" role="list">
-            <li><NuxtLink to="/convert">Convert JSON · YAML · CSV · XML</NuxtLink></li>
-            <li><NuxtLink to="/compare">Compare JSON files</NuxtLink></li>
+            <li><NuxtLink to="/convert">{{ $t('popular.convert') }}</NuxtLink></li>
+            <li><NuxtLink to="/compare">{{ $t('popular.compare') }}</NuxtLink></li>
           </ul>
         </div>
       </div>

@@ -8,6 +8,8 @@ export interface ToolLink {
 }
 
 export interface ToolGroup {
+  /** i18n key under `groups.*` */
+  key: string
   name: string
   tools: ToolLink[]
 }
@@ -18,6 +20,7 @@ export interface ToolGroup {
  */
 export const TOOL_GROUPS: ToolGroup[] = [
   {
+    key: 'format',
     name: 'Format',
     tools: [
       { to: '/', label: 'Beautify & Minify', desc: 'Format or compress code', icon: 'code' },
@@ -25,6 +28,7 @@ export const TOOL_GROUPS: ToolGroup[] = [
     ],
   },
   {
+    key: 'json',
     name: 'JSON',
     tools: [
       { to: '/json-viewer', label: 'JSON Viewer', desc: 'Validate & explore JSON', icon: 'tree' },
@@ -33,6 +37,7 @@ export const TOOL_GROUPS: ToolGroup[] = [
     ],
   },
   {
+    key: 'text',
     name: 'Text & web',
     tools: [
       { to: '/diff', label: 'Text Diff', desc: 'Compare two texts', icon: 'columns' },
@@ -41,6 +46,7 @@ export const TOOL_GROUPS: ToolGroup[] = [
     ],
   },
   {
+    key: 'qr',
     name: 'QR & codes',
     tools: [
       { to: '/scan', label: 'QR Scanner', desc: 'Read QR & barcodes', icon: 'qr' },
@@ -48,6 +54,7 @@ export const TOOL_GROUPS: ToolGroup[] = [
     ],
   },
   {
+    key: 'encode',
     name: 'Encode & data',
     tools: [
       { to: '/base64', label: 'Base64', desc: 'Encode / decode', icon: 'code' },

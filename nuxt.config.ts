@@ -19,7 +19,25 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-01',
   devtools: { enabled: true },
 
-  modules: ['@vite-pwa/nuxt'],
+  modules: ['@vite-pwa/nuxt', '@nuxtjs/i18n'],
+
+  i18n: {
+    strategy: 'no_prefix',
+    defaultLocale: 'en',
+    lazy: true,
+    locales: [
+      { code: 'en', name: 'English', language: 'en-US', file: 'en.json' },
+      { code: 'id', name: 'Bahasa Indonesia', language: 'id-ID', file: 'id.json' },
+      { code: 'ms', name: 'Bahasa Melayu', language: 'ms-MY', file: 'ms.json' },
+      { code: 'fil', name: 'Filipino', language: 'fil-PH', file: 'fil.json' },
+      { code: 'vi', name: 'Tiếng Việt', language: 'vi-VN', file: 'vi.json' },
+    ],
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'neatly-lang',
+      alwaysRedirect: false,
+    },
+  },
 
   css: ['~/assets/scss/main.scss'],
 

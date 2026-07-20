@@ -1,0 +1,47 @@
+{
+  "nav": { "tools": "Mga Tool", "language": "Wika" },
+  "groups": {
+    "format": "Format",
+    "json": "JSON",
+    "qr": "QR & code",
+    "encode": "Encode & data",
+    "text": "Teksto & web"
+  },
+  "footer": {
+    "tools": "Mga Tool",
+    "about": "Tungkol",
+    "legal": "Legal",
+    "tagline": "Ayusin ang iyong code, agad.",
+    "rights": "Ang iyong code ay pinoproseso nang pribado at hindi kailanman iniimbak.",
+    "linkAbout": "Tungkol",
+    "linkContact": "Kontak",
+    "linkTerms": "Mga Tuntunin ng Serbisyo",
+    "linkPrivacy": "Patakaran sa Privacy",
+    "linkDisclaimer": "Disclaimer"
+  },
+  "home": {
+    "badge": "Beautify · Minify · Unminify · 5 wika",
+    "titleA": "Beautify, minify &",
+    "titleHl": "unminify",
+    "titleB": "ang iyong code",
+    "lead": "I-paste ang minified na code para linisin at ayusin ito, o i-compress ang iyong source para mas maliit. Gumagana sa JavaScript, CSS, HTML, JSON, XML at iba pa — mabilis, libre at pribado."
+  },
+  "features": {
+    "heading": "Lahat ng kailangan mo para ayusin ang code",
+    "sub": "Isang mabilis at modernong alternatibo sa pag-beautify at pag-minify ng mga file ng code — walang kailangang mag-sign up.",
+    "beautify": { "title": "Beautify & unminify", "text": "Gawing muli ang minified, packed o obfuscated na code sa malinis, mabasa at maayos na naka-indent na source." },
+    "minify": { "title": "Minify & i-compress", "text": "Alisin ang whitespace at komento para magpadala ng mas maliit na JavaScript, CSS, HTML, JSON at XML." },
+    "languages": { "title": "Limang wika", "text": "JavaScript & TypeScript, CSS, HTML, JSON at XML — awtomatikong natutukoy habang nagpe-paste ka." },
+    "instant": { "title": "Agad at tumpak", "text": "Pinapagana ng subok na mga engine para sa maaasahang resulta sa tuwina." },
+    "private": { "title": "Pribado bilang default", "text": "Ang iyong code ay pinoproseso agad at hindi kailanman iniimbak — walang iniligtas o ibinabahagi." },
+    "friction": { "title": "Walang abala", "text": "I-paste, i-drop ang file, o mag-upload. Kopyahin o i-download ang resulta sa isang click." }
+  },
+  "popular": {
+    "heading": "Mga sikat na tool",
+    "minifiers": "Mga Minifier",
+    "beautifiers": "Mga Beautifier",
+    "more": "Higit pa",
+    "convert": "I-convert ang JSON · YAML · CSV · XML",
+    "compare": "Ihambing ang mga JSON file"
+  }
+}

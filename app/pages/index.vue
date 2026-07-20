@@ -51,16 +51,13 @@ useHead({
       <div class="container hero__inner">
         <span class="hero__badge">
           <BaseIcon name="sparkles" :size="15" />
-          Beautify · Minify · Unminify · 5 languages
+          {{ $t('home.badge') }}
         </span>
         <h1 class="hero__title">
-          Beautify, minify &amp;
-          <span class="text-gradient">unminify</span> your code
+          {{ $t('home.titleA') }}
+          <span class="text-gradient">{{ $t('home.titleHl') }}</span> {{ $t('home.titleB') }}
         </h1>
-        <p class="hero__lead">
-          Paste minified code to unpack and prettify it, or compress your source to ship less.
-          Works with JavaScript, CSS, HTML, JSON, XML and more — fast, free and private.
-        </p>
+        <p class="hero__lead">{{ $t('home.lead') }}</p>
       </div>
     </section>
 

@@ -41,15 +41,15 @@ onBeforeUnmount(() => {
       @click="open = !open"
     >
       <BaseIcon name="grid" :size="17" />
-      <span>Tools</span>
+      <span>{{ $t('nav.tools') }}</span>
       <BaseIcon name="chevron" :size="15" class="nav-menu__caret" />
     </button>
 
     <Transition name="nav-menu">
       <div v-if="open" class="nav-menu__panel" role="menu">
         <div class="nav-menu__grid">
-          <div v-for="group in TOOL_GROUPS" :key="group.name" class="nav-menu__group">
-            <p class="nav-menu__group-title">{{ group.name }}</p>
+          <div v-for="group in TOOL_GROUPS" :key="group.key" class="nav-menu__group">
+            <p class="nav-menu__group-title">{{ $t(`groups.${group.key}`) }}</p>
             <NuxtLink
               v-for="tool in group.tools"
               :key="tool.to"

@@ -47,6 +47,12 @@ Repo: `github.com/maulanayusupp/Neatly` (branch `main`, SSH remote `origin`).
 - **PWA** via `@vite-pwa/nuxt` (`pwa` config in `nuxt.config`): installable
   manifest + service worker (autoUpdate) with runtime caching. `<InstallButton>`
   shows the install prompt. `error.vue` is the custom 404/500 page.
+- **i18n** via `@nuxtjs/i18n` (`no_prefix`, cookie `neatly-lang`). Locales:
+  **en, id, ms, fil, vi** in `i18n/locales/*.json`. `<LanguageSwitcher>` in the
+  header. **RULE: any new/changed static UI label must be added to ALL 5 locale
+  files** (use `$t('key')`; never hardcode user-facing chrome text). Tool
+  proper-name labels in `app/utils/tools.ts` may stay in English; group names,
+  chrome, home, features and popular-tools text are translated.
 
 ## Commands
 

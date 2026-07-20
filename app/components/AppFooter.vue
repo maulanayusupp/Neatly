@@ -6,14 +6,14 @@ const year = 2026
 const toolLinks = ALL_TOOLS
 
 const aboutLinks = [
-  { to: '/about', label: 'About' },
-  { to: '/contact', label: 'Contact' },
+  { to: '/about', key: 'linkAbout' },
+  { to: '/contact', key: 'linkContact' },
 ]
 
 const legalLinks = [
-  { to: '/terms', label: 'Terms of Service' },
-  { to: '/privacy', label: 'Privacy Policy' },
-  { to: '/disclaimer', label: 'Disclaimer' },
+  { to: '/terms', key: 'linkTerms' },
+  { to: '/privacy', key: 'linkPrivacy' },
+  { to: '/disclaimer', key: 'linkDisclaimer' },
 ]
 </script>
 
@@ -22,11 +22,11 @@ const legalLinks = [
     <div class="app-footer__inner container">
       <div class="app-footer__brand">
         <NeatlyLogo :size="28" />
-        <p class="app-footer__tagline">Make your code neat, instantly.</p>
+        <p class="app-footer__tagline">{{ $t('footer.tagline') }}</p>
       </div>
 
-      <nav class="app-footer__col" aria-label="Tools">
-        <h2 class="app-footer__col-title">Tools</h2>
+      <nav class="app-footer__col" :aria-label="$t('footer.tools')">
+        <h2 class="app-footer__col-title">{{ $t('footer.tools') }}</h2>
         <ul role="list">
           <li v-for="link in toolLinks" :key="link.to">
             <NuxtLink :to="link.to">{{ link.label }}</NuxtLink>
@@ -34,26 +34,26 @@ const legalLinks = [
         </ul>
       </nav>
 
-      <nav class="app-footer__col" aria-label="About">
-        <h2 class="app-footer__col-title">About</h2>
+      <nav class="app-footer__col" :aria-label="$t('footer.about')">
+        <h2 class="app-footer__col-title">{{ $t('footer.about') }}</h2>
         <ul role="list">
           <li v-for="link in aboutLinks" :key="link.to">
-            <NuxtLink :to="link.to">{{ link.label }}</NuxtLink>
+            <NuxtLink :to="link.to">{{ $t(`footer.${link.key}`) }}</NuxtLink>
           </li>
         </ul>
       </nav>
 
-      <nav class="app-footer__col" aria-label="Legal">
-        <h2 class="app-footer__col-title">Legal</h2>
+      <nav class="app-footer__col" :aria-label="$t('footer.legal')">
+        <h2 class="app-footer__col-title">{{ $t('footer.legal') }}</h2>
         <ul role="list">
           <li v-for="link in legalLinks" :key="link.to">
-            <NuxtLink :to="link.to">{{ link.label }}</NuxtLink>
+            <NuxtLink :to="link.to">{{ $t(`footer.${link.key}`) }}</NuxtLink>
           </li>
         </ul>
       </nav>
 
       <div class="app-footer__meta">
-        <span>© {{ year }} Neatly · Your code is processed privately and never stored.</span>
+        <span>© {{ year }} Neatly · {{ $t('footer.rights') }}</span>
         <InstallButton />
       </div>
     </div>

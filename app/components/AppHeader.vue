@@ -9,6 +9,7 @@
 
       <nav class="app-header__actions" aria-label="Primary">
         <NavMenu />
+        <LanguageSwitcher />
         <ThemeToggle />
       </nav>
     </div>

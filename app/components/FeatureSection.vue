@@ -1,55 +1,29 @@
 <script setup lang="ts">
 import type { IconName } from '~/utils/icons'
 
-const features: { icon: IconName, title: string, text: string }[] = [
-  {
-    icon: 'beautify',
-    title: 'Beautify & unminify',
-    text: 'Turn minified, packed or obfuscated code back into clean, readable, properly indented source.',
-  },
-  {
-    icon: 'minify',
-    title: 'Minify & compress',
-    text: 'Strip whitespace and comments to ship smaller JavaScript, CSS, HTML, JSON and XML.',
-  },
-  {
-    icon: 'layers',
-    title: 'Five languages',
-    text: 'JavaScript & TypeScript, CSS, HTML, JSON and XML — auto-detected as you paste.',
-  },
-  {
-    icon: 'gauge',
-    title: 'Instant & accurate',
-    text: 'Powered by battle-tested engines (Terser, clean-css, js-beautify) for reliable results.',
-  },
-  {
-    icon: 'shield',
-    title: 'Private by default',
-    text: 'Your code is processed on the fly and never stored — nothing is saved or shared.',
-  },
-  {
-    icon: 'zap',
-    title: 'Zero friction',
-    text: 'Paste, drop a file, or upload. Copy or download the result in a single click.',
-  },
+const features: { icon: IconName, key: string }[] = [
+  { icon: 'beautify', key: 'beautify' },
+  { icon: 'minify', key: 'minify' },
+  { icon: 'layers', key: 'languages' },
+  { icon: 'gauge', key: 'instant' },
+  { icon: 'shield', key: 'private' },
+  { icon: 'zap', key: 'friction' },
 ]
 </script>
 
 <template>
   <section class="features" aria-label="Features">
     <div class="container">
-      <h2 class="features__heading">Everything you need to tidy up code</h2>
-      <p class="features__sub">
-        A fast, modern alternative for beautifying and minifying source files — no sign-up required.
-      </p>
+      <h2 class="features__heading">{{ $t('features.heading') }}</h2>
+      <p class="features__sub">{{ $t('features.sub') }}</p>
 
       <ul class="features__grid" role="list">
-        <li v-for="feature in features" :key="feature.title" class="feature-card">
+        <li v-for="feature in features" :key="feature.key" class="feature-card">
           <span class="feature-card__icon">
             <BaseIcon :name="feature.icon" :size="20" />
           </span>
-          <h3 class="feature-card__title">{{ feature.title }}</h3>
-          <p class="feature-card__text">{{ feature.text }}</p>
+          <h3 class="feature-card__title">{{ $t(`features.${feature.key}.title`) }}</h3>
+          <p class="feature-card__text">{{ $t(`features.${feature.key}.text`) }}</p>
         </li>
       </ul>
     </div>
