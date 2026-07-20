@@ -1,15 +1,13 @@
 <script setup lang="ts">
-const pageTitle = 'URL Encode & Decode — Free Online URL Encoder/Decoder · Neatly'
-const pageDescription
-  = 'Free online URL encoder and decoder. Percent-encode text for URLs or decode it back, instantly and privately in your browser. No sign-up.'
+const { t } = useI18n()
 
 useSeoMeta({
-  title: pageTitle,
-  description: pageDescription,
-  ogTitle: pageTitle,
-  ogDescription: pageDescription,
-  twitterTitle: pageTitle,
-  twitterDescription: pageDescription,
+  title: () => t('urlEncode.metaTitle'),
+  description: () => t('urlEncode.metaDesc'),
+  ogTitle: () => t('urlEncode.metaTitle'),
+  ogDescription: () => t('urlEncode.metaDesc'),
+  twitterTitle: () => t('urlEncode.metaTitle'),
+  twitterDescription: () => t('urlEncode.metaDesc'),
 })
 useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/url-encode' }] })
 
@@ -22,17 +20,17 @@ function convert(text: string, mode: 'forward' | 'backward') {
   <div>
     <ToolHero
       icon="link"
-      badge="Percent-encode · Decode"
-      title="URL"
-      gradient="encoder & decoder"
-      lead="Percent-encode text so it's safe inside a URL, or decode an encoded string back to plain text."
+      :badge="$t('urlEncode.badge')"
+      :title="$t('urlEncode.titleA')"
+      :gradient="$t('urlEncode.titleHl')"
+      :lead="$t('urlEncode.lead')"
     />
     <section class="container tool-outlet">
       <div class="tool-panel">
         <SimpleConverter
-          forward-label="Encode"
-          backward-label="Decode"
-          placeholder="Type or paste text to encode…"
+          :forward-label="$t('urlEncode.encode')"
+          :backward-label="$t('urlEncode.decode')"
+          :placeholder="$t('urlEncode.placeholder')"
           example="https://neatlyapp.vercel.app/search?q=hello world&lang=id"
           :convert="convert"
         />

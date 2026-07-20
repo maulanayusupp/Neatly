@@ -31,17 +31,15 @@ async function copy(algo: string, hex: string) {
   }
 }
 
-const pageTitle = 'Hash Generator — SHA-1, SHA-256, SHA-384 & SHA-512 Online · Neatly'
-const pageDescription
-  = 'Free online hash generator. Compute SHA-1, SHA-256, SHA-384 and SHA-512 hashes of any text instantly and privately in your browser. No sign-up.'
+const { t } = useI18n()
 
 useSeoMeta({
-  title: pageTitle,
-  description: pageDescription,
-  ogTitle: pageTitle,
-  ogDescription: pageDescription,
-  twitterTitle: pageTitle,
-  twitterDescription: pageDescription,
+  title: () => t('hash.metaTitle'),
+  description: () => t('hash.metaDesc'),
+  ogTitle: () => t('hash.metaTitle'),
+  ogDescription: () => t('hash.metaDesc'),
+  twitterTitle: () => t('hash.metaTitle'),
+  twitterDescription: () => t('hash.metaDesc'),
 })
 useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/hash' }] })
 </script>
@@ -50,16 +48,16 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/hash' }
   <div>
     <ToolHero
       icon="hash"
-      badge="SHA-1 · SHA-256 · SHA-384 · SHA-512"
-      title="Hash"
-      gradient="generator"
-      lead="Generate SHA hashes of any text. Everything is computed locally in your browser using the Web Crypto API."
+      :badge="$t('hash.badge')"
+      :title="$t('hash.titleA')"
+      :gradient="$t('hash.titleHl')"
+      :lead="$t('hash.lead')"
     />
 
     <section class="container tool-outlet hash">
       <div class="tool-panel">
         <label class="hash__field">
-          <span class="hash__label">Text to hash</span>
+          <span class="hash__label">{{ $t('hash.textToHash') }}</span>
           <textarea v-model="input" class="hash__input" placeholder="Type or paste text…" spellcheck="false" />
         </label>
         <div class="hash__bar">

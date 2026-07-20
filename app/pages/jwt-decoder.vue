@@ -20,6 +20,8 @@ function pretty(value: unknown) {
   return highlightCode(JSON.stringify(value, null, 2), 'json')
 }
 
+const { t } = useI18n()
+
 const claims = computed(() => {
   const p = decoded.value?.payload as Record<string, unknown> | null
   if (!p) return []
@@ -29,26 +31,22 @@ const claims = computed(() => {
       rows.push({ label, value: new Date((p[key] as number) * 1000).toLocaleString() })
     }
   }
-  dateClaim('iat', 'Issued at')
-  dateClaim('nbf', 'Not before')
-  dateClaim('exp', 'Expires')
+  dateClaim('iat', t('jwt.issuedAt'))
+  dateClaim('nbf', t('jwt.notBefore'))
+  dateClaim('exp', t('jwt.expires'))
   if (typeof p.exp === 'number') {
-    rows.push({ label: 'Status', value: (p.exp as number) * 1000 < Date.now() ? 'Expired' : 'Valid' })
+    rows.push({ label: t('jwt.status'), value: (p.exp as number) * 1000 < Date.now() ? t('jwt.expired') : t('jwt.valid') })
   }
   return rows
 })
 
-const pageTitle = 'JWT Decoder — Decode JSON Web Tokens Online · Neatly'
-const pageDescription
-  = 'Free online JWT decoder. Paste a JSON Web Token to decode its header and payload and read the claims (exp, iat…). Decoding is done privately in your browser — tokens are never sent anywhere.'
-
 useSeoMeta({
-  title: pageTitle,
-  description: pageDescription,
-  ogTitle: pageTitle,
-  ogDescription: pageDescription,
-  twitterTitle: pageTitle,
-  twitterDescription: pageDescription,
+  title: () => t('jwt.metaTitle'),
+  description: () => t('jwt.metaDesc'),
+  ogTitle: () => t('jwt.metaTitle'),
+  ogDescription: () => t('jwt.metaDesc'),
+  twitterTitle: () => t('jwt.metaTitle'),
+  twitterDescription: () => t('jwt.metaDesc'),
 })
 useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/jwt-decoder' }] })
 </script>
@@ -57,28 +55,28 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/jwt-dec
   <div>
     <ToolHero
       icon="key"
-      badge="Decode header · payload · claims"
-      title="JWT"
-      gradient="decoder"
-      lead="Paste a JSON Web Token to inspect its header and payload. Decoding happens in your browser — your token is never uploaded."
+      :badge="$t('jwt.badge')"
+      :title="$t('jwt.titleA')"
+      :gradient="$t('jwt.titleHl')"
+      :lead="$t('jwt.lead')"
     />
 
     <section class="container tool-outlet jwt">
       <div class="tool-panel">
         <label class="jwt__field">
-          <span class="jwt__label">JWT</span>
+          <span class="jwt__label">{{ $t('jwt.token') }}</span>
           <textarea v-model="token" class="jwt__input" placeholder="Paste your token (eyJ…)…" spellcheck="false" />
         </label>
-        <button type="button" class="jwt__sample" @click="token = SAMPLE">Load sample token</button>
+        <button type="button" class="jwt__sample" @click="token = SAMPLE">{{ $t('jwt.sample') }}</button>
       </div>
 
       <div v-if="decoded && !decoded.error" class="jwt__grid">
         <div class="tool-panel">
-          <h2 class="jwt__title">Header</h2>
+          <h2 class="jwt__title">{{ $t('jwt.header') }}</h2>
           <pre class="jwt__json"><code class="hljs" v-html="pretty(decoded.header)" /></pre>
         </div>
         <div class="tool-panel">
-          <h2 class="jwt__title">Payload</h2>
+          <h2 class="jwt__title">{{ $t('jwt.payload') }}</h2>
           <pre class="jwt__json"><code class="hljs" v-html="pretty(decoded.payload)" /></pre>
           <ul v-if="claims.length" class="jwt__claims" role="list">
             <li v-for="c in claims" :key="c.label">

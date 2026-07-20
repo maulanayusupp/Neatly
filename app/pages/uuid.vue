@@ -25,17 +25,15 @@ async function copyAll() {
   }
 }
 
-const pageTitle = 'UUID Generator — Generate v4 UUIDs Online Free · Neatly'
-const pageDescription
-  = 'Free online UUID generator. Instantly generate one or many random version-4 UUIDs and copy them with one click. Runs privately in your browser, no sign-up.'
+const { t } = useI18n()
 
 useSeoMeta({
-  title: pageTitle,
-  description: pageDescription,
-  ogTitle: pageTitle,
-  ogDescription: pageDescription,
-  twitterTitle: pageTitle,
-  twitterDescription: pageDescription,
+  title: () => t('uuid.metaTitle'),
+  description: () => t('uuid.metaDesc'),
+  ogTitle: () => t('uuid.metaTitle'),
+  ogDescription: () => t('uuid.metaDesc'),
+  twitterTitle: () => t('uuid.metaTitle'),
+  twitterDescription: () => t('uuid.metaDesc'),
 })
 useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/uuid' }] })
 </script>
@@ -44,25 +42,25 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/uuid' }
   <div>
     <ToolHero
       icon="fingerprint"
-      badge="Version 4 · cryptographically random"
-      title="UUID"
-      gradient="generator"
-      lead="Generate random v4 UUIDs instantly. Pick how many you need and copy them individually or all at once."
+      :badge="$t('uuid.badge')"
+      :title="$t('uuid.titleA')"
+      :gradient="$t('uuid.titleHl')"
+      :lead="$t('uuid.lead')"
     />
 
     <section class="container tool-outlet">
       <div class="tool-panel uuid">
         <div class="uuid__bar">
           <label class="uuid__count">
-            <span>Count</span>
+            <span>{{ $t('uuid.count') }}</span>
             <select v-model.number="count">
               <option v-for="n in options" :key="n" :value="n">{{ n }}</option>
             </select>
           </label>
           <div class="uuid__actions">
-            <BaseButton icon="refresh" @click="generate">Generate</BaseButton>
+            <BaseButton icon="refresh" @click="generate">{{ $t('uuid.generate') }}</BaseButton>
             <BaseButton variant="secondary" :icon="copiedAll ? 'check' : 'copy'" :disabled="!uuids.length" @click="copyAll">
-              Copy all
+              {{ $t('uuid.copyAll') }}
             </BaseButton>
           </div>
         </div>

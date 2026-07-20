@@ -70,11 +70,11 @@ function swap() {
 
     <div class="conv__grid">
       <label class="conv__field">
-        <span class="conv__label">Input</span>
+        <span class="conv__label">{{ $t('common.input') }}</span>
         <textarea v-model="input" class="conv__area" :placeholder="placeholder" spellcheck="false" />
       </label>
       <div class="conv__field">
-        <span class="conv__label">Output</span>
+        <span class="conv__label">{{ $t('common.output') }}</span>
         <div class="conv__out" :class="{ 'has-error': output.error }">
           <p v-if="output.error" class="conv__error">{{ output.error }}</p>
           <pre v-else class="conv__area conv__area--out">{{ output.text }}</pre>

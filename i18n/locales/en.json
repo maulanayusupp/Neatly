@@ -119,5 +119,53 @@
     "pattern": "Pattern", "testString": "Test string", "matches": "Matches",
     "matchDetails": "Match details", "groups": "groups", "at": "at",
     "flagGlobal": "global", "flagIgnore": "ignore case", "flagMultiline": "multiline", "flagDotall": "dotall"
+  },
+  "base64": {
+    "metaTitle": "Base64 Encode & Decode — Free Online Base64 Converter · Neatly",
+    "metaDesc": "Free online Base64 encoder and decoder. Convert text to Base64 and back, UTF-8 safe, instantly and privately in your browser. No sign-up.",
+    "badge": "Encode · Decode · UTF-8 safe", "titleA": "Base64", "titleHl": "encoder & decoder",
+    "lead": "Convert text to Base64 and back. Handles Unicode correctly and runs entirely in your browser.",
+    "encode": "Encode", "decode": "Decode", "placeholder": "Type or paste text to encode…"
+  },
+  "urlEncode": {
+    "metaTitle": "URL Encode & Decode — Free Online URL Encoder/Decoder · Neatly",
+    "metaDesc": "Free online URL encoder and decoder. Percent-encode text for URLs or decode it back, instantly and privately in your browser. No sign-up.",
+    "badge": "Percent-encode · Decode", "titleA": "URL", "titleHl": "encoder & decoder",
+    "lead": "Percent-encode text so it's safe inside a URL, or decode an encoded string back to plain text.",
+    "encode": "Encode", "decode": "Decode", "placeholder": "Type or paste text to encode…"
+  },
+  "jwt": {
+    "metaTitle": "JWT Decoder — Decode JSON Web Tokens Online · Neatly",
+    "metaDesc": "Free online JWT decoder. Paste a JSON Web Token to decode its header and payload and read the claims (exp, iat…). Decoding is done privately in your browser — tokens are never sent anywhere.",
+    "badge": "Decode header · payload · claims", "titleA": "JWT", "titleHl": "decoder",
+    "lead": "Paste a JSON Web Token to inspect its header and payload. Decoding happens in your browser — your token is never uploaded.",
+    "token": "JWT", "sample": "Load sample token", "header": "Header", "payload": "Payload",
+    "issuedAt": "Issued at", "notBefore": "Not before", "expires": "Expires",
+    "status": "Status", "expired": "Expired", "valid": "Valid"
+  },
+  "hash": {
+    "metaTitle": "Hash Generator — SHA-1, SHA-256, SHA-384 & SHA-512 Online · Neatly",
+    "metaDesc": "Free online hash generator. Compute SHA-1, SHA-256, SHA-384 and SHA-512 hashes of any text instantly and privately in your browser. No sign-up.",
+    "badge": "SHA-1 · SHA-256 · SHA-384 · SHA-512", "titleA": "Hash", "titleHl": "generator",
+    "lead": "Generate SHA hashes of any text. Everything is computed locally in your browser using the Web Crypto API.",
+    "textToHash": "Text to hash"
+  },
+  "uuid": {
+    "metaTitle": "UUID Generator — Generate v4 UUIDs Online Free · Neatly",
+    "metaDesc": "Free online UUID generator. Instantly generate one or many random version-4 UUIDs and copy them with one click. Runs privately in your browser, no sign-up.",
+    "badge": "Version 4 · cryptographically random", "titleA": "UUID", "titleHl": "generator",
+    "lead": "Generate random v4 UUIDs instantly. Pick how many you need and copy them individually or all at once.",
+    "count": "Count", "generate": "Generate", "copyAll": "Copy all"
+  },
+  "timestamp": {
+    "metaTitle": "Unix Timestamp Converter — Epoch to Date & Back Online · Neatly",
+    "metaDesc": "Free online Unix timestamp converter. Convert an epoch timestamp to a human-readable date (local, UTC, ISO) and turn a date back into a timestamp. Private, instant, no sign-up.",
+    "badge": "Epoch ↔ date · local · UTC · ISO", "titleA": "Unix timestamp", "titleHl": "converter",
+    "lead": "Convert a Unix (epoch) timestamp to a readable date, or turn any date back into a timestamp.",
+    "tsToDate": "Timestamp → Date", "dateToTs": "Date → Timestamp", "now": "Now",
+    "local": "Local", "utc": "UTC", "iso": "ISO 8601", "relative": "Relative",
+    "seconds": "Seconds", "millis": "Milliseconds",
+    "tsHint": "Enter a Unix timestamp in seconds or milliseconds.",
+    "dtHint": "Pick a date and time to get its Unix timestamp."
   }
 }

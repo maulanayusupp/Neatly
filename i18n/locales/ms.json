@@ -119,5 +119,53 @@
     "pattern": "Corak", "testString": "Teks ujian", "matches": "Padanan",
     "matchDetails": "Butiran padanan", "groups": "kumpulan", "at": "pada",
     "flagGlobal": "global", "flagIgnore": "abai huruf", "flagMultiline": "berbilang baris", "flagDotall": "dotall"
+  },
+  "base64": {
+    "metaTitle": "Base64 Encode & Decode — Penukar Base64 Dalam Talian Percuma · Neatly",
+    "metaDesc": "Encoder dan decoder Base64 dalam talian percuma. Tukar teks kepada Base64 dan sebaliknya, selamat UTF-8, serta-merta dan peribadi dalam pelayar anda. Tanpa mendaftar.",
+    "badge": "Encode · Decode · selamat UTF-8", "titleA": "Base64", "titleHl": "encoder & decoder",
+    "lead": "Tukar teks kepada Base64 dan sebaliknya. Mengendalikan Unicode dengan betul dan berjalan sepenuhnya dalam pelayar anda.",
+    "encode": "Encode", "decode": "Decode", "placeholder": "Taip atau tampal teks untuk di-encode…"
+  },
+  "urlEncode": {
+    "metaTitle": "URL Encode & Decode — Encoder/Decoder URL Dalam Talian Percuma · Neatly",
+    "metaDesc": "Encoder dan decoder URL dalam talian percuma. Percent-encode teks untuk URL atau decode semula, serta-merta dan peribadi dalam pelayar anda. Tanpa mendaftar.",
+    "badge": "Percent-encode · Decode", "titleA": "URL", "titleHl": "encoder & decoder",
+    "lead": "Percent-encode teks supaya selamat dalam URL, atau decode rentetan yang ter-encode semula kepada teks biasa.",
+    "encode": "Encode", "decode": "Decode", "placeholder": "Taip atau tampal teks untuk di-encode…"
+  },
+  "jwt": {
+    "metaTitle": "JWT Decoder — Decode JSON Web Token Dalam Talian · Neatly",
+    "metaDesc": "JWT decoder dalam talian percuma. Tampal JSON Web Token untuk decode header dan payload serta membaca tuntutan (exp, iat…). Decode dilakukan secara peribadi dalam pelayar anda — token tidak pernah dihantar ke mana-mana.",
+    "badge": "Decode header · payload · tuntutan", "titleA": "JWT", "titleHl": "decoder",
+    "lead": "Tampal JSON Web Token untuk memeriksa header dan payload-nya. Decode berlaku dalam pelayar anda — token anda tidak pernah dimuat naik.",
+    "token": "JWT", "sample": "Muat token contoh", "header": "Header", "payload": "Payload",
+    "issuedAt": "Dikeluarkan", "notBefore": "Tidak sebelum", "expires": "Tamat tempoh",
+    "status": "Status", "expired": "Tamat tempoh", "valid": "Sah"
+  },
+  "hash": {
+    "metaTitle": "Penjana Hash — SHA-1, SHA-256, SHA-384 & SHA-512 Dalam Talian · Neatly",
+    "metaDesc": "Penjana hash dalam talian percuma. Kira hash SHA-1, SHA-256, SHA-384 dan SHA-512 bagi mana-mana teks serta-merta dan peribadi dalam pelayar anda. Tanpa mendaftar.",
+    "badge": "SHA-1 · SHA-256 · SHA-384 · SHA-512", "titleA": "Hash", "titleHl": "penjana",
+    "lead": "Jana hash SHA bagi mana-mana teks. Semuanya dikira secara tempatan dalam pelayar anda menggunakan Web Crypto API.",
+    "textToHash": "Teks untuk di-hash"
+  },
+  "uuid": {
+    "metaTitle": "Penjana UUID — Jana UUID v4 Dalam Talian Percuma · Neatly",
+    "metaDesc": "Penjana UUID dalam talian percuma. Jana satu atau banyak UUID versi-4 rawak serta-merta dan salin dengan satu klik. Berjalan secara peribadi dalam pelayar anda, tanpa mendaftar.",
+    "badge": "Versi 4 · rawak kriptografi", "titleA": "UUID", "titleHl": "penjana",
+    "lead": "Jana UUID v4 rawak serta-merta. Pilih berapa banyak yang anda perlukan dan salin satu demi satu atau semua sekaligus.",
+    "count": "Bilangan", "generate": "Jana", "copyAll": "Salin semua"
+  },
+  "timestamp": {
+    "metaTitle": "Penukar Unix Timestamp — Epoch ke Tarikh & Sebaliknya Dalam Talian · Neatly",
+    "metaDesc": "Penukar Unix timestamp dalam talian percuma. Tukar epoch timestamp kepada tarikh yang boleh dibaca (tempatan, UTC, ISO) dan tukar tarikh semula kepada timestamp. Peribadi, serta-merta, tanpa mendaftar.",
+    "badge": "Epoch ↔ tarikh · tempatan · UTC · ISO", "titleA": "Unix timestamp", "titleHl": "penukar",
+    "lead": "Tukar Unix (epoch) timestamp kepada tarikh yang boleh dibaca, atau tukar mana-mana tarikh semula kepada timestamp.",
+    "tsToDate": "Timestamp → Tarikh", "dateToTs": "Tarikh → Timestamp", "now": "Sekarang",
+    "local": "Tempatan", "utc": "UTC", "iso": "ISO 8601", "relative": "Relatif",
+    "seconds": "Saat", "millis": "Milisaat",
+    "tsHint": "Masukkan Unix timestamp dalam saat atau milisaat.",
+    "dtHint": "Pilih tarikh dan masa untuk mendapatkan Unix timestamp-nya."
   }
 }

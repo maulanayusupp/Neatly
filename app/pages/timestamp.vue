@@ -51,17 +51,15 @@ async function copy(value: string | number) {
   if (await copyText(String(value))) toast.success('Copied')
 }
 
-const pageTitle = 'Unix Timestamp Converter — Epoch to Date & Back Online · Neatly'
-const pageDescription
-  = 'Free online Unix timestamp converter. Convert an epoch timestamp to a human-readable date (local, UTC, ISO) and turn a date back into a timestamp. Private, instant, no sign-up.'
+const { t } = useI18n()
 
 useSeoMeta({
-  title: pageTitle,
-  description: pageDescription,
-  ogTitle: pageTitle,
-  ogDescription: pageDescription,
-  twitterTitle: pageTitle,
-  twitterDescription: pageDescription,
+  title: () => t('timestamp.metaTitle'),
+  description: () => t('timestamp.metaDesc'),
+  ogTitle: () => t('timestamp.metaTitle'),
+  ogDescription: () => t('timestamp.metaDesc'),
+  twitterTitle: () => t('timestamp.metaTitle'),
+  twitterDescription: () => t('timestamp.metaDesc'),
 })
 useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/timestamp' }] })
 </script>
@@ -70,36 +68,36 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/timesta
   <div>
     <ToolHero
       icon="clock"
-      badge="Epoch ↔ date · local · UTC · ISO"
-      title="Unix timestamp"
-      gradient="converter"
-      lead="Convert a Unix (epoch) timestamp to a readable date, or turn any date back into a timestamp."
+      :badge="$t('timestamp.badge')"
+      :title="$t('timestamp.titleA')"
+      :gradient="$t('timestamp.titleHl')"
+      :lead="$t('timestamp.lead')"
     />
 
     <section class="container tool-outlet ts">
       <div class="tool-panel">
         <div class="ts__head">
-          <h2 class="ts__title">Timestamp → Date</h2>
-          <BaseButton size="sm" variant="ghost" icon="clock" @click="setNow">Now</BaseButton>
+          <h2 class="ts__title">{{ $t('timestamp.tsToDate') }}</h2>
+          <BaseButton size="sm" variant="ghost" icon="clock" @click="setNow">{{ $t('timestamp.now') }}</BaseButton>
         </div>
         <input v-model="tsInput" class="ts__input" inputmode="numeric" placeholder="1700000000">
         <ul v-if="fromTimestamp" class="ts__out" role="list">
-          <li><span>Local</span><code @click="copy(fromTimestamp.local)">{{ fromTimestamp.local }}</code></li>
-          <li><span>UTC</span><code @click="copy(fromTimestamp.utc)">{{ fromTimestamp.utc }}</code></li>
-          <li><span>ISO 8601</span><code @click="copy(fromTimestamp.iso)">{{ fromTimestamp.iso }}</code></li>
-          <li><span>Relative</span><code>{{ fromTimestamp.relative }}</code></li>
+          <li><span>{{ $t('timestamp.local') }}</span><code @click="copy(fromTimestamp.local)">{{ fromTimestamp.local }}</code></li>
+          <li><span>{{ $t('timestamp.utc') }}</span><code @click="copy(fromTimestamp.utc)">{{ fromTimestamp.utc }}</code></li>
+          <li><span>{{ $t('timestamp.iso') }}</span><code @click="copy(fromTimestamp.iso)">{{ fromTimestamp.iso }}</code></li>
+          <li><span>{{ $t('timestamp.relative') }}</span><code>{{ fromTimestamp.relative }}</code></li>
         </ul>
-        <p v-else class="ts__hint">Enter a Unix timestamp in seconds or milliseconds.</p>
+        <p v-else class="ts__hint">{{ $t('timestamp.tsHint') }}</p>
       </div>
 
       <div class="tool-panel">
-        <h2 class="ts__title">Date → Timestamp</h2>
+        <h2 class="ts__title">{{ $t('timestamp.dateToTs') }}</h2>
         <input v-model="dtInput" class="ts__input" type="datetime-local">
         <ul v-if="toTimestamp" class="ts__out" role="list">
-          <li><span>Seconds</span><code @click="copy(toTimestamp.seconds)">{{ toTimestamp.seconds }}</code></li>
-          <li><span>Milliseconds</span><code @click="copy(toTimestamp.millis)">{{ toTimestamp.millis }}</code></li>
+          <li><span>{{ $t('timestamp.seconds') }}</span><code @click="copy(toTimestamp.seconds)">{{ toTimestamp.seconds }}</code></li>
+          <li><span>{{ $t('timestamp.millis') }}</span><code @click="copy(toTimestamp.millis)">{{ toTimestamp.millis }}</code></li>
         </ul>
-        <p v-else class="ts__hint">Pick a date and time to get its Unix timestamp.</p>
+        <p v-else class="ts__hint">{{ $t('timestamp.dtHint') }}</p>
       </div>
     </section>
   </div>

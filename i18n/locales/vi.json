@@ -119,5 +119,53 @@
     "pattern": "Mẫu", "testString": "Chuỗi kiểm tra", "matches": "Kết quả khớp",
     "matchDetails": "Chi tiết khớp", "groups": "nhóm", "at": "tại",
     "flagGlobal": "toàn cục", "flagIgnore": "bỏ qua hoa/thường", "flagMultiline": "nhiều dòng", "flagDotall": "dotall"
+  },
+  "base64": {
+    "metaTitle": "Base64 Encode & Decode — Công cụ chuyển đổi Base64 trực tuyến miễn phí · Neatly",
+    "metaDesc": "Trình mã hoá và giải mã Base64 trực tuyến miễn phí. Chuyển văn bản sang Base64 và ngược lại, an toàn UTF-8, tức thì và riêng tư trong trình duyệt. Không cần đăng ký.",
+    "badge": "Mã hoá · Giải mã · an toàn UTF-8", "titleA": "Base64", "titleHl": "mã hoá & giải mã",
+    "lead": "Chuyển văn bản sang Base64 và ngược lại. Xử lý Unicode chính xác và chạy hoàn toàn trong trình duyệt của bạn.",
+    "encode": "Mã hoá", "decode": "Giải mã", "placeholder": "Nhập hoặc dán văn bản để mã hoá…"
+  },
+  "urlEncode": {
+    "metaTitle": "URL Encode & Decode — Trình mã hoá/giải mã URL trực tuyến miễn phí · Neatly",
+    "metaDesc": "Trình mã hoá và giải mã URL trực tuyến miễn phí. Percent-encode văn bản cho URL hoặc giải mã ngược lại, tức thì và riêng tư trong trình duyệt. Không cần đăng ký.",
+    "badge": "Percent-encode · Giải mã", "titleA": "URL", "titleHl": "mã hoá & giải mã",
+    "lead": "Percent-encode văn bản để an toàn bên trong URL, hoặc giải mã chuỗi đã mã hoá về văn bản thường.",
+    "encode": "Mã hoá", "decode": "Giải mã", "placeholder": "Nhập hoặc dán văn bản để mã hoá…"
+  },
+  "jwt": {
+    "metaTitle": "JWT Decoder — Giải mã JSON Web Token trực tuyến · Neatly",
+    "metaDesc": "Trình giải mã JWT trực tuyến miễn phí. Dán JSON Web Token để giải mã header và payload và đọc các claim (exp, iat…). Việc giải mã thực hiện riêng tư trong trình duyệt — token không bao giờ được gửi đi đâu.",
+    "badge": "Giải mã header · payload · claims", "titleA": "JWT", "titleHl": "decoder",
+    "lead": "Dán JSON Web Token để xem header và payload. Việc giải mã diễn ra trong trình duyệt — token của bạn không bao giờ được tải lên.",
+    "token": "JWT", "sample": "Tải token mẫu", "header": "Header", "payload": "Payload",
+    "issuedAt": "Phát hành lúc", "notBefore": "Không trước", "expires": "Hết hạn",
+    "status": "Trạng thái", "expired": "Đã hết hạn", "valid": "Hợp lệ"
+  },
+  "hash": {
+    "metaTitle": "Trình tạo Hash — SHA-1, SHA-256, SHA-384 & SHA-512 trực tuyến · Neatly",
+    "metaDesc": "Trình tạo hash trực tuyến miễn phí. Tính hash SHA-1, SHA-256, SHA-384 và SHA-512 cho bất kỳ văn bản nào tức thì và riêng tư trong trình duyệt. Không cần đăng ký.",
+    "badge": "SHA-1 · SHA-256 · SHA-384 · SHA-512", "titleA": "Hash", "titleHl": "generator",
+    "lead": "Tạo hash SHA cho bất kỳ văn bản nào. Mọi thứ được tính cục bộ trong trình duyệt của bạn bằng Web Crypto API.",
+    "textToHash": "Văn bản cần hash"
+  },
+  "uuid": {
+    "metaTitle": "Trình tạo UUID — Tạo UUID v4 trực tuyến miễn phí · Neatly",
+    "metaDesc": "Trình tạo UUID trực tuyến miễn phí. Tạo ngay một hoặc nhiều UUID phiên bản 4 ngẫu nhiên và sao chép chỉ với một cú nhấp. Chạy riêng tư trong trình duyệt của bạn, không cần đăng ký.",
+    "badge": "Phiên bản 4 · ngẫu nhiên mật mã", "titleA": "UUID", "titleHl": "generator",
+    "lead": "Tạo UUID v4 ngẫu nhiên tức thì. Chọn số lượng bạn cần và sao chép từng cái hoặc tất cả cùng lúc.",
+    "count": "Số lượng", "generate": "Tạo", "copyAll": "Sao chép tất cả"
+  },
+  "timestamp": {
+    "metaTitle": "Trình chuyển đổi Unix Timestamp — Epoch sang ngày & ngược lại trực tuyến · Neatly",
+    "metaDesc": "Trình chuyển đổi Unix timestamp trực tuyến miễn phí. Chuyển epoch timestamp sang ngày dễ đọc (cục bộ, UTC, ISO) và chuyển ngày ngược lại thành timestamp. Riêng tư, tức thì, không cần đăng ký.",
+    "badge": "Epoch ↔ ngày · cục bộ · UTC · ISO", "titleA": "Unix timestamp", "titleHl": "converter",
+    "lead": "Chuyển Unix (epoch) timestamp sang ngày dễ đọc, hoặc chuyển bất kỳ ngày nào ngược lại thành timestamp.",
+    "tsToDate": "Timestamp → Ngày", "dateToTs": "Ngày → Timestamp", "now": "Bây giờ",
+    "local": "Cục bộ", "utc": "UTC", "iso": "ISO 8601", "relative": "Tương đối",
+    "seconds": "Giây", "millis": "Mili giây",
+    "tsHint": "Nhập Unix timestamp theo giây hoặc mili giây.",
+    "dtHint": "Chọn ngày và giờ để lấy Unix timestamp của nó."
   }
 }

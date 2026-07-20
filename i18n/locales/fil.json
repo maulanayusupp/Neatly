@@ -119,5 +119,53 @@
     "pattern": "Pattern", "testString": "Test string", "matches": "Mga match",
     "matchDetails": "Detalye ng match", "groups": "groups", "at": "sa",
     "flagGlobal": "global", "flagIgnore": "ignore case", "flagMultiline": "multiline", "flagDotall": "dotall"
+  },
+  "base64": {
+    "metaTitle": "Base64 Encode & Decode — Libreng Online Base64 Converter · Neatly",
+    "metaDesc": "Libreng online Base64 encoder at decoder. I-convert ang teksto sa Base64 at pabalik, UTF-8 safe, agad at pribado sa iyong browser. Walang sign-up.",
+    "badge": "Encode · Decode · UTF-8 safe", "titleA": "Base64", "titleHl": "encoder & decoder",
+    "lead": "I-convert ang teksto sa Base64 at pabalik. Tama ang paghawak sa Unicode at tumatakbo nang buo sa iyong browser.",
+    "encode": "Encode", "decode": "Decode", "placeholder": "Mag-type o mag-paste ng tekstong ie-encode…"
+  },
+  "urlEncode": {
+    "metaTitle": "URL Encode & Decode — Libreng Online URL Encoder/Decoder · Neatly",
+    "metaDesc": "Libreng online URL encoder at decoder. Percent-encode ang teksto para sa URL o i-decode pabalik, agad at pribado sa iyong browser. Walang sign-up.",
+    "badge": "Percent-encode · Decode", "titleA": "URL", "titleHl": "encoder & decoder",
+    "lead": "Percent-encode ang teksto para ligtas sa loob ng URL, o i-decode ang naka-encode na string pabalik sa plain text.",
+    "encode": "Encode", "decode": "Decode", "placeholder": "Mag-type o mag-paste ng tekstong ie-encode…"
+  },
+  "jwt": {
+    "metaTitle": "JWT Decoder — I-decode ang JSON Web Tokens Online · Neatly",
+    "metaDesc": "Libreng online JWT decoder. I-paste ang JSON Web Token para i-decode ang header at payload at basahin ang claims (exp, iat…). Pribadong ginagawa ang pag-decode sa iyong browser — hindi kailanman ipinapadala ang tokens.",
+    "badge": "Decode header · payload · claims", "titleA": "JWT", "titleHl": "decoder",
+    "lead": "I-paste ang JSON Web Token para suriin ang header at payload nito. Sa iyong browser nangyayari ang pag-decode — hindi kailanman ina-upload ang iyong token.",
+    "token": "JWT", "sample": "Mag-load ng sample token", "header": "Header", "payload": "Payload",
+    "issuedAt": "Inilabas noong", "notBefore": "Hindi bago ang", "expires": "Mag-e-expire",
+    "status": "Status", "expired": "Nag-expire na", "valid": "Valid"
+  },
+  "hash": {
+    "metaTitle": "Hash Generator — SHA-1, SHA-256, SHA-384 & SHA-512 Online · Neatly",
+    "metaDesc": "Libreng online hash generator. Kalkulahin ang SHA-1, SHA-256, SHA-384 at SHA-512 hashes ng anumang teksto agad at pribado sa iyong browser. Walang sign-up.",
+    "badge": "SHA-1 · SHA-256 · SHA-384 · SHA-512", "titleA": "Hash", "titleHl": "generator",
+    "lead": "Bumuo ng SHA hashes ng anumang teksto. Lahat ay kinakalkula lokal sa iyong browser gamit ang Web Crypto API.",
+    "textToHash": "Tekstong iha-hash"
+  },
+  "uuid": {
+    "metaTitle": "UUID Generator — Bumuo ng v4 UUIDs Online nang Libre · Neatly",
+    "metaDesc": "Libreng online UUID generator. Agad na bumuo ng isa o maraming random na version-4 UUIDs at kopyahin sa isang click. Tumatakbo nang pribado sa iyong browser, walang sign-up.",
+    "badge": "Version 4 · cryptographically random", "titleA": "UUID", "titleHl": "generator",
+    "lead": "Agad na bumuo ng random na v4 UUIDs. Piliin kung ilan ang kailangan mo at kopyahin isa-isa o lahat nang sabay.",
+    "count": "Bilang", "generate": "Bumuo", "copyAll": "Kopyahin lahat"
+  },
+  "timestamp": {
+    "metaTitle": "Unix Timestamp Converter — Epoch sa Petsa & Pabalik Online · Neatly",
+    "metaDesc": "Libreng online Unix timestamp converter. I-convert ang epoch timestamp sa nababasang petsa (local, UTC, ISO) at gawing timestamp muli ang isang petsa. Pribado, agad, walang sign-up.",
+    "badge": "Epoch ↔ petsa · local · UTC · ISO", "titleA": "Unix timestamp", "titleHl": "converter",
+    "lead": "I-convert ang Unix (epoch) timestamp sa nababasang petsa, o gawing timestamp muli ang anumang petsa.",
+    "tsToDate": "Timestamp → Petsa", "dateToTs": "Petsa → Timestamp", "now": "Ngayon",
+    "local": "Local", "utc": "UTC", "iso": "ISO 8601", "relative": "Relatibo",
+    "seconds": "Segundo", "millis": "Millisegundo",
+    "tsHint": "Maglagay ng Unix timestamp sa segundo o millisegundo.",
+    "dtHint": "Pumili ng petsa at oras para makuha ang Unix timestamp nito."
   }
 }
