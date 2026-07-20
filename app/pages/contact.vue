@@ -40,9 +40,6 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/contact
     <section class="container contact__inner">
       <header class="contact__hero">
         <span class="contact__avatar">M</span>
-        <span class="contact__status">
-          <span class="contact__dot" /> Available for work
-        </span>
         <h1 class="contact__name">{{ NAME }}</h1>
         <p class="contact__role">
           Full-stack developer · maker of <span class="text-gradient">Neatly</span>
@@ -152,30 +149,8 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/contact
   box-shadow: var(--shadow-lg);
 }
 
-.contact__status {
-  display: inline-flex;
-  align-items: center;
-  gap: spacing(2);
-  margin-top: spacing(5);
-  padding: spacing(1) spacing(3);
-  border-radius: $radius-pill;
-  border: 1px solid var(--color-border);
-  background: var(--color-surface);
-  color: var(--color-text-muted);
-  font-size: $text-xs;
-  font-weight: 600;
-}
-
-.contact__dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--color-success);
-  box-shadow: 0 0 0 3px var(--color-success-soft);
-}
-
 .contact__name {
-  margin-top: spacing(4);
+  margin-top: spacing(6);
   font-size: $text-4xl;
   letter-spacing: -0.03em;
 }
