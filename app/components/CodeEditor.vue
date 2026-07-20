@@ -221,6 +221,9 @@ onMounted(() => {
 .code-editor {
   position: relative;
   display: flex;
+  flex: 1;
+  width: 100%;
+  min-width: 0;
   height: 100%;
   min-height: 0;
   overflow: hidden;
