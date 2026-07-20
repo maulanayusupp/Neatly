@@ -3,10 +3,14 @@ const props = withDefaults(defineProps<{
   forwardLabel: string
   backwardLabel: string
   placeholder: string
+  /** Sample for the forward (encode) direction. */
   example?: string
+  /** Sample for the backward (decode) direction — a valid encoded string. */
+  backwardExample?: string
   convert: (text: string, mode: 'forward' | 'backward') => string
 }>(), {
   example: '',
+  backwardExample: '',
 })
 
 const toast = useToast()
@@ -36,6 +40,19 @@ function swap() {
   mode.value = mode.value === 'forward' ? 'backward' : 'forward'
   if (output.value.text) input.value = output.value.text
 }
+
+// Load a sample that is valid for the current direction. In decode mode we
+// need an already-encoded sample, otherwise the example would fail to decode.
+function loadExample() {
+  if (mode.value === 'backward') {
+    if (props.backwardExample) {
+      input.value = props.backwardExample
+      return
+    }
+    mode.value = 'forward'
+  }
+  input.value = props.example
+}
 </script>
 
 <template>
@@ -62,7 +79,7 @@ function swap() {
         variant="ghost"
         icon="sparkles"
         class="conv__example"
-        @click="input = example"
+        @click="loadExample"
       >
         {{ $t('common.example') }}
       </BaseButton>

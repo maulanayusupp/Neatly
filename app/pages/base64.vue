@@ -34,6 +34,7 @@ function convert(text: string, mode: 'forward' | 'backward') {
           :backward-label="$t('base64.decode')"
           :placeholder="$t('base64.placeholder')"
           example="Hello, Neatly! 👋 Encode me to Base64."
+          backward-example="TmVhdGx5IG1ha2VzIHlvdXIgY29kZSBuZWF0ISDwn5qAIERlY29kZSBtZSBiYWNrIHRvIHRleHQu"
           :convert="convert"
         />
       </div>

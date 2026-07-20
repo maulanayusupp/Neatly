@@ -32,6 +32,7 @@ function convert(text: string, mode: 'forward' | 'backward') {
           :backward-label="$t('urlEncode.decode')"
           :placeholder="$t('urlEncode.placeholder')"
           example="https://neatlyapp.vercel.app/search?q=hello world&lang=id"
+          backward-example="https%3A%2F%2Fneatlyapp.vercel.app%2Fsearch%3Fq%3Dhello%20world%26lang%3Did"
           :convert="convert"
         />
       </div>
