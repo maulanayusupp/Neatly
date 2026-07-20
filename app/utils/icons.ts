@@ -102,6 +102,8 @@ export const ICONS = {
     '<rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/>',
   markdown:
     '<rect x="2" y="5" width="20" height="14" rx="2"/><path d="M6 15V9l3 3 3-3v6"/><path d="M17 9v4"/><path d="M15 12l2 2 2-2"/>',
+  help:
+    '<circle cx="12" cy="12" r="10"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.8.4-1 .9-1 1.7"/><line x1="12" y1="17" x2="12.01" y2="17"/>',
 } as const
 
 export type IconName = keyof typeof ICONS

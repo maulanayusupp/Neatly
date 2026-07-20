@@ -443,6 +443,25 @@
     "preview": "Preview",
     "html": "HTML",
     "placeholder": "# Hello\n\nType **Markdown** here…",
-    "empty": "Type Markdown to see the preview."
+    "empty": "Type Markdown to see the preview.",
+    "help": {
+      "title": "Markdown guide",
+      "hint": "How to write Markdown",
+      "close": "Close",
+      "heading": "Headings",
+      "bold": "Bold",
+      "italic": "Italic",
+      "strike": "Strikethrough",
+      "link": "Link",
+      "image": "Image",
+      "ulist": "Bullet list",
+      "olist": "Numbered list",
+      "task": "Task list",
+      "code": "Inline code",
+      "codeblock": "Code block",
+      "quote": "Blockquote",
+      "table": "Table",
+      "hr": "Divider"
+    }
   }
 }

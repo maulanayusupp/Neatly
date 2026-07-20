@@ -443,6 +443,25 @@
     "preview": "Pratinjau",
     "html": "HTML",
     "placeholder": "# Halo\n\nKetik **Markdown** di sini…",
-    "empty": "Ketik Markdown untuk melihat pratinjau."
+    "empty": "Ketik Markdown untuk melihat pratinjau.",
+    "help": {
+      "title": "Panduan Markdown",
+      "hint": "Cara menulis Markdown",
+      "close": "Tutup",
+      "heading": "Judul",
+      "bold": "Tebal",
+      "italic": "Miring",
+      "strike": "Coret",
+      "link": "Tautan",
+      "image": "Gambar",
+      "ulist": "Daftar poin",
+      "olist": "Daftar bernomor",
+      "task": "Daftar tugas",
+      "code": "Kode inline",
+      "codeblock": "Blok kode",
+      "quote": "Kutipan",
+      "table": "Tabel",
+      "hr": "Pemisah"
+    }
   }
 }

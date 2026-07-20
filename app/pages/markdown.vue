@@ -8,6 +8,30 @@ const SAMPLE = '# Neatly\n\n**Markdown** to HTML with a *live* preview.\n\n- Fas
 
 const input = ref('')
 const tab = ref<'preview' | 'html'>('preview')
+const helpOpen = ref(false)
+
+const CHEATSHEET: { key: string, syntax: string }[] = [
+  { key: 'heading', syntax: '# H1\n## H2\n### H3' },
+  { key: 'bold', syntax: '**bold text**' },
+  { key: 'italic', syntax: '*italic text*' },
+  { key: 'strike', syntax: '~~strikethrough~~' },
+  { key: 'link', syntax: '[title](https://url.com)' },
+  { key: 'image', syntax: '![alt text](image.png)' },
+  { key: 'ulist', syntax: '- item one\n- item two' },
+  { key: 'olist', syntax: '1. first\n2. second' },
+  { key: 'task', syntax: '- [ ] to do\n- [x] done' },
+  { key: 'code', syntax: '`inline code`' },
+  { key: 'codeblock', syntax: '```js\nconst x = 1\n```' },
+  { key: 'quote', syntax: '> a quotation' },
+  { key: 'table', syntax: '| A | B |\n|---|---|\n| 1 | 2 |' },
+  { key: 'hr', syntax: '---' },
+]
+
+function onHelpKey(e: KeyboardEvent) {
+  if (e.key === 'Escape') helpOpen.value = false
+}
+onMounted(() => window.addEventListener('keydown', onHelpKey))
+onBeforeUnmount(() => window.removeEventListener('keydown', onHelpKey))
 const htmlSource = ref('')
 const safeHtml = ref('')
 const copied = ref(false)
@@ -69,7 +93,10 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/markdow
       <section class="md__pane">
         <header class="md__head">
           <h2 class="md__title"><BaseIcon name="markdown" :size="16" /> {{ $t('mdTool.inputLabel') }}</h2>
-          <BaseButton size="sm" variant="ghost" icon="sparkles" @click="input = SAMPLE">{{ $t('common.example') }}</BaseButton>
+          <div class="md__actions">
+            <BaseButton size="sm" variant="ghost" icon="help" :title="$t('mdTool.help.title')" @click="helpOpen = true">{{ $t('mdTool.help.title') }}</BaseButton>
+            <BaseButton size="sm" variant="ghost" icon="sparkles" @click="input = SAMPLE">{{ $t('common.example') }}</BaseButton>
+          </div>
         </header>
         <textarea v-model="input" class="md__input" :placeholder="$t('mdTool.placeholder')" spellcheck="false" />
       </section>
@@ -92,6 +119,29 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/markdow
         </div>
       </section>
     </section>
+
+    <ClientOnly>
+      <Teleport to="body">
+        <Transition name="mdhelp">
+          <div v-if="helpOpen" class="mdhelp" @click.self="helpOpen = false">
+            <div class="mdhelp__panel" role="dialog" aria-modal="true">
+              <header class="mdhelp__head">
+                <h2 class="mdhelp__title"><BaseIcon name="markdown" :size="18" /> {{ $t('mdTool.help.title') }}</h2>
+                <button class="mdhelp__close" type="button" :aria-label="$t('mdTool.help.close')" @click="helpOpen = false">
+                  <BaseIcon name="x" :size="18" />
+                </button>
+              </header>
+              <div class="mdhelp__body">
+                <div v-for="item in CHEATSHEET" :key="item.key" class="mdhelp__row">
+                  <span class="mdhelp__label">{{ $t(`mdTool.help.${item.key}`) }}</span>
+                  <pre class="mdhelp__code">{{ item.syntax }}</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Transition>
+      </Teleport>
+    </ClientOnly>
   </div>
 </template>
 
@@ -147,7 +197,105 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/markdow
   }
 }
 
-.md__actions { display: inline-flex; gap: spacing(1); }
+.md__actions { display: inline-flex; gap: spacing(1); flex-wrap: wrap; }
+
+/* Help modal */
+.mdhelp {
+  position: fixed;
+  inset: 0;
+  z-index: $z-toast;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 8vh spacing(4) spacing(4);
+  background: rgba(11, 13, 22, 0.55);
+  backdrop-filter: blur(4px);
+}
+
+.mdhelp__panel {
+  width: 100%;
+  max-width: 560px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: $radius-lg;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.mdhelp__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: spacing(4);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface-2);
+}
+
+.mdhelp__title {
+  display: inline-flex;
+  align-items: center;
+  gap: spacing(2);
+  font-size: $text-lg;
+}
+
+.mdhelp__close {
+  @include button-reset;
+  display: inline-flex;
+  padding: spacing(1.5);
+  border-radius: $radius-sm;
+  color: var(--color-text-muted);
+  &:hover { color: var(--color-text); background: var(--color-surface-3); }
+}
+
+.mdhelp__body {
+  overflow-y: auto;
+  padding: spacing(3);
+  display: flex;
+  flex-direction: column;
+  gap: spacing(1);
+  @include custom-scrollbar;
+}
+
+.mdhelp__row {
+  display: flex;
+  align-items: center;
+  gap: spacing(3);
+  padding: spacing(2.5) spacing(3);
+  border-radius: $radius-md;
+
+  &:hover { background: var(--color-surface-2); }
+}
+
+.mdhelp__label {
+  flex-shrink: 0;
+  width: 8rem;
+  font-size: $text-sm;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.mdhelp__code {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  padding: spacing(2) spacing(3);
+  border-radius: $radius-sm;
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  font-family: $font-mono;
+  font-size: $text-xs;
+  color: var(--syntax-key);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.mdhelp-enter-active,
+.mdhelp-leave-active { transition: opacity $transition-fast; }
+.mdhelp-enter-from,
+.mdhelp-leave-to { opacity: 0; }
 
 .md__input {
   flex: 1;

@@ -443,6 +443,25 @@
     "preview": "Pratonton",
     "html": "HTML",
     "placeholder": "# Helo\n\nTaip **Markdown** di sini…",
-    "empty": "Taip Markdown untuk melihat pratonton."
+    "empty": "Taip Markdown untuk melihat pratonton.",
+    "help": {
+      "title": "Panduan Markdown",
+      "hint": "Cara menulis Markdown",
+      "close": "Tutup",
+      "heading": "Tajuk",
+      "bold": "Tebal",
+      "italic": "Condong",
+      "strike": "Coret",
+      "link": "Pautan",
+      "image": "Imej",
+      "ulist": "Senarai berpoin",
+      "olist": "Senarai bernombor",
+      "task": "Senarai tugas",
+      "code": "Kod inline",
+      "codeblock": "Blok kod",
+      "quote": "Petikan",
+      "table": "Jadual",
+      "hr": "Pemisah"
+    }
   }
 }

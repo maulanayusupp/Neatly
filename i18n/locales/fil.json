@@ -443,6 +443,25 @@
     "preview": "Preview",
     "html": "HTML",
     "placeholder": "# Kumusta\n\nMag-type ng **Markdown** dito…",
-    "empty": "Mag-type ng Markdown para makita ang preview."
+    "empty": "Mag-type ng Markdown para makita ang preview.",
+    "help": {
+      "title": "Gabay sa Markdown",
+      "hint": "Paano magsulat ng Markdown",
+      "close": "Isara",
+      "heading": "Mga heading",
+      "bold": "Bold",
+      "italic": "Italic",
+      "strike": "Strikethrough",
+      "link": "Link",
+      "image": "Larawan",
+      "ulist": "Bullet list",
+      "olist": "Numbered list",
+      "task": "Task list",
+      "code": "Inline code",
+      "codeblock": "Code block",
+      "quote": "Blockquote",
+      "table": "Talahanayan",
+      "hr": "Divider"
+    }
   }
 }

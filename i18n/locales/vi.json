@@ -443,6 +443,25 @@
     "preview": "Xem trước",
     "html": "HTML",
     "placeholder": "# Xin chào\n\nNhập **Markdown** ở đây…",
-    "empty": "Nhập Markdown để xem trước."
+    "empty": "Nhập Markdown để xem trước.",
+    "help": {
+      "title": "Hướng dẫn Markdown",
+      "hint": "Cách viết Markdown",
+      "close": "Đóng",
+      "heading": "Tiêu đề",
+      "bold": "In đậm",
+      "italic": "In nghiêng",
+      "strike": "Gạch ngang",
+      "link": "Liên kết",
+      "image": "Hình ảnh",
+      "ulist": "Danh sách chấm",
+      "olist": "Danh sách số",
+      "task": "Danh sách việc",
+      "code": "Mã inline",
+      "codeblock": "Khối mã",
+      "quote": "Trích dẫn",
+      "table": "Bảng",
+      "hr": "Đường kẻ"
+    }
   }
 }
