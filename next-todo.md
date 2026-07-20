@@ -10,8 +10,9 @@ Deferred items to pick up later (not done yet).
       landing / about / legal pages — faster + better SEO.
 - [ ] **Per-page OG images** (currently all pages share one `/og-image.png`).
 
-## i18n — remaining (in progress)
-- [ ] Translate remaining tool page bodies (deep form labels) fully in 5 locales.
+## i18n — remaining
+- [x] All tool pages + chrome localized in en/id/ms/fil/vi.
+- [ ] Deep qr-generator form-field labels (SSID, Subject, Bar width, …).
 - [ ] Localize generated content: JSON Compare conclusions, landing page
       titles/FAQ, and the legal pages (terms/privacy/disclaimer) full text.
 
@@ -22,7 +23,8 @@ Deferred items to pick up later (not done yet).
 - [ ] Lorem ipsum, case / slug converter, YAML validator
 
 ## Quality
-- [ ] Unit tests for utils (json-compare, colors, encoding, json-tools).
+- [x] Unit tests for utils (json-compare, colors, encoding, json-tools) — Vitest, `npm test`.
+- [ ] More tests: transform/convert services, share encode/decode, detect.
 - [ ] Error monitoring (Sentry), accessibility audit.
 
 ## Later

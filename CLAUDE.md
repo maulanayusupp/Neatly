@@ -21,7 +21,8 @@ Repo: `github.com/maulanayusupp/Neatly` (branch `main`, SSH remote `origin`).
 | `/base64`, `/url-encode`, `/jwt-decoder`, `/hash`, `/uuid`, `/timestamp` | Client-only dev tools (Base64, URL, JWT decode, SHA hashes via Web Crypto, UUID v4, epoch converter). |
 | `/diff`, `/color`, `/regex`, `/json-to-typescript` | Client-only: text diff (`diff`), color converter + WCAG contrast, regex tester, JSON→TS (`json-to-ts`). |
 | `/minify-<lang>`, `/beautify-<lang>` | 10 generated SEO landing pages (`[slug].vue` + `shared/utils/landing.ts`). |
-| `/about`, `/contact` | About Neatly + contact / hire-me page (author: Maulana). Linked from the footer "About" column (not the header). |
+| `/tools`           | Directory of all tools (grouped cards). Linked from the Tools dropdown ("View all tools") and sitemap. |
+| `/about`, `/contact` | About Neatly + contact page (author: Maulana). Linked from the footer "About" column (not the header). |
 | `/terms`, `/privacy`, `/disclaimer`  | Legal pages (`LegalArticle.vue`). |
 | `/sitemap.xml`     | Generated in `server/routes/sitemap.xml.ts`. |
 
@@ -60,6 +61,7 @@ Repo: `github.com/maulanayusupp/Neatly` (branch `main`, SSH remote `origin`).
 npm run dev        # dev server (http://localhost:3000)
 npm run build      # production build (also the main correctness check)
 npm run preview    # run the built server
+npm test           # run the Vitest unit tests (test/*.test.ts)
 node scripts/generate-icons.mjs   # regenerate favicons from public/favicon.svg
 ```
 

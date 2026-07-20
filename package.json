@@ -10,7 +10,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "test": "vitest run"
   },
   "keywords": [
     "beautify",
@@ -55,6 +56,7 @@
     "@types/papaparse": "^5.5.2",
     "@types/qrcode": "^1.5.6",
     "@vite-pwa/nuxt": "^1.1.1",
-    "sass": "^1.101.0"
+    "sass": "^1.101.0",
+    "vitest": "^4.1.10"
   }
 }
