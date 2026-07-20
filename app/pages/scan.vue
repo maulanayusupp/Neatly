@@ -1,15 +1,13 @@
 <script setup lang="ts">
-const pageTitle = 'QR Code Scanner Online — Scan & Extract Text from QR Codes & Barcodes · Neatly'
-const pageDescription
-  = 'Free online QR code scanner and reader. Scan with your camera or upload/paste an image to decode QR codes and barcodes and extract the text, URL, Wi-Fi or contact — instantly and privately in your browser.'
+const { t } = useI18n()
 
 useSeoMeta({
-  title: pageTitle,
-  description: pageDescription,
-  ogTitle: pageTitle,
-  ogDescription: pageDescription,
-  twitterTitle: pageTitle,
-  twitterDescription: pageDescription,
+  title: () => t('scan.metaTitle'),
+  description: () => t('scan.metaDesc'),
+  ogTitle: () => t('scan.metaTitle'),
+  ogDescription: () => t('scan.metaDesc'),
+  twitterTitle: () => t('scan.metaTitle'),
+  twitterDescription: () => t('scan.metaDesc'),
 })
 useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/scan' }] })
 </script>
@@ -20,16 +18,12 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/scan' }
       <div class="container hero__inner">
         <span class="hero__badge">
           <BaseIcon name="qr" :size="15" />
-          QR &amp; barcode · camera · image · paste
+          {{ $t('scan.badge') }}
         </span>
         <h1 class="hero__title">
-          Scan any <span class="text-gradient">QR code</span> or barcode
+          {{ $t('scan.titleA') }} <span class="text-gradient">{{ $t('scan.titleHl') }}</span> {{ $t('scan.titleB') }}
         </h1>
-        <p class="hero__lead">
-          Read and extract text from QR codes and barcodes using your camera,
-          an uploaded image, or a pasted screenshot — everything runs privately
-          in your browser.
-        </p>
+        <p class="hero__lead">{{ $t('scan.lead') }}</p>
       </div>
     </section>
 
@@ -46,19 +40,9 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/scan' }
     </section>
 
     <section class="container scan-page__about">
-      <h2>QR code &amp; barcode scanner, online</h2>
-      <p>
-        Neatly's scanner reads QR codes and common barcode formats (EAN, UPC,
-        Code 128, Code 39, ITF and more) right in your browser. Point your
-        camera at a code, upload a photo, or paste a screenshot — the decoded
-        text appears instantly, and links, emails and phone numbers become
-        one-tap actions.
-      </p>
-      <p>
-        Because scanning happens entirely on your device, the images and camera
-        frames are never uploaded or stored. It works great for reading links on
-        posters, product barcodes, Wi-Fi codes and contact cards.
-      </p>
+      <h2>{{ $t('scan.aboutHeading') }}</h2>
+      <p>{{ $t('scan.aboutP1') }}</p>
+      <p>{{ $t('scan.aboutP2') }}</p>
     </section>
   </div>
 </template>

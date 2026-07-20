@@ -167,5 +167,35 @@
     "seconds": "Seconds", "millis": "Milliseconds",
     "tsHint": "Enter a Unix timestamp in seconds or milliseconds.",
     "dtHint": "Pick a date and time to get its Unix timestamp."
+  },
+  "scan": {
+    "metaTitle": "QR Code Scanner Online — Scan & Extract Text from QR Codes & Barcodes · Neatly",
+    "metaDesc": "Free online QR code scanner and reader. Scan with your camera or upload/paste an image to decode QR codes and barcodes and extract the text, URL, Wi-Fi or contact — instantly and privately in your browser.",
+    "badge": "QR & barcode · camera · image · paste",
+    "titleA": "Scan any", "titleHl": "QR code", "titleB": "or barcode",
+    "lead": "Read and extract text from QR codes and barcodes using your camera, an uploaded image, or a pasted screenshot — everything runs privately in your browser.",
+    "aboutHeading": "QR code & barcode scanner, online",
+    "aboutP1": "Neatly's scanner reads QR codes and common barcode formats (EAN, UPC, Code 128, Code 39, ITF and more) right in your browser. Point your camera at a code, upload a photo, or paste a screenshot — the decoded text appears instantly, and links, emails and phone numbers become one-tap actions.",
+    "aboutP2": "Because scanning happens entirely on your device, the images and camera frames are never uploaded or stored. It works great for reading links on posters, product barcodes, Wi-Fi codes and contact cards.",
+    "startCamera": "Start Camera", "uploadImage": "Upload Image", "pasteImage": "Paste Image",
+    "startBtn": "Start camera", "stop": "Stop", "beep": "Beep",
+    "cameraHint": "Click “Start camera” to scan a QR code or barcode.",
+    "uploadClick": "Click to choose", "uploadDrop": "or drop an image here", "uploadFormats": "PNG, JPG, WebP, GIF…",
+    "pasteTitle": "Paste an image", "pasteToScan": "to scan it", "pasteBtn": "Paste from clipboard",
+    "result": "Result", "empty": "Point your camera at a code, or upload an image — the result appears here.",
+    "recent": "Recent scans", "open": "Open",
+    "type": { "url": "URL", "email": "Email", "phone": "Phone", "wifi": "Wi-Fi network", "geo": "Location", "contact": "Contact card", "text": "Text" }
+  },
+  "qrGen": {
+    "metaTitle": "QR Code Generator — Create QR Codes & Barcodes Online Free · Neatly",
+    "metaDesc": "Free online QR code generator. Create QR codes for URLs, text, Wi-Fi, email, phone and vCard — customise colors and size, and download as PNG or SVG. Barcodes too. Private, no sign-up.",
+    "badge": "QR codes · Wi-Fi · vCard · barcodes",
+    "titleA": "Generate", "titleHl": "QR codes", "titleB": "& barcodes",
+    "lead": "Create QR codes for links, text, Wi-Fi, email, phone numbers and contact cards — pick your colors and size, then download as PNG or SVG. Everything runs privately in your browser.",
+    "aboutHeading": "Free QR code & barcode generator",
+    "aboutP1": "Neatly's generator creates high-quality QR codes for URLs, plain text, Wi-Fi networks, email, phone numbers and vCard contacts, plus common barcode formats (CODE128, EAN, UPC, CODE39 and more). Customise the foreground and background colors, size and error-correction level, then export a crisp PNG or an infinitely scalable SVG.",
+    "aboutP2": "Everything is generated on your device — nothing is uploaded — so it's fast, private and free, with no watermark and no sign-up.",
+    "qrTab": "QR Code", "barcodeTab": "Barcode",
+    "empty": "Fill in the fields to generate your code."
   }
 }

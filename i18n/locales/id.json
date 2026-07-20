@@ -167,5 +167,35 @@
     "seconds": "Detik", "millis": "Milidetik",
     "tsHint": "Masukkan Unix timestamp dalam detik atau milidetik.",
     "dtHint": "Pilih tanggal dan waktu untuk mendapatkan Unix timestamp-nya."
+  },
+  "scan": {
+    "metaTitle": "Pemindai QR Code Online — Pindai & Ekstrak Teks dari QR Code & Barcode · Neatly",
+    "metaDesc": "Pemindai dan pembaca QR code online gratis. Pindai dengan kamera atau unggah/tempel gambar untuk decode QR code dan barcode serta mengekstrak teks, URL, Wi-Fi, atau kontak — seketika dan privat di browser Anda.",
+    "badge": "QR & barcode · kamera · gambar · tempel",
+    "titleA": "Pindai", "titleHl": "QR code", "titleB": "atau barcode apa pun",
+    "lead": "Baca dan ekstrak teks dari QR code dan barcode menggunakan kamera, gambar yang diunggah, atau tangkapan layar yang ditempel — semuanya berjalan privat di browser Anda.",
+    "aboutHeading": "Pemindai QR code & barcode, online",
+    "aboutP1": "Pemindai Neatly membaca QR code dan format barcode umum (EAN, UPC, Code 128, Code 39, ITF, dan lainnya) langsung di browser Anda. Arahkan kamera ke kode, unggah foto, atau tempel tangkapan layar — teks yang di-decode muncul seketika, dan tautan, email, serta nomor telepon menjadi aksi satu ketuk.",
+    "aboutP2": "Karena pemindaian terjadi sepenuhnya di perangkat Anda, gambar dan frame kamera tidak pernah diunggah atau disimpan. Cocok untuk membaca tautan di poster, barcode produk, kode Wi-Fi, dan kartu kontak.",
+    "startCamera": "Mulai Kamera", "uploadImage": "Unggah Gambar", "pasteImage": "Tempel Gambar",
+    "startBtn": "Mulai kamera", "stop": "Berhenti", "beep": "Bunyi",
+    "cameraHint": "Klik “Mulai kamera” untuk memindai QR code atau barcode.",
+    "uploadClick": "Klik untuk memilih", "uploadDrop": "atau jatuhkan gambar di sini", "uploadFormats": "PNG, JPG, WebP, GIF…",
+    "pasteTitle": "Tempel gambar", "pasteToScan": "untuk memindainya", "pasteBtn": "Tempel dari clipboard",
+    "result": "Hasil", "empty": "Arahkan kamera ke kode, atau unggah gambar — hasilnya muncul di sini.",
+    "recent": "Pindai terakhir", "open": "Buka",
+    "type": { "url": "URL", "email": "Email", "phone": "Telepon", "wifi": "Jaringan Wi-Fi", "geo": "Lokasi", "contact": "Kartu kontak", "text": "Teks" }
+  },
+  "qrGen": {
+    "metaTitle": "Generator QR Code — Buat QR Code & Barcode Online Gratis · Neatly",
+    "metaDesc": "Generator QR code online gratis. Buat QR code untuk URL, teks, Wi-Fi, email, telepon, dan vCard — sesuaikan warna dan ukuran, lalu unduh sebagai PNG atau SVG. Barcode juga. Privat, tanpa daftar.",
+    "badge": "QR code · Wi-Fi · vCard · barcode",
+    "titleA": "Buat", "titleHl": "QR code", "titleB": "& barcode",
+    "lead": "Buat QR code untuk tautan, teks, Wi-Fi, email, nomor telepon, dan kartu kontak — pilih warna dan ukuran, lalu unduh sebagai PNG atau SVG. Semuanya berjalan privat di browser Anda.",
+    "aboutHeading": "Generator QR code & barcode gratis",
+    "aboutP1": "Generator Neatly membuat QR code berkualitas tinggi untuk URL, teks biasa, jaringan Wi-Fi, email, nomor telepon, dan kontak vCard, plus format barcode umum (CODE128, EAN, UPC, CODE39, dan lainnya). Sesuaikan warna latar depan dan belakang, ukuran, dan tingkat koreksi error, lalu ekspor PNG tajam atau SVG yang bisa diskalakan tanpa batas.",
+    "aboutP2": "Semuanya dibuat di perangkat Anda — tidak ada yang diunggah — jadi cepat, privat, dan gratis, tanpa watermark dan tanpa daftar.",
+    "qrTab": "QR Code", "barcodeTab": "Barcode",
+    "empty": "Isi bidang untuk menghasilkan kode Anda."
   }
 }

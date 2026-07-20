@@ -8,10 +8,10 @@ const video = ref<HTMLVideoElement | null>(null)
 const fileInput = ref<HTMLInputElement | null>(null)
 const isDragging = ref(false)
 
-const tabs: { id: ScanMode, label: string, icon: 'camera' | 'upload' | 'clipboard' }[] = [
-  { id: 'camera', label: 'Start Camera', icon: 'camera' },
-  { id: 'upload', label: 'Upload Image', icon: 'upload' },
-  { id: 'paste', label: 'Paste Image', icon: 'clipboard' },
+const tabs: { id: ScanMode, key: string, icon: 'camera' | 'upload' | 'clipboard' }[] = [
+  { id: 'camera', key: 'scan.startCamera', icon: 'camera' },
+  { id: 'upload', key: 'scan.uploadImage', icon: 'upload' },
+  { id: 'paste', key: 'scan.pasteImage', icon: 'clipboard' },
 ]
 
 function selectMode(next: ScanMode) {
@@ -63,7 +63,7 @@ onBeforeUnmount(() => window.removeEventListener('paste', onPaste))
         @click="selectMode(tab.id)"
       >
         <BaseIcon :name="tab.icon" :size="16" />
-        <span>{{ tab.label }}</span>
+        <span>{{ $t(tab.key) }}</span>
       </button>
     </div>
 
@@ -89,7 +89,7 @@ onBeforeUnmount(() => window.removeEventListener('paste', onPaste))
         <div v-if="!isScanning" class="scanner__placeholder">
           <BaseIcon name="camera" :size="30" />
           <p v-if="status === 'error'" class="scanner__error">{{ errorMessage }}</p>
-          <p v-else>Click “Start camera” to scan a QR code or barcode.</p>
+          <p v-else>{{ $t('scan.cameraHint') }}</p>
         </div>
       </div>
 
@@ -100,10 +100,10 @@ onBeforeUnmount(() => window.removeEventListener('paste', onPaste))
           icon="play"
           @click="start"
         >
-          Start camera
+          {{ $t('scan.startBtn') }}
         </BaseButton>
         <BaseButton v-else variant="secondary" icon="stop" @click="store.stop">
-          Stop
+          {{ $t('scan.stop') }}
         </BaseButton>
 
         <label v-if="cameras.length > 1" class="scanner__camera-select">
@@ -115,7 +115,7 @@ onBeforeUnmount(() => window.removeEventListener('paste', onPaste))
 
         <label class="scanner__beep">
           <BaseIcon name="volume" :size="16" />
-          <span>Beep</span>
+          <span>{{ $t('scan.beep') }}</span>
           <input v-model="beep" type="checkbox" class="scanner__switch" aria-label="Beep on scan">
         </label>
       </div>
@@ -132,8 +132,8 @@ onBeforeUnmount(() => window.removeEventListener('paste', onPaste))
         @click="fileInput?.click()"
       >
         <BaseIcon name="image" :size="30" />
-        <p><strong>Click to choose</strong> or drop an image here</p>
-        <span class="scanner__hint">PNG, JPG, WebP, GIF…</span>
+        <p><strong>{{ $t('scan.uploadClick') }}</strong> {{ $t('scan.uploadDrop') }}</p>
+        <span class="scanner__hint">{{ $t('scan.uploadFormats') }}</span>
         <input ref="fileInput" type="file" accept="image/*" class="scanner__file" @change="onFileChange">
       </div>
       <p v-if="status !== 'scanning' && errorMessage" class="scanner__error">{{ errorMessage }}</p>
@@ -143,10 +143,10 @@ onBeforeUnmount(() => window.removeEventListener('paste', onPaste))
     <div v-show="mode === 'paste'" class="scanner__stage">
       <div class="scanner__dropzone">
         <BaseIcon name="clipboard" :size="30" />
-        <p><strong>Paste an image</strong> to scan it</p>
-        <span class="scanner__hint">Press <kbd>⌘/Ctrl</kbd> + <kbd>V</kbd>, or use the button</span>
+        <p><strong>{{ $t('scan.pasteTitle') }}</strong> {{ $t('scan.pasteToScan') }}</p>
+        <span class="scanner__hint">⌘/Ctrl + V</span>
         <BaseButton variant="secondary" icon="clipboard" @click="store.pasteFromClipboard">
-          Paste from clipboard
+          {{ $t('scan.pasteBtn') }}
         </BaseButton>
       </div>
       <p v-if="errorMessage" class="scanner__error">{{ errorMessage }}</p>

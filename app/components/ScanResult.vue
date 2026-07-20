@@ -28,7 +28,7 @@ function show(text: string) {
     <header class="scan-result__header">
       <h2 class="scan-result__title">
         <BaseIcon name="qr" :size="16" />
-        Result
+        {{ $t('scan.result') }}
       </h2>
       <span v-if="result" class="scan-result__format">{{ result.format }}</span>
     </header>
@@ -37,14 +37,14 @@ function show(text: string) {
       <template v-if="result && content">
         <span class="scan-result__chip">
           <BaseIcon :name="content.icon" :size="14" />
-          {{ content.label }}
+          {{ $t(`scan.type.${content.kind}`) }}
         </span>
 
         <p class="scan-result__value">{{ result.text }}</p>
 
         <div class="scan-result__actions">
           <BaseButton size="sm" variant="primary" :icon="copied ? 'check' : 'copy'" @click="copy">
-            {{ copied ? 'Copied' : 'Copy' }}
+            {{ copied ? $t('common.copied') : $t('common.copy') }}
           </BaseButton>
           <a
             v-if="content.href"
@@ -54,19 +54,19 @@ function show(text: string) {
             rel="noopener noreferrer nofollow"
           >
             <BaseIcon :name="content.icon" :size="16" />
-            Open {{ content.label.toLowerCase() }}
+            {{ $t('scan.open') }} {{ $t(`scan.type.${content.kind}`).toLowerCase() }}
           </a>
         </div>
       </template>
 
       <div v-else class="scan-result__empty">
         <BaseIcon name="qr" :size="30" />
-        <p>Point your camera at a code, or upload an image — the result appears here.</p>
+        <p>{{ $t('scan.empty') }}</p>
       </div>
     </div>
 
     <footer v-if="history.length > 1" class="scan-result__history">
-      <h3 class="scan-result__history-title">Recent scans</h3>
+      <h3 class="scan-result__history-title">{{ $t('scan.recent') }}</h3>
       <ul role="list">
         <li v-for="item in history" :key="item.text">
           <button type="button" @click="show(item.text)">

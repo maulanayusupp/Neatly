@@ -192,7 +192,7 @@ function triggerDownload(href: string, name: string) {
           @click="kind = k"
         >
           <BaseIcon :name="k === 'qr' ? 'qr' : 'hash'" :size="16" />
-          {{ k === 'qr' ? 'QR Code' : 'Barcode' }}
+          {{ k === 'qr' ? $t('qrGen.qrTab') : $t('qrGen.barcodeTab') }}
         </button>
       </div>
 
@@ -287,7 +287,7 @@ function triggerDownload(href: string, name: string) {
         <div v-if="svgMarkup" class="qrgen__code" :style="{ '--code-bg': bg }" v-html="svgMarkup" />
         <div v-else class="qrgen__empty">
           <BaseIcon :name="kind === 'qr' ? 'qr' : 'hash'" :size="30" />
-          <p>{{ error || 'Fill in the fields to generate your code.' }}</p>
+          <p>{{ error || $t('qrGen.empty') }}</p>
         </div>
       </div>
       <div class="qrgen__actions">

@@ -167,5 +167,35 @@
     "seconds": "Giây", "millis": "Mili giây",
     "tsHint": "Nhập Unix timestamp theo giây hoặc mili giây.",
     "dtHint": "Chọn ngày và giờ để lấy Unix timestamp của nó."
+  },
+  "scan": {
+    "metaTitle": "Trình quét QR Code trực tuyến — Quét & Trích xuất văn bản từ QR Code & Barcode · Neatly",
+    "metaDesc": "Trình quét và đọc QR code trực tuyến miễn phí. Quét bằng camera hoặc tải lên/dán ảnh để giải mã QR code và barcode, trích xuất văn bản, URL, Wi-Fi hoặc danh bạ — tức thì và riêng tư trong trình duyệt của bạn.",
+    "badge": "QR & barcode · camera · ảnh · dán",
+    "titleA": "Quét", "titleHl": "QR code", "titleB": "hoặc barcode bất kỳ",
+    "lead": "Đọc và trích xuất văn bản từ QR code và barcode bằng camera, ảnh tải lên, hoặc ảnh chụp màn hình đã dán — tất cả chạy riêng tư trong trình duyệt của bạn.",
+    "aboutHeading": "Trình quét QR code & barcode, trực tuyến",
+    "aboutP1": "Trình quét của Neatly đọc QR code và các định dạng barcode phổ biến (EAN, UPC, Code 128, Code 39, ITF và hơn thế) ngay trong trình duyệt của bạn. Hướng camera vào một mã, tải lên ảnh, hoặc dán ảnh chụp màn hình — văn bản giải mã xuất hiện tức thì, và các liên kết, email và số điện thoại trở thành thao tác một chạm.",
+    "aboutP2": "Vì việc quét diễn ra hoàn toàn trên thiết bị của bạn, ảnh và khung hình camera không bao giờ được tải lên hay lưu trữ. Rất hữu ích để đọc liên kết trên poster, barcode sản phẩm, mã Wi-Fi và thẻ danh bạ.",
+    "startCamera": "Bật Camera", "uploadImage": "Tải ảnh lên", "pasteImage": "Dán ảnh",
+    "startBtn": "Bật camera", "stop": "Dừng", "beep": "Bíp",
+    "cameraHint": "Nhấp “Bật camera” để quét QR code hoặc barcode.",
+    "uploadClick": "Nhấp để chọn", "uploadDrop": "hoặc thả ảnh vào đây", "uploadFormats": "PNG, JPG, WebP, GIF…",
+    "pasteTitle": "Dán một ảnh", "pasteToScan": "để quét", "pasteBtn": "Dán từ clipboard",
+    "result": "Kết quả", "empty": "Hướng camera vào một mã, hoặc tải lên ảnh — kết quả sẽ xuất hiện ở đây.",
+    "recent": "Quét gần đây", "open": "Mở",
+    "type": { "url": "URL", "email": "Email", "phone": "Điện thoại", "wifi": "Mạng Wi-Fi", "geo": "Vị trí", "contact": "Thẻ danh bạ", "text": "Văn bản" }
+  },
+  "qrGen": {
+    "metaTitle": "Trình tạo QR Code — Tạo QR Code & Barcode trực tuyến miễn phí · Neatly",
+    "metaDesc": "Trình tạo QR code trực tuyến miễn phí. Tạo QR code cho URL, văn bản, Wi-Fi, email, điện thoại và vCard — tuỳ chỉnh màu và kích thước, tải xuống dạng PNG hoặc SVG. Có cả barcode. Riêng tư, không cần đăng ký.",
+    "badge": "QR code · Wi-Fi · vCard · barcode",
+    "titleA": "Tạo", "titleHl": "QR code", "titleB": "& barcode",
+    "lead": "Tạo QR code cho liên kết, văn bản, Wi-Fi, email, số điện thoại và thẻ danh bạ — chọn màu và kích thước, rồi tải xuống dạng PNG hoặc SVG. Tất cả chạy riêng tư trong trình duyệt của bạn.",
+    "aboutHeading": "Trình tạo QR code & barcode miễn phí",
+    "aboutP1": "Trình tạo của Neatly tạo QR code chất lượng cao cho URL, văn bản thuần, mạng Wi-Fi, email, số điện thoại và danh bạ vCard, cùng các định dạng barcode phổ biến (CODE128, EAN, UPC, CODE39 và hơn thế). Tuỳ chỉnh màu nền trước và nền sau, kích thước và mức độ sửa lỗi, rồi xuất PNG sắc nét hoặc SVG có thể phóng to vô hạn.",
+    "aboutP2": "Mọi thứ được tạo trên thiết bị của bạn — không tải lên gì — nên nhanh, riêng tư và miễn phí, không watermark và không cần đăng ký.",
+    "qrTab": "QR Code", "barcodeTab": "Barcode",
+    "empty": "Điền vào các trường để tạo mã của bạn."
   }
 }

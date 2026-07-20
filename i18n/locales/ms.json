@@ -167,5 +167,35 @@
     "seconds": "Saat", "millis": "Milisaat",
     "tsHint": "Masukkan Unix timestamp dalam saat atau milisaat.",
     "dtHint": "Pilih tarikh dan masa untuk mendapatkan Unix timestamp-nya."
+  },
+  "scan": {
+    "metaTitle": "Pengimbas QR Code Dalam Talian — Imbas & Ekstrak Teks dari QR Code & Barcode · Neatly",
+    "metaDesc": "Pengimbas dan pembaca QR code dalam talian percuma. Imbas dengan kamera atau muat naik/tampal imej untuk decode QR code dan barcode serta ekstrak teks, URL, Wi-Fi atau kenalan — serta-merta dan peribadi dalam pelayar anda.",
+    "badge": "QR & barcode · kamera · imej · tampal",
+    "titleA": "Imbas", "titleHl": "QR code", "titleB": "atau barcode apa pun",
+    "lead": "Baca dan ekstrak teks daripada QR code dan barcode menggunakan kamera, imej yang dimuat naik, atau tangkap layar yang ditampal — semuanya berjalan secara peribadi dalam pelayar anda.",
+    "aboutHeading": "Pengimbas QR code & barcode, dalam talian",
+    "aboutP1": "Pengimbas Neatly membaca QR code dan format barcode biasa (EAN, UPC, Code 128, Code 39, ITF dan lain-lain) terus dalam pelayar anda. Halakan kamera ke kod, muat naik foto, atau tampal tangkap layar — teks yang di-decode muncul serta-merta, dan pautan, e-mel serta nombor telefon menjadi tindakan satu ketik.",
+    "aboutP2": "Kerana pengimbasan berlaku sepenuhnya pada peranti anda, imej dan bingkai kamera tidak pernah dimuat naik atau disimpan. Sesuai untuk membaca pautan pada poster, barcode produk, kod Wi-Fi dan kad kenalan.",
+    "startCamera": "Mula Kamera", "uploadImage": "Muat Naik Imej", "pasteImage": "Tampal Imej",
+    "startBtn": "Mula kamera", "stop": "Henti", "beep": "Bip",
+    "cameraHint": "Klik “Mula kamera” untuk mengimbas QR code atau barcode.",
+    "uploadClick": "Klik untuk pilih", "uploadDrop": "atau lepaskan imej di sini", "uploadFormats": "PNG, JPG, WebP, GIF…",
+    "pasteTitle": "Tampal imej", "pasteToScan": "untuk mengimbasnya", "pasteBtn": "Tampal dari papan keratan",
+    "result": "Hasil", "empty": "Halakan kamera ke kod, atau muat naik imej — hasilnya muncul di sini.",
+    "recent": "Imbasan terkini", "open": "Buka",
+    "type": { "url": "URL", "email": "E-mel", "phone": "Telefon", "wifi": "Rangkaian Wi-Fi", "geo": "Lokasi", "contact": "Kad kenalan", "text": "Teks" }
+  },
+  "qrGen": {
+    "metaTitle": "Penjana QR Code — Cipta QR Code & Barcode Dalam Talian Percuma · Neatly",
+    "metaDesc": "Penjana QR code dalam talian percuma. Cipta QR code untuk URL, teks, Wi-Fi, e-mel, telefon dan vCard — sesuaikan warna dan saiz, dan muat turun sebagai PNG atau SVG. Barcode juga. Peribadi, tanpa mendaftar.",
+    "badge": "QR code · Wi-Fi · vCard · barcode",
+    "titleA": "Jana", "titleHl": "QR code", "titleB": "& barcode",
+    "lead": "Cipta QR code untuk pautan, teks, Wi-Fi, e-mel, nombor telefon dan kad kenalan — pilih warna dan saiz, kemudian muat turun sebagai PNG atau SVG. Semuanya berjalan secara peribadi dalam pelayar anda.",
+    "aboutHeading": "Penjana QR code & barcode percuma",
+    "aboutP1": "Penjana Neatly mencipta QR code berkualiti tinggi untuk URL, teks biasa, rangkaian Wi-Fi, e-mel, nombor telefon dan kenalan vCard, serta format barcode biasa (CODE128, EAN, UPC, CODE39 dan lain-lain). Sesuaikan warna latar depan dan belakang, saiz dan tahap pembetulan ralat, kemudian eksport PNG tajam atau SVG yang boleh diskala tanpa had.",
+    "aboutP2": "Semuanya dijana pada peranti anda — tiada apa dimuat naik — jadi pantas, peribadi dan percuma, tanpa tera air dan tanpa mendaftar.",
+    "qrTab": "QR Code", "barcodeTab": "Barcode",
+    "empty": "Isi medan untuk menjana kod anda."
   }
 }

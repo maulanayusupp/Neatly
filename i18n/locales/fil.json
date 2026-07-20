@@ -167,5 +167,35 @@
     "seconds": "Segundo", "millis": "Millisegundo",
     "tsHint": "Maglagay ng Unix timestamp sa segundo o millisegundo.",
     "dtHint": "Pumili ng petsa at oras para makuha ang Unix timestamp nito."
+  },
+  "scan": {
+    "metaTitle": "QR Code Scanner Online — I-scan & Kunin ang Teksto mula sa QR Codes & Barcodes · Neatly",
+    "metaDesc": "Libreng online QR code scanner at reader. I-scan gamit ang camera o mag-upload/mag-paste ng larawan para i-decode ang QR codes at barcodes at kunin ang teksto, URL, Wi-Fi o contact — agad at pribado sa iyong browser.",
+    "badge": "QR & barcode · camera · larawan · paste",
+    "titleA": "I-scan ang anumang", "titleHl": "QR code", "titleB": "o barcode",
+    "lead": "Basahin at kunin ang teksto mula sa QR codes at barcodes gamit ang iyong camera, isang na-upload na larawan, o na-paste na screenshot — lahat ay tumatakbo nang pribado sa iyong browser.",
+    "aboutHeading": "QR code & barcode scanner, online",
+    "aboutP1": "Binabasa ng scanner ng Neatly ang QR codes at karaniwang barcode formats (EAN, UPC, Code 128, Code 39, ITF at iba pa) mismo sa iyong browser. Ituro ang camera sa isang code, mag-upload ng larawan, o mag-paste ng screenshot — agad lumalabas ang na-decode na teksto, at ang mga link, email at numero ng telepono ay nagiging one-tap actions.",
+    "aboutP2": "Dahil ang pag-scan ay nangyayari nang buo sa iyong device, hindi kailanman ina-upload o iniimbak ang mga larawan at camera frames. Mahusay ito sa pagbasa ng mga link sa poster, product barcodes, Wi-Fi codes at contact cards.",
+    "startCamera": "Simulan ang Camera", "uploadImage": "Mag-upload ng Larawan", "pasteImage": "Mag-paste ng Larawan",
+    "startBtn": "Simulan ang camera", "stop": "Itigil", "beep": "Beep",
+    "cameraHint": "I-click ang “Simulan ang camera” para mag-scan ng QR code o barcode.",
+    "uploadClick": "I-click para pumili", "uploadDrop": "o i-drop ang larawan dito", "uploadFormats": "PNG, JPG, WebP, GIF…",
+    "pasteTitle": "Mag-paste ng larawan", "pasteToScan": "para i-scan ito", "pasteBtn": "I-paste mula sa clipboard",
+    "result": "Resulta", "empty": "Ituro ang camera sa isang code, o mag-upload ng larawan — lalabas dito ang resulta.",
+    "recent": "Kamakailang scan", "open": "Buksan",
+    "type": { "url": "URL", "email": "Email", "phone": "Telepono", "wifi": "Wi-Fi network", "geo": "Lokasyon", "contact": "Contact card", "text": "Teksto" }
+  },
+  "qrGen": {
+    "metaTitle": "QR Code Generator — Gumawa ng QR Codes & Barcodes Online nang Libre · Neatly",
+    "metaDesc": "Libreng online QR code generator. Gumawa ng QR codes para sa URL, teksto, Wi-Fi, email, telepono at vCard — i-customize ang kulay at laki, at i-download bilang PNG o SVG. May barcodes din. Pribado, walang sign-up.",
+    "badge": "QR codes · Wi-Fi · vCard · barcodes",
+    "titleA": "Gumawa ng", "titleHl": "QR codes", "titleB": "& barcodes",
+    "lead": "Gumawa ng QR codes para sa mga link, teksto, Wi-Fi, email, numero ng telepono at contact cards — pumili ng kulay at laki, tapos i-download bilang PNG o SVG. Lahat ay tumatakbo nang pribado sa iyong browser.",
+    "aboutHeading": "Libreng QR code & barcode generator",
+    "aboutP1": "Gumagawa ang generator ng Neatly ng mataas na kalidad na QR codes para sa URL, plain text, Wi-Fi networks, email, numero ng telepono at vCard contacts, kasama ang karaniwang barcode formats (CODE128, EAN, UPC, CODE39 at iba pa). I-customize ang foreground at background na kulay, laki at error-correction level, tapos mag-export ng malinaw na PNG o walang-hanggang scalable na SVG.",
+    "aboutP2": "Lahat ay ginagawa sa iyong device — walang ina-upload — kaya mabilis, pribado at libre, walang watermark at walang sign-up.",
+    "qrTab": "QR Code", "barcodeTab": "Barcode",
+    "empty": "Punan ang mga field para bumuo ng iyong code."
   }
 }

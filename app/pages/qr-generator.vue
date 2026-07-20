@@ -1,15 +1,13 @@
 <script setup lang="ts">
-const pageTitle = 'QR Code Generator — Create QR Codes & Barcodes Online Free · Neatly'
-const pageDescription
-  = 'Free online QR code generator. Create QR codes for URLs, text, Wi-Fi, email, phone and vCard — customise colors and size, and download as PNG or SVG. Barcodes too. Private, no sign-up.'
+const { t } = useI18n()
 
 useSeoMeta({
-  title: pageTitle,
-  description: pageDescription,
-  ogTitle: pageTitle,
-  ogDescription: pageDescription,
-  twitterTitle: pageTitle,
-  twitterDescription: pageDescription,
+  title: () => t('qrGen.metaTitle'),
+  description: () => t('qrGen.metaDesc'),
+  ogTitle: () => t('qrGen.metaTitle'),
+  ogDescription: () => t('qrGen.metaDesc'),
+  twitterTitle: () => t('qrGen.metaTitle'),
+  twitterDescription: () => t('qrGen.metaDesc'),
 })
 useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/qr-generator' }] })
 </script>
@@ -20,16 +18,12 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/qr-gene
       <div class="container hero__inner">
         <span class="hero__badge">
           <BaseIcon name="qr" :size="15" />
-          QR codes · Wi-Fi · vCard · barcodes
+          {{ $t('qrGen.badge') }}
         </span>
         <h1 class="hero__title">
-          Generate <span class="text-gradient">QR codes</span> &amp; barcodes
+          {{ $t('qrGen.titleA') }} <span class="text-gradient">{{ $t('qrGen.titleHl') }}</span> {{ $t('qrGen.titleB') }}
         </h1>
-        <p class="hero__lead">
-          Create QR codes for links, text, Wi-Fi, email, phone numbers and contact
-          cards — pick your colors and size, then download as PNG or SVG. Everything
-          runs privately in your browser.
-        </p>
+        <p class="hero__lead">{{ $t('qrGen.lead') }}</p>
       </div>
     </section>
 
@@ -43,18 +37,9 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/qr-gene
     </section>
 
     <section class="container qrgen-page__about">
-      <h2>Free QR code &amp; barcode generator</h2>
-      <p>
-        Neatly's generator creates high-quality QR codes for URLs, plain text,
-        Wi-Fi networks, email, phone numbers and vCard contacts, plus common
-        barcode formats (CODE128, EAN, UPC, CODE39 and more). Customise the
-        foreground and background colors, size and error-correction level, then
-        export a crisp PNG or an infinitely scalable SVG.
-      </p>
-      <p>
-        Everything is generated on your device — nothing is uploaded — so it's
-        fast, private and free, with no watermark and no sign-up.
-      </p>
+      <h2>{{ $t('qrGen.aboutHeading') }}</h2>
+      <p>{{ $t('qrGen.aboutP1') }}</p>
+      <p>{{ $t('qrGen.aboutP2') }}</p>
     </section>
   </div>
 </template>
