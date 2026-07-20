@@ -37,7 +37,9 @@ const legalLinks = [
             </li>
           </ul>
         </nav>
+      </div>
 
+      <div class="app-footer__secondary">
         <nav class="app-footer__col" :aria-label="$t('footer.about')">
           <h2 class="app-footer__col-title">{{ $t('footer.about') }}</h2>
           <ul role="list">
@@ -96,11 +98,19 @@ const legalLinks = [
   }
 
   @include respond('md') {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
+}
 
-  @include respond('lg') {
-    grid-template-columns: repeat(7, 1fr);
+.app-footer__secondary {
+  display: grid;
+  gap: spacing(6) spacing(5);
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: spacing(7);
+  border-top: 1px solid var(--color-border);
+
+  @include respond('md') {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
