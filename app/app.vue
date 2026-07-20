@@ -6,6 +6,7 @@
     </main>
     <AppFooter />
     <ToastHost />
+    <CommandPalette />
   </div>
 </template>
 

@@ -96,6 +96,8 @@ export const ICONS = {
     '<line x1="12" y1="4" x2="12" y2="14"/><line x1="7.7" y1="6.5" x2="16.3" y2="11.5"/><line x1="16.3" y1="6.5" x2="7.7" y2="11.5"/><rect x="5" y="16" width="4" height="4" rx="1" fill="currentColor" stroke="none"/>',
   globe:
     '<circle cx="12" cy="12" r="9"/><line x1="3" y1="12" x2="21" y2="12"/><path d="M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18z"/>',
+  search:
+    '<circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/>',
 } as const
 
 export type IconName = keyof typeof ICONS

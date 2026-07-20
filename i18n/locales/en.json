@@ -228,5 +228,11 @@
     "badge": "All tools · one place", "titleA": "All", "titleHl": "tools",
     "lead": "Every Neatly tool in one place — beautify, minify, convert, compare, scan, generate and more.",
     "viewAll": "View all tools"
+  },
+  "palette": {
+    "open": "Search tools",
+    "placeholder": "Search tools…",
+    "empty": "No tools found",
+    "navigate": "navigate", "select": "open", "close": "close"
   }
 }

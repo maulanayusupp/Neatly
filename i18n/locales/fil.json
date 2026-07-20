@@ -228,5 +228,11 @@
     "badge": "Lahat ng tool · isang lugar", "titleA": "Lahat ng", "titleHl": "tool",
     "lead": "Lahat ng tool ng Neatly sa isang lugar — beautify, minify, convert, compare, scan, generate at iba pa.",
     "viewAll": "Tingnan lahat ng tool"
+  },
+  "palette": {
+    "open": "Maghanap ng tool",
+    "placeholder": "Maghanap ng tool…",
+    "empty": "Walang nahanap na tool",
+    "navigate": "mag-navigate", "select": "buksan", "close": "isara"
   }
 }

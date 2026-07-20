@@ -228,5 +228,11 @@
     "badge": "Semua alat · satu tempat", "titleA": "Semua", "titleHl": "alat",
     "lead": "Semua alat Neatly di satu tempat — beautify, minify, tukar, banding, imbas, jana dan lain-lain.",
     "viewAll": "Lihat semua alat"
+  },
+  "palette": {
+    "open": "Cari alat",
+    "placeholder": "Cari alat…",
+    "empty": "Tiada alat dijumpai",
+    "navigate": "navigasi", "select": "buka", "close": "tutup"
   }
 }
