@@ -72,5 +72,25 @@
     "differences": "Perbedaan", "oddOne": "Paling berbeda", "differs": "Berbeda",
     "missing": "Hilang", "field": "Field",
     "identical": "Semua masukan sama. Tidak ada perbedaan untuk ditampilkan."
+  },
+  "jsonViewer": {
+    "metaTitle": "JSON Viewer & Validator — Format, Validasi & Jelajahi JSON Online · Neatly",
+    "metaDesc": "JSON viewer dan validator online gratis. Tempel JSON untuk memvalidasi, lihat error dengan nomor baris, dan jelajahi dalam pohon lipat. Format, minify, atau urutkan kunci seketika — privat, tanpa daftar.",
+    "badge": "Validasi · lihat · jelajahi",
+    "titleHl": "JSON viewer", "titleB": "& validator",
+    "lead": "Tempel JSON untuk memvalidasi seketika, lompat ke error per baris, dan jelajahi struktur dalam pohon lipat. Format, minify, atau urutkan kunci dengan satu klik.",
+    "format": "Format", "minify": "Minify", "sortKeys": "Urutkan kunci", "sample": "Contoh",
+    "tree": "Pohon", "valid": "JSON valid", "invalid": "Tidak valid",
+    "keys": "kunci", "nodes": "node", "depth": "kedalaman",
+    "empty": "Tempel JSON untuk memvalidasi dan menjelajahinya di sini."
+  },
+  "jsonToTs": {
+    "metaTitle": "JSON ke TypeScript — Buat Interface dari JSON Online · Neatly",
+    "metaDesc": "Konverter JSON ke TypeScript online gratis. Tempel JSON dan hasilkan interface TypeScript yang sesuai seketika. Privat, di browser Anda, tanpa daftar.",
+    "badge": "JSON → interface TS",
+    "titleA": "JSON ke", "titleHl": "TypeScript",
+    "lead": "Tempel JSON dan dapatkan interface TypeScript yang sesuai seketika, termasuk objek dan array bersarang.",
+    "rootName": "Nama interface root",
+    "empty": "Interface yang dihasilkan akan muncul di sini."
   }
 }

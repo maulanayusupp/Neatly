@@ -72,5 +72,25 @@
     "differences": "Khác biệt", "oddOne": "Khác biệt nhất", "differs": "Khác",
     "missing": "Thiếu", "field": "Trường",
     "identical": "Tất cả đầu vào giống nhau. Không có khác biệt để hiển thị."
+  },
+  "jsonViewer": {
+    "metaTitle": "JSON Viewer & Trình kiểm tra — Định dạng, Kiểm tra & Khám phá JSON trực tuyến · Neatly",
+    "metaDesc": "Trình xem và kiểm tra JSON trực tuyến miễn phí. Dán JSON để kiểm tra, xem lỗi kèm số dòng, và khám phá dạng cây thu gọn. Định dạng, minify hoặc sắp xếp khoá tức thì — riêng tư, không cần đăng ký.",
+    "badge": "Kiểm tra · xem · khám phá",
+    "titleHl": "JSON viewer", "titleB": "& trình kiểm tra",
+    "lead": "Dán JSON để kiểm tra tức thì, nhảy đến lỗi theo dòng, và khám phá cấu trúc dạng cây thu gọn. Định dạng, minify hoặc sắp xếp khoá chỉ với một cú nhấp.",
+    "format": "Định dạng", "minify": "Minify", "sortKeys": "Sắp xếp khoá", "sample": "Ví dụ",
+    "tree": "Cây", "valid": "JSON hợp lệ", "invalid": "Không hợp lệ",
+    "keys": "khoá", "nodes": "nút", "depth": "độ sâu",
+    "empty": "Dán JSON để kiểm tra và khám phá tại đây."
+  },
+  "jsonToTs": {
+    "metaTitle": "JSON sang TypeScript — Tạo Interface từ JSON trực tuyến · Neatly",
+    "metaDesc": "Công cụ chuyển JSON sang TypeScript trực tuyến miễn phí. Dán JSON và tạo ngay các interface TypeScript tương ứng. Riêng tư, trong trình duyệt của bạn, không cần đăng ký.",
+    "badge": "JSON → interface TS",
+    "titleA": "JSON sang", "titleHl": "TypeScript",
+    "lead": "Dán JSON và nhận ngay các interface TypeScript tương ứng, bao gồm cả đối tượng và mảng lồng nhau.",
+    "rootName": "Tên interface gốc",
+    "empty": "Các interface được tạo sẽ xuất hiện ở đây."
   }
 }

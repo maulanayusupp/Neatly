@@ -48,17 +48,15 @@ function download() {
   }
 }
 
-const pageTitle = 'JSON to TypeScript — Generate Interfaces from JSON Online · Neatly'
-const pageDescription
-  = 'Free online JSON to TypeScript converter. Paste JSON and instantly generate matching TypeScript interfaces. Private, in your browser, no sign-up.'
+const { t } = useI18n()
 
 useSeoMeta({
-  title: pageTitle,
-  description: pageDescription,
-  ogTitle: pageTitle,
-  ogDescription: pageDescription,
-  twitterTitle: pageTitle,
-  twitterDescription: pageDescription,
+  title: () => t('jsonToTs.metaTitle'),
+  description: () => t('jsonToTs.metaDesc'),
+  ogTitle: () => t('jsonToTs.metaTitle'),
+  ogDescription: () => t('jsonToTs.metaDesc'),
+  twitterTitle: () => t('jsonToTs.metaTitle'),
+  twitterDescription: () => t('jsonToTs.metaDesc'),
 })
 useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/json-to-typescript' }] })
 </script>
@@ -67,16 +65,16 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/json-to
   <div>
     <ToolHero
       icon="braces"
-      badge="JSON → TS interfaces"
-      title="JSON to"
-      gradient="TypeScript"
-      lead="Paste JSON and get matching TypeScript interfaces instantly, including nested objects and arrays."
+      :badge="$t('jsonToTs.badge')"
+      :title="$t('jsonToTs.titleA')"
+      :gradient="$t('jsonToTs.titleHl')"
+      :lead="$t('jsonToTs.lead')"
     />
 
     <section class="container tool-outlet jtt">
       <div class="jtt__bar">
         <label class="jtt__root">
-          <span>Root interface name</span>
+          <span>{{ $t('jsonToTs.rootName') }}</span>
           <input v-model="rootName" spellcheck="false" placeholder="Root">
         </label>
       </div>
@@ -95,13 +93,13 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/json-to
           icon="braces"
           language="typescript"
           readonly
-          empty-text="Generated interfaces will appear here."
+          :empty-text="$t('jsonToTs.empty')"
         >
           <template #actions>
             <BaseButton size="sm" variant="ghost" :icon="copied ? 'check' : 'copy'" :disabled="!output" @click="copy">
-              {{ copied ? 'Copied' : 'Copy' }}
+              {{ copied ? $t('common.copied') : $t('common.copy') }}
             </BaseButton>
-            <BaseButton size="sm" variant="ghost" icon="download" :disabled="!output" @click="download">Download</BaseButton>
+            <BaseButton size="sm" variant="ghost" icon="download" :disabled="!output" @click="download">{{ $t('common.download') }}</BaseButton>
           </template>
         </EditorPane>
       </div>

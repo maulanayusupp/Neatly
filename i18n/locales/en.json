@@ -72,5 +72,25 @@
     "differences": "Differences", "oddOne": "Odd one out", "differs": "Differs",
     "missing": "Missing", "field": "Field",
     "identical": "All inputs match. There are no differences to show."
+  },
+  "jsonViewer": {
+    "metaTitle": "JSON Viewer & Validator — Format, Validate & Explore JSON Online · Neatly",
+    "metaDesc": "Free online JSON viewer and validator. Paste JSON to validate it, see errors with line numbers, and explore it in a collapsible tree. Format, minify or sort keys instantly — private, no sign-up.",
+    "badge": "Validate · view · explore",
+    "titleHl": "JSON viewer", "titleB": "& validator",
+    "lead": "Paste JSON to validate it instantly, jump to errors by line, and explore the structure in a collapsible tree. Format, minify or sort keys in a click.",
+    "format": "Format", "minify": "Minify", "sortKeys": "Sort keys", "sample": "Sample",
+    "tree": "Tree", "valid": "Valid JSON", "invalid": "Invalid",
+    "keys": "keys", "nodes": "nodes", "depth": "depth",
+    "empty": "Paste JSON to validate and explore it here."
+  },
+  "jsonToTs": {
+    "metaTitle": "JSON to TypeScript — Generate Interfaces from JSON Online · Neatly",
+    "metaDesc": "Free online JSON to TypeScript converter. Paste JSON and instantly generate matching TypeScript interfaces. Private, in your browser, no sign-up.",
+    "badge": "JSON → TS interfaces",
+    "titleA": "JSON to", "titleHl": "TypeScript",
+    "lead": "Paste JSON and get matching TypeScript interfaces instantly, including nested objects and arrays.",
+    "rootName": "Root interface name",
+    "empty": "Generated interfaces will appear here."
   }
 }

@@ -72,5 +72,25 @@
     "differences": "Mga pagkakaiba", "oddOne": "Pinakanaiiba", "differs": "Naiiba",
     "missing": "Nawawala", "field": "Field",
     "identical": "Magkatugma ang lahat ng input. Walang pagkakaibang ipapakita."
+  },
+  "jsonViewer": {
+    "metaTitle": "JSON Viewer & Validator — I-format, I-validate & Tuklasin ang JSON Online · Neatly",
+    "metaDesc": "Libreng online JSON viewer at validator. I-paste ang JSON para i-validate, tingnan ang mga error na may line number, at tuklasin sa collapsible na tree. I-format, i-minify o i-sort ang keys agad — pribado, walang sign-up.",
+    "badge": "I-validate · tingnan · tuklasin",
+    "titleHl": "JSON viewer", "titleB": "& validator",
+    "lead": "I-paste ang JSON para agad na ma-validate, tumalon sa error ayon sa linya, at tuklasin ang istruktura sa collapsible na tree. I-format, i-minify o i-sort ang keys sa isang click.",
+    "format": "I-format", "minify": "I-minify", "sortKeys": "I-sort ang keys", "sample": "Halimbawa",
+    "tree": "Tree", "valid": "Valid na JSON", "invalid": "Hindi valid",
+    "keys": "keys", "nodes": "nodes", "depth": "lalim",
+    "empty": "I-paste ang JSON para i-validate at tuklasin ito dito."
+  },
+  "jsonToTs": {
+    "metaTitle": "JSON to TypeScript — Bumuo ng Interfaces mula sa JSON Online · Neatly",
+    "metaDesc": "Libreng online JSON to TypeScript converter. I-paste ang JSON at agad na bumuo ng tugmang TypeScript interfaces. Pribado, sa iyong browser, walang sign-up.",
+    "badge": "JSON → TS interfaces",
+    "titleA": "JSON to", "titleHl": "TypeScript",
+    "lead": "I-paste ang JSON at agad makakuha ng tugmang TypeScript interfaces, kasama ang mga nested object at array.",
+    "rootName": "Pangalan ng root interface",
+    "empty": "Lalabas dito ang mga nabuong interface."
   }
 }

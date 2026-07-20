@@ -10,17 +10,15 @@ const result = computed(() => (input.value.trim() ? parseJson(input.value) : nul
 const stats = computed(() => (result.value?.ok ? jsonStats(result.value.value) : null))
 const errorLine = computed(() => (result.value && !result.value.ok ? result.value.error.line : undefined))
 
-const pageTitle = 'JSON Viewer & Validator — Format, Validate & Explore JSON Online · Neatly'
-const pageDescription
-  = 'Free online JSON viewer and validator. Paste JSON to validate it, see errors with line numbers, and explore it in a collapsible tree. Format, minify or sort keys instantly — private, no sign-up.'
+const { t } = useI18n()
 
 useSeoMeta({
-  title: pageTitle,
-  description: pageDescription,
-  ogTitle: pageTitle,
-  ogDescription: pageDescription,
-  twitterTitle: pageTitle,
-  twitterDescription: pageDescription,
+  title: () => t('jsonViewer.metaTitle'),
+  description: () => t('jsonViewer.metaDesc'),
+  ogTitle: () => t('jsonViewer.metaTitle'),
+  ogDescription: () => t('jsonViewer.metaDesc'),
+  twitterTitle: () => t('jsonViewer.metaTitle'),
+  twitterDescription: () => t('jsonViewer.metaDesc'),
 })
 useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/json-viewer' }] })
 
@@ -55,35 +53,32 @@ async function copyTree() {
       <div class="container hero__inner">
         <span class="hero__badge">
           <BaseIcon name="tree" :size="15" />
-          Validate · view · explore
+          {{ $t('jsonViewer.badge') }}
         </span>
         <h1 class="hero__title">
-          <span class="text-gradient">JSON viewer</span> &amp; validator
+          <span class="text-gradient">{{ $t('jsonViewer.titleHl') }}</span> {{ $t('jsonViewer.titleB') }}
         </h1>
-        <p class="hero__lead">
-          Paste JSON to validate it instantly, jump to errors by line, and explore
-          the structure in a collapsible tree. Format, minify or sort keys in a click.
-        </p>
+        <p class="hero__lead">{{ $t('jsonViewer.lead') }}</p>
       </div>
     </section>
 
     <section class="container jv__body">
       <div class="jv__toolbar">
         <div class="jv__toolbar-group">
-          <BaseButton size="sm" icon="beautify" :disabled="!result?.ok" @click="format">Format</BaseButton>
-          <BaseButton size="sm" icon="minify" :disabled="!result?.ok" @click="minify">Minify</BaseButton>
-          <BaseButton size="sm" icon="layers" :disabled="!result?.ok" @click="sortKeys">Sort keys</BaseButton>
+          <BaseButton size="sm" icon="beautify" :disabled="!result?.ok" @click="format">{{ $t('jsonViewer.format') }}</BaseButton>
+          <BaseButton size="sm" icon="minify" :disabled="!result?.ok" @click="minify">{{ $t('jsonViewer.minify') }}</BaseButton>
+          <BaseButton size="sm" icon="layers" :disabled="!result?.ok" @click="sortKeys">{{ $t('jsonViewer.sortKeys') }}</BaseButton>
         </div>
         <div class="jv__toolbar-group">
-          <BaseButton size="sm" variant="ghost" icon="sparkles" @click="loadSample">Sample</BaseButton>
-          <BaseButton size="sm" variant="ghost" icon="trash" :disabled="!input" @click="clear">Clear</BaseButton>
+          <BaseButton size="sm" variant="ghost" icon="sparkles" @click="loadSample">{{ $t('jsonViewer.sample') }}</BaseButton>
+          <BaseButton size="sm" variant="ghost" icon="trash" :disabled="!input" @click="clear">{{ $t('common.clear') }}</BaseButton>
         </div>
       </div>
 
       <div class="jv__grid">
         <EditorPane
           v-model="input"
-          title="JSON input"
+          :title="`${$t('common.input')} · JSON`"
           icon="code"
           language="json"
           :error-line="errorLine"
@@ -92,23 +87,23 @@ async function copyTree() {
 
         <section class="jv__viewer">
           <header class="jv__viewer-header">
-            <h2 class="jv__viewer-title"><BaseIcon name="tree" :size="16" /> Tree</h2>
+            <h2 class="jv__viewer-title"><BaseIcon name="tree" :size="16" /> {{ $t('jsonViewer.tree') }}</h2>
             <span
               v-if="result"
               class="jv__badge"
               :class="result.ok ? 'is-valid' : 'is-invalid'"
             >
               <BaseIcon :name="result.ok ? 'check' : 'alert'" :size="13" />
-              {{ result.ok ? 'Valid JSON' : 'Invalid' }}
+              {{ result.ok ? $t('jsonViewer.valid') : $t('jsonViewer.invalid') }}
             </span>
           </header>
 
           <div v-if="stats" class="jv__stats">
-            <span>{{ formatNumber(stats.keys) }} keys</span>
-            <span>{{ formatNumber(stats.nodes) }} nodes</span>
-            <span>depth {{ stats.depth }}</span>
+            <span>{{ formatNumber(stats.keys) }} {{ $t('jsonViewer.keys') }}</span>
+            <span>{{ formatNumber(stats.nodes) }} {{ $t('jsonViewer.nodes') }}</span>
+            <span>{{ $t('jsonViewer.depth') }} {{ stats.depth }}</span>
             <button type="button" class="jv__copy" @click="copyTree">
-              <BaseIcon name="copy" :size="14" /> Copy
+              <BaseIcon name="copy" :size="14" /> {{ $t('common.copy') }}
             </button>
           </div>
 
@@ -121,7 +116,7 @@ async function copyTree() {
             </div>
             <div v-else class="jv__state">
               <BaseIcon name="tree" :size="28" />
-              <p>Paste JSON to validate and explore it here.</p>
+              <p>{{ $t('jsonViewer.empty') }}</p>
             </div>
           </div>
         </section>

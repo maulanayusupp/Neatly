@@ -72,5 +72,25 @@
     "differences": "Perbezaan", "oddOne": "Paling berbeza", "differs": "Berbeza",
     "missing": "Hilang", "field": "Medan",
     "identical": "Semua input sama. Tiada perbezaan untuk dipaparkan."
+  },
+  "jsonViewer": {
+    "metaTitle": "JSON Viewer & Validator — Format, Sahkan & Terokai JSON Dalam Talian · Neatly",
+    "metaDesc": "JSON viewer dan validator dalam talian percuma. Tampal JSON untuk mengesahkan, lihat ralat dengan nombor baris, dan terokai dalam pokok boleh lipat. Format, minify atau susun kunci serta-merta — peribadi, tanpa mendaftar.",
+    "badge": "Sahkan · lihat · terokai",
+    "titleHl": "JSON viewer", "titleB": "& validator",
+    "lead": "Tampal JSON untuk mengesahkan serta-merta, lompat ke ralat mengikut baris, dan terokai struktur dalam pokok boleh lipat. Format, minify atau susun kunci dengan satu klik.",
+    "format": "Format", "minify": "Minify", "sortKeys": "Susun kunci", "sample": "Contoh",
+    "tree": "Pokok", "valid": "JSON sah", "invalid": "Tidak sah",
+    "keys": "kunci", "nodes": "nod", "depth": "kedalaman",
+    "empty": "Tampal JSON untuk mengesahkan dan menerokainya di sini."
+  },
+  "jsonToTs": {
+    "metaTitle": "JSON ke TypeScript — Jana Interface daripada JSON Dalam Talian · Neatly",
+    "metaDesc": "Penukar JSON ke TypeScript dalam talian percuma. Tampal JSON dan jana interface TypeScript yang sepadan serta-merta. Peribadi, dalam pelayar anda, tanpa mendaftar.",
+    "badge": "JSON → interface TS",
+    "titleA": "JSON ke", "titleHl": "TypeScript",
+    "lead": "Tampal JSON dan dapatkan interface TypeScript yang sepadan serta-merta, termasuk objek dan tatasusunan bersarang.",
+    "rootName": "Nama interface root",
+    "empty": "Interface yang dijana akan muncul di sini."
   }
 }
