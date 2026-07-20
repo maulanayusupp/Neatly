@@ -11,7 +11,7 @@ const siteUrl = 'https://neatlyapp.vercel.app'
 const siteName = 'Neatly'
 const siteTitle = 'Neatly — Free Online Developer Tools'
 const siteDescription
-  = 'A free developer toolkit to get your work done: beautify & minify code, format & validate JSON, convert JSON/YAML/CSV/XML, diff & compare, scan & generate QR codes, plus Base64, JWT, hash, UUID and password tools. Fast, private, no sign-up.'
+  = 'A free developer toolkit to get your work done: beautify & minify code, format & validate JSON, convert JSON/YAML/CSV/XML, diff & compare, scan & generate QR codes, format SQL, explain cron, plus Base64, JWT, hash, UUID, password and 20+ more tools. Fast, private, no sign-up.'
 const ogImage = `${siteUrl}/og-image.png`
 
 // https://nuxt.com/docs/api/configuration/nuxt-config

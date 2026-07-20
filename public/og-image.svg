@@ -29,13 +29,13 @@
   <text x="80" y="392" font-family="Helvetica, Arial, sans-serif" font-size="82" font-weight="800" letter-spacing="-3"><tspan fill="url(#brand)">get the job done</tspan></text>
 
   <!-- Tool list -->
-  <text x="82" y="462" font-family="Helvetica, Arial, sans-serif" font-size="29" font-weight="600" fill="#9aa2bd">Beautify · Minify · Format JSON · Convert · Diff · QR · Base64 · Hash</text>
+  <text x="82" y="462" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="600" fill="#9aa2bd">Beautify · Minify · JSON · Convert · SQL · Diff · QR · Cron · Hash</text>
 
   <!-- Chips -->
   <g font-family="Helvetica, Arial, sans-serif" font-size="25" font-weight="700">
     <g transform="translate(80,502)">
       <rect width="180" height="54" rx="27" fill="#1d2130" stroke="#2a2f42"/>
-      <text x="90" y="35" fill="#a5b4fc" text-anchor="middle">18+ tools</text>
+      <text x="90" y="35" fill="#a5b4fc" text-anchor="middle">20+ tools</text>
     </g>
     <g transform="translate(276,502)">
       <rect width="240" height="54" rx="27" fill="#1d2130" stroke="#2a2f42"/>

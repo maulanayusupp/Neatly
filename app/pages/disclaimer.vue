@@ -39,8 +39,10 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/disclai
     <p>
       Neatly relies on well-established open-source libraries (such as Terser,
       clean-css, html-minifier-terser, js-beautify, js-yaml, PapaParse,
-      fast-xml-parser and @zxing/browser). Those libraries are provided under their
-      own licenses and warranties, and their behaviour is outside our control.
+      fast-xml-parser, @zxing/browser, qrcode, JsBarcode, marked, DOMPurify, diff,
+      json-to-ts, sql-formatter, cronstrue and cron-parser). Those libraries are
+      provided under their own licenses and warranties, and their behaviour is outside
+      our control.
     </p>
 
     <h2>Related</h2>

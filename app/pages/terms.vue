@@ -14,10 +14,12 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/terms' 
   >
     <h2>1. The service</h2>
     <p>
-      Neatly ("the Service") is a free online tool that lets you beautify, minify,
-      convert and compare code and data (such as JavaScript, CSS, HTML, JSON, YAML,
-      CSV and XML), and scan QR codes and barcodes. The Service is provided for
-      convenience and general use.
+      Neatly ("the Service") is a free online collection of developer tools that let
+      you beautify, minify, convert, compare, validate and format code and data (such
+      as JavaScript, CSS, HTML, JSON, YAML, CSV, XML and SQL), scan and generate QR
+      codes and barcodes, generate passwords, explain cron expressions, and use various
+      encoding, hashing and text utilities. The Service is provided for convenience and
+      general use.
     </p>
 
     <h2>2. Acceptable use</h2>
