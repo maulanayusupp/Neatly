@@ -92,5 +92,32 @@
     "lead": "Paste JSON and get matching TypeScript interfaces instantly, including nested objects and arrays.",
     "rootName": "Root interface name",
     "empty": "Generated interfaces will appear here."
+  },
+  "diff": {
+    "metaTitle": "Text Diff Checker — Compare Two Texts Online Free · Neatly",
+    "metaDesc": "Free online diff checker. Compare two texts or code snippets and see exactly which lines were added or removed, highlighted side by side. Private, instant, no sign-up.",
+    "badge": "Compare · line by line", "titleA": "Text", "titleHl": "diff checker",
+    "lead": "Paste two versions of a text or code and instantly see which lines were added or removed.",
+    "original": "Original", "changed": "Changed",
+    "originalPlaceholder": "Paste the original text…", "changedPlaceholder": "Paste the changed text…",
+    "differences": "Differences", "identical": "The two texts are identical.",
+    "empty": "Paste both texts to see the differences here."
+  },
+  "color": {
+    "metaTitle": "Color Converter — HEX, RGB & HSL Online + Contrast Checker · Neatly",
+    "metaDesc": "Free online color converter. Convert between HEX, RGB and HSL, pick a color, preview it, and check WCAG contrast against black and white. Private, instant, no sign-up.",
+    "badge": "HEX · RGB · HSL · contrast", "titleA": "Color", "titleHl": "converter",
+    "lead": "Convert colors between HEX, RGB and HSL, preview them, and check WCAG contrast — all in your browser.",
+    "formats": "Formats", "contrast": "Contrast (WCAG)", "onWhite": "on white", "onBlack": "on black",
+    "invalid": "Enter a valid hex color (e.g. #6366f1)."
+  },
+  "regex": {
+    "metaTitle": "Regex Tester — Test Regular Expressions Online · Neatly",
+    "metaDesc": "Free online regex tester. Build and test regular expressions with live match highlighting, flags and capture groups. Runs privately in your browser, no sign-up.",
+    "badge": "Live match · groups · flags", "titleA": "Regex", "titleHl": "tester",
+    "lead": "Write a regular expression and see matches highlighted live, with capture groups — all in your browser.",
+    "pattern": "Pattern", "testString": "Test string", "matches": "Matches",
+    "matchDetails": "Match details", "groups": "groups", "at": "at",
+    "flagGlobal": "global", "flagIgnore": "ignore case", "flagMultiline": "multiline", "flagDotall": "dotall"
   }
 }

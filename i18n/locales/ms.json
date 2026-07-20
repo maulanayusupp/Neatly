@@ -92,5 +92,32 @@
     "lead": "Tampal JSON dan dapatkan interface TypeScript yang sepadan serta-merta, termasuk objek dan tatasusunan bersarang.",
     "rootName": "Nama interface root",
     "empty": "Interface yang dijana akan muncul di sini."
+  },
+  "diff": {
+    "metaTitle": "Penyemak Diff Teks — Bandingkan Dua Teks Dalam Talian Percuma · Neatly",
+    "metaDesc": "Penyemak diff dalam talian percuma. Bandingkan dua teks atau petikan kod dan lihat dengan tepat baris mana yang ditambah atau dibuang, disorot bersebelahan. Peribadi, serta-merta, tanpa mendaftar.",
+    "badge": "Banding · baris demi baris", "titleA": "Diff", "titleHl": "teks",
+    "lead": "Tampal dua versi teks atau kod dan lihat serta-merta baris mana yang ditambah atau dibuang.",
+    "original": "Asal", "changed": "Diubah",
+    "originalPlaceholder": "Tampal teks asal…", "changedPlaceholder": "Tampal teks yang diubah…",
+    "differences": "Perbezaan", "identical": "Kedua-dua teks adalah sama.",
+    "empty": "Tampal kedua-dua teks untuk melihat perbezaannya di sini."
+  },
+  "color": {
+    "metaTitle": "Penukar Warna — HEX, RGB & HSL Dalam Talian + Penyemak Kontras · Neatly",
+    "metaDesc": "Penukar warna dalam talian percuma. Tukar antara HEX, RGB dan HSL, pilih warna, pratonton, dan semak kontras WCAG terhadap hitam dan putih. Peribadi, serta-merta, tanpa mendaftar.",
+    "badge": "HEX · RGB · HSL · kontras", "titleA": "Penukar", "titleHl": "warna",
+    "lead": "Tukar warna antara HEX, RGB dan HSL, pratonton, dan semak kontras WCAG — semua dalam pelayar anda.",
+    "formats": "Format", "contrast": "Kontras (WCAG)", "onWhite": "atas putih", "onBlack": "atas hitam",
+    "invalid": "Masukkan warna hex yang sah (cth. #6366f1)."
+  },
+  "regex": {
+    "metaTitle": "Regex Tester — Uji Ungkapan Nalar Dalam Talian · Neatly",
+    "metaDesc": "Regex tester dalam talian percuma. Bina dan uji ungkapan nalar dengan sorotan padanan langsung, bendera, dan kumpulan tangkapan. Berjalan secara peribadi dalam pelayar anda, tanpa mendaftar.",
+    "badge": "Padanan langsung · kumpulan · bendera", "titleA": "Regex", "titleHl": "tester",
+    "lead": "Tulis ungkapan nalar dan lihat padanan disorot langsung, dengan kumpulan tangkapan — semua dalam pelayar anda.",
+    "pattern": "Corak", "testString": "Teks ujian", "matches": "Padanan",
+    "matchDetails": "Butiran padanan", "groups": "kumpulan", "at": "pada",
+    "flagGlobal": "global", "flagIgnore": "abai huruf", "flagMultiline": "berbilang baris", "flagDotall": "dotall"
   }
 }

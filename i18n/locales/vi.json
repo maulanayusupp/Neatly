@@ -92,5 +92,32 @@
     "lead": "Dán JSON và nhận ngay các interface TypeScript tương ứng, bao gồm cả đối tượng và mảng lồng nhau.",
     "rootName": "Tên interface gốc",
     "empty": "Các interface được tạo sẽ xuất hiện ở đây."
+  },
+  "diff": {
+    "metaTitle": "Trình so sánh văn bản — So sánh hai văn bản trực tuyến miễn phí · Neatly",
+    "metaDesc": "Trình kiểm tra diff trực tuyến miễn phí. So sánh hai văn bản hoặc đoạn mã và xem chính xác dòng nào được thêm hoặc xoá, làm nổi bật cạnh nhau. Riêng tư, tức thì, không cần đăng ký.",
+    "badge": "So sánh · từng dòng", "titleA": "So sánh", "titleHl": "văn bản",
+    "lead": "Dán hai phiên bản văn bản hoặc mã và xem ngay dòng nào được thêm hoặc xoá.",
+    "original": "Bản gốc", "changed": "Đã thay đổi",
+    "originalPlaceholder": "Dán văn bản gốc…", "changedPlaceholder": "Dán văn bản đã thay đổi…",
+    "differences": "Khác biệt", "identical": "Hai văn bản giống hệt nhau.",
+    "empty": "Dán cả hai văn bản để xem khác biệt tại đây."
+  },
+  "color": {
+    "metaTitle": "Trình chuyển đổi màu — HEX, RGB & HSL trực tuyến + Kiểm tra tương phản · Neatly",
+    "metaDesc": "Trình chuyển đổi màu trực tuyến miễn phí. Chuyển đổi giữa HEX, RGB và HSL, chọn màu, xem trước, và kiểm tra tương phản WCAG so với đen và trắng. Riêng tư, tức thì, không cần đăng ký.",
+    "badge": "HEX · RGB · HSL · tương phản", "titleA": "Chuyển đổi", "titleHl": "màu",
+    "lead": "Chuyển đổi màu giữa HEX, RGB và HSL, xem trước, và kiểm tra tương phản WCAG — tất cả trong trình duyệt của bạn.",
+    "formats": "Định dạng", "contrast": "Tương phản (WCAG)", "onWhite": "trên nền trắng", "onBlack": "trên nền đen",
+    "invalid": "Nhập màu hex hợp lệ (vd. #6366f1)."
+  },
+  "regex": {
+    "metaTitle": "Regex Tester — Kiểm tra biểu thức chính quy trực tuyến · Neatly",
+    "metaDesc": "Regex tester trực tuyến miễn phí. Xây dựng và kiểm tra biểu thức chính quy với làm nổi bật kết quả trực tiếp, cờ và nhóm bắt. Chạy riêng tư trong trình duyệt của bạn, không cần đăng ký.",
+    "badge": "Khớp trực tiếp · nhóm · cờ", "titleA": "Regex", "titleHl": "tester",
+    "lead": "Viết biểu thức chính quy và xem các kết quả khớp được làm nổi bật trực tiếp, kèm nhóm bắt — tất cả trong trình duyệt của bạn.",
+    "pattern": "Mẫu", "testString": "Chuỗi kiểm tra", "matches": "Kết quả khớp",
+    "matchDetails": "Chi tiết khớp", "groups": "nhóm", "at": "tại",
+    "flagGlobal": "toàn cục", "flagIgnore": "bỏ qua hoa/thường", "flagMultiline": "nhiều dòng", "flagDotall": "dotall"
   }
 }

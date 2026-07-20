@@ -92,5 +92,32 @@
     "lead": "Tempel JSON dan dapatkan interface TypeScript yang sesuai seketika, termasuk objek dan array bersarang.",
     "rootName": "Nama interface root",
     "empty": "Interface yang dihasilkan akan muncul di sini."
+  },
+  "diff": {
+    "metaTitle": "Pemeriksa Diff Teks — Bandingkan Dua Teks Online Gratis · Neatly",
+    "metaDesc": "Pemeriksa diff online gratis. Bandingkan dua teks atau potongan kode dan lihat persis baris mana yang ditambah atau dihapus, disorot berdampingan. Privat, seketika, tanpa daftar.",
+    "badge": "Bandingkan · baris per baris", "titleA": "Diff", "titleHl": "teks",
+    "lead": "Tempel dua versi teks atau kode dan lihat seketika baris mana yang ditambah atau dihapus.",
+    "original": "Asli", "changed": "Diubah",
+    "originalPlaceholder": "Tempel teks asli…", "changedPlaceholder": "Tempel teks yang diubah…",
+    "differences": "Perbedaan", "identical": "Kedua teks identik.",
+    "empty": "Tempel kedua teks untuk melihat perbedaannya di sini."
+  },
+  "color": {
+    "metaTitle": "Konverter Warna — HEX, RGB & HSL Online + Pemeriksa Kontras · Neatly",
+    "metaDesc": "Konverter warna online gratis. Konversi antara HEX, RGB, dan HSL, pilih warna, pratinjau, dan periksa kontras WCAG terhadap hitam dan putih. Privat, seketika, tanpa daftar.",
+    "badge": "HEX · RGB · HSL · kontras", "titleA": "Konverter", "titleHl": "warna",
+    "lead": "Konversi warna antara HEX, RGB, dan HSL, pratinjau, dan periksa kontras WCAG — semua di browser Anda.",
+    "formats": "Format", "contrast": "Kontras (WCAG)", "onWhite": "di putih", "onBlack": "di hitam",
+    "invalid": "Masukkan warna hex yang valid (mis. #6366f1)."
+  },
+  "regex": {
+    "metaTitle": "Regex Tester — Uji Ekspresi Reguler Online · Neatly",
+    "metaDesc": "Regex tester online gratis. Bangun dan uji ekspresi reguler dengan sorotan kecocokan langsung, flag, dan grup tangkapan. Berjalan privat di browser Anda, tanpa daftar.",
+    "badge": "Cocok langsung · grup · flag", "titleA": "Regex", "titleHl": "tester",
+    "lead": "Tulis ekspresi reguler dan lihat kecocokan disorot langsung, dengan grup tangkapan — semua di browser Anda.",
+    "pattern": "Pola", "testString": "Teks uji", "matches": "Kecocokan",
+    "matchDetails": "Detail kecocokan", "groups": "grup", "at": "di",
+    "flagGlobal": "global", "flagIgnore": "abaikan huruf", "flagMultiline": "multibaris", "flagDotall": "dotall"
   }
 }

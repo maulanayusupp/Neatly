@@ -45,17 +45,15 @@ async function copy(key: string, value: string) {
   }
 }
 
-const pageTitle = 'Color Converter — HEX, RGB & HSL Online + Contrast Checker · Neatly'
-const pageDescription
-  = 'Free online color converter. Convert between HEX, RGB and HSL, pick a color, preview it, and check WCAG contrast against black and white. Private, instant, no sign-up.'
+const { t } = useI18n()
 
 useSeoMeta({
-  title: pageTitle,
-  description: pageDescription,
-  ogTitle: pageTitle,
-  ogDescription: pageDescription,
-  twitterTitle: pageTitle,
-  twitterDescription: pageDescription,
+  title: () => t('color.metaTitle'),
+  description: () => t('color.metaDesc'),
+  ogTitle: () => t('color.metaTitle'),
+  ogDescription: () => t('color.metaDesc'),
+  twitterTitle: () => t('color.metaTitle'),
+  twitterDescription: () => t('color.metaDesc'),
 })
 useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/color' }] })
 </script>
@@ -64,10 +62,10 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/color' 
   <div>
     <ToolHero
       icon="droplet"
-      badge="HEX · RGB · HSL · contrast"
-      title="Color"
-      gradient="converter"
-      lead="Convert colors between HEX, RGB and HSL, preview them, and check WCAG contrast — all in your browser."
+      :badge="$t('color.badge')"
+      :title="$t('color.titleA')"
+      :gradient="$t('color.titleHl')"
+      :lead="$t('color.lead')"
     />
 
     <section class="container tool-outlet color" :style="{ '--swatch': formats?.hex || 'transparent' }">
@@ -83,7 +81,7 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/color' 
 
       <div v-if="formats" class="color__grid">
         <div class="tool-panel color__card">
-          <h2 class="color__card-title">Formats</h2>
+          <h2 class="color__card-title">{{ $t('color.formats') }}</h2>
           <ul class="color__values" role="list">
             <li><span>HEX</span><code @click="copy('hex', formats.hex)">{{ formats.hex }}</code></li>
             <li><span>RGB</span><code @click="copy('rgb', formats.rgb)">{{ formats.rgb }}</code></li>
@@ -92,24 +90,24 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/color' 
         </div>
 
         <div v-if="contrast" class="tool-panel color__card">
-          <h2 class="color__card-title">Contrast (WCAG)</h2>
+          <h2 class="color__card-title">{{ $t('color.contrast') }}</h2>
           <ul class="color__contrast" role="list">
             <li>
               <span class="color__swatch color__swatch--white">Aa</span>
-              <span>on white</span>
+              <span>{{ $t('color.onWhite') }}</span>
               <strong>{{ contrast.white.ratio }}</strong>
               <em :class="`is-${contrast.white.rating.startsWith('AA') ? 'pass' : 'fail'}`">{{ contrast.white.rating }}</em>
             </li>
             <li>
               <span class="color__swatch color__swatch--black">Aa</span>
-              <span>on black</span>
+              <span>{{ $t('color.onBlack') }}</span>
               <strong>{{ contrast.black.ratio }}</strong>
               <em :class="`is-${contrast.black.rating.startsWith('AA') ? 'pass' : 'fail'}`">{{ contrast.black.rating }}</em>
             </li>
           </ul>
         </div>
       </div>
-      <p v-else class="color__error"><BaseIcon name="alert" :size="16" /> Enter a valid hex color (e.g. #6366f1).</p>
+      <p v-else class="color__error"><BaseIcon name="alert" :size="16" /> {{ $t('color.invalid') }}</p>
     </section>
   </div>
 </template>

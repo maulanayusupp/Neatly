@@ -92,5 +92,32 @@
     "lead": "I-paste ang JSON at agad makakuha ng tugmang TypeScript interfaces, kasama ang mga nested object at array.",
     "rootName": "Pangalan ng root interface",
     "empty": "Lalabas dito ang mga nabuong interface."
+  },
+  "diff": {
+    "metaTitle": "Text Diff Checker — Ihambing ang Dalawang Teksto Online nang Libre · Neatly",
+    "metaDesc": "Libreng online diff checker. Ihambing ang dalawang teksto o code snippet at tingnan kung aling linya ang naidagdag o naalis, naka-highlight nang magkatabi. Pribado, agad, walang sign-up.",
+    "badge": "Ihambing · linya bawat linya", "titleA": "Text", "titleHl": "diff checker",
+    "lead": "I-paste ang dalawang bersyon ng teksto o code at agad makita kung aling linya ang naidagdag o naalis.",
+    "original": "Orihinal", "changed": "Binago",
+    "originalPlaceholder": "I-paste ang orihinal na teksto…", "changedPlaceholder": "I-paste ang binagong teksto…",
+    "differences": "Mga pagkakaiba", "identical": "Magkapareho ang dalawang teksto.",
+    "empty": "I-paste ang dalawang teksto para makita ang pagkakaiba dito."
+  },
+  "color": {
+    "metaTitle": "Color Converter — HEX, RGB & HSL Online + Contrast Checker · Neatly",
+    "metaDesc": "Libreng online color converter. I-convert sa pagitan ng HEX, RGB at HSL, pumili ng kulay, i-preview, at suriin ang WCAG contrast laban sa itim at puti. Pribado, agad, walang sign-up.",
+    "badge": "HEX · RGB · HSL · contrast", "titleA": "Color", "titleHl": "converter",
+    "lead": "I-convert ang mga kulay sa pagitan ng HEX, RGB at HSL, i-preview, at suriin ang WCAG contrast — lahat sa iyong browser.",
+    "formats": "Mga format", "contrast": "Contrast (WCAG)", "onWhite": "sa puti", "onBlack": "sa itim",
+    "invalid": "Maglagay ng valid na hex color (hal. #6366f1)."
+  },
+  "regex": {
+    "metaTitle": "Regex Tester — Subukan ang Regular Expressions Online · Neatly",
+    "metaDesc": "Libreng online regex tester. Bumuo at subukan ang regular expressions na may live match highlighting, flags at capture groups. Tumatakbo nang pribado sa iyong browser, walang sign-up.",
+    "badge": "Live match · groups · flags", "titleA": "Regex", "titleHl": "tester",
+    "lead": "Sumulat ng regular expression at makita ang mga match na naka-highlight nang live, may capture groups — lahat sa iyong browser.",
+    "pattern": "Pattern", "testString": "Test string", "matches": "Mga match",
+    "matchDetails": "Detalye ng match", "groups": "groups", "at": "sa",
+    "flagGlobal": "global", "flagIgnore": "ignore case", "flagMultiline": "multiline", "flagDotall": "dotall"
   }
 }

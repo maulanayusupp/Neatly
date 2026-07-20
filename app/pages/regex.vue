@@ -5,11 +5,13 @@ const pattern = ref('\\b(\\w+)@(\\w+)\\.(\\w+)\\b')
 const flags = reactive({ g: true, i: false, m: false, s: false })
 const testStr = ref('Contact: ann@example.com or bob@neatly.dev for details.')
 
+const { t } = useI18n()
+
 const flagList = [
-  { key: 'g', label: 'global' },
-  { key: 'i', label: 'ignore case' },
-  { key: 'm', label: 'multiline' },
-  { key: 's', label: 'dotall' },
+  { key: 'g', labelKey: 'flagGlobal' },
+  { key: 'i', labelKey: 'flagIgnore' },
+  { key: 'm', labelKey: 'flagMultiline' },
+  { key: 's', labelKey: 'flagDotall' },
 ] as const
 
 const flagsStr = computed(() =>
@@ -55,17 +57,13 @@ const highlighted = computed(() => {
   return out
 })
 
-const pageTitle = 'Regex Tester — Test Regular Expressions Online · Neatly'
-const pageDescription
-  = 'Free online regex tester. Build and test regular expressions with live match highlighting, flags and capture groups. Runs privately in your browser, no sign-up.'
-
 useSeoMeta({
-  title: pageTitle,
-  description: pageDescription,
-  ogTitle: pageTitle,
-  ogDescription: pageDescription,
-  twitterTitle: pageTitle,
-  twitterDescription: pageDescription,
+  title: () => t('regex.metaTitle'),
+  description: () => t('regex.metaDesc'),
+  ogTitle: () => t('regex.metaTitle'),
+  ogDescription: () => t('regex.metaDesc'),
+  twitterTitle: () => t('regex.metaTitle'),
+  twitterDescription: () => t('regex.metaDesc'),
 })
 useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/regex' }] })
 </script>
@@ -74,16 +72,16 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/regex' 
   <div>
     <ToolHero
       icon="regex"
-      badge="Live match · groups · flags"
-      title="Regex"
-      gradient="tester"
-      lead="Write a regular expression and see matches highlighted live, with capture groups — all in your browser."
+      :badge="$t('regex.badge')"
+      :title="$t('regex.titleA')"
+      :gradient="$t('regex.titleHl')"
+      :lead="$t('regex.lead')"
     />
 
     <section class="container tool-outlet rx">
       <div class="tool-panel">
         <label class="rx__field">
-          <span class="rx__label">Pattern</span>
+          <span class="rx__label">{{ $t('regex.pattern') }}</span>
           <div class="rx__pattern">
             <span class="rx__slash">/</span>
             <input v-model="pattern" class="rx__input" spellcheck="false" placeholder="pattern">
@@ -93,7 +91,7 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/regex' 
 
         <div class="rx__flags">
           <label v-for="f in flagList" :key="f.key" class="rx__flag">
-            <input v-model="flags[f.key]" type="checkbox"><code>{{ f.key }}</code><span>{{ f.label }}</span>
+            <input v-model="flags[f.key]" type="checkbox"><code>{{ f.key }}</code><span>{{ $t(`regex.${f.labelKey}`) }}</span>
           </label>
         </div>
 
@@ -102,12 +100,12 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/regex' 
 
       <div class="tool-panel">
         <label class="rx__field">
-          <span class="rx__label">Test string</span>
+          <span class="rx__label">{{ $t('regex.testString') }}</span>
           <textarea v-model="testStr" class="rx__area" spellcheck="false" placeholder="Text to test against…" />
         </label>
         <div class="rx__result">
           <div class="rx__result-head">
-            <span class="rx__label">Matches</span>
+            <span class="rx__label">{{ $t('regex.matches') }}</span>
             <span class="rx__count">{{ matches.length }}</span>
           </div>
           <pre class="rx__highlight"><code v-html="highlighted" /></pre>
@@ -115,14 +113,14 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/regex' 
       </div>
 
       <div v-if="matches.length" class="tool-panel">
-        <h2 class="rx__title">Match details</h2>
+        <h2 class="rx__title">{{ $t('regex.matchDetails') }}</h2>
         <ol class="rx__list">
           <li v-for="(m, i) in matches" :key="i">
             <span class="rx__badge">#{{ i + 1 }}</span>
             <code class="rx__mval">{{ m.match }}</code>
-            <span class="rx__at">at {{ m.index }}</span>
+            <span class="rx__at">{{ $t('regex.at') }} {{ m.index }}</span>
             <span v-if="m.groups.length" class="rx__groups">
-              groups: <code v-for="(g, gi) in m.groups" :key="gi">{{ g ?? '—' }}</code>
+              {{ $t('regex.groups') }}: <code v-for="(g, gi) in m.groups" :key="gi">{{ g ?? '—' }}</code>
             </span>
           </li>
         </ol>

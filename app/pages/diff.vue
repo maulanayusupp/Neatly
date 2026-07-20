@@ -25,17 +25,15 @@ const stats = computed(() => ({
 
 const hasDiff = computed(() => stats.value.add > 0 || stats.value.del > 0)
 
-const pageTitle = 'Text Diff Checker — Compare Two Texts Online Free · Neatly'
-const pageDescription
-  = 'Free online diff checker. Compare two texts or code snippets and see exactly which lines were added or removed, highlighted side by side. Private, instant, no sign-up.'
+const { t } = useI18n()
 
 useSeoMeta({
-  title: pageTitle,
-  description: pageDescription,
-  ogTitle: pageTitle,
-  ogDescription: pageDescription,
-  twitterTitle: pageTitle,
-  twitterDescription: pageDescription,
+  title: () => t('diff.metaTitle'),
+  description: () => t('diff.metaDesc'),
+  ogTitle: () => t('diff.metaTitle'),
+  ogDescription: () => t('diff.metaDesc'),
+  twitterTitle: () => t('diff.metaTitle'),
+  twitterDescription: () => t('diff.metaDesc'),
 })
 useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/diff' }] })
 </script>
@@ -44,27 +42,27 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/diff' }
   <div>
     <ToolHero
       icon="columns"
-      badge="Compare · line by line"
-      title="Text"
-      gradient="diff checker"
-      lead="Paste two versions of a text or code and instantly see which lines were added or removed."
+      :badge="$t('diff.badge')"
+      :title="$t('diff.titleA')"
+      :gradient="$t('diff.titleHl')"
+      :lead="$t('diff.lead')"
     />
 
     <section class="container tool-outlet diff">
       <div class="diff__inputs">
         <label class="diff__field">
-          <span class="diff__label">Original</span>
-          <textarea v-model="original" class="diff__area" placeholder="Paste the original text…" spellcheck="false" />
+          <span class="diff__label">{{ $t('diff.original') }}</span>
+          <textarea v-model="original" class="diff__area" :placeholder="$t('diff.originalPlaceholder')" spellcheck="false" />
         </label>
         <label class="diff__field">
-          <span class="diff__label">Changed</span>
-          <textarea v-model="changed" class="diff__area" placeholder="Paste the changed text…" spellcheck="false" />
+          <span class="diff__label">{{ $t('diff.changed') }}</span>
+          <textarea v-model="changed" class="diff__area" :placeholder="$t('diff.changedPlaceholder')" spellcheck="false" />
         </label>
       </div>
 
       <div class="tool-panel diff__result">
         <header class="diff__result-head">
-          <h2 class="diff__result-title"><BaseIcon name="columns" :size="16" /> Differences</h2>
+          <h2 class="diff__result-title"><BaseIcon name="columns" :size="16" /> {{ $t('diff.differences') }}</h2>
           <div v-if="lines.length" class="diff__stats">
             <span class="diff__stat diff__stat--add">+{{ stats.add }}</span>
             <span class="diff__stat diff__stat--del">−{{ stats.del }}</span>
@@ -78,10 +76,10 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/diff' }
           </div>
         </div>
         <div v-else-if="lines.length" class="diff__state">
-          <BaseIcon name="check" :size="26" /><p>The two texts are identical.</p>
+          <BaseIcon name="check" :size="26" /><p>{{ $t('diff.identical') }}</p>
         </div>
         <div v-else class="diff__state">
-          <BaseIcon name="columns" :size="28" /><p>Paste both texts to see the differences here.</p>
+          <BaseIcon name="columns" :size="28" /><p>{{ $t('diff.empty') }}</p>
         </div>
       </div>
     </section>
