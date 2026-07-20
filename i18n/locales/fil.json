@@ -78,7 +78,8 @@
     "input": "Input",
     "output": "Output",
     "from": "Mula sa",
-    "to": "Papunta sa"
+    "to": "Papunta sa",
+    "examples": "Mga halimbawa"
   },
   "convert": {
     "metaTitle": "JSON to YAML, CSV & XML Converter — Libreng Online Data Converter · Neatly",
@@ -499,7 +500,13 @@
       "hourly": "Oras-oras",
       "daily": "Araw-araw sa hatinggabi",
       "weekdays": "Weekdays 9am",
-      "monthly": "Buwan-buwan"
+      "monthly": "Buwan-buwan",
+      "every15": "Bawat 15 minuto",
+      "weekly": "Tuwing Linggo hatinggabi",
+      "noon": "Araw-araw tanghali",
+      "twiceDaily": "Dalawang beses sa isang araw",
+      "nightlyBackup": "Gabi-gabi ng 2am",
+      "quarterly": "Bawat quarter"
     },
     "fields": {
       "minute": "minuto",

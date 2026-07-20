@@ -14,6 +14,14 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/url-enc
 function convert(text: string, mode: 'forward' | 'backward') {
   return mode === 'forward' ? encodeURIComponent(text) : decodeURIComponent(text)
 }
+
+const examples: { label: string, mode: 'forward' | 'backward', value: string }[] = [
+  { label: 'Search URL', mode: 'forward', value: 'https://neatlyapp.vercel.app/search?q=hello world&lang=id' },
+  { label: 'Form data', mode: 'forward', value: 'name=John Doe&email=john@example.com&note=100% sure!' },
+  { label: 'Path with spaces', mode: 'forward', value: '/files/my report final.pdf' },
+  { label: 'Decode URL', mode: 'backward', value: 'https%3A%2F%2Fneatlyapp.vercel.app%2Fsearch%3Fq%3Dhello%20world%26lang%3Did' },
+  { label: 'Decode form data', mode: 'backward', value: 'name%3DJohn%20Doe%26email%3Djohn%40example.com' },
+]
 </script>
 
 <template>
@@ -31,8 +39,7 @@ function convert(text: string, mode: 'forward' | 'backward') {
           :forward-label="$t('urlEncode.encode')"
           :backward-label="$t('urlEncode.decode')"
           :placeholder="$t('urlEncode.placeholder')"
-          example="https://neatlyapp.vercel.app/search?q=hello world&lang=id"
-          backward-example="https%3A%2F%2Fneatlyapp.vercel.app%2Fsearch%3Fq%3Dhello%20world%26lang%3Did"
+          :examples="examples"
           :convert="convert"
         />
       </div>

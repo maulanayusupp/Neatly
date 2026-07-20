@@ -78,7 +78,8 @@
     "input": "Đầu vào",
     "output": "Đầu ra",
     "from": "Từ",
-    "to": "Sang"
+    "to": "Sang",
+    "examples": "Ví dụ"
   },
   "convert": {
     "metaTitle": "Chuyển đổi JSON sang YAML, CSV & XML — Công cụ chuyển đổi dữ liệu trực tuyến miễn phí · Neatly",
@@ -499,7 +500,13 @@
       "hourly": "Mỗi giờ",
       "daily": "Mỗi ngày lúc nửa đêm",
       "weekdays": "Ngày làm việc 9 giờ sáng",
-      "monthly": "Hàng tháng"
+      "monthly": "Hàng tháng",
+      "every15": "Mỗi 15 phút",
+      "weekly": "Mỗi Chủ nhật nửa đêm",
+      "noon": "Mỗi ngày lúc trưa",
+      "twiceDaily": "Hai lần một ngày",
+      "nightlyBackup": "Mỗi đêm lúc 2 giờ",
+      "quarterly": "Hàng quý"
     },
     "fields": {
       "minute": "phút",

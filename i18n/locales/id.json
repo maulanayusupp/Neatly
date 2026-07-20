@@ -78,7 +78,8 @@
     "input": "Masukan",
     "output": "Keluaran",
     "from": "Dari",
-    "to": "Ke"
+    "to": "Ke",
+    "examples": "Contoh"
   },
   "convert": {
     "metaTitle": "Konverter JSON ke YAML, CSV & XML — Konverter Data Online Gratis · Neatly",
@@ -499,7 +500,13 @@
       "hourly": "Setiap jam",
       "daily": "Setiap hari tengah malam",
       "weekdays": "Hari kerja jam 9 pagi",
-      "monthly": "Bulanan"
+      "monthly": "Bulanan",
+      "every15": "Setiap 15 menit",
+      "weekly": "Setiap Minggu tengah malam",
+      "noon": "Setiap hari siang",
+      "twiceDaily": "Dua kali sehari",
+      "nightlyBackup": "Tiap malam jam 2",
+      "quarterly": "Tiap kuartal"
     },
     "fields": {
       "minute": "menit",

@@ -78,7 +78,8 @@
     "input": "Input",
     "output": "Output",
     "from": "Daripada",
-    "to": "Kepada"
+    "to": "Kepada",
+    "examples": "Contoh"
   },
   "convert": {
     "metaTitle": "Penukar JSON ke YAML, CSV & XML — Penukar Data Dalam Talian Percuma · Neatly",
@@ -499,7 +500,13 @@
       "hourly": "Setiap jam",
       "daily": "Setiap hari tengah malam",
       "weekdays": "Hari bekerja jam 9 pagi",
-      "monthly": "Bulanan"
+      "monthly": "Bulanan",
+      "every15": "Setiap 15 minit",
+      "weekly": "Setiap Ahad tengah malam",
+      "noon": "Setiap hari tengah hari",
+      "twiceDaily": "Dua kali sehari",
+      "nightlyBackup": "Setiap malam jam 2",
+      "quarterly": "Setiap suku tahun"
     },
     "fields": {
       "minute": "minit",

@@ -7,10 +7,13 @@ const props = withDefaults(defineProps<{
   example?: string
   /** Sample for the backward (decode) direction — a valid encoded string. */
   backwardExample?: string
+  /** Real-world presets shown as clickable chips (overrides the single Example). */
+  examples?: { label: string, mode: 'forward' | 'backward', value: string }[]
   convert: (text: string, mode: 'forward' | 'backward') => string
 }>(), {
   example: '',
   backwardExample: '',
+  examples: () => [],
 })
 
 const { t } = useI18n()
@@ -58,6 +61,13 @@ function setMode(target: 'forward' | 'backward') {
   if (target !== mode.value) swap()
 }
 
+function loadPreset(index: number) {
+  const preset = props.examples[index]
+  if (!preset) return
+  mode.value = preset.mode
+  input.value = preset.value
+}
+
 // Load a sample that is valid for the current direction. In decode mode we
 // need an already-encoded sample, otherwise the example would fail to decode.
 function loadExample() {
@@ -91,7 +101,7 @@ function loadExample() {
         <BaseIcon name="refresh" :size="16" />
       </button>
       <BaseButton
-        v-if="example"
+        v-if="example && !examples.length"
         size="sm"
         variant="ghost"
         icon="sparkles"
@@ -101,6 +111,12 @@ function loadExample() {
         {{ $t('common.example') }}
       </BaseButton>
     </div>
+
+    <ExamplePresets
+      v-if="examples.length"
+      :items="examples.map(e => e.label)"
+      @select="loadPreset"
+    />
 
     <div class="conv__grid">
       <label class="conv__field">

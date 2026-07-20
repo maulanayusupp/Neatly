@@ -78,7 +78,8 @@
     "input": "Input",
     "output": "Output",
     "from": "From",
-    "to": "To"
+    "to": "To",
+    "examples": "Examples"
   },
   "convert": {
     "metaTitle": "JSON to YAML, CSV & XML Converter — Free Online Data Converter · Neatly",
@@ -499,7 +500,13 @@
       "hourly": "Hourly",
       "daily": "Every day at midnight",
       "weekdays": "Weekdays at 9am",
-      "monthly": "Monthly"
+      "monthly": "Monthly",
+      "every15": "Every 15 minutes",
+      "weekly": "Every Sunday midnight",
+      "noon": "Every day at noon",
+      "twiceDaily": "Twice a day",
+      "nightlyBackup": "Nightly at 2am",
+      "quarterly": "Quarterly"
     },
     "fields": {
       "minute": "minute",

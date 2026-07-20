@@ -16,6 +16,14 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/base64'
 function convert(text: string, mode: 'forward' | 'backward') {
   return mode === 'forward' ? base64Encode(text) : base64Decode(text)
 }
+
+const examples: { label: string, mode: 'forward' | 'backward', value: string }[] = [
+  { label: 'Text → Base64', mode: 'forward', value: 'Hello, Neatly! 👋' },
+  { label: 'Basic Auth', mode: 'forward', value: 'aladdin:opensesame' },
+  { label: 'JSON payload', mode: 'forward', value: '{"userId":42,"role":"admin"}' },
+  { label: 'Decode → text', mode: 'backward', value: 'TmVhdGx5IG1ha2VzIHlvdXIgY29kZSBuZWF0ISDwn5qAIERlY29kZSBtZSBiYWNrIHRvIHRleHQu' },
+  { label: 'Decode Basic Auth', mode: 'backward', value: 'YWxhZGRpbjpvcGVuc2VzYW1l' },
+]
 </script>
 
 <template>
@@ -33,8 +41,7 @@ function convert(text: string, mode: 'forward' | 'backward') {
           :forward-label="$t('base64.encode')"
           :backward-label="$t('base64.decode')"
           :placeholder="$t('base64.placeholder')"
-          example="Hello, Neatly! 👋 Encode me to Base64."
-          backward-example="TmVhdGx5IG1ha2VzIHlvdXIgY29kZSBuZWF0ISDwn5qAIERlY29kZSBtZSBiYWNrIHRvIHRleHQu"
+          :examples="examples"
           :convert="convert"
         />
       </div>
