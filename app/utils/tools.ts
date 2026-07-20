@@ -29,6 +29,15 @@ export const TOOL_GROUPS: ToolGroup[] = [
     tools: [
       { to: '/json-viewer', label: 'JSON Viewer', desc: 'Validate & explore JSON', icon: 'tree' },
       { to: '/compare', label: 'JSON Compare', desc: 'Diff 2–4 JSON files', icon: 'layers' },
+      { to: '/json-to-typescript', label: 'JSON → TypeScript', desc: 'Generate TS interfaces', icon: 'braces' },
+    ],
+  },
+  {
+    name: 'Text & web',
+    tools: [
+      { to: '/diff', label: 'Text Diff', desc: 'Compare two texts', icon: 'columns' },
+      { to: '/color', label: 'Color Converter', desc: 'HEX · RGB · HSL', icon: 'droplet' },
+      { to: '/regex', label: 'Regex Tester', desc: 'Test regular expressions', icon: 'regex' },
     ],
   },
   {

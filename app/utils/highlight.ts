@@ -1,5 +1,6 @@
 import hljs from 'highlight.js/lib/core'
 import javascript from 'highlight.js/lib/languages/javascript'
+import typescript from 'highlight.js/lib/languages/typescript'
 import css from 'highlight.js/lib/languages/css'
 import xml from 'highlight.js/lib/languages/xml'
 import json from 'highlight.js/lib/languages/json'
@@ -9,6 +10,7 @@ let registered = false
 function ensureRegistered() {
   if (registered) return
   hljs.registerLanguage('javascript', javascript)
+  hljs.registerLanguage('typescript', typescript)
   hljs.registerLanguage('css', css)
   hljs.registerLanguage('xml', xml)
   hljs.registerLanguage('json', json)
@@ -20,6 +22,7 @@ function ensureRegistered() {
 // Anything not listed (e.g. csv) falls back to plain escaped text.
 const GRAMMAR: Record<string, string> = {
   javascript: 'javascript',
+  typescript: 'typescript',
   css: 'css',
   html: 'xml',
   json: 'json',

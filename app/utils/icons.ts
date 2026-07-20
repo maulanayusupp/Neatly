@@ -86,6 +86,14 @@ export const ICONS = {
     '<path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 0 0-7.1 7.1l1.7 1.7L12 21l7.1-6.6 1.7-1.7a5 5 0 0 0 0-7.1z"/>',
   arrowRight:
     '<line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>',
+  columns:
+    '<rect x="3" y="4" width="7" height="16" rx="1"/><rect x="14" y="4" width="7" height="16" rx="1"/>',
+  droplet:
+    '<path d="M12 2.7 6.3 8.4a8 8 0 1 0 11.4 0z"/>',
+  braces:
+    '<path d="M8 3a2 2 0 0 0-2 2v3a2 2 0 0 1-2 2 2 2 0 0 1 2 2v3a2 2 0 0 0 2 2"/><path d="M16 3a2 2 0 0 1 2 2v3a2 2 0 0 0 2 2 2 2 0 0 0-2 2v3a2 2 0 0 1-2 2"/>',
+  regex:
+    '<line x1="12" y1="4" x2="12" y2="14"/><line x1="7.7" y1="6.5" x2="16.3" y2="11.5"/><line x1="16.3" y1="6.5" x2="7.7" y2="11.5"/><rect x="5" y="16" width="4" height="4" rx="1" fill="currentColor" stroke="none"/>',
 } as const
 
 export type IconName = keyof typeof ICONS
