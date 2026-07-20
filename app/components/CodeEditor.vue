@@ -15,18 +15,17 @@ const props = withDefaults(defineProps<{
   language: undefined,
 })
 
-const highlighted = computed(() =>
-  props.language
-    ? highlightCode(props.modelValue, props.language)
-    : escapeHtml(props.modelValue),
-)
-
 const emit = defineEmits<{
   'update:modelValue': [value: string]
   'file': [file: File]
 }>()
 
+// Above this length we skip tokenizing on every keystroke and just show the
+// escaped text (still visible — the textarea's own text is transparent).
+const MAX_HIGHLIGHT = 30000
+
 const gutter = ref<HTMLElement | null>(null)
+const layer = ref<HTMLElement | null>(null)
 const isDragging = ref(false)
 
 const lineNumbers = computed(() => {
@@ -34,14 +33,30 @@ const lineNumbers = computed(() => {
   return Array.from({ length: count }, (_, i) => i + 1)
 })
 
+const highlighted = computed(() => {
+  const code = props.modelValue
+  const body = props.language && code.length <= MAX_HIGHLIGHT
+    ? highlightCode(code, props.language)
+    : escapeHtml(code)
+  // Give a trailing newline real height so the layer matches the textarea.
+  return code.endsWith('\n') ? `${body} ` : body
+})
+
 function onInput(event: Event) {
   emit('update:modelValue', (event.target as HTMLTextAreaElement).value)
 }
 
-function syncScroll(event: Event) {
-  if (gutter.value) {
-    gutter.value.scrollTop = (event.target as HTMLElement).scrollTop
+function onInputScroll(event: Event) {
+  const el = event.target as HTMLElement
+  if (layer.value) {
+    layer.value.scrollTop = el.scrollTop
+    layer.value.scrollLeft = el.scrollLeft
   }
+  if (gutter.value) gutter.value.scrollTop = el.scrollTop
+}
+
+function onLayerScroll(event: Event) {
+  if (gutter.value) gutter.value.scrollTop = (event.target as HTMLElement).scrollTop
 }
 
 function onDrop(event: DragEvent) {
@@ -67,27 +82,32 @@ function onDragOver() {
       <span v-for="n in lineNumbers" :key="n" class="code-editor__line-no">{{ n }}</span>
     </div>
 
-    <textarea
-      v-if="!readonly"
-      class="code-editor__area"
-      :value="modelValue"
-      :placeholder="placeholder"
-      :aria-label="ariaLabel"
-      spellcheck="false"
-      autocomplete="off"
-      autocapitalize="off"
-      autocorrect="off"
-      wrap="off"
-      @input="onInput"
-      @scroll="syncScroll"
-    />
-    <pre
-      v-else
-      class="code-editor__area code-editor__area--readonly"
-      :aria-label="ariaLabel"
-      tabindex="0"
-      @scroll="syncScroll"
-    ><code class="hljs" v-html="highlighted" /></pre>
+    <div class="code-editor__content">
+      <pre
+        ref="layer"
+        class="code-editor__layer"
+        :class="{ 'is-readonly': readonly }"
+        :tabindex="readonly ? 0 : undefined"
+        :aria-label="readonly ? ariaLabel : undefined"
+        :aria-hidden="readonly ? undefined : 'true'"
+        @scroll="readonly && onLayerScroll($event)"
+      ><code class="hljs" v-html="highlighted" /></pre>
+
+      <textarea
+        v-if="!readonly"
+        class="code-editor__input"
+        :value="modelValue"
+        :placeholder="placeholder"
+        :aria-label="ariaLabel"
+        spellcheck="false"
+        autocomplete="off"
+        autocapitalize="off"
+        autocorrect="off"
+        wrap="off"
+        @input="onInput"
+        @scroll="onInputScroll"
+      />
+    </div>
 
     <div v-if="isDragging" class="code-editor__dropzone">
       <BaseIcon name="upload" :size="28" />
@@ -109,12 +129,24 @@ function onDragOver() {
   line-height: 1.6;
 }
 
-$editor-pad: spacing(3);
+// Shared text metrics — the highlight layer and the textarea MUST match
+// exactly so the transparent text lines up with the coloured tokens.
+%editor-text {
+  margin: 0;
+  padding: spacing(3) spacing(4);
+  font-family: $font-mono;
+  font-size: $text-sm;
+  line-height: 1.6;
+  tab-size: 2;
+  white-space: pre;
+  word-wrap: normal;
+  overflow-wrap: normal;
+}
 
 .code-editor__gutter {
   flex-shrink: 0;
   overflow: hidden;
-  padding: $editor-pad spacing(2);
+  padding: spacing(3) spacing(2);
   text-align: right;
   color: var(--color-text-subtle);
   background: var(--color-surface-2);
@@ -127,33 +159,59 @@ $editor-pad: spacing(3);
   }
 }
 
-.code-editor__area {
+.code-editor__content {
+  position: relative;
   flex: 1;
   min-width: 0;
-  margin: 0;
-  padding: $editor-pad spacing(4);
+  min-height: 0;
+}
+
+.code-editor__layer {
+  @extend %editor-text;
+
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  color: var(--color-text);
+  pointer-events: none;
+  user-select: none;
+
+  code {
+    font-family: inherit;
+  }
+
+  &.is-readonly {
+    overflow: auto;
+    pointer-events: auto;
+    user-select: text;
+    @include custom-scrollbar;
+  }
+}
+
+.code-editor__input {
+  @extend %editor-text;
+
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   border: 0;
   outline: none;
   resize: none;
-  color: var(--color-text);
-  background: transparent;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  tab-size: 2;
-  white-space: pre;
   overflow: auto;
-
+  background: transparent;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  caret-color: var(--color-text);
   @include custom-scrollbar;
 
   &::placeholder {
     color: var(--color-text-subtle);
+    -webkit-text-fill-color: var(--color-text-subtle);
   }
-}
 
-.code-editor__area--readonly {
-  code {
-    font-family: inherit;
+  &::selection {
+    background: var(--color-brand-soft);
   }
 }
 
@@ -173,9 +231,5 @@ $editor-pad: spacing(3);
   font-family: $font-sans;
   font-weight: 600;
   pointer-events: none;
-}
-
-.code-editor--dragging {
-  outline: none;
 }
 </style>

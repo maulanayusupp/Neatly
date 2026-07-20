@@ -2,7 +2,7 @@
 import { detectLanguageByFilename } from '#shared/utils/languages'
 
 const store = useTransform()
-const { input } = store
+const { input, effectiveLanguage } = store
 const toast = useToast()
 
 const fileInput = ref<HTMLInputElement | null>(null)
@@ -59,6 +59,7 @@ async function pasteFromClipboard() {
     <div class="panel__body">
       <CodeEditor
         v-model="input"
+        :language="effectiveLanguage"
         aria-label="Paste your code here"
         placeholder="Paste your code or drop a file here…"
         @file="loadFile"
