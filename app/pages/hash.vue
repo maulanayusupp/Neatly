@@ -6,6 +6,14 @@ const copiedAlgo = ref('')
 
 const ALGOS = ['SHA-1', 'SHA-256', 'SHA-384', 'SHA-512']
 
+const examples = [
+  { label: 'Pangram', value: 'The quick brown fox jumps over the lazy dog' },
+  { label: 'Passphrase', value: 'correct horse battery staple' },
+  { label: 'Password', value: 'Tr0ub4dor&3' },
+  { label: 'JSON', value: '{"email":"user@neatly.dev","plan":"pro"}' },
+  { label: 'Emoji', value: 'Neatly 🚀 ships fast' },
+]
+
 function toHex(buffer: ArrayBuffer) {
   return [...new Uint8Array(buffer)].map(b => b.toString(16).padStart(2, '0')).join('')
 }
@@ -60,11 +68,11 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/hash' }
           <span class="hash__label">{{ $t('hash.textToHash') }}</span>
           <textarea v-model="input" class="hash__input" placeholder="Type or paste text…" spellcheck="false" />
         </label>
-        <div class="hash__bar">
-          <BaseButton size="sm" variant="ghost" icon="sparkles" @click="input = 'The quick brown fox jumps over the lazy dog'">
-            {{ $t('common.example') }}
-          </BaseButton>
-        </div>
+        <ExamplePresets
+          class="hash__presets"
+          :items="examples.map(e => e.label)"
+          @select="i => input = examples[i].value"
+        />
       </div>
 
       <div v-if="results.length" class="hash__results">
@@ -116,10 +124,8 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/hash' }
   &:focus { outline: none; border-color: var(--color-primary); }
 }
 
-.hash__bar {
+.hash__presets {
   margin-top: spacing(3);
-  display: flex;
-  justify-content: flex-end;
 }
 
 .hash__results {

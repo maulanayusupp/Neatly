@@ -2,7 +2,11 @@
 import { decodeJwt } from '~/utils/encoding'
 import { highlightCode } from '~/utils/highlight'
 
-const SAMPLE = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik5lYXRseSIsImlhdCI6MTcwMDAwMDAwMCwiZXhwIjoyMDAwMDAwMDAwfQ.abc123'
+const examples = [
+  { label: 'Valid (HS256)', token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik5lYXRseSBVc2VyIiwiZW1haWwiOiJ1c2VyQG5lYXRseS5kZXYiLCJpYXQiOjE3MDAwMDAwMDAsImV4cCI6MjAwMDAwMDAwMH0.sig_HS256_demo' },
+  { label: 'Expired', token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0MiIsIm5hbWUiOiJPbGQgU2Vzc2lvbiIsImlhdCI6MTU5MDAwMDAwMCwiZXhwIjoxNjAwMDAwMDAwfQ.sig_HS256_demo' },
+  { label: 'With roles & scope', token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhdXRoMHxhYmMiLCJuYW1lIjoiQWRhIExvdmVsYWNlIiwicm9sZXMiOlsiYWRtaW4iLCJlZGl0b3IiXSwic2NvcGUiOiJyZWFkIHdyaXRlIiwiaWF0IjoxNzAwMDAwMDAwLCJleHAiOjIwMDAwMDAwMDB9.sig_HS256_demo' },
+]
 
 const token = ref('')
 
@@ -67,7 +71,11 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/jwt-dec
           <span class="jwt__label">{{ $t('jwt.token') }}</span>
           <textarea v-model="token" class="jwt__input" placeholder="Paste your token (eyJ…)…" spellcheck="false" />
         </label>
-        <button type="button" class="jwt__sample" @click="token = SAMPLE">{{ $t('jwt.sample') }}</button>
+        <ExamplePresets
+          class="jwt__presets"
+          :items="examples.map(e => e.label)"
+          @select="i => token = examples[i].token"
+        />
       </div>
 
       <div v-if="decoded && !decoded.error" class="jwt__grid">
@@ -130,12 +138,8 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/jwt-dec
   &:focus { outline: none; border-color: var(--color-primary); }
 }
 
-.jwt__sample {
-  @include button-reset;
+.jwt__presets {
   margin-top: spacing(3);
-  color: var(--color-primary);
-  font-size: $text-sm;
-  font-weight: 600;
 }
 
 .jwt__grid {

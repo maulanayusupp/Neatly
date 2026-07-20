@@ -5,6 +5,17 @@ const toast = useToast()
 const hex = ref('#6366f1')
 const copied = ref('')
 
+const examples = [
+  { label: 'Indigo', value: '#6366f1' },
+  { label: 'Red', value: '#ef4444' },
+  { label: 'Green', value: '#22c55e' },
+  { label: 'Amber', value: '#f59e0b' },
+  { label: 'Sky', value: '#0ea5e9' },
+  { label: 'Slate', value: '#64748b' },
+  { label: 'Black', value: '#000000' },
+  { label: 'White', value: '#ffffff' },
+]
+
 const rgb = computed(() => hexToRgb(hex.value))
 const formats = computed(() => {
   const c = rgb.value
@@ -77,6 +88,11 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/color' 
           </label>
           <input v-model="hex" class="color__hex" spellcheck="false" placeholder="#6366f1">
         </div>
+        <ExamplePresets
+          class="color__presets"
+          :items="examples.map(e => e.label)"
+          @select="i => hex = examples[i].value"
+        />
       </div>
 
       <div v-if="formats" class="color__grid">
@@ -124,6 +140,10 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/color' 
   flex-wrap: wrap;
   align-items: center;
   gap: spacing(5);
+}
+
+.color__presets {
+  flex-basis: 100%;
 }
 
 .color__preview {
