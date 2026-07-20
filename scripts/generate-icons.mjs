@@ -20,15 +20,16 @@ const targets = [
   ['public/apple-touch-icon.png', 180],
   ['public/icon-192.png', 192],
   ['public/icon-512.png', 512],
-  ['public/favicon-16.png', 16],
-  ['public/favicon-32.png', 32],
-  ['public/favicon-48.png', 48],
 ]
 
 for (const [file, size] of targets) {
   writeFileSync(resolve(root, file), render(svg, size))
   console.log(`✓ ${file} (${size}px)`)
 }
+
+// favicon.ico is rebuilt manually (rarely) with ImageMagick, e.g.:
+//   node -e "require('@resvg/resvg-js')" # (sizes rendered below to /tmp)
+//   magick /tmp/f16.png /tmp/f32.png /tmp/f48.png public/favicon.ico
 
 // Social preview image (WhatsApp/Twitter/OG need a raster, not SVG).
 const ogSvg = readFileSync(resolve(root, 'public/og-image.svg'))
