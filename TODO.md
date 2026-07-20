@@ -16,6 +16,19 @@ Deferred items to pick up later (not done yet).
 - [ ] Localize generated content: JSON Compare conclusions, landing page
       titles/FAQ, and the legal pages (terms/privacy/disclaimer) full text.
 
+## Tools — planned next (prioritised)
+- [ ] **JSON → Go / Python / Java / C# / Kotlin** — extend the JSON→TypeScript engine to more target languages.
+- [ ] **Mock / fake data generator** — names, emails, addresses, dates, UUIDs; output JSON/CSV/SQL insert, choose row count.
+- [x] **Text utilities** (`/text-tools`) — counts, sort/dedupe/reverse/trim lines, case, find & replace.
+- [ ] **CSS generators** — box-shadow, gradient, border-radius, cubic-bezier (visual, shareable).
+- [ ] **JWT builder / encoder** — sign HS256 client-side via Web Crypto (complements the decoder).
+- [ ] **HTML entity encode/decode** + **string escape** (JSON/JS) — fills the encoding gap.
+- [ ] **AES encrypt/decrypt** (Web Crypto, in-browser).
+- [ ] **HMAC / MD5** on the Hash page; **ULID / nanoid** on the UUID page.
+- [ ] **Recently used / Favorites** (localStorage) on home + command palette.
+- [ ] **Per-tool FAQ + JSON-LD** for rich results (SEO).
+- [ ] Per-page `og:url` + per-page OG images (SEO gaps found 2026-07-20).
+
 ## Tools (ideas / backlog)
 - [x] Password generator (`/password`).
 - [x] Markdown → HTML + preview (`/markdown`).

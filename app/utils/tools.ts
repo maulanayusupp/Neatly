@@ -42,6 +42,7 @@ export const TOOL_GROUPS: ToolGroup[] = [
     key: 'text',
     name: 'Text & web',
     tools: [
+      { to: '/text-tools', label: 'Text Utilities', desc: 'Count, sort, dedupe, case, replace', icon: 'file' },
       { to: '/diff', label: 'Text Diff', desc: 'Compare two texts', icon: 'columns' },
       { to: '/color', label: 'Color Converter', desc: 'HEX · RGB · HSL', icon: 'droplet' },
       { to: '/regex', label: 'Regex Tester', desc: 'Test regular expressions', icon: 'regex' },

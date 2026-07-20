@@ -13,6 +13,7 @@ export default defineEventHandler((event) => {
     'compare',
     'json-viewer',
     'json-to-typescript',
+    'text-tools',
     'diff',
     'color',
     'regex',
