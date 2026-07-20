@@ -7,7 +7,7 @@ const PORTFOLIO = 'https://maulanayusupp.github.io'
 const toast = useToast()
 const copied = ref(false)
 
-const mailtoHire = `mailto:${EMAIL}?subject=${encodeURIComponent('Project inquiry via Neatly')}`
+const mailtoMessage = `mailto:${EMAIL}?subject=${encodeURIComponent('Message via Neatly')}`
 const mailtoHello = `mailto:${EMAIL}?subject=${encodeURIComponent('Hello from Neatly')}`
 
 async function copyEmail() {
@@ -18,9 +18,9 @@ async function copyEmail() {
   }
 }
 
-const pageTitle = `Contact & Hire — ${NAME} · Neatly`
+const pageTitle = `Contact — ${NAME} · Neatly`
 const pageDescription
-  = `Get in touch with ${NAME}, the developer behind Neatly. Available for freelance projects and collaborations — say hello or start a project.`
+  = `Get in touch with ${NAME}, the developer behind Neatly. Questions, feedback or ideas are always welcome.`
 
 useSeoMeta({
   title: pageTitle,
@@ -46,7 +46,7 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/contact
         </p>
         <p class="contact__bio">
           I design and build fast, private, well-crafted web tools — like the ones
-          you're using here. If you have an idea, a project, or just want to say hi,
+          you're using here. If you have feedback, an idea, or just want to say hi,
           I'd love to hear from you.
         </p>
         <div class="contact__cta">
@@ -62,14 +62,14 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/contact
 
       <div class="contact__cards">
         <article class="contact__card">
-          <span class="contact__card-icon"><BaseIcon name="briefcase" :size="20" /></span>
-          <h2 class="contact__card-title">Hire me</h2>
+          <span class="contact__card-icon"><BaseIcon name="send" :size="20" /></span>
+          <h2 class="contact__card-title">Get in touch</h2>
           <p class="contact__card-text">
-            Open to freelance work, contract projects and collaborations —
-            web apps, developer tools, front-end and full-stack.
+            Questions, feedback, feature ideas or just a hello — drop me a message
+            any time.
           </p>
-          <a class="contact__card-link" :href="mailtoHire">
-            Start a project <BaseIcon name="arrowRight" :size="16" />
+          <a class="contact__card-link" :href="mailtoMessage">
+            Send a message <BaseIcon name="arrowRight" :size="16" />
           </a>
         </article>
 

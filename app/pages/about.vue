@@ -48,8 +48,7 @@ const principles: { icon: IconName, title: string, text: string }[] = [
           <h2 class="about__maker-title">Who makes Neatly?</h2>
           <p class="about__maker-text">
             Neatly is designed and built by <strong>Maulana</strong>, a developer who
-            enjoys making fast, well-crafted web tools. Have feedback, a feature idea,
-            or a project in mind?
+            enjoys making fast, well-crafted web tools. Have feedback or a feature idea?
           </p>
         </div>
         <NuxtLink to="/contact" class="about__maker-cta">
