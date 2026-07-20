@@ -54,6 +54,9 @@
   --syntax-attr: #0550ae;
   --syntax-fn: #8250df;
   --syntax-punct: #57606a;
+
+  --color-active-line: rgba(99, 102, 241, 0.06);
+  --color-active-gutter: #4f46e5;
 }
 
 :root[data-theme='dark'] {
@@ -101,4 +104,7 @@
   --syntax-attr: #d2a8ff;
   --syntax-fn: #d2a8ff;
   --syntax-punct: #8b949e;
+
+  --color-active-line: rgba(129, 140, 248, 0.1);
+  --color-active-gutter: #a5b4fc;
 }

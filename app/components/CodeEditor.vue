@@ -26,7 +26,16 @@ const MAX_HIGHLIGHT = 30000
 
 const gutter = ref<HTMLElement | null>(null)
 const layer = ref<HTMLElement | null>(null)
+const content = ref<HTMLElement | null>(null)
+const inputEl = ref<HTMLTextAreaElement | null>(null)
+
 const isDragging = ref(false)
+const isFocused = ref(false)
+const activeLine = ref(0)
+
+// Measured metrics used to place the active-line band (px).
+let lineHeightPx = 0
+let padTopPx = 0
 
 const lineNumbers = computed(() => {
   const count = Math.max(1, props.modelValue.split('\n').length)
@@ -42,8 +51,37 @@ const highlighted = computed(() => {
   return code.endsWith('\n') ? `${body} ` : body
 })
 
+function measure() {
+  const el = layer.value
+  if (!el) return
+  const cs = getComputedStyle(el)
+  const lh = Number.parseFloat(cs.lineHeight)
+  const pt = Number.parseFloat(cs.paddingTop)
+  if (lh) lineHeightPx = lh
+  if (!Number.isNaN(pt)) padTopPx = pt
+  content.value?.style.setProperty('--active-line-height', `${lineHeightPx}px`)
+  applyActiveLine()
+}
+
+function applyActiveLine() {
+  if (!content.value || !lineHeightPx) return
+  content.value.style.setProperty(
+    '--active-line-top',
+    `${padTopPx + activeLine.value * lineHeightPx}px`,
+  )
+}
+
+function updateActiveLine() {
+  const ta = inputEl.value
+  if (!ta) return
+  const before = ta.value.slice(0, ta.selectionStart)
+  activeLine.value = before.split('\n').length - 1
+  applyActiveLine()
+}
+
 function onInput(event: Event) {
   emit('update:modelValue', (event.target as HTMLTextAreaElement).value)
+  updateActiveLine()
 }
 
 function onInputScroll(event: Event) {
@@ -53,10 +91,17 @@ function onInputScroll(event: Event) {
     layer.value.scrollLeft = el.scrollLeft
   }
   if (gutter.value) gutter.value.scrollTop = el.scrollTop
+  content.value?.style.setProperty('--active-line-scroll', `${el.scrollTop}px`)
 }
 
 function onLayerScroll(event: Event) {
   if (gutter.value) gutter.value.scrollTop = (event.target as HTMLElement).scrollTop
+}
+
+function onFocus() {
+  isFocused.value = true
+  if (!lineHeightPx) measure()
+  updateActiveLine()
 }
 
 function onDrop(event: DragEvent) {
@@ -68,21 +113,32 @@ function onDrop(event: DragEvent) {
 function onDragOver() {
   if (!props.readonly) isDragging.value = true
 }
+
+onMounted(() => {
+  if (!props.readonly) measure()
+})
 </script>
 
 <template>
   <div
     class="code-editor"
-    :class="{ 'code-editor--dragging': isDragging }"
+    :class="{ 'code-editor--dragging': isDragging, 'is-focused': isFocused }"
     @dragover.prevent="onDragOver"
     @dragleave.prevent="isDragging = false"
     @drop.prevent="onDrop"
   >
     <div ref="gutter" class="code-editor__gutter" aria-hidden="true">
-      <span v-for="n in lineNumbers" :key="n" class="code-editor__line-no">{{ n }}</span>
+      <span
+        v-for="n in lineNumbers"
+        :key="n"
+        class="code-editor__line-no"
+        :class="{ 'is-active': !readonly && isFocused && n - 1 === activeLine }"
+      >{{ n }}</span>
     </div>
 
-    <div class="code-editor__content">
+    <div ref="content" class="code-editor__content">
+      <span v-if="!readonly" class="code-editor__active-line" aria-hidden="true" />
+
       <pre
         ref="layer"
         class="code-editor__layer"
@@ -95,6 +151,7 @@ function onDragOver() {
 
       <textarea
         v-if="!readonly"
+        ref="inputEl"
         class="code-editor__input"
         :value="modelValue"
         :placeholder="placeholder"
@@ -106,6 +163,11 @@ function onDragOver() {
         wrap="off"
         @input="onInput"
         @scroll="onInputScroll"
+        @focus="onFocus"
+        @blur="isFocused = false"
+        @click="updateActiveLine"
+        @keyup="updateActiveLine"
+        @select="updateActiveLine"
       />
     </div>
 
@@ -156,6 +218,12 @@ function onDragOver() {
   .code-editor__line-no {
     display: block;
     min-width: 1.75rem;
+    transition: color $transition-fast;
+
+    &.is-active {
+      color: var(--color-active-gutter);
+      font-weight: 700;
+    }
   }
 }
 
@@ -164,6 +232,23 @@ function onDragOver() {
   flex: 1;
   min-width: 0;
   min-height: 0;
+  overflow: hidden;
+}
+
+.code-editor__active-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(var(--active-line-top, 0px) - var(--active-line-scroll, 0px));
+  height: var(--active-line-height, 1.6em);
+  background: var(--color-active-line);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity $transition-fast;
+}
+
+.code-editor.is-focused .code-editor__active-line {
+  opacity: 1;
 }
 
 .code-editor__layer {
@@ -175,6 +260,7 @@ function onDragOver() {
   color: var(--color-text);
   pointer-events: none;
   user-select: none;
+  background: transparent;
 
   code {
     font-family: inherit;
