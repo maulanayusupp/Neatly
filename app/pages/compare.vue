@@ -1,0 +1,169 @@
+<script setup lang="ts">
+const store = useJsonCompare()
+const { sources, report, status, errors, canAdd, canRemove } = store
+
+useSeoMeta({
+  title: 'JSON Compare — Diff 2, 3 or 4 JSON files · Neatly',
+  description:
+    'Compare multiple JSON objects side by side. Neatly finds exactly which fields differ, in which JSON, and gives you a plain-language conclusion — free and instant.',
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: 'https://neatly.tools/compare' }],
+})
+</script>
+
+<template>
+  <div class="compare">
+    <section class="hero">
+      <div class="container hero__inner">
+        <span class="hero__badge">
+          <BaseIcon name="layers" :size="15" />
+          Compare 2–4 JSON inputs
+        </span>
+        <h1 class="hero__title">
+          Spot every <span class="text-gradient">JSON difference</span>
+        </h1>
+        <p class="hero__lead">
+          Paste two or more JSON objects and Neatly shows exactly which fields differ,
+          in which input, plus a clear conclusion. Add up to four at once.
+        </p>
+      </div>
+    </section>
+
+    <section class="container compare__body">
+      <div class="compare__toolbar">
+        <div class="compare__toolbar-left">
+          <BaseButton icon="layers" :disabled="!canAdd" @click="store.addSource">
+            Add JSON
+          </BaseButton>
+          <span class="compare__count">{{ sources.length }} / 4</span>
+        </div>
+        <div class="compare__toolbar-right">
+          <BaseButton variant="ghost" icon="sparkles" @click="store.loadExample">
+            Load example
+          </BaseButton>
+          <BaseButton variant="ghost" icon="trash" @click="store.clearAll">
+            Clear
+          </BaseButton>
+          <BaseButton variant="primary" size="lg" icon="minify" @click="store.run">
+            Compare
+          </BaseButton>
+        </div>
+      </div>
+
+      <div class="compare__grid" :class="`compare__grid--${sources.length}`">
+        <CompareCard
+          v-for="(source, index) in sources"
+          :key="source.id"
+          :id="source.id"
+          :label="compareLabel(index)"
+          :text="source.text"
+          :error="errors[source.id]"
+          :removable="canRemove"
+          @update="text => store.setText(source.id, text)"
+          @remove="store.removeSource(source.id)"
+        />
+      </div>
+
+      <p v-if="status === 'error'" class="compare__error">
+        <BaseIcon name="alert" :size="16" />
+        Please fix the highlighted JSON input(s) before comparing.
+      </p>
+
+      <CompareResult v-if="report && status === 'success'" :report="report" class="compare__result" />
+    </section>
+  </div>
+</template>
+
+<style scoped lang="scss">
+.hero {
+  padding-block: spacing(12) spacing(6);
+  text-align: center;
+}
+
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: spacing(2);
+  padding: spacing(1.5) spacing(3.5);
+  border-radius: $radius-pill;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  font-size: $text-xs;
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
+}
+
+.hero__title {
+  margin-top: spacing(5);
+  font-size: $text-4xl;
+  letter-spacing: -0.035em;
+}
+
+.hero__lead {
+  margin: spacing(4) auto 0;
+  max-width: 58ch;
+  color: var(--color-text-muted);
+  font-size: $text-lg;
+}
+
+.compare__body {
+  padding-bottom: spacing(12);
+  display: flex;
+  flex-direction: column;
+  gap: spacing(5);
+}
+
+.compare__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: spacing(3);
+  padding: spacing(4);
+  @include card;
+}
+
+.compare__toolbar-left,
+.compare__toolbar-right {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: spacing(2);
+}
+
+.compare__count {
+  font-size: $text-sm;
+  font-weight: 700;
+  color: var(--color-text-subtle);
+  font-variant-numeric: tabular-nums;
+}
+
+.compare__grid {
+  display: grid;
+  gap: spacing(4);
+  grid-template-columns: 1fr;
+
+  @include respond('md') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.compare__error {
+  display: inline-flex;
+  align-items: center;
+  gap: spacing(2);
+  padding: spacing(3) spacing(4);
+  border-radius: $radius-md;
+  background: var(--color-danger-soft);
+  color: var(--color-danger);
+  font-size: $text-sm;
+  font-weight: 600;
+}
+
+.compare__result {
+  margin-top: spacing(2);
+}
+</style>

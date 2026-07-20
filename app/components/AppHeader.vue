@@ -9,6 +9,17 @@ const repoUrl = 'https://github.com'
         <NeatlyLogo :size="34" />
       </NuxtLink>
 
+      <nav class="app-nav" aria-label="Tools">
+        <NuxtLink to="/" class="app-nav__link">
+          <BaseIcon name="code" :size="16" />
+          <span>Beautify &amp; Minify</span>
+        </NuxtLink>
+        <NuxtLink to="/compare" class="app-nav__link">
+          <BaseIcon name="layers" :size="16" />
+          <span>JSON Compare</span>
+        </NuxtLink>
+      </nav>
+
       <nav class="app-header__actions" aria-label="Primary">
         <a
           class="app-header__link"
@@ -41,6 +52,39 @@ const repoUrl = 'https://github.com'
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.app-nav {
+  display: none;
+  align-items: center;
+  gap: spacing(1);
+  margin-inline: auto;
+
+  @include respond('md') {
+    display: flex;
+  }
+}
+
+.app-nav__link {
+  display: inline-flex;
+  align-items: center;
+  gap: spacing(2);
+  padding: spacing(2) spacing(3);
+  border-radius: $radius-md;
+  color: var(--color-text-muted);
+  font-size: $text-sm;
+  font-weight: 600;
+  transition: color $transition-fast, background-color $transition-fast;
+
+  &:hover {
+    color: var(--color-text);
+    background: var(--color-surface-2);
+  }
+
+  &.router-link-exact-active {
+    color: var(--color-primary);
+    background: var(--color-brand-soft);
+  }
 }
 
 .app-header__actions {
