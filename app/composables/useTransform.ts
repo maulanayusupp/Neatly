@@ -7,7 +7,15 @@ import type {
   TransformStats,
 } from '#shared/types'
 import { detectLanguage } from '#shared/utils/detect'
-import { DEFAULT_LANGUAGE } from '#shared/utils/languages'
+import { DEFAULT_LANGUAGE, isLanguageId } from '#shared/utils/languages'
+
+/** Serialisable editor state used for shareable links. */
+export interface ShareState {
+  v: 1
+  m: TransformMode
+  l: LanguageId | 'auto'
+  c: string
+}
 
 type Status = 'idle' | 'loading' | 'success' | 'error'
 
@@ -62,6 +70,25 @@ export function useTransform() {
     status.value = 'idle'
     errorMessage.value = ''
     errorLocation.value = null
+  }
+
+  /** Snapshot the shareable state. */
+  function getShareState(): ShareState {
+    return {
+      v: 1,
+      m: mode.value,
+      l: autoDetect.value ? 'auto' : language.value,
+      c: input.value,
+    }
+  }
+
+  /** Restore state from a shared link. */
+  function applyShareState(state: Partial<ShareState> | null) {
+    if (!state) return
+    if (state.m === 'beautify' || state.m === 'minify') mode.value = state.m
+    if (state.l === 'auto') autoDetect.value = true
+    else if (typeof state.l === 'string' && isLanguageId(state.l)) selectLanguage(state.l)
+    if (typeof state.c === 'string') input.value = state.c
   }
 
   async function run() {
@@ -127,6 +154,8 @@ export function useTransform() {
     setMode,
     clear,
     run,
+    getShareState,
+    applyShareState,
   }
 }
 

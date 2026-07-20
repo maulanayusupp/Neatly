@@ -29,6 +29,24 @@ function applyIndent(option: { size: number, tabs: boolean }) {
 }
 
 const runLabel = computed(() => (mode.value === 'minify' ? 'Minify' : 'Beautify'))
+
+const toast = useToast()
+
+async function share() {
+  if (!hasInput.value) {
+    toast.error('Add some code before sharing.')
+    return
+  }
+  const url = await buildShareUrl(store.getShareState())
+  if (!url) {
+    toast.error('Input is too large to share as a link.')
+    return
+  }
+  if (await copyText(url)) {
+    window.history.replaceState(null, '', url)
+    toast.success('Share link copied to clipboard')
+  }
+}
 </script>
 
 <template>
@@ -58,6 +76,10 @@ const runLabel = computed(() => (mode.value === 'minify' ? 'Minify' : 'Beautify'
           {{ option.label }}
         </button>
       </div>
+
+      <BaseButton variant="secondary" icon="share" :disabled="!hasInput" @click="share">
+        Share
+      </BaseButton>
 
       <BaseButton
         variant="primary"

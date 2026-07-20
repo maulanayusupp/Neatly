@@ -1,5 +1,15 @@
 <script setup lang="ts">
+import type { ShareState } from '~/composables/useTransform'
+
 const { public: { siteUrl, siteName } } = useRuntimeConfig()
+
+const store = useTransform()
+
+// Restore editor state from a shared link (#s=…) on first load.
+onMounted(async () => {
+  const shared = await readShareUrl<ShareState>()
+  if (shared) store.applyShareState(shared)
+})
 
 useSeoMeta({
   title: 'Neatly — Beautify & Minify Code Instantly',
