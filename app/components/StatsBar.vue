@@ -31,6 +31,11 @@ const deltaLabel = computed(() => {
       <span class="stats__value">{{ formatBytes(stats.outputBytes) }}</span>
     </div>
 
+    <div class="stats__item">
+      <span class="stats__label">Gzipped</span>
+      <span class="stats__value">{{ formatBytes(stats.gzipBytes) }}</span>
+    </div>
+
     <div class="stats__bar" aria-hidden="true">
       <span class="stats__bar-fill" :style="{ inlineSize: `${Math.min(ratio, 1) * 100}%` }" />
     </div>

@@ -2,8 +2,13 @@
 import { detectLanguageByFilename } from '#shared/utils/languages'
 
 const store = useTransform()
-const { input, effectiveLanguage } = store
+const { input, effectiveLanguage, errorLocation } = store
 const toast = useToast()
+
+// A fresh edit invalidates any previous syntax-error marker.
+watch(input, () => {
+  if (errorLocation.value) errorLocation.value = null
+})
 
 const fileInput = ref<HTMLInputElement | null>(null)
 
@@ -60,6 +65,7 @@ async function pasteFromClipboard() {
       <CodeEditor
         v-model="input"
         :language="effectiveLanguage"
+        :error-line="errorLocation?.line"
         aria-label="Paste your code here"
         placeholder="Paste your code or drop a file here…"
         @file="loadFile"

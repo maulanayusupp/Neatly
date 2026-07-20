@@ -2,7 +2,7 @@
 import type { LanguageId } from '#shared/types'
 
 const store = useTransform()
-const { output, status, errorMessage, effectiveLanguage, mode } = store
+const { output, status, errorMessage, errorLocation, effectiveLanguage, mode } = store
 const toast = useToast()
 
 const copied = ref(false)
@@ -72,6 +72,9 @@ function downloadOutput() {
         <BaseIcon name="alert" :size="26" />
         <p class="panel__state-title">Couldn’t transform your code</p>
         <p class="panel__state-text">{{ errorMessage }}</p>
+        <span v-if="errorLocation" class="panel__state-loc">
+          Line {{ errorLocation.line }} · Column {{ errorLocation.column }} — jumped to it in the editor
+        </span>
       </div>
 
       <div v-else-if="status === 'loading'" class="panel__state">
@@ -182,7 +185,18 @@ function downloadOutput() {
 .panel__state-text {
   font-family: $font-sans;
   font-size: $text-sm;
-  max-width: 32ch;
+  max-width: 40ch;
+}
+
+.panel__state-loc {
+  margin-top: spacing(1);
+  padding: spacing(1) spacing(3);
+  border-radius: $radius-pill;
+  background: var(--color-danger-soft);
+  color: var(--color-danger);
+  font-family: $font-mono;
+  font-size: $text-xs;
+  font-weight: 600;
 }
 
 .panel__footer {

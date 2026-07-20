@@ -8,11 +8,14 @@ const props = withDefaults(defineProps<{
   placeholder?: string
   ariaLabel?: string
   language?: LanguageId
+  /** 1-based line to flag as an error and scroll to. */
+  errorLine?: number
 }>(), {
   readonly: false,
   placeholder: '',
   ariaLabel: 'Code editor',
   language: undefined,
+  errorLine: undefined,
 })
 
 const emit = defineEmits<{
@@ -114,6 +117,41 @@ function onDragOver() {
   if (!props.readonly) isDragging.value = true
 }
 
+function nthLineStart(text: string, line: number): number {
+  let idx = 0
+  for (let i = 1; i < line; i++) {
+    const next = text.indexOf('\n', idx)
+    if (next === -1) return idx
+    idx = next + 1
+  }
+  return idx
+}
+
+function jumpToLine(line: number) {
+  if (props.readonly) return
+  if (!lineHeightPx) measure()
+  content.value?.style.setProperty('--error-line-top', `${padTopPx + (line - 1) * lineHeightPx}px`)
+
+  const ta = inputEl.value
+  if (!ta) return
+  const pos = nthLineStart(ta.value, line)
+  ta.focus()
+  ta.setSelectionRange(pos, pos)
+  ta.scrollTop = Math.max(0, (line - 1) * lineHeightPx - ta.clientHeight / 2)
+
+  if (layer.value) {
+    layer.value.scrollTop = ta.scrollTop
+    layer.value.scrollLeft = ta.scrollLeft
+  }
+  if (gutter.value) gutter.value.scrollTop = ta.scrollTop
+  content.value?.style.setProperty('--active-line-scroll', `${ta.scrollTop}px`)
+  updateActiveLine()
+}
+
+watch(() => props.errorLine, (line) => {
+  if (line && !props.readonly) nextTick(() => jumpToLine(line))
+})
+
 onMounted(() => {
   if (!props.readonly) measure()
 })
@@ -138,6 +176,7 @@ onMounted(() => {
 
     <div ref="content" class="code-editor__content">
       <span v-if="!readonly" class="code-editor__active-line" aria-hidden="true" />
+      <span v-if="!readonly && errorLine" class="code-editor__error-line" aria-hidden="true" />
 
       <pre
         ref="layer"
@@ -249,6 +288,17 @@ onMounted(() => {
 
 .code-editor.is-focused .code-editor__active-line {
   opacity: 1;
+}
+
+.code-editor__error-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(var(--error-line-top, 0px) - var(--active-line-scroll, 0px));
+  height: var(--active-line-height, 1.6em);
+  background: var(--color-danger-soft);
+  box-shadow: inset 3px 0 0 var(--color-danger);
+  pointer-events: none;
 }
 
 .code-editor__layer {

@@ -37,7 +37,11 @@ export default defineEventHandler(async (event) => {
   }
   catch (error) {
     if (error instanceof TransformError) {
-      throw createError({ statusCode: error.statusCode, statusMessage: error.message })
+      throw createError({
+        statusCode: error.statusCode,
+        statusMessage: error.message,
+        data: error.location ? { location: error.location } : undefined,
+      })
     }
     throw createError({ statusCode: 500, statusMessage: 'Unexpected error while transforming code.' })
   }

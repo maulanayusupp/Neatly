@@ -2,8 +2,8 @@ import { minify as terserMinify } from 'terser'
 import CleanCSS from 'clean-css'
 import { minify as htmlMinify } from 'html-minifier-terser'
 import { minify as xmlMinify } from 'minify-xml'
-import type { LanguageId } from '#shared/types'
-import { TransformError, toErrorMessage } from '../utils/errors'
+import type { ErrorLocation, LanguageId } from '#shared/types'
+import { TransformError, jsonErrorLocation, toErrorMessage } from '../utils/errors'
 
 /**
  * Minify (compress) a snippet for the given language.
@@ -35,8 +35,21 @@ async function minifyJs(code: string): Promise<string> {
   catch (error) {
     throw new TransformError(
       `Could not minify JavaScript: ${toErrorMessage(error, 'invalid syntax')}`,
+      422,
+      terserErrorLocation(error),
     )
   }
+}
+
+/** Terser attaches 1-based `line`/`col` to its parse errors. */
+function terserErrorLocation(error: unknown): ErrorLocation | undefined {
+  if (error && typeof error === 'object') {
+    const e = error as { line?: number, col?: number }
+    if (typeof e.line === 'number') {
+      return { line: e.line, column: typeof e.col === 'number' ? e.col + 1 : 1 }
+    }
+  }
+  return undefined
 }
 
 function minifyCss(code: string): string {
@@ -74,6 +87,8 @@ function minifyJson(code: string): string {
   catch (error) {
     throw new TransformError(
       `Invalid JSON: ${toErrorMessage(error, 'could not parse input')}`,
+      422,
+      jsonErrorLocation(code, error),
     )
   }
 }

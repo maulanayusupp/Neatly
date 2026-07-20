@@ -1,3 +1,4 @@
+import { gzipSync } from 'node:zlib'
 import type {
   TransformOptions,
   TransformRequest,
@@ -35,6 +36,7 @@ function computeStats(input: string, output: string): TransformStats {
     savedPercent: inputBytes === 0 ? 0 : (savedBytes / inputBytes) * 100,
     inputLines: countLines(input),
     outputLines: countLines(output),
+    gzipBytes: output ? gzipSync(Buffer.from(output, 'utf8')).length : 0,
   }
 }
 

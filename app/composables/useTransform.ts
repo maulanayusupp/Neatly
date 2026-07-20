@@ -1,4 +1,5 @@
 import type {
+  ErrorLocation,
   LanguageId,
   TransformMode,
   TransformRequest,
@@ -27,6 +28,7 @@ export function useTransform() {
   const indentWithTabs = useState<boolean>('nt:tabs', () => false)
   const status = useState<Status>('nt:status', () => 'idle')
   const errorMessage = useState<string>('nt:error', () => '')
+  const errorLocation = useState<ErrorLocation | null>('nt:errorLoc', () => null)
   const stats = useState<TransformStats | null>('nt:stats', () => null)
 
   /** Language actually used for transforming (respects auto-detect). */
@@ -59,6 +61,7 @@ export function useTransform() {
     stats.value = null
     status.value = 'idle'
     errorMessage.value = ''
+    errorLocation.value = null
   }
 
   async function run() {
@@ -70,6 +73,7 @@ export function useTransform() {
 
     status.value = 'loading'
     errorMessage.value = ''
+    errorLocation.value = null
 
     const payload: TransformRequest = {
       code: input.value,
@@ -95,6 +99,7 @@ export function useTransform() {
       stats.value = null
       status.value = 'error'
       errorMessage.value = extractErrorMessage(error)
+      errorLocation.value = extractErrorLocation(error)
     }
   }
 
@@ -109,6 +114,7 @@ export function useTransform() {
     indentWithTabs,
     status,
     errorMessage,
+    errorLocation,
     stats,
     // derived
     effectiveLanguage,
@@ -122,6 +128,16 @@ export function useTransform() {
     clear,
     run,
   }
+}
+
+function extractErrorLocation(error: unknown): ErrorLocation | null {
+  if (error && typeof error === 'object') {
+    const loc = (error as { data?: { location?: ErrorLocation } }).data?.location
+    if (loc && typeof loc.line === 'number' && typeof loc.column === 'number') {
+      return loc
+    }
+  }
+  return null
 }
 
 function extractErrorMessage(error: unknown): string {

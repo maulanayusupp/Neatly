@@ -1,6 +1,6 @@
 import jsBeautify from 'js-beautify'
 import type { LanguageId, TransformOptions } from '#shared/types'
-import { TransformError, toErrorMessage } from '../utils/errors'
+import { TransformError, jsonErrorLocation, toErrorMessage } from '../utils/errors'
 
 const { js: beautifyJs, css: beautifyCss, html: beautifyHtml } = jsBeautify
 
@@ -62,6 +62,8 @@ function beautifyJson(code: string, options: TransformOptions): string {
   catch (error) {
     throw new TransformError(
       `Invalid JSON: ${toErrorMessage(error, 'could not parse input')}`,
+      422,
+      jsonErrorLocation(code, error),
     )
   }
   const indent = options.indentWithTabs ? '\t' : options.indentSize

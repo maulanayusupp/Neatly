@@ -35,6 +35,14 @@ export interface TransformStats {
   savedPercent: number
   inputLines: number
   outputLines: number
+  /** Gzipped size of the output, in bytes. */
+  gzipBytes: number
+}
+
+/** 1-based location of a syntax error within the input. */
+export interface ErrorLocation {
+  line: number
+  column: number
 }
 
 /** Successful transform response. */
