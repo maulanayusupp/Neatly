@@ -3,7 +3,7 @@ import javascript from 'highlight.js/lib/languages/javascript'
 import css from 'highlight.js/lib/languages/css'
 import xml from 'highlight.js/lib/languages/xml'
 import json from 'highlight.js/lib/languages/json'
-import type { LanguageId } from '#shared/types'
+import yaml from 'highlight.js/lib/languages/yaml'
 
 let registered = false
 function ensureRegistered() {
@@ -12,16 +12,19 @@ function ensureRegistered() {
   hljs.registerLanguage('css', css)
   hljs.registerLanguage('xml', xml)
   hljs.registerLanguage('json', json)
+  hljs.registerLanguage('yaml', yaml)
   registered = true
 }
 
-// Neatly language ids -> highlight.js grammar names.
-const GRAMMAR: Record<LanguageId, string> = {
+// Editor language / format ids -> highlight.js grammar names.
+// Anything not listed (e.g. csv) falls back to plain escaped text.
+const GRAMMAR: Record<string, string> = {
   javascript: 'javascript',
   css: 'css',
   html: 'xml',
   json: 'json',
   xml: 'xml',
+  yaml: 'yaml',
 }
 
 /** Escape raw text for safe injection when highlighting is unavailable. */
@@ -37,10 +40,12 @@ export function escapeHtml(value: string): string {
  * Deterministic, so it produces identical output on the server and client and
  * causes no hydration mismatch. Falls back to escaped text on any error.
  */
-export function highlightCode(code: string, language: LanguageId): string {
+export function highlightCode(code: string, language: string): string {
+  const grammar = GRAMMAR[language]
+  if (!grammar) return escapeHtml(code)
   ensureRegistered()
   try {
-    return hljs.highlight(code, { language: GRAMMAR[language], ignoreIllegal: true }).value
+    return hljs.highlight(code, { language: grammar, ignoreIllegal: true }).value
   }
   catch {
     return escapeHtml(code)

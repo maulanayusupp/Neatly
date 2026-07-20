@@ -14,6 +14,10 @@ const repoUrl = 'https://maulanayusupp.github.io'
           <BaseIcon name="code" :size="16" />
           <span>Beautify &amp; Minify</span>
         </NuxtLink>
+        <NuxtLink to="/convert" class="app-nav__link">
+          <BaseIcon name="beautify" :size="16" />
+          <span>Convert</span>
+        </NuxtLink>
         <NuxtLink to="/compare" class="app-nav__link">
           <BaseIcon name="layers" :size="16" />
           <span>JSON Compare</span>

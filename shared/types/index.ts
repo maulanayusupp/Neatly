@@ -45,6 +45,23 @@ export interface ErrorLocation {
   column: number
 }
 
+/** Data formats supported by the converter. */
+export type ConvertFormat = 'json' | 'yaml' | 'csv' | 'xml'
+
+export interface ConvertRequest {
+  code: string
+  from: ConvertFormat
+  to: ConvertFormat
+  options?: { indentSize?: number }
+}
+
+export interface ConvertResult {
+  output: string
+  from: ConvertFormat
+  to: ConvertFormat
+  outputBytes: number
+}
+
 /** Successful transform response. */
 export interface TransformResult {
   output: string

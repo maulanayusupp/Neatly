@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import type { LanguageId } from '#shared/types'
 import { escapeHtml, highlightCode } from '~/utils/highlight'
 
 const props = withDefaults(defineProps<{
@@ -7,7 +6,8 @@ const props = withDefaults(defineProps<{
   readonly?: boolean
   placeholder?: string
   ariaLabel?: string
-  language?: LanguageId
+  /** highlight.js grammar / format id (e.g. 'json', 'yaml'); undefined = plain. */
+  language?: string
   /** 1-based line to flag as an error and scroll to. */
   errorLine?: number
 }>(), {
