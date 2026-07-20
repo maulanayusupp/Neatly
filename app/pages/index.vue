@@ -64,6 +64,7 @@ useHead({
     </section>
 
     <FeatureSection />
+    <PopularTools />
   </div>
 </template>
 
