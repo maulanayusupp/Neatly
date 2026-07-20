@@ -538,5 +538,8 @@
     "valid": "YAML hợp lệ",
     "invalid": "YAML không hợp lệ",
     "empty": "Dán YAML để xác thực và định dạng."
+  },
+  "converter": {
+    "invalidInput": "Đây có vẻ không phải là dữ liệu hợp lệ để {mode}. Hãy kiểm tra lại và thử lần nữa."
   }
 }

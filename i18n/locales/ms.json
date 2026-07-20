@@ -538,5 +538,8 @@
     "valid": "YAML Sah",
     "invalid": "YAML Tidak Sah",
     "empty": "Tampal YAML untuk mengesah dan mengemaskannya."
+  },
+  "converter": {
+    "invalidInput": "Ini nampaknya bukan input yang sah untuk {mode}. Semak semula dan cuba lagi."
   }
 }

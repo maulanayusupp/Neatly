@@ -538,5 +538,8 @@
     "valid": "Valid YAML",
     "invalid": "Invalid YAML",
     "empty": "Paste YAML to validate and format it."
+  },
+  "converter": {
+    "invalidInput": "This doesn't look like valid input for {mode}. Check it and try again."
   }
 }

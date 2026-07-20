@@ -13,6 +13,7 @@ const props = withDefaults(defineProps<{
   backwardExample: '',
 })
 
+const { t } = useI18n()
 const toast = useToast()
 const input = ref('')
 const mode = ref<'forward' | 'backward'>('forward')
@@ -24,7 +25,12 @@ const output = computed(() => {
     return { text: props.convert(input.value, mode.value), error: '' }
   }
   catch (error) {
-    return { text: '', error: (error as Error).message || 'Could not convert the input.' }
+    const raw = (error as Error).message || ''
+    // Low-level decode failures (atob / decodeURIComponent) are cryptic — show
+    // a clear, direction-aware message instead.
+    const cryptic = /atob|latin1|uri|malformed|invalid/i.test(raw)
+    const label = mode.value === 'backward' ? props.backwardLabel : props.forwardLabel
+    return { text: '', error: cryptic ? t('converter.invalidInput', { mode: label }) : raw }
   }
 })
 
@@ -37,8 +43,19 @@ async function copy() {
 }
 
 function swap() {
+  // Capture the current result BEFORE flipping mode — once mode changes the
+  // `output` computed re-runs in the new direction (and may error on the old
+  // input), so reading it afterwards would lose the value we want to carry.
+  const carried = output.value.text
   mode.value = mode.value === 'forward' ? 'backward' : 'forward'
-  if (output.value.text) input.value = output.value.text
+  if (carried) input.value = carried
+}
+
+// Switching direction carries the current result into the input, so e.g.
+// encoding then hitting "Decode" round-trips your output instead of trying
+// to decode the original plaintext (which would just error).
+function setMode(target: 'forward' | 'backward') {
+  if (target !== mode.value) swap()
 }
 
 // Load a sample that is valid for the current direction. In decode mode we
@@ -62,13 +79,13 @@ function loadExample() {
         type="button"
         class="conv__mode"
         :class="{ 'is-active': mode === 'forward' }"
-        @click="mode = 'forward'"
+        @click="setMode('forward')"
       >{{ forwardLabel }}</button>
       <button
         type="button"
         class="conv__mode"
         :class="{ 'is-active': mode === 'backward' }"
-        @click="mode = 'backward'"
+        @click="setMode('backward')"
       >{{ backwardLabel }}</button>
       <button type="button" class="conv__swap" aria-label="Swap" @click="swap">
         <BaseIcon name="refresh" :size="16" />

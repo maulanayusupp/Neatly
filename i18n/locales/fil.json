@@ -538,5 +538,8 @@
     "valid": "Valid na YAML",
     "invalid": "Hindi Valid na YAML",
     "empty": "Mag-paste ng YAML para i-validate at ayusin ito."
+  },
+  "converter": {
+    "invalidInput": "Mukhang hindi ito valid na input para sa {mode}. Suriin ito at subukang muli."
   }
 }

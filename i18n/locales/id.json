@@ -538,5 +538,8 @@
     "valid": "YAML Valid",
     "invalid": "YAML Tidak Valid",
     "empty": "Tempel YAML untuk memvalidasi dan merapikannya."
+  },
+  "converter": {
+    "invalidInput": "Ini sepertinya bukan input yang valid untuk {mode}. Periksa lagi lalu coba lagi."
   }
 }
