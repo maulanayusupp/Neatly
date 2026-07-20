@@ -57,5 +57,20 @@
     "lead": "Chuyển đổi dữ liệu giữa JSON, YAML, CSV và XML chỉ với một cú nhấp. Dán, chọn định dạng và sao chép kết quả.",
     "placeholder": "Dán dữ liệu của bạn hoặc thả tệp vào đây…",
     "outputEmpty": "Kết quả chuyển đổi sẽ xuất hiện ở đây."
+  },
+  "compare": {
+    "metaTitle": "JSON Diff & So sánh — So sánh 2, 3 hoặc 4 tệp JSON trực tuyến · Neatly",
+    "metaDesc": "Công cụ so sánh JSON trực tuyến miễn phí. So sánh 2–4 tệp JSON cạnh nhau, xem chính xác trường nào khác nhau ở tệp nào, và nhận kết luận bằng ngôn ngữ dễ hiểu — tức thì và riêng tư.",
+    "badge": "So sánh 2–4 đầu vào JSON",
+    "titleA": "Phát hiện mọi", "titleHl": "khác biệt JSON",
+    "lead": "Dán hai hoặc nhiều đối tượng JSON và Neatly cho biết chính xác trường nào khác nhau, ở đầu vào nào, kèm kết luận rõ ràng. Thêm tối đa bốn cùng lúc.",
+    "addJson": "Thêm JSON", "loadExample": "Tải ví dụ", "run": "So sánh",
+    "fixError": "Vui lòng sửa các đầu vào JSON được đánh dấu trước khi so sánh.",
+    "jsonN": "JSON {n}", "invalid": "Không hợp lệ",
+    "cardPlaceholder": "Dán JSON vào đây hoặc thả tệp .json…",
+    "conclusion": "Kết luận", "inputs": "Đầu vào", "fields": "Trường đã so sánh",
+    "differences": "Khác biệt", "oddOne": "Khác biệt nhất", "differs": "Khác",
+    "missing": "Thiếu", "field": "Trường",
+    "identical": "Tất cả đầu vào giống nhau. Không có khác biệt để hiển thị."
   }
 }

@@ -2,17 +2,15 @@
 const store = useJsonCompare()
 const { sources, report, status, errors, canAdd, canRemove } = store
 
-const pageTitle = 'JSON Diff & Compare — Compare 2, 3 or 4 JSON Files Online · Neatly'
-const pageDescription
-  = 'Free online JSON diff tool. Compare 2–4 JSON files side by side, see exactly which field differs in which file, and get a plain-language conclusion — instantly and privately.'
+const { t } = useI18n()
 
 useSeoMeta({
-  title: pageTitle,
-  description: pageDescription,
-  ogTitle: pageTitle,
-  ogDescription: pageDescription,
-  twitterTitle: pageTitle,
-  twitterDescription: pageDescription,
+  title: () => t('compare.metaTitle'),
+  description: () => t('compare.metaDesc'),
+  ogTitle: () => t('compare.metaTitle'),
+  ogDescription: () => t('compare.metaDesc'),
+  twitterTitle: () => t('compare.metaTitle'),
+  twitterDescription: () => t('compare.metaDesc'),
 })
 
 useHead({
@@ -26,15 +24,12 @@ useHead({
       <div class="container hero__inner">
         <span class="hero__badge">
           <BaseIcon name="layers" :size="15" />
-          Compare 2–4 JSON inputs
+          {{ $t('compare.badge') }}
         </span>
         <h1 class="hero__title">
-          Spot every <span class="text-gradient">JSON difference</span>
+          {{ $t('compare.titleA') }} <span class="text-gradient">{{ $t('compare.titleHl') }}</span>
         </h1>
-        <p class="hero__lead">
-          Paste two or more JSON objects and Neatly shows exactly which fields differ,
-          in which input, plus a clear conclusion. Add up to four at once.
-        </p>
+        <p class="hero__lead">{{ $t('compare.lead') }}</p>
       </div>
     </section>
 
@@ -42,19 +37,19 @@ useHead({
       <div class="compare__toolbar">
         <div class="compare__toolbar-left">
           <BaseButton icon="layers" :disabled="!canAdd" @click="store.addSource">
-            Add JSON
+            {{ $t('compare.addJson') }}
           </BaseButton>
           <span class="compare__count">{{ sources.length }} / 4</span>
         </div>
         <div class="compare__toolbar-right">
           <BaseButton variant="ghost" icon="sparkles" @click="store.loadExample">
-            Load example
+            {{ $t('compare.loadExample') }}
           </BaseButton>
           <BaseButton variant="ghost" icon="trash" @click="store.clearAll">
-            Clear
+            {{ $t('common.clear') }}
           </BaseButton>
           <BaseButton variant="primary" size="lg" icon="minify" @click="store.run">
-            Compare
+            {{ $t('compare.run') }}
           </BaseButton>
         </div>
       </div>
@@ -75,7 +70,7 @@ useHead({
 
       <p v-if="status === 'error'" class="compare__error">
         <BaseIcon name="alert" :size="16" />
-        Please fix the highlighted JSON input(s) before comparing.
+        {{ $t('compare.fixError') }}
       </p>
 
       <CompareResult v-if="report && status === 'success'" :report="report" class="compare__result" />

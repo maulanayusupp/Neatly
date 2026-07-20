@@ -57,5 +57,20 @@
     "lead": "Ubah data antara JSON, YAML, CSV dan XML dengan satu klik. Tampal, pilih format anda, dan salin hasilnya.",
     "placeholder": "Tampal data anda atau lepaskan fail di sini…",
     "outputEmpty": "Hasil penukaran akan muncul di sini."
+  },
+  "compare": {
+    "metaTitle": "JSON Diff & Banding — Bandingkan 2, 3 atau 4 Fail JSON Dalam Talian · Neatly",
+    "metaDesc": "Alat diff JSON dalam talian percuma. Bandingkan 2–4 fail JSON bersebelahan, lihat dengan tepat medan mana yang berbeza dalam fail mana, dan dapatkan kesimpulan bahasa mudah — serta-merta dan peribadi.",
+    "badge": "Bandingkan 2–4 input JSON",
+    "titleA": "Kesan setiap", "titleHl": "perbezaan JSON",
+    "lead": "Tampal dua atau lebih objek JSON dan Neatly menunjukkan dengan tepat medan mana yang berbeza, dalam input mana, serta kesimpulan yang jelas. Tambah sehingga empat sekaligus.",
+    "addJson": "Tambah JSON", "loadExample": "Muat contoh", "run": "Bandingkan",
+    "fixError": "Sila betulkan input JSON yang ditanda sebelum membandingkan.",
+    "jsonN": "JSON {n}", "invalid": "Tidak sah",
+    "cardPlaceholder": "Tampal JSON di sini atau lepaskan fail .json…",
+    "conclusion": "Kesimpulan", "inputs": "Input", "fields": "Medan dibandingkan",
+    "differences": "Perbezaan", "oddOne": "Paling berbeza", "differs": "Berbeza",
+    "missing": "Hilang", "field": "Medan",
+    "identical": "Semua input sama. Tiada perbezaan untuk dipaparkan."
   }
 }

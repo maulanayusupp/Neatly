@@ -35,10 +35,10 @@ async function loadFile(file: File) {
 <template>
   <section class="compare-card" :class="{ 'has-error': error }">
     <header class="compare-card__header">
-      <span class="compare-card__label">JSON {{ label }}</span>
+      <span class="compare-card__label">{{ $t('compare.jsonN', { n: label }) }}</span>
       <div class="compare-card__actions">
         <span v-if="error" class="compare-card__badge is-error">
-          <BaseIcon name="alert" :size="13" /> Invalid
+          <BaseIcon name="alert" :size="13" /> {{ $t('compare.invalid') }}
         </span>
         <button
           v-if="removable"
@@ -57,7 +57,7 @@ async function loadFile(file: File) {
         v-model="model"
         language="json"
         :aria-label="`JSON ${label} input`"
-        placeholder="Paste JSON here or drop a .json file…"
+        :placeholder="$t('compare.cardPlaceholder')"
         @file="loadFile"
       />
     </div>

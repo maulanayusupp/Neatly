@@ -57,5 +57,20 @@
     "lead": "Transform data between JSON, YAML, CSV and XML in one click. Paste, pick your formats, and copy the result.",
     "placeholder": "Paste your data or drop a file here…",
     "outputEmpty": "Converted output will appear here."
+  },
+  "compare": {
+    "metaTitle": "JSON Diff & Compare — Compare 2, 3 or 4 JSON Files Online · Neatly",
+    "metaDesc": "Free online JSON diff tool. Compare 2–4 JSON files side by side, see exactly which field differs in which file, and get a plain-language conclusion — instantly and privately.",
+    "badge": "Compare 2–4 JSON inputs",
+    "titleA": "Spot every", "titleHl": "JSON difference",
+    "lead": "Paste two or more JSON objects and Neatly shows exactly which fields differ, in which input, plus a clear conclusion. Add up to four at once.",
+    "addJson": "Add JSON", "loadExample": "Load example", "run": "Compare",
+    "fixError": "Please fix the highlighted JSON input(s) before comparing.",
+    "jsonN": "JSON {n}", "invalid": "Invalid",
+    "cardPlaceholder": "Paste JSON here or drop a .json file…",
+    "conclusion": "Conclusion", "inputs": "Inputs", "fields": "Fields compared",
+    "differences": "Differences", "oddOne": "Odd one out", "differs": "Differs",
+    "missing": "Missing", "field": "Field",
+    "identical": "All inputs match. There are no differences to show."
   }
 }

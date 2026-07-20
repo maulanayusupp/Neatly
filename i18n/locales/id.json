@@ -57,5 +57,20 @@
     "lead": "Ubah data antara JSON, YAML, CSV, dan XML dalam satu klik. Tempel, pilih format, dan salin hasilnya.",
     "placeholder": "Tempel data Anda atau jatuhkan berkas di sini…",
     "outputEmpty": "Hasil konversi akan muncul di sini."
+  },
+  "compare": {
+    "metaTitle": "JSON Diff & Bandingkan — Bandingkan 2, 3 atau 4 Berkas JSON Online · Neatly",
+    "metaDesc": "Alat diff JSON online gratis. Bandingkan 2–4 berkas JSON berdampingan, lihat persis field mana yang berbeda di berkas mana, dan dapatkan kesimpulan bahasa sederhana — seketika dan privat.",
+    "badge": "Bandingkan 2–4 masukan JSON",
+    "titleA": "Temukan setiap", "titleHl": "perbedaan JSON",
+    "lead": "Tempel dua atau lebih objek JSON dan Neatly menunjukkan persis field mana yang berbeda, di masukan mana, plus kesimpulan yang jelas. Tambah hingga empat sekaligus.",
+    "addJson": "Tambah JSON", "loadExample": "Muat contoh", "run": "Bandingkan",
+    "fixError": "Perbaiki masukan JSON yang ditandai sebelum membandingkan.",
+    "jsonN": "JSON {n}", "invalid": "Tidak valid",
+    "cardPlaceholder": "Tempel JSON di sini atau jatuhkan berkas .json…",
+    "conclusion": "Kesimpulan", "inputs": "Masukan", "fields": "Field dibandingkan",
+    "differences": "Perbedaan", "oddOne": "Paling berbeda", "differs": "Berbeda",
+    "missing": "Hilang", "field": "Field",
+    "identical": "Semua masukan sama. Tidak ada perbedaan untuk ditampilkan."
   }
 }

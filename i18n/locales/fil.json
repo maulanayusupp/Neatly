@@ -57,5 +57,20 @@
     "lead": "Baguhin ang data sa pagitan ng JSON, YAML, CSV at XML sa isang click. I-paste, piliin ang format, at kopyahin ang resulta.",
     "placeholder": "I-paste ang iyong data o i-drop ang file dito…",
     "outputEmpty": "Lalabas dito ang na-convert na output."
+  },
+  "compare": {
+    "metaTitle": "JSON Diff & Compare — Ihambing ang 2, 3 o 4 na JSON File Online · Neatly",
+    "metaDesc": "Libreng online JSON diff tool. Ihambing ang 2–4 na JSON file nang magkatabi, tingnan kung aling field ang naiiba sa aling file, at makakuha ng malinaw na konklusyon — agad at pribado.",
+    "badge": "Ihambing ang 2–4 na JSON input",
+    "titleA": "Tuklasin ang bawat", "titleHl": "pagkakaiba ng JSON",
+    "lead": "I-paste ang dalawa o higit pang JSON object at ipapakita ng Neatly kung aling field ang naiiba, sa aling input, kasama ang malinaw na konklusyon. Magdagdag ng hanggang apat nang sabay.",
+    "addJson": "Magdagdag ng JSON", "loadExample": "Mag-load ng halimbawa", "run": "Ihambing",
+    "fixError": "Pakiayos ang naka-highlight na JSON input bago ihambing.",
+    "jsonN": "JSON {n}", "invalid": "Hindi valid",
+    "cardPlaceholder": "I-paste ang JSON dito o i-drop ang .json file…",
+    "conclusion": "Konklusyon", "inputs": "Mga input", "fields": "Mga field na inihambing",
+    "differences": "Mga pagkakaiba", "oddOne": "Pinakanaiiba", "differs": "Naiiba",
+    "missing": "Nawawala", "field": "Field",
+    "identical": "Magkatugma ang lahat ng input. Walang pagkakaibang ipapakita."
   }
 }

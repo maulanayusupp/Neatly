@@ -2,11 +2,12 @@
 import type { CompareReport, DiffCell, DiffRow } from '#shared/utils/json-compare'
 
 const props = defineProps<{ report: CompareReport }>()
+const { t } = useI18n()
 
 const summary = computed(() => [
-  { label: 'Inputs', value: props.report.labels.length },
-  { label: 'Fields compared', value: props.report.totalPaths },
-  { label: 'Differences', value: props.report.diffCount },
+  { key: 'inputs', label: t('compare.inputs'), value: props.report.labels.length },
+  { key: 'fields', label: t('compare.fields'), value: props.report.totalPaths },
+  { key: 'differences', label: t('compare.differences'), value: props.report.diffCount },
 ])
 
 const conclusionIcon = (tone: string) =>
@@ -29,7 +30,7 @@ const valueClass = (cell: DiffCell) => `val--${cell.type}`
     <div class="result__conclusion">
       <h2 class="result__heading">
         <BaseIcon name="layers" :size="18" />
-        Conclusion
+        {{ $t('compare.conclusion') }}
       </h2>
       <ul class="result__list" role="list">
         <li
@@ -44,7 +45,7 @@ const valueClass = (cell: DiffCell) => `val--${cell.type}`
       </ul>
 
       <div class="result__summary">
-        <div v-for="stat in summary" :key="stat.label" class="result__stat">
+        <div v-for="stat in summary" :key="stat.key" class="result__stat">
           <span class="result__stat-value">{{ stat.value }}</span>
           <span class="result__stat-label">{{ stat.label }}</span>
         </div>
@@ -54,22 +55,22 @@ const valueClass = (cell: DiffCell) => `val--${cell.type}`
     <!-- Identical -->
     <div v-if="report.identical" class="result__identical">
       <BaseIcon name="check" :size="30" />
-      <p>All inputs match. There are no differences to show.</p>
+      <p>{{ $t('compare.identical') }}</p>
     </div>
 
     <!-- Diff table -->
     <div v-else class="result__table-wrap">
       <div class="result__legend" aria-hidden="true">
-        <span class="legend legend--outlier">Odd one out</span>
-        <span class="legend legend--diff">Differs</span>
-        <span class="legend legend--missing">Missing</span>
+        <span class="legend legend--outlier">{{ $t('compare.oddOne') }}</span>
+        <span class="legend legend--diff">{{ $t('compare.differs') }}</span>
+        <span class="legend legend--missing">{{ $t('compare.missing') }}</span>
       </div>
 
       <div class="result__scroll">
         <table class="difftable">
           <thead>
             <tr>
-              <th class="difftable__field">Field</th>
+              <th class="difftable__field">{{ $t('compare.field') }}</th>
               <th v-for="label in report.labels" :key="label" scope="col">JSON {{ label }}</th>
             </tr>
           </thead>
