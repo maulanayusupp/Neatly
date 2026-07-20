@@ -9,6 +9,7 @@ export default defineEventHandler((event) => {
     'tools',
     'convert',
     'sql',
+    'yaml',
     'compare',
     'json-viewer',
     'json-to-typescript',

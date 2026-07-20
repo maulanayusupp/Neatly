@@ -523,5 +523,20 @@
     "encoded": "Terenkode",
     "empty": "Tambahkan gambar untuk mendapatkan data URI Base64-nya.",
     "notImage": "Silakan pilih berkas gambar."
+  },
+  "yamlTool": {
+    "metaTitle": "Validator & Format YAML — Alat Online Gratis | Neatly",
+    "metaDesc": "Validasi YAML online dan lihat baris kesalahan yang tepat, lalu rapikan atau salin sebagai JSON. Cepat, privat, berjalan sepenuhnya di browser Anda.",
+    "badge": "Validator YAML",
+    "titleHl": "Validasi & rapikan",
+    "titleB": "YAML Anda",
+    "lead": "Temukan kesalahan indentasi dan sintaks dengan baris kesalahan yang tepat, lalu rapikan konfigurasi atau ubah ke JSON — semua di browser Anda.",
+    "format": "Rapikan",
+    "copyYaml": "Salin YAML",
+    "copyJson": "Salin sebagai JSON",
+    "formatted": "YAML Rapi",
+    "valid": "YAML Valid",
+    "invalid": "YAML Tidak Valid",
+    "empty": "Tempel YAML untuk memvalidasi dan merapikannya."
   }
 }

@@ -26,7 +26,7 @@ Deferred items to pick up later (not done yet).
 - [ ] Image tools: compress, favicon generator
 - [x] Case / slug converter (`/case`).
 - [x] Lorem ipsum generator (`/lorem`).
-- [ ] YAML validator
+- [x] YAML validator (`/yaml`).
 
 ## Compliance
 - [x] Terms, Privacy, Disclaimer pages.

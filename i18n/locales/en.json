@@ -523,5 +523,20 @@
     "encoded": "Encoded",
     "empty": "Add an image to get its Base64 data URI.",
     "notImage": "Please choose an image file."
+  },
+  "yamlTool": {
+    "metaTitle": "YAML Validator & Formatter — Free Online Tool | Neatly",
+    "metaDesc": "Validate YAML online and see the exact error line, then pretty-print it or copy it as JSON. Fast, private, runs entirely in your browser.",
+    "badge": "YAML validator",
+    "titleHl": "Validate & format",
+    "titleB": "your YAML",
+    "lead": "Catch indentation and syntax mistakes with a precise error line, then clean up your config or convert it to JSON — all in your browser.",
+    "format": "Format",
+    "copyYaml": "Copy YAML",
+    "copyJson": "Copy as JSON",
+    "formatted": "Formatted YAML",
+    "valid": "Valid YAML",
+    "invalid": "Invalid YAML",
+    "empty": "Paste YAML to validate and format it."
   }
 }

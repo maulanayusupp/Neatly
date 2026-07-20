@@ -26,6 +26,7 @@ export const TOOL_GROUPS: ToolGroup[] = [
       { to: '/', label: 'Beautify & Minify', desc: 'Format or compress code', icon: 'code' },
       { to: '/convert', label: 'Convert', desc: 'JSON · YAML · CSV · XML', icon: 'beautify' },
       { to: '/sql', label: 'SQL Formatter', desc: 'Beautify SQL queries', icon: 'code' },
+      { to: '/yaml', label: 'YAML Validator', desc: 'Validate & format YAML', icon: 'check' },
     ],
   },
   {

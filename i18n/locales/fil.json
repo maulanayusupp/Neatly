@@ -523,5 +523,20 @@
     "encoded": "Naka-encode",
     "empty": "Magdagdag ng larawan para makuha ang Base64 data URI nito.",
     "notImage": "Pumili ng image file."
+  },
+  "yamlTool": {
+    "metaTitle": "YAML Validator at Formatter — Libreng Online na Tool | Neatly",
+    "metaDesc": "I-validate ang YAML online at tingnan ang eksaktong linya ng error, pagkatapos ay linisin ito o kopyahin bilang JSON. Mabilis, pribado, tumatakbo nang buo sa iyong browser.",
+    "badge": "YAML validator",
+    "titleHl": "I-validate at ayusin",
+    "titleB": "ang iyong YAML",
+    "lead": "Hanapin ang mga mali sa indentation at syntax gamit ang tumpak na linya ng error, pagkatapos ay linisin ang config o i-convert ito sa JSON — lahat sa iyong browser.",
+    "format": "Ayusin",
+    "copyYaml": "Kopyahin ang YAML",
+    "copyJson": "Kopyahin bilang JSON",
+    "formatted": "Nakaayos na YAML",
+    "valid": "Valid na YAML",
+    "invalid": "Hindi Valid na YAML",
+    "empty": "Mag-paste ng YAML para i-validate at ayusin ito."
   }
 }

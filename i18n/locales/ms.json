@@ -523,5 +523,20 @@
     "encoded": "Terenkod",
     "empty": "Tambah imej untuk mendapatkan data URI Base64-nya.",
     "notImage": "Sila pilih fail imej."
+  },
+  "yamlTool": {
+    "metaTitle": "Pengesah & Pemformat YAML — Alat Dalam Talian Percuma | Neatly",
+    "metaDesc": "Sahkan YAML dalam talian dan lihat baris ralat yang tepat, kemudian kemaskan atau salin sebagai JSON. Pantas, peribadi, berjalan sepenuhnya dalam pelayar anda.",
+    "badge": "Pengesah YAML",
+    "titleHl": "Sahkan & kemaskan",
+    "titleB": "YAML anda",
+    "lead": "Kesan ralat indentasi dan sintaks dengan baris ralat yang tepat, kemudian kemaskan konfigurasi atau tukar ke JSON — semuanya dalam pelayar anda.",
+    "format": "Kemaskan",
+    "copyYaml": "Salin YAML",
+    "copyJson": "Salin sebagai JSON",
+    "formatted": "YAML Kemas",
+    "valid": "YAML Sah",
+    "invalid": "YAML Tidak Sah",
+    "empty": "Tampal YAML untuk mengesah dan mengemaskannya."
   }
 }

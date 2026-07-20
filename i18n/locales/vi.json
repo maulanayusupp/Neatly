@@ -523,5 +523,20 @@
     "encoded": "Đã mã hoá",
     "empty": "Thêm ảnh để lấy data URI Base64 của nó.",
     "notImage": "Vui lòng chọn tệp ảnh."
+  },
+  "yamlTool": {
+    "metaTitle": "Trình xác thực & định dạng YAML — Công cụ trực tuyến miễn phí | Neatly",
+    "metaDesc": "Xác thực YAML trực tuyến và xem chính xác dòng lỗi, sau đó định dạng lại hoặc sao chép dưới dạng JSON. Nhanh, riêng tư, chạy hoàn toàn trong trình duyệt của bạn.",
+    "badge": "Trình xác thực YAML",
+    "titleHl": "Xác thực & định dạng",
+    "titleB": "YAML của bạn",
+    "lead": "Phát hiện lỗi thụt lề và cú pháp với dòng lỗi chính xác, sau đó dọn dẹp cấu hình hoặc chuyển sang JSON — tất cả trong trình duyệt của bạn.",
+    "format": "Định dạng",
+    "copyYaml": "Sao chép YAML",
+    "copyJson": "Sao chép dưới dạng JSON",
+    "formatted": "YAML đã định dạng",
+    "valid": "YAML hợp lệ",
+    "invalid": "YAML không hợp lệ",
+    "empty": "Dán YAML để xác thực và định dạng."
   }
 }
