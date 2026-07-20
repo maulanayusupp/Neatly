@@ -16,6 +16,7 @@ Repo: `github.com/maulanayusupp/Neatly` (branch `main`, SSH remote `origin`).
 | `/convert`         | Convert between JSON, YAML, CSV, XML. |
 | `/compare`         | Diff 2–4 JSON inputs, outlier detection + conclusion. |
 | `/scan`            | **Client-only** QR + barcode scanner (camera / upload / paste) via `@zxing/browser`. No backend. |
+| `/qr-generator`    | **Client-only** QR + barcode generator (`qrcode`, `jsbarcode`); URL/text/Wi-Fi/email/phone/vCard, PNG+SVG export. |
 | `/minify-<lang>`, `/beautify-<lang>` | 10 generated SEO landing pages (`[slug].vue` + `shared/utils/landing.ts`). |
 | `/terms`, `/privacy`, `/disclaimer`  | Legal pages (`LegalArticle.vue`). |
 | `/sitemap.xml`     | Generated in `server/routes/sitemap.xml.ts`. |

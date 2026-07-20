@@ -9,6 +9,7 @@ export default defineEventHandler((event) => {
     'convert',
     'compare',
     'scan',
+    'qr-generator',
     'terms',
     'privacy',
     'disclaimer',

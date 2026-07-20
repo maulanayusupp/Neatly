@@ -34,6 +34,7 @@ export const TOOL_GROUPS: ToolGroup[] = [
     name: 'QR & codes',
     tools: [
       { to: '/scan', label: 'QR Scanner', desc: 'Read QR & barcodes', icon: 'qr' },
+      { to: '/qr-generator', label: 'QR Generator', desc: 'Create QR & barcodes', icon: 'grid' },
     ],
   },
 ]
