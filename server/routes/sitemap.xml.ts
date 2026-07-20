@@ -26,6 +26,7 @@ export default defineEventHandler((event) => {
     'timestamp',
     'password',
     'number-base',
+    'image-to-base64',
     'lorem',
     'markdown',
     'cron',

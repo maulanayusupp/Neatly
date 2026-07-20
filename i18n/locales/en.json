@@ -508,5 +508,20 @@
       "month": "month",
       "dow": "day (week)"
     }
+  },
+  "imgB64": {
+    "metaTitle": "Image to Base64 — Convert Images to Data URI Online · Neatly",
+    "metaDesc": "Free online image to Base64 / data URI converter. Drop or paste an image and copy it as a data URI, CSS background, HTML img or Markdown. Private, in your browser, no upload.",
+    "badge": "Data URI · CSS · HTML · Markdown",
+    "titleA": "Image to",
+    "titleHl": "Base64",
+    "lead": "Turn any image into a Base64 data URI you can embed directly in CSS, HTML or Markdown — all in your browser, nothing uploaded.",
+    "dropClick": "Click to choose",
+    "dropHint": "or drop / paste an image",
+    "outputFormat": "Output format",
+    "original": "Original",
+    "encoded": "Encoded",
+    "empty": "Add an image to get its Base64 data URI.",
+    "notImage": "Please choose an image file."
   }
 }

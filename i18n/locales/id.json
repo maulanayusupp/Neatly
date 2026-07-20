@@ -508,5 +508,20 @@
       "month": "bulan",
       "dow": "hari (minggu)"
     }
+  },
+  "imgB64": {
+    "metaTitle": "Gambar ke Base64 — Konversi Gambar ke Data URI Online · Neatly",
+    "metaDesc": "Konverter gambar ke Base64 / data URI online gratis. Jatuhkan atau tempel gambar dan salin sebagai data URI, CSS background, HTML img, atau Markdown. Privat, di browser Anda, tanpa unggah.",
+    "badge": "Data URI · CSS · HTML · Markdown",
+    "titleA": "Gambar ke",
+    "titleHl": "Base64",
+    "lead": "Ubah gambar apa pun menjadi data URI Base64 yang bisa disematkan langsung di CSS, HTML, atau Markdown — semua di browser Anda, tanpa unggah.",
+    "dropClick": "Klik untuk memilih",
+    "dropHint": "atau jatuhkan / tempel gambar",
+    "outputFormat": "Format keluaran",
+    "original": "Asli",
+    "encoded": "Terenkode",
+    "empty": "Tambahkan gambar untuk mendapatkan data URI Base64-nya.",
+    "notImage": "Silakan pilih berkas gambar."
   }
 }

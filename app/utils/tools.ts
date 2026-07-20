@@ -70,6 +70,7 @@ export const TOOL_GROUPS: ToolGroup[] = [
       { to: '/timestamp', label: 'Timestamp', desc: 'Epoch ↔ date', icon: 'clock' },
       { to: '/password', label: 'Password', desc: 'Strong random passwords', icon: 'lock' },
       { to: '/number-base', label: 'Number Base', desc: 'Bin · Oct · Dec · Hex', icon: 'hash' },
+      { to: '/image-to-base64', label: 'Image to Base64', desc: 'Image → data URI', icon: 'image' },
     ],
   },
 ]

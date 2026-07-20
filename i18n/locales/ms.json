@@ -508,5 +508,20 @@
       "month": "bulan",
       "dow": "hari (minggu)"
     }
+  },
+  "imgB64": {
+    "metaTitle": "Imej ke Base64 — Tukar Imej ke Data URI Dalam Talian · Neatly",
+    "metaDesc": "Penukar imej ke Base64 / data URI dalam talian percuma. Lepaskan atau tampal imej dan salin sebagai data URI, latar CSS, img HTML, atau Markdown. Peribadi, dalam pelayar anda, tanpa muat naik.",
+    "badge": "Data URI · CSS · HTML · Markdown",
+    "titleA": "Imej ke",
+    "titleHl": "Base64",
+    "lead": "Tukar mana-mana imej menjadi data URI Base64 yang boleh dibenamkan terus dalam CSS, HTML atau Markdown — semua dalam pelayar anda, tanpa muat naik.",
+    "dropClick": "Klik untuk pilih",
+    "dropHint": "atau lepaskan / tampal imej",
+    "outputFormat": "Format output",
+    "original": "Asal",
+    "encoded": "Terenkod",
+    "empty": "Tambah imej untuk mendapatkan data URI Base64-nya.",
+    "notImage": "Sila pilih fail imej."
   }
 }

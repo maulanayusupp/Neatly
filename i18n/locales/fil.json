@@ -508,5 +508,20 @@
       "month": "buwan",
       "dow": "araw (linggo)"
     }
+  },
+  "imgB64": {
+    "metaTitle": "Image to Base64 — I-convert ang Larawan sa Data URI Online · Neatly",
+    "metaDesc": "Libreng online image to Base64 / data URI converter. Mag-drop o mag-paste ng larawan at kopyahin bilang data URI, CSS background, HTML img o Markdown. Pribado, sa iyong browser, walang upload.",
+    "badge": "Data URI · CSS · HTML · Markdown",
+    "titleA": "Image to",
+    "titleHl": "Base64",
+    "lead": "Gawing Base64 data URI ang anumang larawan na maaari mong i-embed nang direkta sa CSS, HTML o Markdown — lahat sa iyong browser, walang na-upload.",
+    "dropClick": "I-click para pumili",
+    "dropHint": "o i-drop / i-paste ang larawan",
+    "outputFormat": "Format ng output",
+    "original": "Orihinal",
+    "encoded": "Naka-encode",
+    "empty": "Magdagdag ng larawan para makuha ang Base64 data URI nito.",
+    "notImage": "Pumili ng image file."
   }
 }

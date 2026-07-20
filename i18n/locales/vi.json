@@ -508,5 +508,20 @@
       "month": "tháng",
       "dow": "ngày (tuần)"
     }
+  },
+  "imgB64": {
+    "metaTitle": "Ảnh sang Base64 — Chuyển ảnh sang Data URI trực tuyến · Neatly",
+    "metaDesc": "Trình chuyển ảnh sang Base64 / data URI trực tuyến miễn phí. Thả hoặc dán ảnh và sao chép dưới dạng data URI, nền CSS, img HTML hoặc Markdown. Riêng tư, trong trình duyệt, không tải lên.",
+    "badge": "Data URI · CSS · HTML · Markdown",
+    "titleA": "Ảnh sang",
+    "titleHl": "Base64",
+    "lead": "Biến bất kỳ ảnh nào thành data URI Base64 để nhúng trực tiếp vào CSS, HTML hoặc Markdown — tất cả trong trình duyệt của bạn, không tải lên.",
+    "dropClick": "Nhấp để chọn",
+    "dropHint": "hoặc thả / dán ảnh",
+    "outputFormat": "Định dạng đầu ra",
+    "original": "Gốc",
+    "encoded": "Đã mã hoá",
+    "empty": "Thêm ảnh để lấy data URI Base64 của nó.",
+    "notImage": "Vui lòng chọn tệp ảnh."
   }
 }

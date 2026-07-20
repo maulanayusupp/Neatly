@@ -22,7 +22,8 @@ Deferred items to pick up later (not done yet).
 - [x] SQL formatter (`/sql`).
 - [x] Cron expression explainer (`/cron`).
 - [x] Number base converter (`/number-base`).
-- [ ] Image tools: compress, image → Base64, favicon generator
+- [x] Image → Base64 / data URI (`/image-to-base64`).
+- [ ] Image tools: compress, favicon generator
 - [x] Case / slug converter (`/case`).
 - [x] Lorem ipsum generator (`/lorem`).
 - [ ] YAML validator
