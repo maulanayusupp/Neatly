@@ -87,6 +87,19 @@ export default defineNuxtConfig({
     },
   },
 
+  // Baseline security headers on every response.
+  routeRules: {
+    '/**': {
+      headers: {
+        'X-Content-Type-Options': 'nosniff',
+        'Referrer-Policy': 'strict-origin-when-cross-origin',
+        'X-Frame-Options': 'SAMEORIGIN',
+        'Permissions-Policy': 'camera=(self), microphone=(), geolocation=(), browsing-topics=()',
+        'Strict-Transport-Security': 'max-age=31536000; includeSubDomains',
+      },
+    },
+  },
+
   app: {
     head: {
       htmlAttrs: { lang: 'en' },

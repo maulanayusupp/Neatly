@@ -35,20 +35,23 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/privacy
       revoke at any time in your browser settings.
     </p>
 
-    <h2>Data stored in your browser</h2>
+    <h2>Cookies &amp; local storage</h2>
     <p>
-      For your convenience, the Service stores a small amount of data locally in your
-      browser (via <strong>localStorage</strong>) — for example your light/dark theme
-      preference. This never leaves your device and can be cleared at any time from
-      your browser settings. Shareable links encode the state you choose to share
-      inside the URL itself; nothing is stored on our side.
+      The Service uses only <strong>strictly-necessary / functional</strong> storage to
+      remember your preferences — no advertising or tracking cookies. Because these are
+      functional, no cookie-consent banner is required. Specifically:
     </p>
-
-    <h2>Cookies and analytics</h2>
+    <ul>
+      <li><strong>Cookie <code>neatly-lang</code></strong> — remembers your chosen language.</li>
+      <li><strong>localStorage <code>neatly-theme</code></strong> — remembers light/dark mode.</li>
+      <li><strong>localStorage <code>neatly-beep</code></strong> — remembers the scanner beep setting.</li>
+    </ul>
     <p>
-      The Service does not set advertising cookies and does not track your content.
-      If basic, privacy-respecting analytics are added in the future to count page
-      views, this policy will be updated accordingly.
+      All of this stays on your device and can be cleared any time from your browser
+      settings. Shareable links encode the state you choose to share inside the URL
+      itself; nothing is stored on our side. The Service does not use analytics or
+      tracking; if privacy-respecting analytics are added later, this policy will be
+      updated first.
     </p>
 
     <h2>Server logs</h2>
@@ -62,6 +65,22 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/privacy
     <p>
       The Service is not directed at children and does not knowingly collect personal
       information from them.
+    </p>
+
+    <h2>Your rights</h2>
+    <p>
+      Because we don't hold accounts or store the content you submit, there is normally
+      no personal data of yours for us to access, correct, export or delete. Data kept
+      on your device (see above) is fully under your control and can be cleared from
+      your browser at any time. If you have any privacy question or request under laws
+      such as the GDPR, UK GDPR, CCPA or Indonesia's PDP Law, you can contact us and
+      we'll respond.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      For any privacy question or request, reach the operator of Neatly at
+      <a href="mailto:maulanayusupp@gmail.com">maulanayusupp@gmail.com</a>.
     </p>
 
     <h2>Changes</h2>
