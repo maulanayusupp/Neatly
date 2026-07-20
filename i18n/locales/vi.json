@@ -431,5 +431,18 @@
     "words": "từ",
     "chars": "ký tự",
     "copyParagraph": "Sao chép đoạn"
+  },
+  "mdTool": {
+    "metaTitle": "Markdown sang HTML — Chuyển đổi & Xem trước Markdown trực tuyến · Neatly",
+    "metaDesc": "Trình chuyển đổi Markdown sang HTML trực tuyến miễn phí kèm xem trước trực tiếp. Dán Markdown, xem kết quả, và sao chép HTML sạch & an toàn. Riêng tư, trong trình duyệt, không cần đăng ký.",
+    "badge": "Xem trước trực tiếp · HTML sạch",
+    "titleA": "Markdown sang",
+    "titleHl": "HTML",
+    "lead": "Viết hoặc dán Markdown và xem kết quả trực tiếp, rồi sao chép HTML đã được làm sạch. Mọi thứ chạy trong trình duyệt của bạn.",
+    "inputLabel": "Markdown",
+    "preview": "Xem trước",
+    "html": "HTML",
+    "placeholder": "# Xin chào\n\nNhập **Markdown** ở đây…",
+    "empty": "Nhập Markdown để xem trước."
   }
 }

@@ -431,5 +431,18 @@
     "words": "words",
     "chars": "characters",
     "copyParagraph": "Copy paragraph"
+  },
+  "mdTool": {
+    "metaTitle": "Markdown to HTML — Convert & Preview Markdown Online · Neatly",
+    "metaDesc": "Free online Markdown to HTML converter with live preview. Paste Markdown, see it rendered, and copy the clean, sanitized HTML. Private, in your browser, no sign-up.",
+    "badge": "Live preview · clean HTML",
+    "titleA": "Markdown to",
+    "titleHl": "HTML",
+    "lead": "Write or paste Markdown and see it rendered live, then copy the sanitized HTML. Everything runs in your browser.",
+    "inputLabel": "Markdown",
+    "preview": "Preview",
+    "html": "HTML",
+    "placeholder": "# Hello\n\nType **Markdown** here…",
+    "empty": "Type Markdown to see the preview."
   }
 }

@@ -431,5 +431,18 @@
     "words": "kata",
     "chars": "karakter",
     "copyParagraph": "Salin paragraf"
+  },
+  "mdTool": {
+    "metaTitle": "Markdown ke HTML — Konversi & Pratinjau Markdown Online · Neatly",
+    "metaDesc": "Konverter Markdown ke HTML online gratis dengan pratinjau langsung. Tempel Markdown, lihat hasilnya, dan salin HTML yang bersih & aman. Privat, di browser Anda, tanpa daftar.",
+    "badge": "Pratinjau langsung · HTML bersih",
+    "titleA": "Markdown ke",
+    "titleHl": "HTML",
+    "lead": "Tulis atau tempel Markdown dan lihat hasilnya secara langsung, lalu salin HTML yang sudah disanitasi. Semuanya berjalan di browser Anda.",
+    "inputLabel": "Markdown",
+    "preview": "Pratinjau",
+    "html": "HTML",
+    "placeholder": "# Halo\n\nKetik **Markdown** di sini…",
+    "empty": "Ketik Markdown untuk melihat pratinjau."
   }
 }

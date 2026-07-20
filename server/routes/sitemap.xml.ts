@@ -26,6 +26,7 @@ export default defineEventHandler((event) => {
     'password',
     'number-base',
     'lorem',
+    'markdown',
     'about',
     'contact',
     'terms',

@@ -45,6 +45,7 @@ export const TOOL_GROUPS: ToolGroup[] = [
       { to: '/regex', label: 'Regex Tester', desc: 'Test regular expressions', icon: 'regex' },
       { to: '/case', label: 'Case Converter', desc: 'camelCase, snake, kebab, slug', icon: 'code' },
       { to: '/lorem', label: 'Lorem Ipsum', desc: 'Placeholder text generator', icon: 'file' },
+      { to: '/markdown', label: 'Markdown → HTML', desc: 'Preview & convert Markdown', icon: 'markdown' },
     ],
   },
   {

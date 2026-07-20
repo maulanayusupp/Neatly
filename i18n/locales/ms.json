@@ -431,5 +431,18 @@
     "words": "perkataan",
     "chars": "aksara",
     "copyParagraph": "Salin perenggan"
+  },
+  "mdTool": {
+    "metaTitle": "Markdown ke HTML — Tukar & Pratonton Markdown Dalam Talian · Neatly",
+    "metaDesc": "Penukar Markdown ke HTML dalam talian percuma dengan pratonton langsung. Tampal Markdown, lihat hasilnya, dan salin HTML yang bersih & selamat. Peribadi, dalam pelayar anda, tanpa mendaftar.",
+    "badge": "Pratonton langsung · HTML bersih",
+    "titleA": "Markdown ke",
+    "titleHl": "HTML",
+    "lead": "Tulis atau tampal Markdown dan lihat hasilnya secara langsung, kemudian salin HTML yang telah disanitasi. Semuanya berjalan dalam pelayar anda.",
+    "inputLabel": "Markdown",
+    "preview": "Pratonton",
+    "html": "HTML",
+    "placeholder": "# Helo\n\nTaip **Markdown** di sini…",
+    "empty": "Taip Markdown untuk melihat pratonton."
   }
 }

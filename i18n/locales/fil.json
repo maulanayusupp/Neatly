@@ -431,5 +431,18 @@
     "words": "salita",
     "chars": "karakter",
     "copyParagraph": "Kopyahin ang talata"
+  },
+  "mdTool": {
+    "metaTitle": "Markdown to HTML — I-convert at I-preview ang Markdown Online · Neatly",
+    "metaDesc": "Libreng online Markdown to HTML converter na may live preview. I-paste ang Markdown, tingnan ang render, at kopyahin ang malinis at ligtas na HTML. Pribado, sa iyong browser, walang sign-up.",
+    "badge": "Live preview · malinis na HTML",
+    "titleA": "Markdown to",
+    "titleHl": "HTML",
+    "lead": "Sumulat o mag-paste ng Markdown at makita itong naka-render nang live, tapos kopyahin ang na-sanitize na HTML. Lahat ay tumatakbo sa iyong browser.",
+    "inputLabel": "Markdown",
+    "preview": "Preview",
+    "html": "HTML",
+    "placeholder": "# Kumusta\n\nMag-type ng **Markdown** dito…",
+    "empty": "Mag-type ng Markdown para makita ang preview."
   }
 }
