@@ -1,6 +1,4 @@
-<script setup lang="ts">
-const repoUrl = 'https://maulanayusupp.github.io'
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <header class="app-header">
@@ -11,16 +9,10 @@ const repoUrl = 'https://maulanayusupp.github.io'
 
       <nav class="app-header__actions" aria-label="Primary">
         <NavMenu />
-        <a
-          class="app-header__link"
-          :href="repoUrl"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="View source on GitHub"
-        >
-          <BaseIcon name="github" :size="18" />
-          <span class="app-header__link-label">GitHub</span>
-        </a>
+        <NuxtLink class="app-header__link" to="/contact" aria-label="Contact">
+          <BaseIcon name="send" :size="17" />
+          <span class="app-header__link-label">Contact</span>
+        </NuxtLink>
         <ThemeToggle />
       </nav>
     </div>

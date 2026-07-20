@@ -6,6 +6,7 @@ const year = 2026
 const toolLinks = ALL_TOOLS
 
 const legalLinks = [
+  { to: '/contact', label: 'Contact' },
   { to: '/terms', label: 'Terms of Service' },
   { to: '/privacy', label: 'Privacy Policy' },
   { to: '/disclaimer', label: 'Disclaimer' },
@@ -29,8 +30,8 @@ const legalLinks = [
         </ul>
       </nav>
 
-      <nav class="app-footer__col" aria-label="Legal">
-        <h2 class="app-footer__col-title">Legal</h2>
+      <nav class="app-footer__col" aria-label="More">
+        <h2 class="app-footer__col-title">More</h2>
         <ul role="list">
           <li v-for="link in legalLinks" :key="link.to">
             <NuxtLink :to="link.to">{{ link.label }}</NuxtLink>
@@ -39,7 +40,10 @@ const legalLinks = [
       </nav>
 
       <div class="app-footer__meta">
-        <span>© {{ year }} Neatly · Your code is processed privately and never stored.</span>
+        <span>
+          © {{ year }} Neatly · Built by
+          <NuxtLink to="/contact" class="app-footer__author">Maulana Yusup A</NuxtLink>
+        </span>
         <InstallButton />
       </div>
     </div>
@@ -95,6 +99,13 @@ const legalLinks = [
   &:hover {
     color: var(--color-primary);
   }
+}
+
+.app-footer__author {
+  color: var(--color-text-muted);
+  font-weight: 600;
+
+  &:hover { color: var(--color-primary); }
 }
 
 .app-footer__meta {

@@ -76,6 +76,16 @@ export const ICONS = {
     '<circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/>',
   fingerprint:
     '<path d="M12 10a2 2 0 0 0-2 2c0 1.5.5 3-1 5"/><path d="M12 6a6 6 0 0 0-6 6c0 2-.5 3.5-1 4.5"/><path d="M12 6a6 6 0 0 1 6 6c0 1 0 2.5-.5 4"/><path d="M12 10a2 2 0 0 1 2 2c0 3 .5 4.5 1 5.5"/>',
+  user:
+    '<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
+  send:
+    '<line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>',
+  briefcase:
+    '<rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M2 13h20"/>',
+  heart:
+    '<path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 0 0-7.1 7.1l1.7 1.7L12 21l7.1-6.6 1.7-1.7a5 5 0 0 0 0-7.1z"/>',
+  arrowRight:
+    '<line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>',
 } as const
 
 export type IconName = keyof typeof ICONS
