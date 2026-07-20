@@ -5,8 +5,12 @@ const year = 2026
 
 const toolLinks = ALL_TOOLS
 
-const legalLinks = [
+const aboutLinks = [
+  { to: '/about', label: 'About' },
   { to: '/contact', label: 'Contact' },
+]
+
+const legalLinks = [
   { to: '/terms', label: 'Terms of Service' },
   { to: '/privacy', label: 'Privacy Policy' },
   { to: '/disclaimer', label: 'Disclaimer' },
@@ -30,8 +34,17 @@ const legalLinks = [
         </ul>
       </nav>
 
-      <nav class="app-footer__col" aria-label="More">
-        <h2 class="app-footer__col-title">More</h2>
+      <nav class="app-footer__col" aria-label="About">
+        <h2 class="app-footer__col-title">About</h2>
+        <ul role="list">
+          <li v-for="link in aboutLinks" :key="link.to">
+            <NuxtLink :to="link.to">{{ link.label }}</NuxtLink>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="app-footer__col" aria-label="Legal">
+        <h2 class="app-footer__col-title">Legal</h2>
         <ul role="list">
           <li v-for="link in legalLinks" :key="link.to">
             <NuxtLink :to="link.to">{{ link.label }}</NuxtLink>
@@ -40,10 +53,7 @@ const legalLinks = [
       </nav>
 
       <div class="app-footer__meta">
-        <span>
-          © {{ year }} Neatly · Built by
-          <NuxtLink to="/contact" class="app-footer__author">Maulana Yusup A</NuxtLink>
-        </span>
+        <span>© {{ year }} Neatly · Your code is processed privately and never stored.</span>
         <InstallButton />
       </div>
     </div>
@@ -63,9 +73,22 @@ const legalLinks = [
   gap: spacing(8);
   grid-template-columns: 1fr;
 
+  @include respond('sm') {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   @include respond('md') {
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1.8fr 1fr 1fr 1fr;
     gap: spacing(6);
+  }
+}
+
+.app-footer__brand {
+  @include respond('sm') {
+    grid-column: 1 / -1;
+  }
+  @include respond('md') {
+    grid-column: auto;
   }
 }
 
@@ -99,13 +122,6 @@ const legalLinks = [
   &:hover {
     color: var(--color-primary);
   }
-}
-
-.app-footer__author {
-  color: var(--color-text-muted);
-  font-weight: 600;
-
-  &:hover { color: var(--color-primary); }
 }
 
 .app-footer__meta {

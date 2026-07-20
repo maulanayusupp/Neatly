@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const NAME = 'Maulana Yusup A'
+const NAME = 'Maulana'
 const EMAIL = 'maulanayusupp@gmail.com'
 const GITHUB = 'https://github.com/maulanayusupp'
 const PORTFOLIO = 'https://maulanayusupp.github.io'
@@ -39,7 +39,7 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/contact
 
     <section class="container contact__inner">
       <header class="contact__hero">
-        <span class="contact__avatar">MY</span>
+        <span class="contact__avatar">M</span>
         <span class="contact__status">
           <span class="contact__dot" /> Available for work
         </span>
