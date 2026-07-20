@@ -63,6 +63,7 @@ function downloadOutput() {
       <CodeEditor
         v-if="status === 'success'"
         :model-value="output"
+        :language="effectiveLanguage"
         readonly
         aria-label="Transformed code"
       />

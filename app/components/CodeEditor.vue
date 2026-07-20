@@ -1,14 +1,25 @@
 <script setup lang="ts">
+import type { LanguageId } from '#shared/types'
+import { escapeHtml, highlightCode } from '~/utils/highlight'
+
 const props = withDefaults(defineProps<{
   modelValue: string
   readonly?: boolean
   placeholder?: string
   ariaLabel?: string
+  language?: LanguageId
 }>(), {
   readonly: false,
   placeholder: '',
   ariaLabel: 'Code editor',
+  language: undefined,
 })
+
+const highlighted = computed(() =>
+  props.language
+    ? highlightCode(props.modelValue, props.language)
+    : escapeHtml(props.modelValue),
+)
 
 const emit = defineEmits<{
   'update:modelValue': [value: string]
@@ -76,7 +87,7 @@ function onDragOver() {
       :aria-label="ariaLabel"
       tabindex="0"
       @scroll="syncScroll"
-    ><code>{{ modelValue }}</code></pre>
+    ><code class="hljs" v-html="highlighted" /></pre>
 
     <div v-if="isDragging" class="code-editor__dropzone">
       <BaseIcon name="upload" :size="28" />
