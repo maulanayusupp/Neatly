@@ -9,12 +9,19 @@ const toast = useToast()
 const fileInput = ref<HTMLInputElement | null>(null)
 const copied = ref(false)
 
+const pageTitle = 'JSON to YAML, CSV & XML Converter — Free Online Data Converter · Neatly'
+const pageDescription
+  = 'Convert JSON to YAML, CSV or XML — and back — instantly and free. Paste your data, pick the formats, then copy or download the result. Private, fast, no sign-up.'
+
 useSeoMeta({
-  title: 'Convert JSON, YAML, CSV & XML — Free Online Converter · Neatly',
-  description:
-    'Convert between JSON, YAML, CSV and XML instantly. Paste your data, pick the formats, and copy or download the result. Free, fast and private.',
+  title: pageTitle,
+  description: pageDescription,
+  ogTitle: pageTitle,
+  ogDescription: pageDescription,
+  twitterTitle: pageTitle,
+  twitterDescription: pageDescription,
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatly.tools/convert' }] })
+useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/convert' }] })
 
 const EXT_TO_FORMAT: Record<string, ConvertFormat> = {
   json: 'json', yaml: 'yaml', yml: 'yaml', csv: 'csv', xml: 'xml', svg: 'xml',

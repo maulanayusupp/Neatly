@@ -3,7 +3,7 @@ useSeoMeta({
   title: 'Disclaimer · Neatly',
   description: 'Neatly is provided for convenience with no warranty. Always review output before relying on it.',
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatly.tools/disclaimer' }] })
+useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/disclaimer' }] })
 </script>
 
 <template>

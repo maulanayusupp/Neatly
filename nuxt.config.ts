@@ -7,10 +7,12 @@ const scssAbstracts = fileURLToPath(
   new URL('./app/assets/scss/abstracts', import.meta.url),
 ).replace(/\\/g, '/')
 
-const siteUrl = 'https://neatly.tools'
+const siteUrl = 'https://neatlyapp.vercel.app'
 const siteName = 'Neatly'
+const siteTitle = 'Neatly — Beautify, Minify & Unminify JavaScript, CSS, HTML, JSON, XML'
 const siteDescription
-  = 'Neatly is a fast, modern tool to beautify (unminify) and minify JavaScript, CSS, HTML, JSON and XML. Paste, drop a file, and get clean, readable — or compact — code instantly.'
+  = 'Free online code beautifier, minifier & unminifier for JavaScript, CSS, HTML, JSON, YAML, CSV and XML. Convert formats, compare JSON, and scan QR codes & barcodes — fast and private.'
+const ogImage = `${siteUrl}/og-image.png`
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -31,7 +33,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: { lang: 'en' },
-      title: 'Neatly — Beautify & Minify Code Instantly',
+      title: siteTitle,
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -39,18 +41,25 @@ export default defineNuxtConfig({
         { name: 'theme-color', content: '#6366f1' },
         { name: 'application-name', content: siteName },
         { name: 'author', content: siteName },
-        // Open Graph
+        // Open Graph (used by WhatsApp, Facebook, LinkedIn, etc.)
         { property: 'og:type', content: 'website' },
         { property: 'og:site_name', content: siteName },
-        { property: 'og:title', content: 'Neatly — Beautify & Minify Code Instantly' },
+        { property: 'og:title', content: siteTitle },
         { property: 'og:description', content: siteDescription },
         { property: 'og:url', content: siteUrl },
-        { property: 'og:image', content: `${siteUrl}/og-image.svg` },
+        { property: 'og:image', content: ogImage },
+        { property: 'og:image:secure_url', content: ogImage },
+        { property: 'og:image:type', content: 'image/png' },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
+        { property: 'og:image:alt', content: 'Neatly — beautify, minify and unminify code' },
+        { property: 'og:locale', content: 'en_US' },
         // Twitter
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'Neatly — Beautify & Minify Code Instantly' },
+        { name: 'twitter:title', content: siteTitle },
         { name: 'twitter:description', content: siteDescription },
-        { name: 'twitter:image', content: `${siteUrl}/og-image.svg` },
+        { name: 'twitter:image', content: ogImage },
+        { name: 'twitter:image:alt', content: 'Neatly — beautify, minify and unminify code' },
       ],
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },

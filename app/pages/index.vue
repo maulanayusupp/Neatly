@@ -11,10 +11,17 @@ onMounted(async () => {
   if (shared) store.applyShareState(shared)
 })
 
+const pageTitle = 'Neatly — Beautify, Minify & Unminify JavaScript, CSS, HTML, JSON & XML'
+const pageDescription
+  = 'Free online code beautifier, minifier and unminifier. Instantly format, prettify or compress JavaScript, TypeScript, CSS, HTML, JSON, YAML and XML — paste, drop a file, done. Private, no sign-up.'
+
 useSeoMeta({
-  title: 'Neatly — Beautify & Minify Code Instantly',
-  description:
-    'Free online tool to beautify (unminify) and minify JavaScript, CSS, HTML, JSON and XML. Paste your code, pick a mode, and get clean or compact output in a click.',
+  title: pageTitle,
+  description: pageDescription,
+  ogTitle: pageTitle,
+  ogDescription: pageDescription,
+  twitterTitle: pageTitle,
+  twitterDescription: pageDescription,
 })
 
 // Structured data for rich search results.
@@ -44,15 +51,15 @@ useHead({
       <div class="container hero__inner">
         <span class="hero__badge">
           <BaseIcon name="sparkles" :size="15" />
-          Beautify &amp; minify · 5 languages
+          Beautify · Minify · Unminify · 5 languages
         </span>
         <h1 class="hero__title">
-          Make your code
-          <span class="text-gradient">neat</span>, instantly.
+          Beautify, minify &amp;
+          <span class="text-gradient">unminify</span> your code
         </h1>
         <p class="hero__lead">
           Paste minified code to unpack and prettify it, or compress your source to ship less.
-          Works with JavaScript, CSS, HTML, JSON and XML — right in your browser.
+          Works with JavaScript, CSS, HTML, JSON, XML and more — fast, free and private.
         </p>
       </div>
     </section>

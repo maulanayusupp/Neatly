@@ -1,10 +1,17 @@
 <script setup lang="ts">
+const pageTitle = 'QR Code Scanner Online — Scan & Extract Text from QR Codes & Barcodes · Neatly'
+const pageDescription
+  = 'Free online QR code scanner and reader. Scan with your camera or upload/paste an image to decode QR codes and barcodes and extract the text, URL, Wi-Fi or contact — instantly and privately in your browser.'
+
 useSeoMeta({
-  title: 'QR Code & Barcode Scanner — Read Codes Online · Neatly',
-  description:
-    'Free online QR code and barcode scanner. Scan with your camera, upload an image, or paste a screenshot to read and extract the text instantly. Runs privately in your browser.',
+  title: pageTitle,
+  description: pageDescription,
+  ogTitle: pageTitle,
+  ogDescription: pageDescription,
+  twitterTitle: pageTitle,
+  twitterDescription: pageDescription,
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatly.tools/scan' }] })
+useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/scan' }] })
 </script>
 
 <template>

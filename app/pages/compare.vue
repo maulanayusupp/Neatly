@@ -2,14 +2,21 @@
 const store = useJsonCompare()
 const { sources, report, status, errors, canAdd, canRemove } = store
 
+const pageTitle = 'JSON Diff & Compare — Compare 2, 3 or 4 JSON Files Online · Neatly'
+const pageDescription
+  = 'Free online JSON diff tool. Compare 2–4 JSON files side by side, see exactly which field differs in which file, and get a plain-language conclusion — instantly and privately.'
+
 useSeoMeta({
-  title: 'JSON Compare — Diff 2, 3 or 4 JSON files · Neatly',
-  description:
-    'Compare multiple JSON objects side by side. Neatly finds exactly which fields differ, in which JSON, and gives you a plain-language conclusion — free and instant.',
+  title: pageTitle,
+  description: pageDescription,
+  ogTitle: pageTitle,
+  ogDescription: pageDescription,
+  twitterTitle: pageTitle,
+  twitterDescription: pageDescription,
 })
 
 useHead({
-  link: [{ rel: 'canonical', href: 'https://neatly.tools/compare' }],
+  link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/compare' }],
 })
 </script>
 

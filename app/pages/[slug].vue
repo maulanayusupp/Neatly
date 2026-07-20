@@ -24,6 +24,10 @@ const related = LANDING_PAGES.filter(
 useSeoMeta({
   title: page.title,
   description: page.description,
+  ogTitle: page.title,
+  ogDescription: page.description,
+  twitterTitle: page.title,
+  twitterDescription: page.description,
 })
 
 useHead({

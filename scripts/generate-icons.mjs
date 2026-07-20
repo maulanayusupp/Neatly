@@ -8,8 +8,11 @@ import { Resvg } from '@resvg/resvg-js'
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const svg = readFileSync(resolve(root, 'public/favicon.svg'))
 
-function render(size) {
-  const resvg = new Resvg(svg, { fitTo: { mode: 'width', value: size } })
+function render(source, size) {
+  const resvg = new Resvg(source, {
+    fitTo: { mode: 'width', value: size },
+    font: { loadSystemFonts: true, defaultFontFamily: 'Helvetica' },
+  })
   return resvg.render().asPng()
 }
 
@@ -23,6 +26,11 @@ const targets = [
 ]
 
 for (const [file, size] of targets) {
-  writeFileSync(resolve(root, file), render(size))
+  writeFileSync(resolve(root, file), render(svg, size))
   console.log(`✓ ${file} (${size}px)`)
 }
+
+// Social preview image (WhatsApp/Twitter/OG need a raster, not SVG).
+const ogSvg = readFileSync(resolve(root, 'public/og-image.svg'))
+writeFileSync(resolve(root, 'public/og-image.png'), render(ogSvg, 1200))
+console.log('✓ public/og-image.png (1200px)')

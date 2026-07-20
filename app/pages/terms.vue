@@ -3,7 +3,7 @@ useSeoMeta({
   title: 'Terms of Service · Neatly',
   description: 'The terms that govern your use of Neatly, a free online tool to beautify, minify, convert and compare code.',
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatly.tools/terms' }] })
+useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/terms' }] })
 </script>
 
 <template>
