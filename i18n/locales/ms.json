@@ -463,5 +463,22 @@
       "table": "Jadual",
       "hr": "Pemisah"
     }
+  },
+  "sqlTool": {
+    "metaTitle": "Pemformat SQL — Beautify & Format Query SQL Dalam Talian · Neatly",
+    "metaDesc": "Pemformat dan beautifier SQL dalam talian percuma. Tampal query berselerak dan dapatkan SQL kemas & berindentasi — pilih dialek, huruf kata kunci, dan indent. Peribadi, dalam pelayar anda, tanpa mendaftar.",
+    "badge": "Format · beautify · dialek",
+    "titleA": "Pemformat",
+    "titleHl": "SQL",
+    "lead": "Tampal query SQL yang berselerak dan dapatkan SQL yang kemas, mudah dibaca dan berindentasi. Pilih dialek dan huruf kata kunci.",
+    "dialect": "Dialek",
+    "keywordCase": "Kata kunci",
+    "upper": "HURUF BESAR",
+    "lower": "huruf kecil",
+    "preserve": "Kekalkan",
+    "format": "Format",
+    "placeholder": "select * from users where id = 1",
+    "empty": "SQL yang diformat akan muncul di sini.",
+    "error": "Tidak dapat memformat SQL itu."
   }
 }

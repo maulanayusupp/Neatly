@@ -463,5 +463,22 @@
       "table": "Tabel",
       "hr": "Pemisah"
     }
+  },
+  "sqlTool": {
+    "metaTitle": "Formatter SQL — Beautify & Format Query SQL Online · Neatly",
+    "metaDesc": "Formatter dan beautifier SQL online gratis. Tempel query berantakan dan dapatkan SQL rapi & terindentasi — pilih dialek, huruf keyword, dan indent. Privat, di browser Anda, tanpa daftar.",
+    "badge": "Format · beautify · dialek",
+    "titleA": "Formatter",
+    "titleHl": "SQL",
+    "lead": "Tempel query SQL yang berantakan dan dapatkan SQL yang rapi, mudah dibaca, dan terindentasi. Pilih dialek dan huruf keyword.",
+    "dialect": "Dialek",
+    "keywordCase": "Keyword",
+    "upper": "HURUF BESAR",
+    "lower": "huruf kecil",
+    "preserve": "Biarkan",
+    "format": "Format",
+    "placeholder": "select * from users where id = 1",
+    "empty": "SQL yang diformat akan muncul di sini.",
+    "error": "Tidak dapat memformat SQL itu."
   }
 }

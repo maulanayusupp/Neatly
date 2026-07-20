@@ -463,5 +463,22 @@
       "table": "Talahanayan",
       "hr": "Divider"
     }
+  },
+  "sqlTool": {
+    "metaTitle": "SQL Formatter — I-beautify at I-format ang SQL Queries Online · Neatly",
+    "metaDesc": "Libreng online SQL formatter at beautifier. I-paste ang magulong query at makakuha ng malinis at naka-indent na SQL — piliin ang dialect, keyword case at indent. Pribado, sa iyong browser, walang sign-up.",
+    "badge": "Format · beautify · dialects",
+    "titleA": "SQL",
+    "titleHl": "formatter",
+    "lead": "I-paste ang magulong SQL query at makakuha ng malinis, nababasa at naka-indent na SQL. Piliin ang dialect at keyword case.",
+    "dialect": "Dialect",
+    "keywordCase": "Keywords",
+    "upper": "UPPERCASE",
+    "lower": "lowercase",
+    "preserve": "Panatilihin",
+    "format": "I-format",
+    "placeholder": "select * from users where id = 1",
+    "empty": "Lalabas dito ang naka-format na SQL.",
+    "error": "Hindi ma-format ang SQL na iyan."
   }
 }

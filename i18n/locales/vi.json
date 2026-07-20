@@ -463,5 +463,22 @@
       "table": "Bảng",
       "hr": "Đường kẻ"
     }
+  },
+  "sqlTool": {
+    "metaTitle": "Trình định dạng SQL — Làm đẹp & Định dạng truy vấn SQL trực tuyến · Neatly",
+    "metaDesc": "Trình định dạng và làm đẹp SQL trực tuyến miễn phí. Dán truy vấn lộn xộn và nhận SQL sạch, thụt lề gọn — chọn phương ngữ, kiểu chữ từ khoá và thụt lề. Riêng tư, trong trình duyệt, không cần đăng ký.",
+    "badge": "Định dạng · làm đẹp · phương ngữ",
+    "titleA": "Trình định dạng",
+    "titleHl": "SQL",
+    "lead": "Dán truy vấn SQL lộn xộn và nhận SQL sạch, dễ đọc và thụt lề gọn. Chọn phương ngữ và kiểu chữ từ khoá.",
+    "dialect": "Phương ngữ",
+    "keywordCase": "Từ khoá",
+    "upper": "CHỮ HOA",
+    "lower": "chữ thường",
+    "preserve": "Giữ nguyên",
+    "format": "Định dạng",
+    "placeholder": "select * from users where id = 1",
+    "empty": "SQL đã định dạng sẽ xuất hiện ở đây.",
+    "error": "Không thể định dạng SQL đó."
   }
 }

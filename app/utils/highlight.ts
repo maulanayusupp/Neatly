@@ -5,6 +5,7 @@ import css from 'highlight.js/lib/languages/css'
 import xml from 'highlight.js/lib/languages/xml'
 import json from 'highlight.js/lib/languages/json'
 import yaml from 'highlight.js/lib/languages/yaml'
+import sql from 'highlight.js/lib/languages/sql'
 
 let registered = false
 function ensureRegistered() {
@@ -15,6 +16,7 @@ function ensureRegistered() {
   hljs.registerLanguage('xml', xml)
   hljs.registerLanguage('json', json)
   hljs.registerLanguage('yaml', yaml)
+  hljs.registerLanguage('sql', sql)
   registered = true
 }
 
@@ -28,6 +30,7 @@ const GRAMMAR: Record<string, string> = {
   json: 'json',
   xml: 'xml',
   yaml: 'yaml',
+  sql: 'sql',
 }
 
 /** Escape raw text for safe injection when highlighting is unavailable. */

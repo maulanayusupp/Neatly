@@ -19,7 +19,8 @@ Deferred items to pick up later (not done yet).
 ## Tools (ideas / backlog)
 - [x] Password generator (`/password`).
 - [x] Markdown → HTML + preview (`/markdown`).
-- [ ] Cron expression parser, SQL formatter
+- [x] SQL formatter (`/sql`).
+- [ ] Cron expression parser
 - [x] Number base converter (`/number-base`).
 - [ ] Image tools: compress, image → Base64, favicon generator
 - [x] Case / slug converter (`/case`).

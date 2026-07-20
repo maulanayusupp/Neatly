@@ -8,6 +8,7 @@ export default defineEventHandler((event) => {
     '',
     'tools',
     'convert',
+    'sql',
     'compare',
     'json-viewer',
     'json-to-typescript',

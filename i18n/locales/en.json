@@ -463,5 +463,22 @@
       "table": "Table",
       "hr": "Divider"
     }
+  },
+  "sqlTool": {
+    "metaTitle": "SQL Formatter — Beautify & Format SQL Queries Online · Neatly",
+    "metaDesc": "Free online SQL formatter and beautifier. Paste a messy query and get clean, indented SQL — choose dialect, keyword case and indent. Private, in your browser, no sign-up.",
+    "badge": "Format · beautify · dialects",
+    "titleA": "SQL",
+    "titleHl": "formatter",
+    "lead": "Paste a messy SQL query and get clean, readable, properly indented SQL. Pick your dialect and keyword case.",
+    "dialect": "Dialect",
+    "keywordCase": "Keywords",
+    "upper": "UPPERCASE",
+    "lower": "lowercase",
+    "preserve": "Preserve",
+    "format": "Format",
+    "placeholder": "select * from users where id = 1",
+    "empty": "Formatted SQL will appear here.",
+    "error": "Could not format that SQL."
   }
 }
