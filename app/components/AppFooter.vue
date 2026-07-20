@@ -38,9 +38,10 @@ const legalLinks = [
         </ul>
       </nav>
 
-      <p class="app-footer__meta">
-        © {{ year }} Neatly · Your code is processed privately and never stored.
-      </p>
+      <div class="app-footer__meta">
+        <span>© {{ year }} Neatly · Your code is processed privately and never stored.</span>
+        <InstallButton />
+      </div>
     </div>
   </footer>
 </template>
@@ -97,6 +98,11 @@ const legalLinks = [
 }
 
 .app-footer__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: spacing(3);
   color: var(--color-text-subtle);
   font-size: $text-xs;
 

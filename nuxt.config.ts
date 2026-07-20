@@ -19,7 +19,46 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-01',
   devtools: { enabled: true },
 
+  modules: ['@vite-pwa/nuxt'],
+
   css: ['~/assets/scss/main.scss'],
+
+  pwa: {
+    registerType: 'autoUpdate',
+    manifest: {
+      name: 'Neatly — Beautify, Minify & Unminify code',
+      short_name: 'Neatly',
+      description: siteDescription,
+      theme_color: '#6366f1',
+      background_color: '#0b0d16',
+      display: 'standalone',
+      start_url: '/',
+      icons: [
+        { src: '/icon-192.png', sizes: '192x192', type: 'image/png', purpose: 'any maskable' },
+        { src: '/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any maskable' },
+        { src: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+        { src: '/favicon.svg', sizes: 'any', type: 'image/svg+xml' },
+      ],
+    },
+    workbox: {
+      navigateFallback: '/',
+      globPatterns: ['**/*.{js,css,html,svg,png,ico,woff2,webmanifest}'],
+      runtimeCaching: [
+        {
+          urlPattern: ({ request }) => request.mode === 'navigate',
+          handler: 'NetworkFirst',
+          options: { cacheName: 'neatly-pages', networkTimeoutSeconds: 3 },
+        },
+        {
+          urlPattern: ({ request }) => ['style', 'script', 'image', 'font'].includes(request.destination),
+          handler: 'StaleWhileRevalidate',
+          options: { cacheName: 'neatly-assets' },
+        },
+      ],
+    },
+    client: { installPrompt: true },
+    devOptions: { enabled: false },
+  },
 
   runtimeConfig: {
     // Hard limit for the payload we are willing to transform (in bytes).
@@ -65,7 +104,7 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
-        { rel: 'manifest', href: '/site.webmanifest' },
+        { rel: 'manifest', href: '/manifest.webmanifest' },
         { rel: 'canonical', href: siteUrl },
       ],
       script: [

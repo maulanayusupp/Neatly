@@ -42,6 +42,9 @@ Repo: `github.com/maulanayusupp/Neatly` (branch `main`, SSH remote `origin`).
 - **Client-only libs** (e.g. `@zxing/browser`) must be **lazy-loaded** inside
   functions and wrapped in `<ClientOnly>` so SSR stays clean.
 - Icons are inline SVG in `app/utils/icons.ts` (no icon dependency).
+- **PWA** via `@vite-pwa/nuxt` (`pwa` config in `nuxt.config`): installable
+  manifest + service worker (autoUpdate) with runtime caching. `<InstallButton>`
+  shows the install prompt. `error.vue` is the custom 404/500 page.
 
 ## Commands
 
