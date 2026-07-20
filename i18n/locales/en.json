@@ -20,6 +20,8 @@
     "linkDisclaimer": "Disclaimer"
   },
   "home": {
+    "metaTitle": "Neatly — Free Online Developer Tools: Beautify, Minify, Format & Convert",
+    "metaDesc": "Free developer tools to get your work done — beautify & minify JavaScript, CSS & HTML, format & validate JSON, convert JSON/YAML/CSV/XML, diff & compare, scan & generate QR codes, and more. Private, no sign-up.",
     "badge": "Beautify · Minify · Unminify · 5 languages",
     "titleA": "Beautify, minify &",
     "titleHl": "unminify",

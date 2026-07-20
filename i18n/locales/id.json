@@ -20,6 +20,8 @@
     "linkDisclaimer": "Penafian"
   },
   "home": {
+    "metaTitle": "Neatly — Alat Developer Online Gratis: Beautify, Minify, Format & Konversi",
+    "metaDesc": "Alat developer gratis untuk menyelesaikan pekerjaan — beautify & minify JavaScript, CSS & HTML, format & validasi JSON, konversi JSON/YAML/CSV/XML, diff & banding, pindai & buat QR code, dan lainnya. Privat, tanpa daftar.",
     "badge": "Beautify · Minify · Unminify · 5 bahasa",
     "titleA": "Beautify, minify &",
     "titleHl": "unminify",

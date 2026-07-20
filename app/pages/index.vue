@@ -11,17 +11,15 @@ onMounted(async () => {
   if (shared) store.applyShareState(shared)
 })
 
-const pageTitle = 'Neatly — Beautify, Minify & Unminify JavaScript, CSS, HTML, JSON & XML'
-const pageDescription
-  = 'Free online code beautifier, minifier and unminifier. Instantly format, prettify or compress JavaScript, TypeScript, CSS, HTML, JSON, YAML and XML — paste, drop a file, done. Private, no sign-up.'
+const { t } = useI18n()
 
 useSeoMeta({
-  title: pageTitle,
-  description: pageDescription,
-  ogTitle: pageTitle,
-  ogDescription: pageDescription,
-  twitterTitle: pageTitle,
-  twitterDescription: pageDescription,
+  title: () => t('home.metaTitle'),
+  description: () => t('home.metaDesc'),
+  ogTitle: () => t('home.metaTitle'),
+  ogDescription: () => t('home.metaDesc'),
+  twitterTitle: () => t('home.metaTitle'),
+  twitterDescription: () => t('home.metaDesc'),
 })
 
 // Structured data for rich search results.

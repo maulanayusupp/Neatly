@@ -20,6 +20,8 @@
     "linkDisclaimer": "Disclaimer"
   },
   "home": {
+    "metaTitle": "Neatly — Libreng Online Developer Tools: Beautify, Minify, Format & Convert",
+    "metaDesc": "Libreng developer tools para matapos ang iyong trabaho — beautify & minify ng JavaScript, CSS & HTML, i-format & i-validate ang JSON, i-convert ang JSON/YAML/CSV/XML, diff & compare, mag-scan & gumawa ng QR codes, at iba pa. Pribado, walang sign-up.",
     "badge": "Beautify · Minify · Unminify · 5 wika",
     "titleA": "Beautify, minify &",
     "titleHl": "unminify",

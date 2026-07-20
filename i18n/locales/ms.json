@@ -20,6 +20,8 @@
     "linkDisclaimer": "Penafian"
   },
   "home": {
+    "metaTitle": "Neatly — Alat Pembangun Dalam Talian Percuma: Beautify, Minify, Format & Tukar",
+    "metaDesc": "Alat pembangun percuma untuk menyiapkan kerja anda — beautify & minify JavaScript, CSS & HTML, format & sahkan JSON, tukar JSON/YAML/CSV/XML, diff & banding, imbas & jana QR code, dan banyak lagi. Peribadi, tanpa mendaftar.",
     "badge": "Beautify · Minify · Unminify · 5 bahasa",
     "titleA": "Beautify, minify &",
     "titleHl": "unminify",

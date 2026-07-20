@@ -15,35 +15,37 @@
   <rect x="0" y="0" width="1200" height="6" fill="url(#brand)"/>
 
   <!-- Brand -->
-  <g transform="translate(80,74)">
-    <rect width="76" height="76" rx="21" fill="url(#brand)"/>
-    <path fill="#0b0d16" d="M32 17l4 13.1L49 34l-13 4-4 13-4-13-13-4 13-3.9z"/>
-    <path fill="#0b0d16" fill-opacity="0.8" d="M53 42l1.7 5.7 5.7 1.7-5.7 1.7L53 57l-1.7-5.9-5.7-1.7 5.7-1.7z"/>
-    <text x="96" y="52" font-family="Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#e9ebf5" letter-spacing="-1">Neatly</text>
+  <g transform="translate(80,70)">
+    <rect width="66" height="66" rx="18" fill="url(#brand)"/>
+    <path fill="#0b0d16" d="M28 15l3.5 11.5L43 30l-11.5 3.5L28 45l-3.5-11.5L13 30l11.5-3.5z"/>
+    <text x="84" y="44" font-family="Helvetica, Arial, sans-serif" font-size="40" font-weight="700" fill="#e9ebf5" letter-spacing="-1">Neatly</text>
   </g>
+
+  <!-- Eyebrow -->
+  <text x="82" y="205" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#818cf8" letter-spacing="3">FREE · PRIVATE · NO SIGN-UP</text>
 
   <!-- Headline -->
-  <text x="80" y="268" font-family="Helvetica, Arial, sans-serif" font-size="76" font-weight="800" fill="#e9ebf5" letter-spacing="-3">Beautify, Minify &amp;</text>
-  <text x="80" y="352" font-family="Helvetica, Arial, sans-serif" font-size="76" font-weight="800" letter-spacing="-3"><tspan fill="url(#brand)">Unminify</tspan><tspan fill="#e9ebf5"> your code</tspan></text>
+  <text x="80" y="300" font-family="Helvetica, Arial, sans-serif" font-size="82" font-weight="800" fill="#e9ebf5" letter-spacing="-3">Developer tools that</text>
+  <text x="80" y="392" font-family="Helvetica, Arial, sans-serif" font-size="82" font-weight="800" letter-spacing="-3"><tspan fill="url(#brand)">get the job done</tspan></text>
 
-  <!-- Languages -->
-  <text x="82" y="424" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="600" fill="#9aa2bd">JavaScript · CSS · HTML · JSON · YAML · CSV · XML</text>
+  <!-- Tool list -->
+  <text x="82" y="462" font-family="Helvetica, Arial, sans-serif" font-size="29" font-weight="600" fill="#9aa2bd">Beautify · Minify · Format JSON · Convert · Diff · QR · Base64 · Hash</text>
 
-  <!-- Feature chips -->
-  <g font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700">
-    <g transform="translate(80,470)">
-      <rect width="240" height="58" rx="29" fill="#1d2130" stroke="#2a2f42"/>
-      <text x="120" y="38" fill="#a5b4fc" text-anchor="middle">Convert formats</text>
+  <!-- Chips -->
+  <g font-family="Helvetica, Arial, sans-serif" font-size="25" font-weight="700">
+    <g transform="translate(80,502)">
+      <rect width="180" height="54" rx="27" fill="#1d2130" stroke="#2a2f42"/>
+      <text x="90" y="35" fill="#a5b4fc" text-anchor="middle">18+ tools</text>
     </g>
-    <g transform="translate(340,470)">
-      <rect width="230" height="58" rx="29" fill="#1d2130" stroke="#2a2f42"/>
-      <text x="115" y="38" fill="#a5b4fc" text-anchor="middle">Compare JSON</text>
+    <g transform="translate(276,502)">
+      <rect width="240" height="54" rx="27" fill="#1d2130" stroke="#2a2f42"/>
+      <text x="120" y="35" fill="#a5b4fc" text-anchor="middle">Runs in your browser</text>
     </g>
-    <g transform="translate(590,470)">
-      <rect width="260" height="58" rx="29" fill="#1d2130" stroke="#2a2f42"/>
-      <text x="130" y="38" fill="#a5b4fc" text-anchor="middle">QR &amp; barcode scan</text>
+    <g transform="translate(532,502)">
+      <rect width="150" height="54" rx="27" fill="#1d2130" stroke="#2a2f42"/>
+      <text x="75" y="35" fill="#a5b4fc" text-anchor="middle">5 languages</text>
     </g>
   </g>
 
-  <text x="80" y="588" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="#6f778f">neatlyapp.vercel.app</text>
+  <text x="80" y="600" font-family="Helvetica, Arial, sans-serif" font-size="25" font-weight="600" fill="#6f778f">neatlyapp.vercel.app</text>
 </svg>

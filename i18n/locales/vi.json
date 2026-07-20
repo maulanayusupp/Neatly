@@ -20,6 +20,8 @@
     "linkDisclaimer": "Tuyên bố miễn trừ"
   },
   "home": {
+    "metaTitle": "Neatly — Công cụ lập trình trực tuyến miễn phí: Beautify, Minify, Định dạng & Chuyển đổi",
+    "metaDesc": "Công cụ lập trình miễn phí giúp bạn hoàn thành công việc — beautify & minify JavaScript, CSS & HTML, định dạng & kiểm tra JSON, chuyển đổi JSON/YAML/CSV/XML, so sánh, quét & tạo QR code, và hơn thế. Riêng tư, không cần đăng ký.",
     "badge": "Beautify · Minify · Unminify · 5 ngôn ngữ",
     "titleA": "Beautify, minify &",
     "titleHl": "unminify",

@@ -9,9 +9,9 @@ const scssAbstracts = fileURLToPath(
 
 const siteUrl = 'https://neatlyapp.vercel.app'
 const siteName = 'Neatly'
-const siteTitle = 'Neatly — Beautify, Minify & Unminify JavaScript, CSS, HTML, JSON, XML'
+const siteTitle = 'Neatly — Free Online Developer Tools'
 const siteDescription
-  = 'Free online code beautifier, minifier & unminifier for JavaScript, CSS, HTML, JSON, YAML, CSV and XML. Convert formats, compare JSON, and scan QR codes & barcodes — fast and private.'
+  = 'A free developer toolkit to get your work done: beautify & minify code, format & validate JSON, convert JSON/YAML/CSV/XML, diff & compare, scan & generate QR codes, plus Base64, JWT, hash, UUID and password tools. Fast, private, no sign-up.'
 const ogImage = `${siteUrl}/og-image.png`
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
@@ -109,14 +109,14 @@ export default defineNuxtConfig({
         { property: 'og:image:type', content: 'image/png' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
-        { property: 'og:image:alt', content: 'Neatly — beautify, minify and unminify code' },
+        { property: 'og:image:alt', content: 'Neatly — free online developer tools' },
         { property: 'og:locale', content: 'en_US' },
         // Twitter
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: siteTitle },
         { name: 'twitter:description', content: siteDescription },
         { name: 'twitter:image', content: ogImage },
-        { name: 'twitter:image:alt', content: 'Neatly — beautify, minify and unminify code' },
+        { name: 'twitter:image:alt', content: 'Neatly — free online developer tools' },
       ],
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
