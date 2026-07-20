@@ -8,6 +8,7 @@ export default defineEventHandler((event) => {
     '',
     'convert',
     'compare',
+    'scan',
     'terms',
     'privacy',
     'disclaimer',

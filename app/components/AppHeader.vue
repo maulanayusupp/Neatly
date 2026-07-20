@@ -22,6 +22,10 @@ const repoUrl = 'https://maulanayusupp.github.io'
           <BaseIcon name="layers" :size="16" />
           <span>JSON Compare</span>
         </NuxtLink>
+        <NuxtLink to="/scan" class="app-nav__link">
+          <BaseIcon name="qr" :size="16" />
+          <span>QR Scan</span>
+        </NuxtLink>
       </nav>
 
       <nav class="app-header__actions" aria-label="Primary">

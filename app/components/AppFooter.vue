@@ -5,6 +5,7 @@ const toolLinks = [
   { to: '/', label: 'Beautify & Minify' },
   { to: '/convert', label: 'Convert' },
   { to: '/compare', label: 'JSON Compare' },
+  { to: '/scan', label: 'QR & Barcode Scanner' },
 ]
 
 const legalLinks = [
