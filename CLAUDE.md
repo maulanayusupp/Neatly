@@ -15,6 +15,7 @@ Repo: `github.com/maulanayusupp/Neatly` (branch `main`, SSH remote `origin`).
 | `/`                | Beautify & minify JS/TS, CSS, HTML, JSON, XML. Auto-detect, live highlighting, active-line highlight, gzip size, jump-to-error, shareable links (`#s=`). |
 | `/convert`         | Convert between JSON, YAML, CSV, XML. |
 | `/compare`         | Diff 2–4 JSON inputs, outlier detection + conclusion. |
+| `/json-viewer`     | Validate JSON (error line), collapsible tree view, stats, format/minify/sort-keys. |
 | `/scan`            | **Client-only** QR + barcode scanner (camera / upload / paste) via `@zxing/browser`. No backend. |
 | `/qr-generator`    | **Client-only** QR + barcode generator (`qrcode`, `jsbarcode`); URL/text/Wi-Fi/email/phone/vCard, PNG+SVG export. |
 | `/minify-<lang>`, `/beautify-<lang>` | 10 generated SEO landing pages (`[slug].vue` + `shared/utils/landing.ts`). |

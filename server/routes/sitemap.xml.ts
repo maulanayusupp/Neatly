@@ -8,6 +8,7 @@ export default defineEventHandler((event) => {
     '',
     'convert',
     'compare',
+    'json-viewer',
     'scan',
     'qr-generator',
     'terms',

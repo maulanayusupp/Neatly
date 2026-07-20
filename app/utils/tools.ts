@@ -27,6 +27,7 @@ export const TOOL_GROUPS: ToolGroup[] = [
   {
     name: 'JSON',
     tools: [
+      { to: '/json-viewer', label: 'JSON Viewer', desc: 'Validate & explore JSON', icon: 'tree' },
       { to: '/compare', label: 'JSON Compare', desc: 'Diff 2–4 JSON files', icon: 'layers' },
     ],
   },
