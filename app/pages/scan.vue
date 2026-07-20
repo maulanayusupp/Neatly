@@ -96,7 +96,8 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatly.tools/scan' }] })
 
   @include respond('lg') {
     grid-template-columns: 1fr 1fr;
-    align-items: start;
+    // Both columns stretch to the same height for a consistent layout.
+    align-items: stretch;
   }
 }
 
