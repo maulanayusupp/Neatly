@@ -44,6 +44,7 @@ export const TOOL_GROUPS: ToolGroup[] = [
       { to: '/color', label: 'Color Converter', desc: 'HEX · RGB · HSL', icon: 'droplet' },
       { to: '/regex', label: 'Regex Tester', desc: 'Test regular expressions', icon: 'regex' },
       { to: '/case', label: 'Case Converter', desc: 'camelCase, snake, kebab, slug', icon: 'code' },
+      { to: '/lorem', label: 'Lorem Ipsum', desc: 'Placeholder text generator', icon: 'file' },
     ],
   },
   {
@@ -65,6 +66,7 @@ export const TOOL_GROUPS: ToolGroup[] = [
       { to: '/uuid', label: 'UUID', desc: 'Generate v4 UUIDs', icon: 'fingerprint' },
       { to: '/timestamp', label: 'Timestamp', desc: 'Epoch ↔ date', icon: 'clock' },
       { to: '/password', label: 'Password', desc: 'Strong random passwords', icon: 'lock' },
+      { to: '/number-base', label: 'Number Base', desc: 'Bin · Oct · Dec · Hex', icon: 'hash' },
     ],
   },
 ]

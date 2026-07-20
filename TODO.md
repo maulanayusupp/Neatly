@@ -19,10 +19,11 @@ Deferred items to pick up later (not done yet).
 ## Tools (ideas / backlog)
 - [x] Password generator (`/password`).
 - [ ] Cron expression parser, SQL formatter, Markdown ↔ HTML + preview
-- [ ] Number base converter (hex/bin/dec)
+- [x] Number base converter (`/number-base`).
 - [ ] Image tools: compress, image → Base64, favicon generator
 - [x] Case / slug converter (`/case`).
-- [ ] Lorem ipsum, YAML validator
+- [x] Lorem ipsum generator (`/lorem`).
+- [ ] YAML validator
 
 ## Quality
 - [x] Unit tests for utils (json-compare, colors, encoding, json-tools) — Vitest, `npm test`.

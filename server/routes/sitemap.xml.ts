@@ -24,6 +24,8 @@ export default defineEventHandler((event) => {
     'uuid',
     'timestamp',
     'password',
+    'number-base',
+    'lorem',
     'about',
     'contact',
     'terms',
