@@ -27,6 +27,16 @@ Deferred items to pick up later (not done yet).
 - [x] Lorem ipsum generator (`/lorem`).
 - [ ] YAML validator
 
+## Compliance
+- [x] Terms, Privacy, Disclaimer pages.
+- [x] Privacy: functional cookie/localStorage list, user rights, contact.
+- [x] Security headers (Nitro routeRules): nosniff, Referrer-Policy, X-Frame-Options, Permissions-Policy (camera=self), HSTS.
+- [ ] Real legal entity name + address + governing-law jurisdiction (owner to provide).
+- [ ] Impressum / legal notice — only if targeting Germany.
+- [ ] Accessibility statement + audit (nice to have).
+- [ ] Content-Security-Policy (needs nonces for inline theme script + JSON-LD).
+- [ ] Cookie consent banner — only when analytics/tracking is added.
+
 ## Quality
 - [x] Unit tests for utils (json-compare, colors, encoding, json-tools) — Vitest, `npm test`.
 - [ ] More tests: transform/convert services, share encode/decode, detect.
