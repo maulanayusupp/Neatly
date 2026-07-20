@@ -20,7 +20,7 @@ Deferred items to pick up later (not done yet).
 - [x] Password generator (`/password`).
 - [x] Markdown → HTML + preview (`/markdown`).
 - [x] SQL formatter (`/sql`).
-- [ ] Cron expression parser
+- [x] Cron expression explainer (`/cron`).
 - [x] Number base converter (`/number-base`).
 - [ ] Image tools: compress, image → Base64, favicon generator
 - [x] Case / slug converter (`/case`).

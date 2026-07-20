@@ -480,5 +480,33 @@
     "placeholder": "select * from users where id = 1",
     "empty": "Lalabas dito ang naka-format na SQL.",
     "error": "Hindi ma-format ang SQL na iyan."
+  },
+  "cronTool": {
+    "metaTitle": "Cron Expression Explainer — Unawain ang Cron Online · Neatly",
+    "metaDesc": "Libreng online cron expression explainer. I-paste ang crontab schedule para makita ito sa simpleng wika kasama ang susunod na mga takbo. Pribado, sa iyong browser, walang sign-up.",
+    "badge": "Ipaliwanag · susunod · presets",
+    "titleA": "Cron",
+    "titleHl": "explainer",
+    "lead": "I-paste ang cron expression para makita ang ibig sabihin nito sa simpleng wika at kung kailan susunod na tatakbo.",
+    "expression": "Cron expression",
+    "description": "Sa simpleng wika",
+    "nextRuns": "Susunod na takbo",
+    "invalid": "Mukhang hindi ito valid na cron expression.",
+    "presetsLabel": "Subukan:",
+    "presets": {
+      "everyMinute": "Bawat minuto",
+      "every5": "Bawat 5 minuto",
+      "hourly": "Oras-oras",
+      "daily": "Araw-araw sa hatinggabi",
+      "weekdays": "Weekdays 9am",
+      "monthly": "Buwan-buwan"
+    },
+    "fields": {
+      "minute": "minuto",
+      "hour": "oras",
+      "dom": "araw (buwan)",
+      "month": "buwan",
+      "dow": "araw (linggo)"
+    }
   }
 }

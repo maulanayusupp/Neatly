@@ -47,6 +47,7 @@ export const TOOL_GROUPS: ToolGroup[] = [
       { to: '/case', label: 'Case Converter', desc: 'camelCase, snake, kebab, slug', icon: 'code' },
       { to: '/lorem', label: 'Lorem Ipsum', desc: 'Placeholder text generator', icon: 'file' },
       { to: '/markdown', label: 'Markdown → HTML', desc: 'Preview & convert Markdown', icon: 'markdown' },
+      { to: '/cron', label: 'Cron Explainer', desc: 'Explain cron expressions', icon: 'clock' },
     ],
   },
   {

@@ -480,5 +480,33 @@
     "placeholder": "select * from users where id = 1",
     "empty": "SQL yang diformat akan muncul di sini.",
     "error": "Tidak dapat memformat SQL itu."
+  },
+  "cronTool": {
+    "metaTitle": "Penjelas Ekspresi Cron — Pahami Cron Online · Neatly",
+    "metaDesc": "Penjelas ekspresi cron online gratis. Tempel jadwal crontab untuk melihatnya dalam bahasa sederhana plus waktu jalan berikutnya. Privat, di browser Anda, tanpa daftar.",
+    "badge": "Jelaskan · jadwal · preset",
+    "titleA": "Penjelas",
+    "titleHl": "cron",
+    "lead": "Tempel ekspresi cron untuk melihat artinya dalam bahasa sederhana dan kapan berikutnya berjalan.",
+    "expression": "Ekspresi cron",
+    "description": "Dalam bahasa sederhana",
+    "nextRuns": "Jadwal berikutnya",
+    "invalid": "Itu sepertinya bukan ekspresi cron yang valid.",
+    "presetsLabel": "Coba:",
+    "presets": {
+      "everyMinute": "Setiap menit",
+      "every5": "Setiap 5 menit",
+      "hourly": "Setiap jam",
+      "daily": "Setiap hari tengah malam",
+      "weekdays": "Hari kerja jam 9 pagi",
+      "monthly": "Bulanan"
+    },
+    "fields": {
+      "minute": "menit",
+      "hour": "jam",
+      "dom": "hari (bulan)",
+      "month": "bulan",
+      "dow": "hari (minggu)"
+    }
   }
 }

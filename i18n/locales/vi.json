@@ -480,5 +480,33 @@
     "placeholder": "select * from users where id = 1",
     "empty": "SQL đã định dạng sẽ xuất hiện ở đây.",
     "error": "Không thể định dạng SQL đó."
+  },
+  "cronTool": {
+    "metaTitle": "Trình giải thích Cron — Hiểu biểu thức Cron trực tuyến · Neatly",
+    "metaDesc": "Trình giải thích biểu thức cron trực tuyến miễn phí. Dán lịch crontab để xem bằng ngôn ngữ dễ hiểu kèm các lần chạy tiếp theo. Riêng tư, trong trình duyệt, không cần đăng ký.",
+    "badge": "Giải thích · lần chạy · mẫu",
+    "titleA": "Trình giải thích",
+    "titleHl": "cron",
+    "lead": "Dán biểu thức cron để xem ý nghĩa bằng ngôn ngữ dễ hiểu và khi nào chạy tiếp theo.",
+    "expression": "Biểu thức cron",
+    "description": "Bằng ngôn ngữ dễ hiểu",
+    "nextRuns": "Lần chạy tiếp theo",
+    "invalid": "Đó không giống một biểu thức cron hợp lệ.",
+    "presetsLabel": "Thử:",
+    "presets": {
+      "everyMinute": "Mỗi phút",
+      "every5": "Mỗi 5 phút",
+      "hourly": "Mỗi giờ",
+      "daily": "Mỗi ngày lúc nửa đêm",
+      "weekdays": "Ngày làm việc 9 giờ sáng",
+      "monthly": "Hàng tháng"
+    },
+    "fields": {
+      "minute": "phút",
+      "hour": "giờ",
+      "dom": "ngày (tháng)",
+      "month": "tháng",
+      "dow": "ngày (tuần)"
+    }
   }
 }

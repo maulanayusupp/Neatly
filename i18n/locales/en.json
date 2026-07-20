@@ -480,5 +480,33 @@
     "placeholder": "select * from users where id = 1",
     "empty": "Formatted SQL will appear here.",
     "error": "Could not format that SQL."
+  },
+  "cronTool": {
+    "metaTitle": "Cron Expression Explainer — Parse & Understand Cron Online · Neatly",
+    "metaDesc": "Free online cron expression explainer. Paste a crontab schedule to see it in plain English plus the next run times. Private, in your browser, no sign-up.",
+    "badge": "Explain · next runs · presets",
+    "titleA": "Cron",
+    "titleHl": "explainer",
+    "lead": "Paste a cron expression to see what it means in plain English and when it runs next.",
+    "expression": "Cron expression",
+    "description": "In plain English",
+    "nextRuns": "Next runs",
+    "invalid": "That doesn't look like a valid cron expression.",
+    "presetsLabel": "Try:",
+    "presets": {
+      "everyMinute": "Every minute",
+      "every5": "Every 5 minutes",
+      "hourly": "Hourly",
+      "daily": "Every day at midnight",
+      "weekdays": "Weekdays at 9am",
+      "monthly": "Monthly"
+    },
+    "fields": {
+      "minute": "minute",
+      "hour": "hour",
+      "dom": "day (month)",
+      "month": "month",
+      "dow": "day (week)"
+    }
   }
 }

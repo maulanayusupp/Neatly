@@ -28,6 +28,7 @@ export default defineEventHandler((event) => {
     'number-base',
     'lorem',
     'markdown',
+    'cron',
     'about',
     'contact',
     'terms',
