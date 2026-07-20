@@ -67,6 +67,9 @@ onBeforeUnmount(() => {
             </NuxtLink>
           </div>
         </div>
+        <NuxtLink to="/tools" class="nav-menu__all">
+          <BaseIcon name="grid" :size="15" /> {{ $t('toolsPage.viewAll') }}
+        </NuxtLink>
       </div>
     </Transition>
   </div>
@@ -191,6 +194,21 @@ onBeforeUnmount(() => {
 .nav-menu__desc {
   font-size: $text-xs;
   color: var(--color-text-muted);
+}
+
+.nav-menu__all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: spacing(2);
+  margin-top: spacing(3);
+  padding: spacing(2.5);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-primary);
+  font-size: $text-sm;
+  font-weight: 600;
+
+  &:hover { background: var(--color-surface-2); border-radius: $radius-sm; }
 }
 
 .nav-menu-enter-active,

@@ -221,5 +221,12 @@
     "aroundWeb": "Di web", "aroundWebText": "Cari kod dan karya saya yang lain di sini.",
     "aboutNeatly": "Tentang Neatly", "aboutNeatlyText": "Koleksi alat pembangun yang pantas dan peribadi — beautify, minify, tukar, banding, imbas dan jana — percuma dan tanpa mendaftar.",
     "exploreTools": "Terokai alat"
+  },
+  "toolsPage": {
+    "metaTitle": "Semua Alat — Beautify, Minify, Tukar, Imbas & Lain-lain · Neatly",
+    "metaDesc": "Semua alat pembangun Neatly di satu tempat — beautify & minify, tukar, banding & sahkan JSON, imbas & jana QR code, serta utiliti encode/hash. Percuma, peribadi, tanpa mendaftar.",
+    "badge": "Semua alat · satu tempat", "titleA": "Semua", "titleHl": "alat",
+    "lead": "Semua alat Neatly di satu tempat — beautify, minify, tukar, banding, imbas, jana dan lain-lain.",
+    "viewAll": "Lihat semua alat"
   }
 }

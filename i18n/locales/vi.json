@@ -221,5 +221,12 @@
     "aroundWeb": "Trên web", "aroundWebText": "Tìm mã và các dự án khác của tôi ở đây.",
     "aboutNeatly": "Giới thiệu Neatly", "aboutNeatlyText": "Bộ công cụ lập trình nhanh và riêng tư đang phát triển — beautify, minify, chuyển đổi, so sánh, quét và tạo — miễn phí và không cần đăng ký.",
     "exploreTools": "Khám phá công cụ"
+  },
+  "toolsPage": {
+    "metaTitle": "Tất cả công cụ — Beautify, Minify, Chuyển đổi, Quét & Hơn thế · Neatly",
+    "metaDesc": "Mọi công cụ lập trình của Neatly ở một nơi — beautify & minify, chuyển đổi, so sánh & kiểm tra JSON, quét & tạo QR code, cùng các tiện ích encode/hash. Miễn phí, riêng tư, không cần đăng ký.",
+    "badge": "Tất cả công cụ · một nơi", "titleA": "Tất cả", "titleHl": "công cụ",
+    "lead": "Mọi công cụ Neatly ở một nơi — beautify, minify, chuyển đổi, so sánh, quét, tạo và hơn thế.",
+    "viewAll": "Xem tất cả công cụ"
   }
 }

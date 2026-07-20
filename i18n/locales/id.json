@@ -221,5 +221,12 @@
     "aroundWeb": "Di web", "aroundWebText": "Temukan kode dan karya saya lainnya di sini.",
     "aboutNeatly": "Tentang Neatly", "aboutNeatlyText": "Koleksi alat developer yang cepat dan privat — beautify, minify, konversi, banding, pindai, dan generate — gratis dan tanpa daftar.",
     "exploreTools": "Jelajahi alat"
+  },
+  "toolsPage": {
+    "metaTitle": "Semua Alat — Beautify, Minify, Konversi, Pindai & Lainnya · Neatly",
+    "metaDesc": "Semua alat developer Neatly di satu tempat — beautify & minify, konversi, banding & validasi JSON, pindai & buat QR code, serta utilitas encode/hash. Gratis, privat, tanpa daftar.",
+    "badge": "Semua alat · satu tempat", "titleA": "Semua", "titleHl": "alat",
+    "lead": "Semua alat Neatly di satu tempat — beautify, minify, konversi, banding, pindai, generate, dan lainnya.",
+    "viewAll": "Lihat semua alat"
   }
 }

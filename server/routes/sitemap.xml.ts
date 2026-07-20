@@ -6,6 +6,7 @@ export default defineEventHandler((event) => {
 
   const paths = [
     '',
+    'tools',
     'convert',
     'compare',
     'json-viewer',

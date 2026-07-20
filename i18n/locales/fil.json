@@ -221,5 +221,12 @@
     "aroundWeb": "Sa web", "aroundWebText": "Hanapin ang aking code at iba pang gawa dito.",
     "aboutNeatly": "Tungkol sa Neatly", "aboutNeatlyText": "Lumalagong koleksyon ng mabilis at pribadong developer tools — beautify, minify, convert, compare, scan at generate — libre at walang sign-up.",
     "exploreTools": "Tuklasin ang mga tool"
+  },
+  "toolsPage": {
+    "metaTitle": "Lahat ng Tool — Beautify, Minify, Convert, Scan & Iba Pa · Neatly",
+    "metaDesc": "Lahat ng developer tool ng Neatly sa isang lugar — beautify & minify, convert, compare & i-validate ang JSON, mag-scan & gumawa ng QR codes, at encode/hash utilities. Libre, pribado, walang sign-up.",
+    "badge": "Lahat ng tool · isang lugar", "titleA": "Lahat ng", "titleHl": "tool",
+    "lead": "Lahat ng tool ng Neatly sa isang lugar — beautify, minify, convert, compare, scan, generate at iba pa.",
+    "viewAll": "Tingnan lahat ng tool"
   }
 }

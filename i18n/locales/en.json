@@ -221,5 +221,12 @@
     "aroundWeb": "Around the web", "aroundWebText": "Find my code and other work here.",
     "aboutNeatly": "About Neatly", "aboutNeatlyText": "A growing collection of fast, private developer tools — beautify, minify, convert, compare, scan and generate — free and no sign-up.",
     "exploreTools": "Explore the tools"
+  },
+  "toolsPage": {
+    "metaTitle": "All Tools — Beautify, Minify, Convert, Scan & More · Neatly",
+    "metaDesc": "Every Neatly developer tool in one place — beautify & minify, convert, compare & validate JSON, scan & generate QR codes, and encode/hash utilities. Free, private, no sign-up.",
+    "badge": "All tools · one place", "titleA": "All", "titleHl": "tools",
+    "lead": "Every Neatly tool in one place — beautify, minify, convert, compare, scan, generate and more.",
+    "viewAll": "View all tools"
   }
 }
