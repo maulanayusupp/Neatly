@@ -424,7 +424,7 @@
     "paragraphs": "Paragraphs",
     "wordsPerPara": "Words per paragraph",
     "startWith": "Start with “Lorem ipsum…”",
-    "wrapHtml": "Wrap in <p> tags",
+    "wrapHtml": "Wrap in HTML paragraphs",
     "regenerate": "Regenerate",
     "copyAll": "Copy all",
     "download": "Download",

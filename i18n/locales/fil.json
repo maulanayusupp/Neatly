@@ -424,7 +424,7 @@
     "paragraphs": "Mga talata",
     "wordsPerPara": "Salita bawat talata",
     "startWith": "Magsimula sa “Lorem ipsum…”",
-    "wrapHtml": "Balutin sa <p> tags",
+    "wrapHtml": "Balutin sa HTML paragraphs",
     "regenerate": "Bumuo muli",
     "copyAll": "Kopyahin lahat",
     "download": "I-download",

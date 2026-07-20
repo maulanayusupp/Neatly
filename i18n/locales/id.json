@@ -424,7 +424,7 @@
     "paragraphs": "Paragraf",
     "wordsPerPara": "Kata per paragraf",
     "startWith": "Mulai dengan “Lorem ipsum…”",
-    "wrapHtml": "Bungkus dengan tag <p>",
+    "wrapHtml": "Bungkus jadi paragraf HTML",
     "regenerate": "Buat ulang",
     "copyAll": "Salin semua",
     "download": "Unduh",

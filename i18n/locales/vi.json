@@ -424,7 +424,7 @@
     "paragraphs": "Đoạn văn",
     "wordsPerPara": "Từ mỗi đoạn",
     "startWith": "Bắt đầu bằng “Lorem ipsum…”",
-    "wrapHtml": "Bọc trong thẻ <p>",
+    "wrapHtml": "Bọc thành đoạn HTML",
     "regenerate": "Tạo lại",
     "copyAll": "Sao chép tất cả",
     "download": "Tải xuống",
