@@ -18,17 +18,15 @@ async function copyEmail() {
   }
 }
 
-const pageTitle = `Contact — ${NAME} · Neatly`
-const pageDescription
-  = `Get in touch with ${NAME}, the developer behind Neatly. Questions, feedback or ideas are always welcome.`
+const { t } = useI18n()
 
 useSeoMeta({
-  title: pageTitle,
-  description: pageDescription,
-  ogTitle: pageTitle,
-  ogDescription: pageDescription,
-  twitterTitle: pageTitle,
-  twitterDescription: pageDescription,
+  title: () => t('contact.metaTitle'),
+  description: () => t('contact.metaDesc'),
+  ogTitle: () => t('contact.metaTitle'),
+  ogDescription: () => t('contact.metaDesc'),
+  twitterTitle: () => t('contact.metaTitle'),
+  twitterDescription: () => t('contact.metaDesc'),
 })
 useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/contact' }] })
 </script>
@@ -42,20 +40,16 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/contact
         <span class="contact__avatar">M</span>
         <h1 class="contact__name">{{ NAME }}</h1>
         <p class="contact__role">
-          Full-stack developer · maker of <span class="text-gradient">Neatly</span>
+          {{ $t('contact.role') }} <span class="text-gradient">Neatly</span>
         </p>
-        <p class="contact__bio">
-          I design and build fast, private, well-crafted web tools — like the ones
-          you're using here. If you have feedback, an idea, or just want to say hi,
-          I'd love to hear from you.
-        </p>
+        <p class="contact__bio">{{ $t('contact.bio') }}</p>
         <div class="contact__cta">
           <a class="contact__btn contact__btn--primary" :href="mailtoHello">
-            <BaseIcon name="send" :size="18" /> Email me
+            <BaseIcon name="send" :size="18" /> {{ $t('contact.emailMe') }}
           </a>
           <button class="contact__btn contact__btn--ghost" type="button" @click="copyEmail">
             <BaseIcon :name="copied ? 'check' : 'copy'" :size="18" />
-            {{ copied ? 'Copied' : EMAIL }}
+            {{ copied ? $t('common.copied') : EMAIL }}
           </button>
         </div>
       </header>
@@ -63,20 +57,17 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/contact
       <div class="contact__cards">
         <article class="contact__card">
           <span class="contact__card-icon"><BaseIcon name="send" :size="20" /></span>
-          <h2 class="contact__card-title">Get in touch</h2>
-          <p class="contact__card-text">
-            Questions, feedback, feature ideas or just a hello — drop me a message
-            any time.
-          </p>
+          <h2 class="contact__card-title">{{ $t('contact.getInTouch') }}</h2>
+          <p class="contact__card-text">{{ $t('contact.getInTouchText') }}</p>
           <a class="contact__card-link" :href="mailtoMessage">
-            Send a message <BaseIcon name="arrowRight" :size="16" />
+            {{ $t('contact.sendMessage') }} <BaseIcon name="arrowRight" :size="16" />
           </a>
         </article>
 
         <article class="contact__card">
           <span class="contact__card-icon"><BaseIcon name="user" :size="20" /></span>
-          <h2 class="contact__card-title">Around the web</h2>
-          <p class="contact__card-text">Find my code and other work here.</p>
+          <h2 class="contact__card-title">{{ $t('contact.aroundWeb') }}</h2>
+          <p class="contact__card-text">{{ $t('contact.aroundWebText') }}</p>
           <div class="contact__links">
             <a :href="GITHUB" target="_blank" rel="noopener noreferrer">
               <BaseIcon name="github" :size="16" /> GitHub
@@ -89,13 +80,10 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/contact
 
         <article class="contact__card">
           <span class="contact__card-icon"><BaseIcon name="sparkles" :size="20" /></span>
-          <h2 class="contact__card-title">About Neatly</h2>
-          <p class="contact__card-text">
-            A growing collection of fast, private developer tools — beautify,
-            minify, convert, compare, scan and generate — free and no sign-up.
-          </p>
+          <h2 class="contact__card-title">{{ $t('contact.aboutNeatly') }}</h2>
+          <p class="contact__card-text">{{ $t('contact.aboutNeatlyText') }}</p>
           <NuxtLink class="contact__card-link" to="/">
-            Explore the tools <BaseIcon name="arrowRight" :size="16" />
+            {{ $t('contact.exploreTools') }} <BaseIcon name="arrowRight" :size="16" />
           </NuxtLink>
         </article>
       </div>

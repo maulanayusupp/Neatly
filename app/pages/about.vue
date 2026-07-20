@@ -2,25 +2,23 @@
 import type { IconName } from '~/utils/icons'
 import { ALL_TOOLS } from '~/utils/tools'
 
-const pageTitle = 'About Neatly — Fast, Private Developer Tools'
-const pageDescription
-  = 'About Neatly: a growing collection of fast, private, free developer tools — beautify, minify, convert, compare, scan and generate — built with no sign-up and no tracking.'
+const { t } = useI18n()
 
 useSeoMeta({
-  title: pageTitle,
-  description: pageDescription,
-  ogTitle: pageTitle,
-  ogDescription: pageDescription,
-  twitterTitle: pageTitle,
-  twitterDescription: pageDescription,
+  title: () => t('about.metaTitle'),
+  description: () => t('about.metaDesc'),
+  ogTitle: () => t('about.metaTitle'),
+  ogDescription: () => t('about.metaDesc'),
+  twitterTitle: () => t('about.metaTitle'),
+  twitterDescription: () => t('about.metaDesc'),
 })
 useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/about' }] })
 
-const principles: { icon: IconName, title: string, text: string }[] = [
-  { icon: 'gauge', title: 'Fast', text: 'Clean, instant tools that get out of your way — no bloat, no waiting.' },
-  { icon: 'shield', title: 'Private', text: 'Your data is processed on the fly and never stored. Scanning and many tools run entirely in your browser.' },
-  { icon: 'sparkles', title: 'Free & open', text: 'Every tool is free, with no sign-up, no account and no watermark.' },
-  { icon: 'layers', title: 'All in one', text: 'Beautify, minify, convert, compare, validate, scan and generate — from one tidy place.' },
+const principles: { icon: IconName, key: string }[] = [
+  { icon: 'gauge', key: 'fast' },
+  { icon: 'shield', key: 'private' },
+  { icon: 'sparkles', key: 'free' },
+  { icon: 'layers', key: 'all' },
 ]
 </script>
 
@@ -28,36 +26,33 @@ const principles: { icon: IconName, title: string, text: string }[] = [
   <div class="about">
     <ToolHero
       icon="sparkles"
-      badge="Fast · private · free"
-      title="About"
-      gradient="Neatly"
-      lead="Neatly is a growing collection of fast, private developer tools. Beautify and minify code, convert and compare data, scan and generate QR codes, and more — all in one place, with no sign-up."
+      :badge="$t('about.badge')"
+      :title="$t('about.titleA')"
+      :gradient="$t('about.titleHl')"
+      :lead="$t('about.lead')"
     />
 
     <section class="container about__body">
       <ul class="about__principles" role="list">
-        <li v-for="p in principles" :key="p.title" class="about__card">
+        <li v-for="p in principles" :key="p.key" class="about__card">
           <span class="about__icon"><BaseIcon :name="p.icon" :size="20" /></span>
-          <h2 class="about__card-title">{{ p.title }}</h2>
-          <p class="about__card-text">{{ p.text }}</p>
+          <h2 class="about__card-title">{{ $t(`about.${p.key}T`) }}</h2>
+          <p class="about__card-text">{{ $t(`about.${p.key}X`) }}</p>
         </li>
       </ul>
 
       <div class="about__maker">
         <div>
-          <h2 class="about__maker-title">Who makes Neatly?</h2>
-          <p class="about__maker-text">
-            Neatly is designed and built by <strong>Maulana</strong>, a developer who
-            enjoys making fast, well-crafted web tools. Have feedback or a feature idea?
-          </p>
+          <h2 class="about__maker-title">{{ $t('about.makerHeading') }}</h2>
+          <p class="about__maker-text">{{ $t('about.makerText') }}</p>
         </div>
         <NuxtLink to="/contact" class="about__maker-cta">
-          <BaseIcon name="send" :size="18" /> Get in touch
+          <BaseIcon name="send" :size="18" /> {{ $t('about.getInTouch') }}
         </NuxtLink>
       </div>
 
       <nav class="about__tools" aria-label="Tools">
-        <h2 class="about__tools-title">Explore the tools</h2>
+        <h2 class="about__tools-title">{{ $t('about.exploreTools') }}</h2>
         <div class="about__tools-links">
           <NuxtLink v-for="tool in ALL_TOOLS" :key="tool.to" :to="tool.to">
             <BaseIcon :name="tool.icon" :size="15" /> {{ tool.label }}

@@ -197,5 +197,29 @@
     "aboutP2": "Everything is generated on your device — nothing is uploaded — so it's fast, private and free, with no watermark and no sign-up.",
     "qrTab": "QR Code", "barcodeTab": "Barcode",
     "empty": "Fill in the fields to generate your code."
+  },
+  "about": {
+    "metaTitle": "About Neatly — Fast, Private Developer Tools",
+    "metaDesc": "About Neatly: a growing collection of fast, private, free developer tools — beautify, minify, convert, compare, scan and generate — built with no sign-up and no tracking.",
+    "badge": "Fast · private · free", "titleA": "About", "titleHl": "Neatly",
+    "lead": "Neatly is a growing collection of fast, private developer tools. Beautify and minify code, convert and compare data, scan and generate QR codes, and more — all in one place, with no sign-up.",
+    "fastT": "Fast", "fastX": "Clean, instant tools that get out of your way — no bloat, no waiting.",
+    "privateT": "Private", "privateX": "Your data is processed on the fly and never stored. Scanning and many tools run entirely in your browser.",
+    "freeT": "Free & open", "freeX": "Every tool is free, with no sign-up, no account and no watermark.",
+    "allT": "All in one", "allX": "Beautify, minify, convert, compare, validate, scan and generate — from one tidy place.",
+    "makerHeading": "Who makes Neatly?",
+    "makerText": "Neatly is designed and built by Maulana, a developer who enjoys making fast, well-crafted web tools. Have feedback or a feature idea?",
+    "getInTouch": "Get in touch", "exploreTools": "Explore the tools"
+  },
+  "contact": {
+    "metaTitle": "Contact — Maulana · Neatly",
+    "metaDesc": "Get in touch with Maulana, the developer behind Neatly. Questions, feedback or ideas are always welcome.",
+    "role": "Full-stack developer · maker of",
+    "bio": "I design and build fast, private, well-crafted web tools — like the ones you're using here. If you have feedback, an idea, or just want to say hi, I'd love to hear from you.",
+    "emailMe": "Email me",
+    "getInTouch": "Get in touch", "getInTouchText": "Questions, feedback, feature ideas or just a hello — drop me a message any time.", "sendMessage": "Send a message",
+    "aroundWeb": "Around the web", "aroundWebText": "Find my code and other work here.",
+    "aboutNeatly": "About Neatly", "aboutNeatlyText": "A growing collection of fast, private developer tools — beautify, minify, convert, compare, scan and generate — free and no sign-up.",
+    "exploreTools": "Explore the tools"
   }
 }

@@ -197,5 +197,29 @@
     "aboutP2": "Lahat ay ginagawa sa iyong device — walang ina-upload — kaya mabilis, pribado at libre, walang watermark at walang sign-up.",
     "qrTab": "QR Code", "barcodeTab": "Barcode",
     "empty": "Punan ang mga field para bumuo ng iyong code."
+  },
+  "about": {
+    "metaTitle": "Tungkol sa Neatly — Mabilis, Pribadong Developer Tools",
+    "metaDesc": "Tungkol sa Neatly: lumalagong koleksyon ng mabilis, pribado at libreng developer tools — beautify, minify, convert, compare, scan at generate — gawa nang walang sign-up at walang tracking.",
+    "badge": "Mabilis · pribado · libre", "titleA": "Tungkol sa", "titleHl": "Neatly",
+    "lead": "Ang Neatly ay lumalagong koleksyon ng mabilis at pribadong developer tools. I-beautify at i-minify ang code, i-convert at ihambing ang data, mag-scan at gumawa ng QR codes, at iba pa — lahat sa isang lugar, walang sign-up.",
+    "fastT": "Mabilis", "fastX": "Malinis at agad na mga tool na hindi nakakaabala — walang bloat, walang paghihintay.",
+    "privateT": "Pribado", "privateX": "Ang iyong data ay pinoproseso agad at hindi kailanman iniimbak. Ang pag-scan at maraming tool ay tumatakbo nang buo sa iyong browser.",
+    "freeT": "Libre at bukas", "freeX": "Bawat tool ay libre, walang sign-up, walang account at walang watermark.",
+    "allT": "Lahat sa isa", "allX": "Beautify, minify, convert, compare, validate, scan at generate — mula sa isang maayos na lugar.",
+    "makerHeading": "Sino ang gumagawa ng Neatly?",
+    "makerText": "Ang Neatly ay dinisenyo at ginawa ni Maulana, isang developer na mahilig gumawa ng mabilis at mahusay na web tools. May feedback o ideya sa feature?",
+    "getInTouch": "Makipag-ugnayan", "exploreTools": "Tuklasin ang mga tool"
+  },
+  "contact": {
+    "metaTitle": "Kontak — Maulana · Neatly",
+    "metaDesc": "Makipag-ugnayan kay Maulana, ang developer sa likod ng Neatly. Malugod na tinatanggap ang mga tanong, feedback o ideya.",
+    "role": "Full-stack developer · gumawa ng",
+    "bio": "Nagdidisenyo at gumagawa ako ng mabilis, pribado at mahusay na web tools — tulad ng ginagamit mo dito. Kung may feedback ka, ideya, o gusto lang bumati, ikagagalak kong marinig ito.",
+    "emailMe": "I-email ako",
+    "getInTouch": "Makipag-ugnayan", "getInTouchText": "Mga tanong, feedback, ideya sa feature o pagbati lang — magpadala ng mensahe anumang oras.", "sendMessage": "Magpadala ng mensahe",
+    "aroundWeb": "Sa web", "aroundWebText": "Hanapin ang aking code at iba pang gawa dito.",
+    "aboutNeatly": "Tungkol sa Neatly", "aboutNeatlyText": "Lumalagong koleksyon ng mabilis at pribadong developer tools — beautify, minify, convert, compare, scan at generate — libre at walang sign-up.",
+    "exploreTools": "Tuklasin ang mga tool"
   }
 }

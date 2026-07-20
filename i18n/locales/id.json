@@ -197,5 +197,29 @@
     "aboutP2": "Semuanya dibuat di perangkat Anda — tidak ada yang diunggah — jadi cepat, privat, dan gratis, tanpa watermark dan tanpa daftar.",
     "qrTab": "QR Code", "barcodeTab": "Barcode",
     "empty": "Isi bidang untuk menghasilkan kode Anda."
+  },
+  "about": {
+    "metaTitle": "Tentang Neatly — Alat Developer Cepat & Privat",
+    "metaDesc": "Tentang Neatly: koleksi alat developer yang cepat, privat, dan gratis — beautify, minify, konversi, banding, pindai, dan generate — dibuat tanpa daftar dan tanpa pelacakan.",
+    "badge": "Cepat · privat · gratis", "titleA": "Tentang", "titleHl": "Neatly",
+    "lead": "Neatly adalah koleksi alat developer yang cepat dan privat. Beautify dan minify kode, konversi dan bandingkan data, pindai dan buat QR code, dan lainnya — semua di satu tempat, tanpa daftar.",
+    "fastT": "Cepat", "fastX": "Alat bersih dan instan yang tidak menghalangi Anda — tanpa bloat, tanpa menunggu.",
+    "privateT": "Privat", "privateX": "Data Anda diproses langsung dan tidak pernah disimpan. Pemindaian dan banyak alat berjalan sepenuhnya di browser Anda.",
+    "freeT": "Gratis & terbuka", "freeX": "Setiap alat gratis, tanpa daftar, tanpa akun, dan tanpa watermark.",
+    "allT": "Semua dalam satu", "allX": "Beautify, minify, konversi, banding, validasi, pindai, dan generate — dari satu tempat yang rapi.",
+    "makerHeading": "Siapa pembuat Neatly?",
+    "makerText": "Neatly dirancang dan dibuat oleh Maulana, developer yang senang membuat alat web yang cepat dan rapi. Punya masukan atau ide fitur?",
+    "getInTouch": "Hubungi", "exploreTools": "Jelajahi alat"
+  },
+  "contact": {
+    "metaTitle": "Kontak — Maulana · Neatly",
+    "metaDesc": "Hubungi Maulana, developer di balik Neatly. Pertanyaan, masukan, atau ide selalu diterima.",
+    "role": "Full-stack developer · pembuat",
+    "bio": "Saya merancang dan membangun alat web yang cepat, privat, dan rapi — seperti yang Anda gunakan di sini. Jika Anda punya masukan, ide, atau sekadar ingin menyapa, saya senang mendengarnya.",
+    "emailMe": "Email saya",
+    "getInTouch": "Hubungi", "getInTouchText": "Pertanyaan, masukan, ide fitur, atau sekadar sapaan — kirim pesan kapan saja.", "sendMessage": "Kirim pesan",
+    "aroundWeb": "Di web", "aroundWebText": "Temukan kode dan karya saya lainnya di sini.",
+    "aboutNeatly": "Tentang Neatly", "aboutNeatlyText": "Koleksi alat developer yang cepat dan privat — beautify, minify, konversi, banding, pindai, dan generate — gratis dan tanpa daftar.",
+    "exploreTools": "Jelajahi alat"
   }
 }

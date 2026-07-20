@@ -197,5 +197,29 @@
     "aboutP2": "Semuanya dijana pada peranti anda — tiada apa dimuat naik — jadi pantas, peribadi dan percuma, tanpa tera air dan tanpa mendaftar.",
     "qrTab": "QR Code", "barcodeTab": "Barcode",
     "empty": "Isi medan untuk menjana kod anda."
+  },
+  "about": {
+    "metaTitle": "Tentang Neatly — Alat Pembangun Pantas & Peribadi",
+    "metaDesc": "Tentang Neatly: koleksi alat pembangun yang pantas, peribadi dan percuma — beautify, minify, tukar, banding, imbas dan jana — dibina tanpa mendaftar dan tanpa penjejakan.",
+    "badge": "Pantas · peribadi · percuma", "titleA": "Tentang", "titleHl": "Neatly",
+    "lead": "Neatly ialah koleksi alat pembangun yang pantas dan peribadi. Beautify dan minify kod, tukar dan bandingkan data, imbas dan jana QR code, dan banyak lagi — semua di satu tempat, tanpa mendaftar.",
+    "fastT": "Pantas", "fastX": "Alat bersih dan segera yang tidak menghalang anda — tanpa bloat, tanpa menunggu.",
+    "privateT": "Peribadi", "privateX": "Data anda diproses serta-merta dan tidak pernah disimpan. Pengimbasan dan banyak alat berjalan sepenuhnya dalam pelayar anda.",
+    "freeT": "Percuma & terbuka", "freeX": "Setiap alat percuma, tanpa mendaftar, tanpa akaun dan tanpa tera air.",
+    "allT": "Semua dalam satu", "allX": "Beautify, minify, tukar, banding, sahkan, imbas dan jana — dari satu tempat yang kemas.",
+    "makerHeading": "Siapa pencipta Neatly?",
+    "makerText": "Neatly direka dan dibina oleh Maulana, pembangun yang gemar mencipta alat web yang pantas dan kemas. Ada maklum balas atau idea ciri?",
+    "getInTouch": "Hubungi", "exploreTools": "Terokai alat"
+  },
+  "contact": {
+    "metaTitle": "Hubungi — Maulana · Neatly",
+    "metaDesc": "Hubungi Maulana, pembangun di sebalik Neatly. Soalan, maklum balas atau idea sentiasa dialu-alukan.",
+    "role": "Full-stack developer · pencipta",
+    "bio": "Saya mereka dan membina alat web yang pantas, peribadi dan kemas — seperti yang anda guna di sini. Jika anda ada maklum balas, idea, atau sekadar ingin menyapa, saya gembira mendengarnya.",
+    "emailMe": "E-mel saya",
+    "getInTouch": "Hubungi", "getInTouchText": "Soalan, maklum balas, idea ciri atau sekadar sapaan — hantar mesej bila-bila masa.", "sendMessage": "Hantar mesej",
+    "aroundWeb": "Di web", "aroundWebText": "Cari kod dan karya saya yang lain di sini.",
+    "aboutNeatly": "Tentang Neatly", "aboutNeatlyText": "Koleksi alat pembangun yang pantas dan peribadi — beautify, minify, tukar, banding, imbas dan jana — percuma dan tanpa mendaftar.",
+    "exploreTools": "Terokai alat"
   }
 }

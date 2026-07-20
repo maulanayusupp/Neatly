@@ -197,5 +197,29 @@
     "aboutP2": "Mọi thứ được tạo trên thiết bị của bạn — không tải lên gì — nên nhanh, riêng tư và miễn phí, không watermark và không cần đăng ký.",
     "qrTab": "QR Code", "barcodeTab": "Barcode",
     "empty": "Điền vào các trường để tạo mã của bạn."
+  },
+  "about": {
+    "metaTitle": "Giới thiệu Neatly — Công cụ lập trình nhanh, riêng tư",
+    "metaDesc": "Giới thiệu Neatly: bộ công cụ lập trình nhanh, riêng tư và miễn phí đang phát triển — beautify, minify, chuyển đổi, so sánh, quét và tạo — không cần đăng ký và không theo dõi.",
+    "badge": "Nhanh · riêng tư · miễn phí", "titleA": "Giới thiệu", "titleHl": "Neatly",
+    "lead": "Neatly là bộ công cụ lập trình nhanh và riêng tư đang phát triển. Beautify và minify mã, chuyển đổi và so sánh dữ liệu, quét và tạo QR code, và hơn thế — tất cả ở một nơi, không cần đăng ký.",
+    "fastT": "Nhanh", "fastX": "Công cụ gọn gàng, tức thì, không cản đường bạn — không rườm rà, không chờ đợi.",
+    "privateT": "Riêng tư", "privateX": "Dữ liệu của bạn được xử lý ngay và không bao giờ được lưu. Việc quét và nhiều công cụ chạy hoàn toàn trong trình duyệt của bạn.",
+    "freeT": "Miễn phí & mở", "freeX": "Mọi công cụ đều miễn phí, không cần đăng ký, không tài khoản và không watermark.",
+    "allT": "Tất cả trong một", "allX": "Beautify, minify, chuyển đổi, so sánh, kiểm tra, quét và tạo — từ một nơi gọn gàng.",
+    "makerHeading": "Ai tạo ra Neatly?",
+    "makerText": "Neatly được thiết kế và xây dựng bởi Maulana, một lập trình viên thích tạo ra các công cụ web nhanh và tinh tế. Có góp ý hoặc ý tưởng tính năng?",
+    "getInTouch": "Liên hệ", "exploreTools": "Khám phá công cụ"
+  },
+  "contact": {
+    "metaTitle": "Liên hệ — Maulana · Neatly",
+    "metaDesc": "Liên hệ với Maulana, lập trình viên đứng sau Neatly. Câu hỏi, góp ý hoặc ý tưởng luôn được hoan nghênh.",
+    "role": "Full-stack developer · người tạo",
+    "bio": "Tôi thiết kế và xây dựng các công cụ web nhanh, riêng tư và tinh tế — như những gì bạn đang dùng ở đây. Nếu bạn có góp ý, ý tưởng, hoặc chỉ muốn chào hỏi, tôi rất vui được nghe.",
+    "emailMe": "Email cho tôi",
+    "getInTouch": "Liên hệ", "getInTouchText": "Câu hỏi, góp ý, ý tưởng tính năng hoặc chỉ một lời chào — nhắn tôi bất cứ lúc nào.", "sendMessage": "Gửi tin nhắn",
+    "aroundWeb": "Trên web", "aroundWebText": "Tìm mã và các dự án khác của tôi ở đây.",
+    "aboutNeatly": "Giới thiệu Neatly", "aboutNeatlyText": "Bộ công cụ lập trình nhanh và riêng tư đang phát triển — beautify, minify, chuyển đổi, so sánh, quét và tạo — miễn phí và không cần đăng ký.",
+    "exploreTools": "Khám phá công cụ"
   }
 }
