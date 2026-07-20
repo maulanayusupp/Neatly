@@ -9,10 +9,16 @@ const runs = ref<string[]>([])
 const presets = [
   { expr: '* * * * *', key: 'everyMinute' },
   { expr: '*/5 * * * *', key: 'every5' },
+  { expr: '*/15 * * * *', key: 'every15' },
   { expr: '0 * * * *', key: 'hourly' },
   { expr: '0 0 * * *', key: 'daily' },
   { expr: '0 9 * * 1-5', key: 'weekdays' },
+  { expr: '0 0 * * 0', key: 'weekly' },
+  { expr: '0 12 * * *', key: 'noon' },
+  { expr: '0 0,12 * * *', key: 'twiceDaily' },
+  { expr: '0 2 * * *', key: 'nightlyBackup' },
   { expr: '0 0 1 * *', key: 'monthly' },
+  { expr: '0 0 1 */3 *', key: 'quarterly' },
 ]
 const fieldKeys = ['minute', 'hour', 'dom', 'month', 'dow']
 
