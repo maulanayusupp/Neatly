@@ -234,5 +234,16 @@
     "placeholder": "Cari alat…",
     "empty": "Tiada alat dijumpai",
     "navigate": "navigasi", "select": "buka", "close": "tutup"
+  },
+  "passwordGen": {
+    "metaTitle": "Penjana Kata Laluan — Cipta Kata Laluan Rawak yang Kuat · Neatly",
+    "metaDesc": "Penjana kata laluan dalam talian percuma. Cipta kata laluan rawak yang kuat dengan panjang, huruf, nombor dan simbol tersuai — dijana dengan selamat dalam pelayar anda, tidak pernah disimpan.",
+    "badge": "Selamat · boleh sesuai · peribadi", "titleA": "Penjana", "titleHl": "kata laluan",
+    "lead": "Cipta kata laluan rawak yang kuat secara kriptografi. Pilih panjang dan set aksara, kemudian salin — semuanya berlaku dalam pelayar anda.",
+    "length": "Panjang", "lowercase": "Huruf kecil (a–z)", "uppercase": "Huruf besar (A–Z)",
+    "numbers": "Nombor (0–9)", "symbols": "Simbol (!#$…)", "excludeAmbiguous": "Kecualikan kabur (il1O0)",
+    "generate": "Jana", "strength": "Kekuatan",
+    "weak": "Lemah", "fair": "Sederhana", "good": "Baik", "strong": "Kuat",
+    "noSet": "Pilih sekurang-kurangnya satu set aksara."
   }
 }

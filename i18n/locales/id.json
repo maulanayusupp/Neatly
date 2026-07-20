@@ -234,5 +234,16 @@
     "placeholder": "Cari alat…",
     "empty": "Alat tidak ditemukan",
     "navigate": "navigasi", "select": "buka", "close": "tutup"
+  },
+  "passwordGen": {
+    "metaTitle": "Generator Kata Sandi — Buat Kata Sandi Acak yang Kuat · Neatly",
+    "metaDesc": "Generator kata sandi online gratis. Buat kata sandi acak yang kuat dengan panjang, huruf, angka, dan simbol khusus — dibuat aman di browser Anda, tidak pernah disimpan.",
+    "badge": "Aman · dapat disesuaikan · privat", "titleA": "Generator", "titleHl": "kata sandi",
+    "lead": "Buat kata sandi acak yang kuat secara kriptografis. Pilih panjang dan set karakter, lalu salin — semuanya terjadi di browser Anda.",
+    "length": "Panjang", "lowercase": "Huruf kecil (a–z)", "uppercase": "Huruf besar (A–Z)",
+    "numbers": "Angka (0–9)", "symbols": "Simbol (!#$…)", "excludeAmbiguous": "Kecualikan ambigu (il1O0)",
+    "generate": "Buat", "strength": "Kekuatan",
+    "weak": "Lemah", "fair": "Cukup", "good": "Baik", "strong": "Kuat",
+    "noSet": "Pilih setidaknya satu set karakter."
   }
 }

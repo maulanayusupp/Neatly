@@ -63,6 +63,7 @@ export const TOOL_GROUPS: ToolGroup[] = [
       { to: '/hash', label: 'Hash', desc: 'SHA-1 / 256 / 384 / 512', icon: 'hash' },
       { to: '/uuid', label: 'UUID', desc: 'Generate v4 UUIDs', icon: 'fingerprint' },
       { to: '/timestamp', label: 'Timestamp', desc: 'Epoch ↔ date', icon: 'clock' },
+      { to: '/password', label: 'Password', desc: 'Strong random passwords', icon: 'lock' },
     ],
   },
 ]

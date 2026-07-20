@@ -234,5 +234,16 @@
     "placeholder": "Search tools…",
     "empty": "No tools found",
     "navigate": "navigate", "select": "open", "close": "close"
+  },
+  "passwordGen": {
+    "metaTitle": "Password Generator — Create Strong Random Passwords · Neatly",
+    "metaDesc": "Free online password generator. Create strong, random passwords with custom length, letters, numbers and symbols — generated securely in your browser, never stored.",
+    "badge": "Secure · customizable · private", "titleA": "Password", "titleHl": "generator",
+    "lead": "Create strong, cryptographically-random passwords. Choose the length and character sets, then copy — everything happens in your browser.",
+    "length": "Length", "lowercase": "Lowercase (a–z)", "uppercase": "Uppercase (A–Z)",
+    "numbers": "Numbers (0–9)", "symbols": "Symbols (!#$…)", "excludeAmbiguous": "Exclude ambiguous (il1O0)",
+    "generate": "Generate", "strength": "Strength",
+    "weak": "Weak", "fair": "Fair", "good": "Good", "strong": "Strong",
+    "noSet": "Select at least one character set."
   }
 }

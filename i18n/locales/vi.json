@@ -234,5 +234,16 @@
     "placeholder": "Tìm công cụ…",
     "empty": "Không tìm thấy công cụ",
     "navigate": "điều hướng", "select": "mở", "close": "đóng"
+  },
+  "passwordGen": {
+    "metaTitle": "Trình tạo mật khẩu — Tạo mật khẩu ngẫu nhiên mạnh · Neatly",
+    "metaDesc": "Trình tạo mật khẩu trực tuyến miễn phí. Tạo mật khẩu ngẫu nhiên mạnh với độ dài, chữ cái, số và ký hiệu tuỳ chỉnh — tạo an toàn trong trình duyệt của bạn, không bao giờ được lưu.",
+    "badge": "An toàn · tuỳ chỉnh · riêng tư", "titleA": "Trình tạo", "titleHl": "mật khẩu",
+    "lead": "Tạo mật khẩu ngẫu nhiên mạnh về mặt mật mã. Chọn độ dài và bộ ký tự, rồi sao chép — mọi thứ diễn ra trong trình duyệt của bạn.",
+    "length": "Độ dài", "lowercase": "Chữ thường (a–z)", "uppercase": "Chữ hoa (A–Z)",
+    "numbers": "Số (0–9)", "symbols": "Ký hiệu (!#$…)", "excludeAmbiguous": "Loại bỏ ký tự dễ nhầm (il1O0)",
+    "generate": "Tạo", "strength": "Độ mạnh",
+    "weak": "Yếu", "fair": "Trung bình", "good": "Tốt", "strong": "Mạnh",
+    "noSet": "Chọn ít nhất một bộ ký tự."
   }
 }

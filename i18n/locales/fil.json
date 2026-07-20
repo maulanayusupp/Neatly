@@ -234,5 +234,16 @@
     "placeholder": "Maghanap ng tool…",
     "empty": "Walang nahanap na tool",
     "navigate": "mag-navigate", "select": "buksan", "close": "isara"
+  },
+  "passwordGen": {
+    "metaTitle": "Password Generator — Gumawa ng Malalakas na Random na Password · Neatly",
+    "metaDesc": "Libreng online password generator. Gumawa ng malalakas at random na password na may custom na haba, letra, numero at simbolo — ligtas na ginawa sa iyong browser, hindi kailanman iniimbak.",
+    "badge": "Ligtas · nababago · pribado", "titleA": "Password", "titleHl": "generator",
+    "lead": "Gumawa ng malalakas, cryptographically-random na password. Piliin ang haba at character sets, tapos kopyahin — lahat ay nangyayari sa iyong browser.",
+    "length": "Haba", "lowercase": "Maliit na letra (a–z)", "uppercase": "Malaking letra (A–Z)",
+    "numbers": "Mga numero (0–9)", "symbols": "Mga simbolo (!#$…)", "excludeAmbiguous": "Ibukod ang malabo (il1O0)",
+    "generate": "Bumuo", "strength": "Lakas",
+    "weak": "Mahina", "fair": "Katamtaman", "good": "Mabuti", "strong": "Malakas",
+    "noSet": "Pumili ng kahit isang character set."
   }
 }

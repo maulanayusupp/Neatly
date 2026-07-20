@@ -22,6 +22,7 @@ export default defineEventHandler((event) => {
     'hash',
     'uuid',
     'timestamp',
+    'password',
     'about',
     'contact',
     'terms',

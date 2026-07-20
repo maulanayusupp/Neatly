@@ -17,8 +17,9 @@ Deferred items to pick up later (not done yet).
       titles/FAQ, and the legal pages (terms/privacy/disclaimer) full text.
 
 ## Tools (ideas / backlog)
+- [x] Password generator (`/password`).
 - [ ] Cron expression parser, SQL formatter, Markdown ↔ HTML + preview
-- [ ] Password generator, number base converter (hex/bin/dec)
+- [ ] Number base converter (hex/bin/dec)
 - [ ] Image tools: compress, image → Base64, favicon generator
 - [ ] Lorem ipsum, case / slug converter, YAML validator
 
