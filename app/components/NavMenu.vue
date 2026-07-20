@@ -114,12 +114,15 @@ onBeforeUnmount(() => {
   top: calc(100% + 10px);
   right: 0;
   z-index: $z-overlay;
-  width: min(92vw, 520px);
+  width: min(94vw, 600px);
+  max-height: min(72vh, 640px);
+  overflow-y: auto;
   padding: spacing(4);
   border-radius: $radius-lg;
   border: 1px solid var(--color-border);
   background: var(--color-surface);
   box-shadow: var(--shadow-lg);
+  @include custom-scrollbar;
 }
 
 .nav-menu__grid {

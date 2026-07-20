@@ -18,6 +18,7 @@ Repo: `github.com/maulanayusupp/Neatly` (branch `main`, SSH remote `origin`).
 | `/json-viewer`     | Validate JSON (error line), collapsible tree view, stats, format/minify/sort-keys. |
 | `/scan`            | **Client-only** QR + barcode scanner (camera / upload / paste) via `@zxing/browser`. No backend. |
 | `/qr-generator`    | **Client-only** QR + barcode generator (`qrcode`, `jsbarcode`); URL/text/Wi-Fi/email/phone/vCard, PNG+SVG export. |
+| `/base64`, `/url-encode`, `/jwt-decoder`, `/hash`, `/uuid`, `/timestamp` | Client-only dev tools (Base64, URL, JWT decode, SHA hashes via Web Crypto, UUID v4, epoch converter). |
 | `/minify-<lang>`, `/beautify-<lang>` | 10 generated SEO landing pages (`[slug].vue` + `shared/utils/landing.ts`). |
 | `/terms`, `/privacy`, `/disclaimer`  | Legal pages (`LegalArticle.vue`). |
 | `/sitemap.xml`     | Generated in `server/routes/sitemap.xml.ts`. |

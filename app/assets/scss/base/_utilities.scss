@@ -15,3 +15,17 @@
   background-clip: text;
   color: transparent;
 }
+
+// Shared wrapper for simple single-tool pages.
+.tool-outlet {
+  padding-bottom: spacing(16);
+}
+
+.tool-panel {
+  @include card;
+  padding: spacing(5);
+
+  @include respond('md') {
+    padding: spacing(6);
+  }
+}

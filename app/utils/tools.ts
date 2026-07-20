@@ -38,6 +38,17 @@ export const TOOL_GROUPS: ToolGroup[] = [
       { to: '/qr-generator', label: 'QR Generator', desc: 'Create QR & barcodes', icon: 'grid' },
     ],
   },
+  {
+    name: 'Encode & data',
+    tools: [
+      { to: '/base64', label: 'Base64', desc: 'Encode / decode', icon: 'code' },
+      { to: '/url-encode', label: 'URL Encode', desc: 'Percent-encode text', icon: 'link' },
+      { to: '/jwt-decoder', label: 'JWT Decoder', desc: 'Decode JSON Web Tokens', icon: 'key' },
+      { to: '/hash', label: 'Hash', desc: 'SHA-1 / 256 / 384 / 512', icon: 'hash' },
+      { to: '/uuid', label: 'UUID', desc: 'Generate v4 UUIDs', icon: 'fingerprint' },
+      { to: '/timestamp', label: 'Timestamp', desc: 'Epoch ↔ date', icon: 'clock' },
+    ],
+  },
 ]
 
 export const ALL_TOOLS: ToolLink[] = TOOL_GROUPS.flatMap(group => group.tools)
