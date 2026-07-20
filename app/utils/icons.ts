@@ -61,6 +61,21 @@ export const ICONS = {
     '<path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/>',
   wifi:
     '<path d="M5 12.5a10 10 0 0 1 14 0"/><path d="M8.5 16a5 5 0 0 1 7 0"/><line x1="12" y1="19.5" x2="12.01" y2="19.5"/>',
+  chevron: '<polyline points="6 9 12 15 18 9"/>',
+  grid:
+    '<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/>',
+  tree:
+    '<rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><path d="M6 9v6a2 2 0 0 0 2 2h7"/><path d="M6 9v0M15 18h-2"/>',
+  key:
+    '<circle cx="7.5" cy="15.5" r="4.5"/><path d="M10.7 12.3 21 2m-4 2 2.5 2.5M14 7l2.5 2.5"/>',
+  hash:
+    '<line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/>',
+  link:
+    '<path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.5-1.5"/>',
+  clock:
+    '<circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/>',
+  fingerprint:
+    '<path d="M12 10a2 2 0 0 0-2 2c0 1.5.5 3-1 5"/><path d="M12 6a6 6 0 0 0-6 6c0 2-.5 3.5-1 4.5"/><path d="M12 6a6 6 0 0 1 6 6c0 1 0 2.5-.5 4"/><path d="M12 10a2 2 0 0 1 2 2c0 3 .5 4.5 1 5.5"/>',
 } as const
 
 export type IconName = keyof typeof ICONS

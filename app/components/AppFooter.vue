@@ -1,12 +1,9 @@
 <script setup lang="ts">
+import { ALL_TOOLS } from '~/utils/tools'
+
 const year = 2026
 
-const toolLinks = [
-  { to: '/', label: 'Beautify & Minify' },
-  { to: '/convert', label: 'Convert' },
-  { to: '/compare', label: 'JSON Compare' },
-  { to: '/scan', label: 'QR & Barcode Scanner' },
-]
+const toolLinks = ALL_TOOLS
 
 const legalLinks = [
   { to: '/terms', label: 'Terms of Service' },
