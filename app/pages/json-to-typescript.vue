@@ -31,7 +31,6 @@ async function generate() {
 }
 
 watch([input, rootName], generate)
-onMounted(() => { if (!input.value) input.value = SAMPLE })
 
 async function copy() {
   if (output.value && await copyText(output.value)) {

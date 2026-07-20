@@ -49,7 +49,6 @@ async function regenerate() {
   safeHtml.value = DOMPurify.sanitize(raw)
 }
 
-onMounted(() => { input.value = SAMPLE })
 watch(input, regenerate)
 
 const highlightedSource = computed(() => highlightCode(htmlSource.value, 'html'))
