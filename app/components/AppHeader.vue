@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const repoUrl = 'https://github.com'
+const repoUrl = 'https://maulanayusupp.github.io'
 </script>
 
 <template>
