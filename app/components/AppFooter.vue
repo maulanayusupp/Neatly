@@ -1,7 +1,17 @@
 <script setup lang="ts">
-import { LANGUAGES } from '#shared/utils/languages'
-
 const year = 2026
+
+const toolLinks = [
+  { to: '/', label: 'Beautify & Minify' },
+  { to: '/convert', label: 'Convert' },
+  { to: '/compare', label: 'JSON Compare' },
+]
+
+const legalLinks = [
+  { to: '/terms', label: 'Terms of Service' },
+  { to: '/privacy', label: 'Privacy Policy' },
+  { to: '/disclaimer', label: 'Disclaimer' },
+]
 </script>
 
 <template>
@@ -12,12 +22,26 @@ const year = 2026
         <p class="app-footer__tagline">Make your code neat, instantly.</p>
       </div>
 
-      <ul class="app-footer__langs" role="list">
-        <li v-for="lang in LANGUAGES" :key="lang.id">{{ lang.label }}</li>
-      </ul>
+      <nav class="app-footer__col" aria-label="Tools">
+        <h2 class="app-footer__col-title">Tools</h2>
+        <ul role="list">
+          <li v-for="link in toolLinks" :key="link.to">
+            <NuxtLink :to="link.to">{{ link.label }}</NuxtLink>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="app-footer__col" aria-label="Legal">
+        <h2 class="app-footer__col-title">Legal</h2>
+        <ul role="list">
+          <li v-for="link in legalLinks" :key="link.to">
+            <NuxtLink :to="link.to">{{ link.label }}</NuxtLink>
+          </li>
+        </ul>
+      </nav>
 
       <p class="app-footer__meta">
-        © {{ year }} Neatly · Runs privately in your browser session.
+        © {{ year }} Neatly · Your code is processed privately and never stored.
       </p>
     </div>
   </footer>
@@ -31,36 +55,46 @@ const year = 2026
 }
 
 .app-footer__inner {
-  padding-block: spacing(8);
+  padding-block: spacing(10);
   display: grid;
-  gap: spacing(5);
+  gap: spacing(8);
+  grid-template-columns: 1fr;
 
   @include respond('md') {
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    row-gap: spacing(4);
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: spacing(6);
   }
 }
 
 .app-footer__tagline {
-  margin-top: spacing(2);
+  margin-top: spacing(3);
+  max-width: 34ch;
   color: var(--color-text-muted);
   font-size: $text-sm;
 }
 
-.app-footer__langs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: spacing(2) spacing(4);
-  margin: 0;
+.app-footer__col-title {
+  font-size: $text-sm;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.app-footer__col ul {
+  margin-top: spacing(3);
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: spacing(2);
+}
+
+.app-footer__col a {
   color: var(--color-text-muted);
   font-size: $text-sm;
-  font-weight: 600;
+  transition: color $transition-fast;
 
-  @include respond('md') {
-    justify-content: flex-end;
+  &:hover {
+    color: var(--color-primary);
   }
 }
 
@@ -70,6 +104,8 @@ const year = 2026
 
   @include respond('md') {
     grid-column: 1 / -1;
+    border-top: 1px solid var(--color-border);
+    padding-top: spacing(5);
   }
 }
 </style>
