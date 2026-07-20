@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import { ALL_TOOLS } from '~/utils/tools'
+import { TOOL_GROUPS } from '~/utils/tools'
 
 const year = 2026
-
-const toolLinks = ALL_TOOLS
 
 const aboutLinks = [
   { to: '/about', key: 'linkAbout' },
@@ -25,32 +23,39 @@ const legalLinks = [
         <p class="app-footer__tagline">{{ $t('footer.tagline') }}</p>
       </div>
 
-      <nav class="app-footer__col" :aria-label="$t('footer.tools')">
-        <h2 class="app-footer__col-title">{{ $t('footer.tools') }}</h2>
-        <ul role="list">
-          <li v-for="link in toolLinks" :key="link.to">
-            <NuxtLink :to="link.to">{{ link.label }}</NuxtLink>
-          </li>
-        </ul>
-      </nav>
+      <div class="app-footer__cols">
+        <nav
+          v-for="group in TOOL_GROUPS"
+          :key="group.key"
+          class="app-footer__col"
+          :aria-label="$t(`groups.${group.key}`)"
+        >
+          <h2 class="app-footer__col-title">{{ $t(`groups.${group.key}`) }}</h2>
+          <ul role="list">
+            <li v-for="link in group.tools" :key="link.to">
+              <NuxtLink :to="link.to">{{ link.label }}</NuxtLink>
+            </li>
+          </ul>
+        </nav>
 
-      <nav class="app-footer__col" :aria-label="$t('footer.about')">
-        <h2 class="app-footer__col-title">{{ $t('footer.about') }}</h2>
-        <ul role="list">
-          <li v-for="link in aboutLinks" :key="link.to">
-            <NuxtLink :to="link.to">{{ $t(`footer.${link.key}`) }}</NuxtLink>
-          </li>
-        </ul>
-      </nav>
+        <nav class="app-footer__col" :aria-label="$t('footer.about')">
+          <h2 class="app-footer__col-title">{{ $t('footer.about') }}</h2>
+          <ul role="list">
+            <li v-for="link in aboutLinks" :key="link.to">
+              <NuxtLink :to="link.to">{{ $t(`footer.${link.key}`) }}</NuxtLink>
+            </li>
+          </ul>
+        </nav>
 
-      <nav class="app-footer__col" :aria-label="$t('footer.legal')">
-        <h2 class="app-footer__col-title">{{ $t('footer.legal') }}</h2>
-        <ul role="list">
-          <li v-for="link in legalLinks" :key="link.to">
-            <NuxtLink :to="link.to">{{ $t(`footer.${link.key}`) }}</NuxtLink>
-          </li>
-        </ul>
-      </nav>
+        <nav class="app-footer__col" :aria-label="$t('footer.legal')">
+          <h2 class="app-footer__col-title">{{ $t('footer.legal') }}</h2>
+          <ul role="list">
+            <li v-for="link in legalLinks" :key="link.to">
+              <NuxtLink :to="link.to">{{ $t(`footer.${link.key}`) }}</NuxtLink>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
       <div class="app-footer__meta">
         <span>© {{ year }} Neatly · {{ $t('footer.rights') }}</span>
@@ -69,27 +74,9 @@ const legalLinks = [
 
 .app-footer__inner {
   padding-block: spacing(10);
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: spacing(8);
-  grid-template-columns: 1fr;
-
-  @include respond('sm') {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  @include respond('md') {
-    grid-template-columns: 1.8fr 1fr 1fr 1fr;
-    gap: spacing(6);
-  }
-}
-
-.app-footer__brand {
-  @include respond('sm') {
-    grid-column: 1 / -1;
-  }
-  @include respond('md') {
-    grid-column: auto;
-  }
 }
 
 .app-footer__tagline {
@@ -97,6 +84,24 @@ const legalLinks = [
   max-width: 34ch;
   color: var(--color-text-muted);
   font-size: $text-sm;
+}
+
+.app-footer__cols {
+  display: grid;
+  gap: spacing(6) spacing(5);
+  grid-template-columns: repeat(2, 1fr);
+
+  @include respond('sm') {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include respond('md') {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @include respond('lg') {
+    grid-template-columns: repeat(7, 1fr);
+  }
 }
 
 .app-footer__col-title {
@@ -132,11 +137,7 @@ const legalLinks = [
   gap: spacing(3);
   color: var(--color-text-subtle);
   font-size: $text-xs;
-
-  @include respond('md') {
-    grid-column: 1 / -1;
-    border-top: 1px solid var(--color-border);
-    padding-top: spacing(5);
-  }
+  border-top: 1px solid var(--color-border);
+  padding-top: spacing(5);
 }
 </style>
