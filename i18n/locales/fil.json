@@ -247,5 +247,12 @@
     "generate": "Bumuo", "strength": "Lakas",
     "weak": "Mahina", "fair": "Katamtaman", "good": "Mabuti", "strong": "Malakas",
     "noSet": "Pumili ng kahit isang character set."
+  },
+  "caseConv": {
+    "metaTitle": "Case Converter — camelCase, snake_case, kebab & slug Online · Neatly",
+    "metaDesc": "Libreng online case converter. I-convert ang teksto sa UPPERCASE, lowercase, Title Case, camelCase, PascalCase, snake_case, kebab-case, CONSTANT_CASE, at slug — agad at pribado.",
+    "badge": "camelCase · snake_case · kebab · slug", "titleA": "Case", "titleHl": "converter",
+    "lead": "I-convert ang teksto sa bawat karaniwang case — camelCase, snake_case, kebab-case, CONSTANT_CASE, Title Case, at URL slug — sa isang lugar.",
+    "inputLabel": "Iyong teksto", "placeholder": "Mag-type o mag-paste ng teksto…"
   }
 }

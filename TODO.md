@@ -21,7 +21,8 @@ Deferred items to pick up later (not done yet).
 - [ ] Cron expression parser, SQL formatter, Markdown ↔ HTML + preview
 - [ ] Number base converter (hex/bin/dec)
 - [ ] Image tools: compress, image → Base64, favicon generator
-- [ ] Lorem ipsum, case / slug converter, YAML validator
+- [x] Case / slug converter (`/case`).
+- [ ] Lorem ipsum, YAML validator
 
 ## Quality
 - [x] Unit tests for utils (json-compare, colors, encoding, json-tools) — Vitest, `npm test`.

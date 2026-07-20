@@ -247,5 +247,12 @@
     "generate": "Jana", "strength": "Kekuatan",
     "weak": "Lemah", "fair": "Sederhana", "good": "Baik", "strong": "Kuat",
     "noSet": "Pilih sekurang-kurangnya satu set aksara."
+  },
+  "caseConv": {
+    "metaTitle": "Penukar Case — camelCase, snake_case, kebab & slug Dalam Talian · Neatly",
+    "metaDesc": "Penukar case dalam talian percuma. Tukar teks kepada UPPERCASE, lowercase, Title Case, camelCase, PascalCase, snake_case, kebab-case, CONSTANT_CASE, dan slug — serta-merta dan peribadi.",
+    "badge": "camelCase · snake_case · kebab · slug", "titleA": "Penukar", "titleHl": "case",
+    "lead": "Tukar teks antara semua case biasa — camelCase, snake_case, kebab-case, CONSTANT_CASE, Title Case, dan slug URL — di satu tempat.",
+    "inputLabel": "Teks anda", "placeholder": "Taip atau tampal teks…"
   }
 }

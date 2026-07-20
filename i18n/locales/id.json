@@ -247,5 +247,12 @@
     "generate": "Buat", "strength": "Kekuatan",
     "weak": "Lemah", "fair": "Cukup", "good": "Baik", "strong": "Kuat",
     "noSet": "Pilih setidaknya satu set karakter."
+  },
+  "caseConv": {
+    "metaTitle": "Konverter Case — camelCase, snake_case, kebab & slug Online · Neatly",
+    "metaDesc": "Konverter case online gratis. Ubah teks ke UPPERCASE, lowercase, Title Case, camelCase, PascalCase, snake_case, kebab-case, CONSTANT_CASE, dan slug — seketika dan privat.",
+    "badge": "camelCase · snake_case · kebab · slug", "titleA": "Konverter", "titleHl": "case",
+    "lead": "Ubah teks antara semua case umum — camelCase, snake_case, kebab-case, CONSTANT_CASE, Title Case, dan slug URL — di satu tempat.",
+    "inputLabel": "Teks Anda", "placeholder": "Ketik atau tempel teks…"
   }
 }

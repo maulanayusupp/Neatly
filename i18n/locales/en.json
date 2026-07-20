@@ -247,5 +247,12 @@
     "generate": "Generate", "strength": "Strength",
     "weak": "Weak", "fair": "Fair", "good": "Good", "strong": "Strong",
     "noSet": "Select at least one character set."
+  },
+  "caseConv": {
+    "metaTitle": "Case Converter — camelCase, snake_case, kebab & slug Online · Neatly",
+    "metaDesc": "Free online case converter. Convert text to UPPERCASE, lowercase, Title Case, camelCase, PascalCase, snake_case, kebab-case, CONSTANT_CASE and slugs — instantly and privately.",
+    "badge": "camelCase · snake_case · kebab · slug", "titleA": "Case", "titleHl": "converter",
+    "lead": "Convert text between every common case — camelCase, snake_case, kebab-case, CONSTANT_CASE, Title Case and URL slugs — in one place.",
+    "inputLabel": "Your text", "placeholder": "Type or paste text…"
   }
 }

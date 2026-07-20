@@ -247,5 +247,12 @@
     "generate": "Tạo", "strength": "Độ mạnh",
     "weak": "Yếu", "fair": "Trung bình", "good": "Tốt", "strong": "Mạnh",
     "noSet": "Chọn ít nhất một bộ ký tự."
+  },
+  "caseConv": {
+    "metaTitle": "Trình chuyển đổi Case — camelCase, snake_case, kebab & slug trực tuyến · Neatly",
+    "metaDesc": "Trình chuyển đổi case trực tuyến miễn phí. Chuyển văn bản sang UPPERCASE, lowercase, Title Case, camelCase, PascalCase, snake_case, kebab-case, CONSTANT_CASE và slug — tức thì và riêng tư.",
+    "badge": "camelCase · snake_case · kebab · slug", "titleA": "Trình chuyển đổi", "titleHl": "case",
+    "lead": "Chuyển văn bản giữa mọi case phổ biến — camelCase, snake_case, kebab-case, CONSTANT_CASE, Title Case và slug URL — ở một nơi.",
+    "inputLabel": "Văn bản của bạn", "placeholder": "Nhập hoặc dán văn bản…"
   }
 }

@@ -14,6 +14,7 @@ export default defineEventHandler((event) => {
     'diff',
     'color',
     'regex',
+    'case',
     'scan',
     'qr-generator',
     'base64',

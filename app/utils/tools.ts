@@ -43,6 +43,7 @@ export const TOOL_GROUPS: ToolGroup[] = [
       { to: '/diff', label: 'Text Diff', desc: 'Compare two texts', icon: 'columns' },
       { to: '/color', label: 'Color Converter', desc: 'HEX · RGB · HSL', icon: 'droplet' },
       { to: '/regex', label: 'Regex Tester', desc: 'Test regular expressions', icon: 'regex' },
+      { to: '/case', label: 'Case Converter', desc: 'camelCase, snake, kebab, slug', icon: 'code' },
     ],
   },
   {
