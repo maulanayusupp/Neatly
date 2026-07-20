@@ -43,5 +43,19 @@
     "more": "Lagi",
     "convert": "Tukar JSON · YAML · CSV · XML",
     "compare": "Bandingkan fail JSON"
+  },
+  "common": {
+    "copy": "Salin", "copied": "Disalin", "download": "Muat turun", "clear": "Kosongkan",
+    "upload": "Muat naik", "paste": "Tampal", "example": "Contoh", "input": "Input",
+    "output": "Output", "from": "Daripada", "to": "Kepada"
+  },
+  "convert": {
+    "metaTitle": "Penukar JSON ke YAML, CSV & XML — Penukar Data Dalam Talian Percuma · Neatly",
+    "metaDesc": "Tukar JSON kepada YAML, CSV atau XML — dan sebaliknya — serta-merta dan percuma. Tampal data anda, pilih format, kemudian salin atau muat turun hasilnya. Peribadi, pantas, tanpa mendaftar.",
+    "badge": "JSON · YAML · CSV · XML",
+    "titleA": "Tukar", "titleHl": "sebarang format", "titleB": ", serta-merta",
+    "lead": "Ubah data antara JSON, YAML, CSV dan XML dengan satu klik. Tampal, pilih format anda, dan salin hasilnya.",
+    "placeholder": "Tampal data anda atau lepaskan fail di sini…",
+    "outputEmpty": "Hasil penukaran akan muncul di sini."
   }
 }

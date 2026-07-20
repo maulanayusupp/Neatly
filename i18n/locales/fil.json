@@ -43,5 +43,19 @@
     "more": "Higit pa",
     "convert": "I-convert ang JSON · YAML · CSV · XML",
     "compare": "Ihambing ang mga JSON file"
+  },
+  "common": {
+    "copy": "Kopyahin", "copied": "Nakopya", "download": "I-download", "clear": "I-clear",
+    "upload": "I-upload", "paste": "I-paste", "example": "Halimbawa", "input": "Input",
+    "output": "Output", "from": "Mula sa", "to": "Papunta sa"
+  },
+  "convert": {
+    "metaTitle": "JSON to YAML, CSV & XML Converter — Libreng Online Data Converter · Neatly",
+    "metaDesc": "I-convert ang JSON sa YAML, CSV o XML — at pabalik — agad at libre. I-paste ang iyong data, piliin ang format, tapos kopyahin o i-download ang resulta. Pribado, mabilis, walang sign-up.",
+    "badge": "JSON · YAML · CSV · XML",
+    "titleA": "I-convert ang", "titleHl": "anumang format", "titleB": ", agad",
+    "lead": "Baguhin ang data sa pagitan ng JSON, YAML, CSV at XML sa isang click. I-paste, piliin ang format, at kopyahin ang resulta.",
+    "placeholder": "I-paste ang iyong data o i-drop ang file dito…",
+    "outputEmpty": "Lalabas dito ang na-convert na output."
   }
 }

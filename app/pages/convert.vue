@@ -9,17 +9,15 @@ const toast = useToast()
 const fileInput = ref<HTMLInputElement | null>(null)
 const copied = ref(false)
 
-const pageTitle = 'JSON to YAML, CSV & XML Converter — Free Online Data Converter · Neatly'
-const pageDescription
-  = 'Convert JSON to YAML, CSV or XML — and back — instantly and free. Paste your data, pick the formats, then copy or download the result. Private, fast, no sign-up.'
+const { t } = useI18n()
 
 useSeoMeta({
-  title: pageTitle,
-  description: pageDescription,
-  ogTitle: pageTitle,
-  ogDescription: pageDescription,
-  twitterTitle: pageTitle,
-  twitterDescription: pageDescription,
+  title: () => t('convert.metaTitle'),
+  description: () => t('convert.metaDesc'),
+  ogTitle: () => t('convert.metaTitle'),
+  ogDescription: () => t('convert.metaDesc'),
+  twitterTitle: () => t('convert.metaTitle'),
+  twitterDescription: () => t('convert.metaDesc'),
 })
 useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/convert' }] })
 
@@ -79,29 +77,26 @@ function downloadOutput() {
       <div class="container hero__inner">
         <span class="hero__badge">
           <BaseIcon name="code" :size="15" />
-          JSON · YAML · CSV · XML
+          {{ $t('convert.badge') }}
         </span>
         <h1 class="hero__title">
-          Convert <span class="text-gradient">any format</span>, instantly
+          {{ $t('convert.titleA') }} <span class="text-gradient">{{ $t('convert.titleHl') }}</span>{{ $t('convert.titleB') }}
         </h1>
-        <p class="hero__lead">
-          Transform data between JSON, YAML, CSV and XML in one click.
-          Paste, pick your formats, and copy the result.
-        </p>
+        <p class="hero__lead">{{ $t('convert.lead') }}</p>
       </div>
     </section>
 
     <section class="container convert__body">
       <div class="convert__toolbar">
-        <FormatTabs v-model="from" label="From" />
+        <FormatTabs v-model="from" :label="$t('common.from')" />
         <button class="convert__swap" type="button" aria-label="Swap formats" @click="store.swap">
           <BaseIcon name="beautify" :size="18" />
         </button>
-        <FormatTabs v-model="to" label="To" />
+        <FormatTabs v-model="to" :label="$t('common.to')" />
 
         <div class="convert__actions">
-          <BaseButton variant="ghost" icon="sparkles" @click="store.loadExample">Example</BaseButton>
-          <BaseButton variant="ghost" icon="trash" :disabled="!hasInput" @click="store.clear">Clear</BaseButton>
+          <BaseButton variant="ghost" icon="sparkles" @click="store.loadExample">{{ $t('common.example') }}</BaseButton>
+          <BaseButton variant="ghost" icon="trash" :disabled="!hasInput" @click="store.clear">{{ $t('common.clear') }}</BaseButton>
           <BaseButton
             variant="primary"
             size="lg"
@@ -110,7 +105,7 @@ function downloadOutput() {
             :disabled="!hasInput"
             @click="store.run"
           >
-            Convert
+            {{ $t('convert.titleA') }}
           </BaseButton>
         </div>
       </div>
@@ -118,33 +113,33 @@ function downloadOutput() {
       <div class="convert__grid">
         <EditorPane
           v-model="input"
-          :title="`Input · ${getFormat(from).label}`"
+          :title="`${$t('common.input')} · ${getFormat(from).label}`"
           icon="code"
           :language="from"
-          placeholder="Paste your data or drop a file here…"
+          :placeholder="$t('convert.placeholder')"
           @file="loadFile"
         >
           <template #actions>
-            <BaseButton size="sm" variant="ghost" icon="upload" @click="fileInput?.click()">Upload</BaseButton>
-            <BaseButton size="sm" variant="ghost" icon="copy" @click="paste">Paste</BaseButton>
+            <BaseButton size="sm" variant="ghost" icon="upload" @click="fileInput?.click()">{{ $t('common.upload') }}</BaseButton>
+            <BaseButton size="sm" variant="ghost" icon="copy" @click="paste">{{ $t('common.paste') }}</BaseButton>
             <input ref="fileInput" class="convert__file" type="file" accept=".json,.yaml,.yml,.csv,.xml,.svg,.txt" @change="onFileChange">
           </template>
         </EditorPane>
 
         <EditorPane
           :model-value="status === 'success' ? output : ''"
-          :title="`Output · ${getFormat(to).label}`"
+          :title="`${$t('common.output')} · ${getFormat(to).label}`"
           icon="sparkles"
           :language="to"
           readonly
-          empty-text="Converted output will appear here."
+          :empty-text="$t('convert.outputEmpty')"
         >
           <template #actions>
             <BaseButton size="sm" variant="ghost" :icon="copied ? 'check' : 'copy'" :disabled="status !== 'success'" @click="copyOutput">
-              {{ copied ? 'Copied' : 'Copy' }}
+              {{ copied ? $t('common.copied') : $t('common.copy') }}
             </BaseButton>
             <BaseButton size="sm" variant="ghost" icon="download" :disabled="status !== 'success'" @click="downloadOutput">
-              Download
+              {{ $t('common.download') }}
             </BaseButton>
           </template>
         </EditorPane>

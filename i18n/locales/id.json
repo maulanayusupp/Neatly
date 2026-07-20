@@ -43,5 +43,19 @@
     "more": "Lainnya",
     "convert": "Konversi JSON · YAML · CSV · XML",
     "compare": "Bandingkan berkas JSON"
+  },
+  "common": {
+    "copy": "Salin", "copied": "Tersalin", "download": "Unduh", "clear": "Bersihkan",
+    "upload": "Unggah", "paste": "Tempel", "example": "Contoh", "input": "Masukan",
+    "output": "Keluaran", "from": "Dari", "to": "Ke"
+  },
+  "convert": {
+    "metaTitle": "Konverter JSON ke YAML, CSV & XML — Konverter Data Online Gratis · Neatly",
+    "metaDesc": "Konversi JSON ke YAML, CSV, atau XML — dan sebaliknya — seketika dan gratis. Tempel data Anda, pilih format, lalu salin atau unduh hasilnya. Privat, cepat, tanpa daftar.",
+    "badge": "JSON · YAML · CSV · XML",
+    "titleA": "Konversi", "titleHl": "semua format", "titleB": ", seketika",
+    "lead": "Ubah data antara JSON, YAML, CSV, dan XML dalam satu klik. Tempel, pilih format, dan salin hasilnya.",
+    "placeholder": "Tempel data Anda atau jatuhkan berkas di sini…",
+    "outputEmpty": "Hasil konversi akan muncul di sini."
   }
 }

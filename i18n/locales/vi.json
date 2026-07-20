@@ -43,5 +43,19 @@
     "more": "Thêm",
     "convert": "Chuyển đổi JSON · YAML · CSV · XML",
     "compare": "So sánh tệp JSON"
+  },
+  "common": {
+    "copy": "Sao chép", "copied": "Đã sao chép", "download": "Tải xuống", "clear": "Xoá",
+    "upload": "Tải lên", "paste": "Dán", "example": "Ví dụ", "input": "Đầu vào",
+    "output": "Đầu ra", "from": "Từ", "to": "Sang"
+  },
+  "convert": {
+    "metaTitle": "Chuyển đổi JSON sang YAML, CSV & XML — Công cụ chuyển đổi dữ liệu trực tuyến miễn phí · Neatly",
+    "metaDesc": "Chuyển JSON sang YAML, CSV hoặc XML — và ngược lại — tức thì và miễn phí. Dán dữ liệu, chọn định dạng, rồi sao chép hoặc tải kết quả. Riêng tư, nhanh, không cần đăng ký.",
+    "badge": "JSON · YAML · CSV · XML",
+    "titleA": "Chuyển đổi", "titleHl": "mọi định dạng", "titleB": ", tức thì",
+    "lead": "Chuyển đổi dữ liệu giữa JSON, YAML, CSV và XML chỉ với một cú nhấp. Dán, chọn định dạng và sao chép kết quả.",
+    "placeholder": "Dán dữ liệu của bạn hoặc thả tệp vào đây…",
+    "outputEmpty": "Kết quả chuyển đổi sẽ xuất hiện ở đây."
   }
 }

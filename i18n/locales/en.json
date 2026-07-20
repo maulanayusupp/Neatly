@@ -43,5 +43,19 @@
     "more": "More",
     "convert": "Convert JSON · YAML · CSV · XML",
     "compare": "Compare JSON files"
+  },
+  "common": {
+    "copy": "Copy", "copied": "Copied", "download": "Download", "clear": "Clear",
+    "upload": "Upload", "paste": "Paste", "example": "Example", "input": "Input",
+    "output": "Output", "from": "From", "to": "To"
+  },
+  "convert": {
+    "metaTitle": "JSON to YAML, CSV & XML Converter — Free Online Data Converter · Neatly",
+    "metaDesc": "Convert JSON to YAML, CSV or XML — and back — instantly and free. Paste your data, pick the formats, then copy or download the result. Private, fast, no sign-up.",
+    "badge": "JSON · YAML · CSV · XML",
+    "titleA": "Convert", "titleHl": "any format", "titleB": ", instantly",
+    "lead": "Transform data between JSON, YAML, CSV and XML in one click. Paste, pick your formats, and copy the result.",
+    "placeholder": "Paste your data or drop a file here…",
+    "outputEmpty": "Converted output will appear here."
   }
 }
