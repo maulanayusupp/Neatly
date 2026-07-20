@@ -18,6 +18,28 @@ const flagsStr = computed(() =>
   Object.entries(flags).filter(([, on]) => on).map(([k]) => k).join(''),
 )
 
+const examples = [
+  { label: 'Email', pattern: '\\b[\\w.+-]+@[\\w-]+\\.[\\w.-]+\\b', flags: 'gi', test: 'Reach us at ann@example.com or BOB@Neatly.dev today.' },
+  { label: 'URL', pattern: 'https?:\\/\\/[^\\s]+', flags: 'g', test: 'Docs at https://neatlyapp.vercel.app and http://example.org/x?y=1.' },
+  { label: 'IPv4', pattern: '\\b(?:\\d{1,3}\\.){3}\\d{1,3}\\b', flags: 'g', test: 'Hosts 192.168.0.1, 10.0.0.255 and 8.8.8.8 responded.' },
+  { label: 'Phone', pattern: '\\+?\\d[\\d ()-]{7,}\\d', flags: 'g', test: 'Call +1 (555) 123-4567 or 555-987-6543.' },
+  { label: 'Date (ISO)', pattern: '\\b\\d{4}-\\d{2}-\\d{2}\\b', flags: 'g', test: 'Opened 2026-07-20, due 2026-08-01.' },
+  { label: 'Hex color', pattern: '#(?:[0-9a-fA-F]{6}|[0-9a-fA-F]{3})\\b', flags: 'g', test: 'Brand #6366f1, accent #fff, invalid #12g456.' },
+  { label: 'Slug', pattern: '\\b[a-z0-9]+(?:-[a-z0-9]+)*\\b', flags: 'g', test: 'my-first-post, another-slug-here, notASlug' },
+  { label: 'Price', pattern: '\\$\\d+(?:\\.\\d{2})?', flags: 'g', test: 'Total $42.00 plus $3 shipping and $1250.99 tax.' },
+  { label: 'Hashtag', pattern: '#[A-Za-z]\\w*', flags: 'g', test: 'Loving #Neatly and #devtools — ship faster!' },
+]
+
+function applyExample(i: number) {
+  const ex = examples[i]!
+  pattern.value = ex.pattern
+  flags.g = ex.flags.includes('g')
+  flags.i = ex.flags.includes('i')
+  flags.m = ex.flags.includes('m')
+  flags.s = ex.flags.includes('s')
+  testStr.value = ex.test
+}
+
 const compiled = computed<{ re: RegExp | null, error: string }>(() => {
   if (!pattern.value) return { re: null, error: '' }
   try {
@@ -80,6 +102,7 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/regex' 
 
     <section class="container tool-outlet rx">
       <div class="tool-panel">
+        <ExamplePresets class="rx__presets" :items="examples.map(e => e.label)" @select="applyExample" />
         <label class="rx__field">
           <span class="rx__label">{{ $t('regex.pattern') }}</span>
           <div class="rx__pattern">
@@ -134,6 +157,10 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/regex' 
   display: flex;
   flex-direction: column;
   gap: spacing(4);
+}
+
+.rx__presets {
+  margin-bottom: spacing(4);
 }
 
 .rx__field {
