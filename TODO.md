@@ -23,7 +23,7 @@ Deferred items to pick up later (not done yet).
 - [x] **Timezone converter** (`/timezone`) — convert a moment across many zones, DST-aware.
 - [x] **Meta tag / Open Graph generator** (`/meta-tags`) — SEO/OG/Twitter tags + live social preview.
 - [ ] **.gitignore / robots.txt / LICENSE generator** (Web & SEO).
-- [ ] **URL parser** — break a URL into parts, edit query params (Web & SEO).
+- [x] **URL parser** (`/url-parser`) — break a URL into parts, edit query params.
 - [ ] **CSS generators** — box-shadow, gradient, border-radius, cubic-bezier (visual, shareable).
 - [ ] **JWT builder / encoder** — sign HS256 client-side via Web Crypto (complements the decoder).
 - [ ] **HTML entity encode/decode** + **string escape** (JSON/JS) — fills the encoding gap.

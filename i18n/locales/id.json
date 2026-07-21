@@ -631,5 +631,33 @@
     "prevTwitter": "Twitter / X",
     "samplePageTitle": "Judul halaman Anda",
     "sampleDesc": "Deskripsi meta Anda akan muncul di sini."
+  },
+  "urlParser": {
+    "metaTitle": "URL Parser — Pecah & Edit URL | Neatly",
+    "metaDesc": "Uraikan URL apa pun menjadi protokol, host, port, path, query, dan fragment, edit parameter query lalu bangun ulang. Cepat dan privat di browser.",
+    "badge": "URL parser",
+    "titleA": "Pecah & edit",
+    "titleHl": "URL apa pun",
+    "lead": "Tempel URL untuk memecahnya menjadi bagian-bagiannya, dekode dan edit parameter query, lalu salin tautan yang dibangun ulang — semua di browser Anda.",
+    "placeholder": "https://example.com/path?query=value#hash",
+    "invalid": "Sepertinya ini bukan URL yang valid.",
+    "components": "Komponen URL",
+    "queryParams": "Parameter query",
+    "addParam": "Tambah",
+    "key": "Kunci",
+    "value": "Nilai",
+    "noParams": "Tidak ada parameter query.",
+    "rebuilt": "URL dibangun ulang",
+    "parts": {
+      "protocol": "Protokol",
+      "hostname": "Hostname",
+      "port": "Port",
+      "path": "Path",
+      "query": "Query",
+      "fragment": "Fragment",
+      "origin": "Origin",
+      "username": "Username",
+      "password": "Kata sandi"
+    }
   }
 }

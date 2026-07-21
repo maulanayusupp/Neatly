@@ -631,5 +631,33 @@
     "prevTwitter": "Twitter / X",
     "samplePageTitle": "Your page title",
     "sampleDesc": "Your meta description will appear here."
+  },
+  "urlParser": {
+    "metaTitle": "URL Parser — Break Down & Edit URLs | Neatly",
+    "metaDesc": "Parse any URL into protocol, host, port, path, query and fragment, edit its query parameters and rebuild it. Fast and private in your browser.",
+    "badge": "URL parser",
+    "titleA": "Break down & edit",
+    "titleHl": "any URL",
+    "lead": "Paste a URL to split it into its parts, decode and edit query parameters, and copy the rebuilt link — all in your browser.",
+    "placeholder": "https://example.com/path?query=value#hash",
+    "invalid": "That doesn't look like a valid URL.",
+    "components": "URL components",
+    "queryParams": "Query parameters",
+    "addParam": "Add",
+    "key": "Key",
+    "value": "Value",
+    "noParams": "No query parameters.",
+    "rebuilt": "Rebuilt URL",
+    "parts": {
+      "protocol": "Protocol",
+      "hostname": "Hostname",
+      "port": "Port",
+      "path": "Path",
+      "query": "Query",
+      "fragment": "Fragment",
+      "origin": "Origin",
+      "username": "Username",
+      "password": "Password"
+    }
   }
 }

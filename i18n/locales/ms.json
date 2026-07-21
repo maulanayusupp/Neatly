@@ -631,5 +631,33 @@
     "prevTwitter": "Twitter / X",
     "samplePageTitle": "Tajuk halaman anda",
     "sampleDesc": "Penerangan meta anda akan muncul di sini."
+  },
+  "urlParser": {
+    "metaTitle": "Penghurai URL — Pecah & Edit URL | Neatly",
+    "metaDesc": "Hurai mana-mana URL kepada protokol, hos, port, path, query dan fragment, edit parameter query dan bina semula. Pantas dan peribadi dalam pelayar.",
+    "badge": "Penghurai URL",
+    "titleA": "Pecah & edit",
+    "titleHl": "mana-mana URL",
+    "lead": "Tampal URL untuk memecahkannya kepada bahagian, nyahkod dan edit parameter query, dan salin pautan yang dibina semula — semua dalam pelayar anda.",
+    "placeholder": "https://example.com/path?query=value#hash",
+    "invalid": "Ini nampaknya bukan URL yang sah.",
+    "components": "Komponen URL",
+    "queryParams": "Parameter query",
+    "addParam": "Tambah",
+    "key": "Kunci",
+    "value": "Nilai",
+    "noParams": "Tiada parameter query.",
+    "rebuilt": "URL dibina semula",
+    "parts": {
+      "protocol": "Protokol",
+      "hostname": "Hostname",
+      "port": "Port",
+      "path": "Path",
+      "query": "Query",
+      "fragment": "Fragment",
+      "origin": "Origin",
+      "username": "Nama pengguna",
+      "password": "Kata laluan"
+    }
   }
 }

@@ -631,5 +631,33 @@
     "prevTwitter": "Twitter / X",
     "samplePageTitle": "Ang title ng page mo",
     "sampleDesc": "Lalabas dito ang iyong meta description."
+  },
+  "urlParser": {
+    "metaTitle": "URL Parser — Hatiin at I-edit ang mga URL | Neatly",
+    "metaDesc": "I-parse ang anumang URL sa protocol, host, port, path, query at fragment, i-edit ang query parameters at buuin muli. Mabilis at pribado sa browser.",
+    "badge": "URL parser",
+    "titleA": "Hatiin at i-edit ang",
+    "titleHl": "anumang URL",
+    "lead": "Mag-paste ng URL para hatiin ito sa mga bahagi, i-decode at i-edit ang query parameters, at kopyahin ang muling-binuong link — lahat sa iyong browser.",
+    "placeholder": "https://example.com/path?query=value#hash",
+    "invalid": "Mukhang hindi ito valid na URL.",
+    "components": "Mga bahagi ng URL",
+    "queryParams": "Query parameters",
+    "addParam": "Idagdag",
+    "key": "Key",
+    "value": "Value",
+    "noParams": "Walang query parameters.",
+    "rebuilt": "Muling-binuong URL",
+    "parts": {
+      "protocol": "Protocol",
+      "hostname": "Hostname",
+      "port": "Port",
+      "path": "Path",
+      "query": "Query",
+      "fragment": "Fragment",
+      "origin": "Origin",
+      "username": "Username",
+      "password": "Password"
+    }
   }
 }

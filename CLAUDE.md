@@ -23,6 +23,7 @@ Repo: `github.com/maulanayusupp/Neatly` (branch `main`, SSH remote `origin`).
 | `/timezone`        | Client-only timezone converter (Intl APIs): convert a moment across many zones at once, DST-aware, add/remove zones. Interactive part wrapped in `<ClientOnly>` (depends on the visitor's local zone). |
 | `/text-tools`      | Client-only text utilities: word/char/line/sentence/paragraph counts, sort/dedupe/reverse/trim lines, add line numbers, change case, collapse spaces, find & replace (regex). |
 | `/meta-tags`       | Client-only SEO/Open Graph/Twitter meta-tag generator with live Google, Facebook and Twitter card previews. |
+| `/url-parser`      | Client-only URL parser: split a URL into protocol/host/port/path/query/fragment, edit query params, and rebuild the link (`URL` API). |
 | `/diff`, `/color`, `/regex`, `/json-to-typescript` | Client-only: text diff (`diff`), color converter + WCAG contrast, regex tester, JSON→TS (`json-to-ts`). |
 | `/minify-<lang>`, `/beautify-<lang>` | 10 generated SEO landing pages (`[slug].vue` + `shared/utils/landing.ts`). |
 | `/tools`           | Directory of all tools (grouped cards). Linked from the Tools dropdown ("View all tools") and sitemap. |

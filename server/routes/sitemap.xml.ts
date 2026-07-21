@@ -34,6 +34,7 @@ export default defineEventHandler((event) => {
     'markdown',
     'cron',
     'meta-tags',
+    'url-parser',
     'about',
     'contact',
     'terms',

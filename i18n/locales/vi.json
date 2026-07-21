@@ -631,5 +631,33 @@
     "prevTwitter": "Twitter / X",
     "samplePageTitle": "Tiêu đề trang của bạn",
     "sampleDesc": "Mô tả meta của bạn sẽ hiển thị ở đây."
+  },
+  "urlParser": {
+    "metaTitle": "Trình phân tích URL — Tách & chỉnh sửa URL | Neatly",
+    "metaDesc": "Phân tích bất kỳ URL nào thành giao thức, host, cổng, đường dẫn, query và fragment, chỉnh sửa tham số query và dựng lại. Nhanh và riêng tư trong trình duyệt.",
+    "badge": "Phân tích URL",
+    "titleA": "Tách & chỉnh sửa",
+    "titleHl": "mọi URL",
+    "lead": "Dán URL để tách thành các phần, giải mã và chỉnh sửa tham số query, rồi sao chép liên kết được dựng lại — tất cả trong trình duyệt của bạn.",
+    "placeholder": "https://example.com/path?query=value#hash",
+    "invalid": "Đây có vẻ không phải là URL hợp lệ.",
+    "components": "Thành phần URL",
+    "queryParams": "Tham số query",
+    "addParam": "Thêm",
+    "key": "Khóa",
+    "value": "Giá trị",
+    "noParams": "Không có tham số query.",
+    "rebuilt": "URL đã dựng lại",
+    "parts": {
+      "protocol": "Giao thức",
+      "hostname": "Hostname",
+      "port": "Cổng",
+      "path": "Đường dẫn",
+      "query": "Query",
+      "fragment": "Fragment",
+      "origin": "Origin",
+      "username": "Tên đăng nhập",
+      "password": "Mật khẩu"
+    }
   }
 }
