@@ -2,13 +2,22 @@
 
 Deferred items to pick up later (not done yet).
 
-## Growth & measurement (deferred)
-- [ ] **Analytics** — privacy-friendly (Vercel Analytics / Plausible / Umami) to
-      measure page views, top pages and referrers. _(explicitly deferred)_
-- [ ] **Google Search Console** — add verification meta + submit `/sitemap.xml`.
-- [ ] **Prerender** static pages (nuxt `routeRules` `prerender: true`) for
-      landing / about / legal pages — faster + better SEO.
+## Growth & measurement
+- [x] **Analytics** — Vercel Web Analytics via `/_vercel/insights/script.js`
+      (cookieless), injected in `app.vue` for production only.
+- [x] **Site `robots.txt`** (`server/routes/robots.txt.ts`) → points to sitemap.
+- [x] **Per-page `og:url` / `twitter:url`** — set from the route in `app.vue`.
+- [x] **Per-tool FAQ + `FAQPage` JSON-LD** — `ToolFaq.vue` + `app/utils/faqs.ts`
+      (10 tools done: home, base64, json-viewer, jwt, url-encode, hash,
+      timestamp, regex, timezone, meta-tags). _Expand to the remaining tools._
+- [ ] **Google Search Console** — add verification meta + submit `/sitemap.xml`. _(owner)_
+- [ ] **Prerender** static pages — `nitro.prerender` did not trigger under
+      Nuxt 4.5 / Nitro 2.13 (+ @vite-pwa) — no phase, no error, 0 output.
+      SSR already serves fully crawlable HTML, so this is a speed-only
+      optimisation; revisit (likely a module interaction).
 - [ ] **Per-page OG images** (currently all pages share one `/og-image.png`).
+- [ ] `SoftwareApplication` + `BreadcrumbList` JSON-LD per tool; related-tools
+      internal links.
 
 ## i18n — remaining
 - [x] All tool pages + chrome localized in en/id/ms/fil/vi.

@@ -59,6 +59,14 @@ Repo: `github.com/maulanayusupp/Neatly` (branch `main`, SSH remote `origin`).
 - **PWA** via `@vite-pwa/nuxt` (`pwa` config in `nuxt.config`): installable
   manifest + service worker (autoUpdate) with runtime caching. `<InstallButton>`
   shows the install prompt. `error.vue` is the custom 404/500 page.
+- **SEO / growth**: each page sets its own `useSeoMeta` + canonical; `app.vue`
+  sets `og:url`/`twitter:url` from the current route (overriding the homepage
+  defaults) and injects **Vercel Web Analytics** (`/_vercel/insights/script.js`,
+  production only, cookieless). `server/routes/robots.txt.ts` + `sitemap.xml.ts`
+  are generated. **Per-tool FAQ**: `<ToolFaq>` (rendered once in `app.vue`) reads
+  `app/utils/faqs.ts` by route and renders an accordion **and** `FAQPage`
+  JSON-LD; FAQ copy stays English (like tool proper-names). The homepage +
+  landing pages also emit `WebApplication` JSON-LD.
 - **i18n** via `@nuxtjs/i18n` (`no_prefix`, cookie `neatly-lang`). Locales:
   **en, id, ms, fil, vi** in `i18n/locales/*.json`. `<LanguageSwitcher>` in the
   header. **RULE: any new/changed static UI label must be added to ALL 5 locale
