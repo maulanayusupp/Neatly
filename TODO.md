@@ -18,7 +18,6 @@ Deferred items to pick up later (not done yet).
 
 ## Tools — planned next (prioritised)
 - [ ] **JSON → Go / Python / Java / C# / Kotlin** — extend the JSON→TypeScript engine to more target languages.
-- [ ] **Mock / fake data generator** — names, emails, addresses, dates, UUIDs; output JSON/CSV/SQL insert, choose row count.
 - [x] **Text utilities** (`/text-tools`) — counts, sort/dedupe/reverse/trim lines, case, find & replace.
 - [x] **Timezone converter** (`/timezone`) — convert a moment across many zones, DST-aware.
 - [x] **Meta tag / Open Graph generator** (`/meta-tags`) — SEO/OG/Twitter tags + live social preview.
