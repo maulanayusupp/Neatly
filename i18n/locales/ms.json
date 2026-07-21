@@ -603,5 +603,33 @@
     "local": "Tempatan",
     "remove": "Buang",
     "loading": "Memuatkan penukar…"
+  },
+  "metaTags": {
+    "metaTitle": "Penjana Meta Tag & Open Graph — Pratonton Sosial | Neatly",
+    "metaDesc": "Jana meta tag SEO, Open Graph dan Twitter Card, serta pratonton rupa halaman di Google, Facebook dan Twitter. Percuma dan peribadi.",
+    "badge": "Meta & Open Graph",
+    "titleA": "Jana meta tag &",
+    "titleHl": "pratonton sosial",
+    "lead": "Isi butiran halaman anda dan salin tag SEO, Open Graph dan Twitter sedia tampal — dengan pratonton langsung kad Google, Facebook dan Twitter.",
+    "details": "Butiran halaman",
+    "output": "Tag dijana",
+    "fTitle": "Tajuk",
+    "fDescription": "Penerangan",
+    "fUrl": "URL halaman",
+    "fSiteName": "Nama laman",
+    "fImage": "URL imej",
+    "fType": "Jenis OG",
+    "fCard": "Kad Twitter",
+    "fTwitterSite": "Handle Twitter",
+    "fThemeColor": "Warna tema",
+    "fAuthor": "Penulis",
+    "fKeywords": "Kata kunci",
+    "fRobots": "Robots",
+    "fLocale": "Lokal",
+    "prevGoogle": "Hasil Google",
+    "prevSocial": "Facebook / LinkedIn",
+    "prevTwitter": "Twitter / X",
+    "samplePageTitle": "Tajuk halaman anda",
+    "sampleDesc": "Penerangan meta anda akan muncul di sini."
   }
 }

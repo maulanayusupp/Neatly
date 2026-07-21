@@ -50,6 +50,7 @@ export const TOOL_GROUPS: ToolGroup[] = [
       { to: '/lorem', label: 'Lorem Ipsum', desc: 'Placeholder text generator', icon: 'file' },
       { to: '/markdown', label: 'Markdown → HTML', desc: 'Preview & convert Markdown', icon: 'markdown' },
       { to: '/cron', label: 'Cron Explainer', desc: 'Explain cron expressions', icon: 'clock' },
+      { to: '/meta-tags', label: 'Meta Tag Generator', desc: 'SEO, Open Graph & Twitter tags', icon: 'globe' },
     ],
   },
   {

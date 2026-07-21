@@ -603,5 +603,33 @@
     "local": "Lokal",
     "remove": "Hapus",
     "loading": "Memuat konverter…"
+  },
+  "metaTags": {
+    "metaTitle": "Generator Meta Tag & Open Graph — Pratinjau Sosial | Neatly",
+    "metaDesc": "Buat meta tag SEO, Open Graph dan Twitter Card, serta pratinjau tampilan halaman di Google, Facebook dan Twitter. Gratis dan privat.",
+    "badge": "Meta & Open Graph",
+    "titleA": "Buat meta tag &",
+    "titleHl": "pratinjau sosial",
+    "lead": "Isi detail halaman Anda dan salin tag SEO, Open Graph, dan Twitter siap tempel — dengan pratinjau langsung kartu Google, Facebook, dan Twitter.",
+    "details": "Detail halaman",
+    "output": "Tag yang dihasilkan",
+    "fTitle": "Judul",
+    "fDescription": "Deskripsi",
+    "fUrl": "URL halaman",
+    "fSiteName": "Nama situs",
+    "fImage": "URL gambar",
+    "fType": "Tipe OG",
+    "fCard": "Kartu Twitter",
+    "fTwitterSite": "Handle Twitter",
+    "fThemeColor": "Warna tema",
+    "fAuthor": "Penulis",
+    "fKeywords": "Kata kunci",
+    "fRobots": "Robots",
+    "fLocale": "Lokal",
+    "prevGoogle": "Hasil Google",
+    "prevSocial": "Facebook / LinkedIn",
+    "prevTwitter": "Twitter / X",
+    "samplePageTitle": "Judul halaman Anda",
+    "sampleDesc": "Deskripsi meta Anda akan muncul di sini."
   }
 }

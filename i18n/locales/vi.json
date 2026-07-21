@@ -603,5 +603,33 @@
     "local": "Địa phương",
     "remove": "Xóa",
     "loading": "Đang tải bộ chuyển đổi…"
+  },
+  "metaTags": {
+    "metaTitle": "Trình tạo Meta Tag & Open Graph — Xem trước mạng xã hội | Neatly",
+    "metaDesc": "Tạo meta tag SEO, Open Graph và Twitter Card, và xem trước trang hiển thị trên Google, Facebook và Twitter. Miễn phí và riêng tư.",
+    "badge": "Meta & Open Graph",
+    "titleA": "Tạo meta tag &",
+    "titleHl": "xem trước mạng xã hội",
+    "lead": "Điền thông tin trang và sao chép thẻ SEO, Open Graph và Twitter sẵn dùng — kèm xem trước trực tiếp thẻ Google, Facebook và Twitter.",
+    "details": "Thông tin trang",
+    "output": "Thẻ đã tạo",
+    "fTitle": "Tiêu đề",
+    "fDescription": "Mô tả",
+    "fUrl": "URL trang",
+    "fSiteName": "Tên trang web",
+    "fImage": "URL hình ảnh",
+    "fType": "Loại OG",
+    "fCard": "Thẻ Twitter",
+    "fTwitterSite": "Twitter handle",
+    "fThemeColor": "Màu chủ đề",
+    "fAuthor": "Tác giả",
+    "fKeywords": "Từ khóa",
+    "fRobots": "Robots",
+    "fLocale": "Ngôn ngữ",
+    "prevGoogle": "Kết quả Google",
+    "prevSocial": "Facebook / LinkedIn",
+    "prevTwitter": "Twitter / X",
+    "samplePageTitle": "Tiêu đề trang của bạn",
+    "sampleDesc": "Mô tả meta của bạn sẽ hiển thị ở đây."
   }
 }

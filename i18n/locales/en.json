@@ -603,5 +603,33 @@
     "local": "Local",
     "remove": "Remove",
     "loading": "Loading converter…"
+  },
+  "metaTags": {
+    "metaTitle": "Meta Tag & Open Graph Generator — Social Preview | Neatly",
+    "metaDesc": "Generate SEO meta tags, Open Graph and Twitter Card markup, and preview how your page looks on Google, Facebook and Twitter. Free and private.",
+    "badge": "Meta & Open Graph",
+    "titleA": "Generate meta tags &",
+    "titleHl": "social previews",
+    "lead": "Fill in your page details and copy ready-to-paste SEO, Open Graph and Twitter tags — with a live preview of your Google, Facebook and Twitter cards.",
+    "details": "Page details",
+    "output": "Generated tags",
+    "fTitle": "Title",
+    "fDescription": "Description",
+    "fUrl": "Page URL",
+    "fSiteName": "Site name",
+    "fImage": "Image URL",
+    "fType": "OG type",
+    "fCard": "Twitter card",
+    "fTwitterSite": "Twitter handle",
+    "fThemeColor": "Theme color",
+    "fAuthor": "Author",
+    "fKeywords": "Keywords",
+    "fRobots": "Robots",
+    "fLocale": "Locale",
+    "prevGoogle": "Google result",
+    "prevSocial": "Facebook / LinkedIn",
+    "prevTwitter": "Twitter / X",
+    "samplePageTitle": "Your page title",
+    "sampleDesc": "Your meta description will appear here."
   }
 }

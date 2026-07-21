@@ -33,6 +33,7 @@ export default defineEventHandler((event) => {
     'lorem',
     'markdown',
     'cron',
+    'meta-tags',
     'about',
     'contact',
     'terms',

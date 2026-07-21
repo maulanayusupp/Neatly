@@ -603,5 +603,33 @@
     "local": "Lokal",
     "remove": "Alisin",
     "loading": "Naglo-load ng converter…"
+  },
+  "metaTags": {
+    "metaTitle": "Meta Tag at Open Graph Generator — Social Preview | Neatly",
+    "metaDesc": "Bumuo ng SEO meta tags, Open Graph at Twitter Card, at i-preview kung paano lumalabas ang page sa Google, Facebook at Twitter. Libre at pribado.",
+    "badge": "Meta at Open Graph",
+    "titleA": "Bumuo ng meta tags at",
+    "titleHl": "social previews",
+    "lead": "Punan ang detalye ng page at kopyahin ang ready na SEO, Open Graph at Twitter tags — may live preview ng Google, Facebook at Twitter cards.",
+    "details": "Detalye ng page",
+    "output": "Nabuong tags",
+    "fTitle": "Title",
+    "fDescription": "Description",
+    "fUrl": "Page URL",
+    "fSiteName": "Pangalan ng site",
+    "fImage": "Image URL",
+    "fType": "OG type",
+    "fCard": "Twitter card",
+    "fTwitterSite": "Twitter handle",
+    "fThemeColor": "Theme color",
+    "fAuthor": "May-akda",
+    "fKeywords": "Keywords",
+    "fRobots": "Robots",
+    "fLocale": "Locale",
+    "prevGoogle": "Resulta sa Google",
+    "prevSocial": "Facebook / LinkedIn",
+    "prevTwitter": "Twitter / X",
+    "samplePageTitle": "Ang title ng page mo",
+    "sampleDesc": "Lalabas dito ang iyong meta description."
   }
 }
