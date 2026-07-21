@@ -11,6 +11,9 @@ useHead({
     { property: 'og:url', content: () => pageUrl.value },
     { name: 'twitter:url', content: () => pageUrl.value },
   ],
+  // Vercel Web Analytics (cookieless, privacy-friendly). Served by Vercel at
+  // this same-origin path in production; skipped in dev to avoid a 404.
+  script: import.meta.env.PROD ? [{ src: '/_vercel/insights/script.js', defer: true }] : [],
 })
 </script>
 
