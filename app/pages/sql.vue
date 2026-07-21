@@ -43,7 +43,6 @@ useSeoMeta({
   twitterTitle: () => t('sqlTool.metaTitle'),
   twitterDescription: () => t('sqlTool.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/sql' }] })
 </script>
 
 <template>

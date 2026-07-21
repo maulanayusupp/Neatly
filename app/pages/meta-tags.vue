@@ -57,7 +57,6 @@ useSeoMeta({
   twitterTitle: () => t('metaTags.metaTitle'),
   twitterDescription: () => t('metaTags.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/meta-tags' }] })
 </script>
 
 <template>

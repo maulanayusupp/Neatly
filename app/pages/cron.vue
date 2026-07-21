@@ -53,7 +53,6 @@ useSeoMeta({
   twitterTitle: () => t('cronTool.metaTitle'),
   twitterDescription: () => t('cronTool.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/cron' }] })
 </script>
 
 <template>

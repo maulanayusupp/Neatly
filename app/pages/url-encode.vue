@@ -9,7 +9,6 @@ useSeoMeta({
   twitterTitle: () => t('urlEncode.metaTitle'),
   twitterDescription: () => t('urlEncode.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/url-encode' }] })
 
 function convert(text: string, mode: 'forward' | 'backward') {
   return mode === 'forward' ? encodeURIComponent(text) : decodeURIComponent(text)

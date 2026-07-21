@@ -19,7 +19,6 @@ useSeoMeta({
   twitterTitle: () => t('convert.metaTitle'),
   twitterDescription: () => t('convert.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/convert' }] })
 
 const EXT_TO_FORMAT: Record<string, ConvertFormat> = {
   json: 'json', yaml: 'yaml', yml: 'yaml', csv: 'csv', xml: 'xml', svg: 'xml',

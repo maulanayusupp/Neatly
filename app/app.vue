@@ -17,6 +17,8 @@ const ogImage = computed(() =>
     : `${siteUrl}/og-image.png`)
 
 useHead({
+  // Canonical for every route, derived from the runtime siteUrl.
+  link: [{ rel: 'canonical', href: () => pageUrl.value }],
   meta: [
     { property: 'og:url', content: () => pageUrl.value },
     { name: 'twitter:url', content: () => pageUrl.value },

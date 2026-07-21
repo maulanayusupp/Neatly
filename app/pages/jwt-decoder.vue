@@ -52,7 +52,6 @@ useSeoMeta({
   twitterTitle: () => t('jwt.metaTitle'),
   twitterDescription: () => t('jwt.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/jwt-decoder' }] })
 </script>
 
 <template>

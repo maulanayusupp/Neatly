@@ -87,7 +87,6 @@ useSeoMeta({
   twitterTitle: () => t('regex.metaTitle'),
   twitterDescription: () => t('regex.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/regex' }] })
 </script>
 
 <template>

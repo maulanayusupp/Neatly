@@ -7,7 +7,11 @@ const scssAbstracts = fileURLToPath(
   new URL('./app/assets/scss/abstracts', import.meta.url),
 ).replace(/\\/g, '/')
 
-const siteUrl = 'https://neatlyapp.vercel.app'
+// Single source of truth for the public origin. Override per environment with
+// NUXT_PUBLIC_SITE_URL (e.g. set it in Vercel when moving to a custom domain);
+// everything else — canonical, og:url, og:image, sitemap, robots, JSON-LD —
+// derives from this, so switching domains is a one-value change.
+const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://neatlyapp.vercel.app'
 const siteName = 'Neatly'
 const siteTitle = 'Neatly — Free Online Developer Tools'
 const siteDescription
@@ -136,7 +140,7 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
         { rel: 'manifest', href: '/manifest.webmanifest' },
-        { rel: 'canonical', href: siteUrl },
+        // canonical is set per-route in app.vue (derived from the runtime siteUrl).
       ],
       script: [
         {

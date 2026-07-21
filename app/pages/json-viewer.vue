@@ -20,7 +20,6 @@ useSeoMeta({
   twitterTitle: () => t('jsonViewer.metaTitle'),
   twitterDescription: () => t('jsonViewer.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/json-viewer' }] })
 
 function format() {
   if (result.value?.ok) input.value = JSON.stringify(result.value.value, null, 2)

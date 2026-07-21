@@ -11,7 +11,6 @@ useSeoMeta({
   twitterTitle: () => t('base64.metaTitle'),
   twitterDescription: () => t('base64.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/base64' }] })
 
 function convert(text: string, mode: 'forward' | 'backward') {
   return mode === 'forward' ? base64Encode(text) : base64Decode(text)

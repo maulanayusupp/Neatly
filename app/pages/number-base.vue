@@ -39,7 +39,6 @@ useSeoMeta({
   twitterTitle: () => t('numberBase.metaTitle'),
   twitterDescription: () => t('numberBase.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/number-base' }] })
 </script>
 
 <template>

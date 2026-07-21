@@ -58,7 +58,6 @@ useSeoMeta({
   twitterTitle: () => t('lorem.metaTitle'),
   twitterDescription: () => t('lorem.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/lorem' }] })
 </script>
 
 <template>

@@ -29,7 +29,6 @@ useSeoMeta({
   twitterTitle: () => t('yamlTool.metaTitle'),
   twitterDescription: () => t('yamlTool.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/yaml' }] })
 
 function format() {
   if (result.value.ok && result.value.formatted) input.value = result.value.formatted

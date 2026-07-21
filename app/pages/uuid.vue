@@ -35,7 +35,6 @@ useSeoMeta({
   twitterTitle: () => t('uuid.metaTitle'),
   twitterDescription: () => t('uuid.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/uuid' }] })
 </script>
 
 <template>

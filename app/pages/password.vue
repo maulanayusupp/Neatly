@@ -53,7 +53,6 @@ useSeoMeta({
   twitterTitle: () => t('passwordGen.metaTitle'),
   twitterDescription: () => t('passwordGen.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/password' }] })
 </script>
 
 <template>

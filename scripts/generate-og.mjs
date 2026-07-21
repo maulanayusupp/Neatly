@@ -16,6 +16,7 @@ const tools = [...toolsSrc.matchAll(/\{\s*to:\s*'([^']+)',\s*label:\s*'([^']*)',
   .map(m => ({ to: m[1], label: m[2], desc: m[3] }))
   .filter(t => t.to !== '/') // home keeps the default og-image.png
 
+const siteHost = (process.env.NUXT_PUBLIC_SITE_URL || 'https://neatlyapp.vercel.app').replace(/^https?:\/\//, '').replace(/\/$/, '')
 const escapeXml = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 // resvg's fallback fonts lack arrow glyphs — spell them out.
 const clean = s => s.replace(/→/g, 'to').replace(/↔/g, 'and').trim()
@@ -63,7 +64,7 @@ function template(label, desc) {
     </g>
   </g>
 
-  <text x="80" y="600" font-family="Helvetica, Arial, sans-serif" font-size="25" font-weight="600" fill="#6f778f">neatlyapp.vercel.app</text>
+  <text x="80" y="600" font-family="Helvetica, Arial, sans-serif" font-size="25" font-weight="600" fill="#6f778f">${escapeXml(siteHost)}</text>
 </svg>`
 }
 

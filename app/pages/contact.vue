@@ -28,7 +28,6 @@ useSeoMeta({
   twitterTitle: () => t('contact.metaTitle'),
   twitterDescription: () => t('contact.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/contact' }] })
 </script>
 
 <template>

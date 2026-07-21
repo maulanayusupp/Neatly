@@ -11,7 +11,6 @@ useSeoMeta({
   twitterTitle: () => t('toolsPage.metaTitle'),
   twitterDescription: () => t('toolsPage.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/tools' }] })
 </script>
 
 <template>

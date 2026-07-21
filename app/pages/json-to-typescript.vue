@@ -57,7 +57,6 @@ useSeoMeta({
   twitterTitle: () => t('jsonToTs.metaTitle'),
   twitterDescription: () => t('jsonToTs.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/json-to-typescript' }] })
 </script>
 
 <template>

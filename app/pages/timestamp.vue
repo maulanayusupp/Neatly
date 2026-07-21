@@ -61,7 +61,6 @@ useSeoMeta({
   twitterTitle: () => t('timestamp.metaTitle'),
   twitterDescription: () => t('timestamp.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/timestamp' }] })
 </script>
 
 <template>

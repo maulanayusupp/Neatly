@@ -75,7 +75,6 @@ useSeoMeta({
   twitterTitle: () => t('mdTool.metaTitle'),
   twitterDescription: () => t('mdTool.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/markdown' }] })
 </script>
 
 <template>

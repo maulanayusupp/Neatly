@@ -58,7 +58,6 @@ useSeoMeta({
   twitterTitle: () => t('urlParser.metaTitle'),
   twitterDescription: () => t('urlParser.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/url-parser' }] })
 </script>
 
 <template>

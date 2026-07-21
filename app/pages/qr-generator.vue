@@ -9,7 +9,6 @@ useSeoMeta({
   twitterTitle: () => t('qrGen.metaTitle'),
   twitterDescription: () => t('qrGen.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/qr-generator' }] })
 </script>
 
 <template>

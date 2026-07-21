@@ -64,7 +64,6 @@ useSeoMeta({
   twitterTitle: () => t('imgB64.metaTitle'),
   twitterDescription: () => t('imgB64.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/image-to-base64' }] })
 </script>
 
 <template>

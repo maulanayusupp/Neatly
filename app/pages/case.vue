@@ -27,7 +27,6 @@ useSeoMeta({
   twitterTitle: () => t('caseConv.metaTitle'),
   twitterDescription: () => t('caseConv.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/case' }] })
 </script>
 
 <template>

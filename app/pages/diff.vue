@@ -40,7 +40,6 @@ useSeoMeta({
   twitterTitle: () => t('diff.metaTitle'),
   twitterDescription: () => t('diff.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/diff' }] })
 </script>
 
 <template>

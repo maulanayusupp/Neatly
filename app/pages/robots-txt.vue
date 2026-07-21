@@ -62,7 +62,6 @@ useSeoMeta({
   twitterTitle: () => t('robotsTxt.metaTitle'),
   twitterDescription: () => t('robotsTxt.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/robots-txt' }] })
 </script>
 
 <template>

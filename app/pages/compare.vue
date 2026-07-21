@@ -13,9 +13,6 @@ useSeoMeta({
   twitterDescription: () => t('compare.metaDesc'),
 })
 
-useHead({
-  link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/compare' }],
-})
 </script>
 
 <template>

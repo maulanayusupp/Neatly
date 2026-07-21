@@ -66,7 +66,6 @@ useSeoMeta({
   twitterTitle: () => t('color.metaTitle'),
   twitterDescription: () => t('color.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/color' }] })
 </script>
 
 <template>

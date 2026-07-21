@@ -3,7 +3,6 @@ useSeoMeta({
   title: 'Privacy Policy · Neatly',
   description: 'How Neatly handles your data: code is processed transiently and never stored. No accounts, no tracking of your content.',
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/privacy' }] })
 </script>
 
 <template>

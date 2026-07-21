@@ -12,7 +12,6 @@ useSeoMeta({
   twitterTitle: () => t('about.metaTitle'),
   twitterDescription: () => t('about.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/about' }] })
 
 const principles: { icon: IconName, key: string }[] = [
   { icon: 'gauge', key: 'fast' },

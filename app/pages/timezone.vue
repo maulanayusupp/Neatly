@@ -86,7 +86,6 @@ useSeoMeta({
   twitterTitle: () => t('timezoneTool.metaTitle'),
   twitterDescription: () => t('timezoneTool.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/timezone' }] })
 </script>
 
 <template>

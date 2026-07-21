@@ -9,7 +9,6 @@ useSeoMeta({
   twitterTitle: () => t('scan.metaTitle'),
   twitterDescription: () => t('scan.metaDesc'),
 })
-useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/scan' }] })
 </script>
 
 <template>
