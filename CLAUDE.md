@@ -66,7 +66,11 @@ Repo: `github.com/maulanayusupp/Neatly` (branch `main`, SSH remote `origin`).
   are generated. **Per-tool FAQ**: `<ToolFaq>` (rendered once in `app.vue`) reads
   `app/utils/faqs.ts` by route and renders an accordion **and** `FAQPage`
   JSON-LD; FAQ copy stays English (like tool proper-names). The homepage +
-  landing pages also emit `WebApplication` JSON-LD.
+  landing pages also emit `WebApplication` JSON-LD. **Per-tool OG images**:
+  `scripts/generate-og.mjs` (run `npm run generate:og`) renders a 1200×630 PNG
+  per tool into `public/og/<slug>.png` from the `tools.ts` registry; `app.vue`
+  points `og:image`/`twitter:image` at it, falling back to `og-image.png`.
+  Rerun the script when a tool's label/desc changes or a tool is added.
 - **i18n** via `@nuxtjs/i18n` (`no_prefix`, cookie `neatly-lang`). Locales:
   **en, id, ms, fil, vi** in `i18n/locales/*.json`. `<LanguageSwitcher>` in the
   header. **RULE: any new/changed static UI label must be added to ALL 5 locale

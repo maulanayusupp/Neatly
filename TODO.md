@@ -16,7 +16,8 @@ Deferred items to pick up later (not done yet).
       Nuxt 4.5 / Nitro 2.13 (+ @vite-pwa) — no phase, no error, 0 output.
       SSR already serves fully crawlable HTML, so this is a speed-only
       optimisation; revisit (likely a module interaction).
-- [ ] **Per-page OG images** (currently all pages share one `/og-image.png`).
+- [x] **Per-tool OG images** (`scripts/generate-og.mjs` → `public/og/<slug>.png`,
+      wired in `app.vue`). Home/landing/legal fall back to `og-image.png`.
 
 ## i18n — remaining
 - [x] All tool pages + chrome localized in en/id/ms/fil/vi.
