@@ -35,6 +35,7 @@ export default defineEventHandler((event) => {
     'cron',
     'meta-tags',
     'url-parser',
+    'robots-txt',
     'about',
     'contact',
     'terms',

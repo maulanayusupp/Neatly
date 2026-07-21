@@ -659,5 +659,29 @@
       "username": "Username",
       "password": "Password"
     }
+  },
+  "robotsTxt": {
+    "metaTitle": "robots.txt Generator — Bumuo at Kopyahin ang robots.txt | Neatly",
+    "metaDesc": "Bumuo ng robots.txt na may Allow/Disallow rules bawat user-agent, crawl-delay, sitemap at host. May presets para sa allow-all, block-all at pag-block sa AI crawlers.",
+    "badge": "robots.txt generator",
+    "titleA": "Bumuo ng iyong",
+    "titleHl": "robots.txt",
+    "lead": "Bumuo ng robots.txt na may Allow/Disallow rules bawat crawler, crawl-delay, sitemaps at host — may madaling presets, lahat sa iyong browser.",
+    "presets": "Presets",
+    "preset": {
+      "allowAll": "Payagan lahat",
+      "blockAll": "I-block lahat",
+      "blockCommon": "I-block ang common paths",
+      "blockAi": "I-block ang AI crawlers"
+    },
+    "group": "Group",
+    "addGroup": "Magdagdag ng user-agent group",
+    "removeGroup": "Alisin ang group",
+    "userAgent": "User-agent",
+    "disallow": "Disallow (isang path bawat linya)",
+    "allow": "Allow (isang path bawat linya)",
+    "crawlDelay": "Crawl-delay (segundo)",
+    "sitemaps": "Sitemaps (isang URL bawat linya)",
+    "host": "Host (opsyonal)"
   }
 }

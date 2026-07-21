@@ -659,5 +659,29 @@
       "username": "Username",
       "password": "Kata sandi"
     }
+  },
+  "robotsTxt": {
+    "metaTitle": "Generator robots.txt — Buat & Salin robots.txt | Neatly",
+    "metaDesc": "Buat file robots.txt dengan aturan Allow/Disallow per user-agent, crawl-delay, sitemap, dan host. Preset untuk izinkan semua, blokir semua, dan blokir crawler AI.",
+    "badge": "Generator robots.txt",
+    "titleA": "Buat",
+    "titleHl": "robots.txt Anda",
+    "lead": "Susun robots.txt dengan aturan Allow/Disallow per crawler, crawl-delay, sitemap, dan host — dengan preset praktis, semua di browser Anda.",
+    "presets": "Preset",
+    "preset": {
+      "allowAll": "Izinkan semua",
+      "blockAll": "Blokir semua",
+      "blockCommon": "Blokir path umum",
+      "blockAi": "Blokir crawler AI"
+    },
+    "group": "Grup",
+    "addGroup": "Tambah grup user-agent",
+    "removeGroup": "Hapus grup",
+    "userAgent": "User-agent",
+    "disallow": "Disallow (satu path per baris)",
+    "allow": "Allow (satu path per baris)",
+    "crawlDelay": "Crawl-delay (detik)",
+    "sitemaps": "Sitemap (satu URL per baris)",
+    "host": "Host (opsional)"
   }
 }

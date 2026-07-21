@@ -659,5 +659,29 @@
       "username": "Tên đăng nhập",
       "password": "Mật khẩu"
     }
+  },
+  "robotsTxt": {
+    "metaTitle": "Trình tạo robots.txt — Tạo & sao chép robots.txt | Neatly",
+    "metaDesc": "Tạo file robots.txt với quy tắc Allow/Disallow theo từng user-agent, crawl-delay, sitemap và host. Có mẫu cho phép tất cả, chặn tất cả và chặn trình thu thập AI.",
+    "badge": "Trình tạo robots.txt",
+    "titleA": "Tạo",
+    "titleHl": "robots.txt của bạn",
+    "lead": "Xây dựng robots.txt với quy tắc Allow/Disallow theo từng trình thu thập, crawl-delay, sitemap và host — kèm mẫu tiện lợi, tất cả trong trình duyệt.",
+    "presets": "Mẫu",
+    "preset": {
+      "allowAll": "Cho phép tất cả",
+      "blockAll": "Chặn tất cả",
+      "blockCommon": "Chặn đường dẫn phổ biến",
+      "blockAi": "Chặn trình thu thập AI"
+    },
+    "group": "Nhóm",
+    "addGroup": "Thêm nhóm user-agent",
+    "removeGroup": "Xóa nhóm",
+    "userAgent": "User-agent",
+    "disallow": "Disallow (mỗi đường dẫn một dòng)",
+    "allow": "Allow (mỗi đường dẫn một dòng)",
+    "crawlDelay": "Crawl-delay (giây)",
+    "sitemaps": "Sitemap (mỗi URL một dòng)",
+    "host": "Host (tùy chọn)"
   }
 }

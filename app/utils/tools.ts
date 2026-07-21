@@ -52,6 +52,7 @@ export const TOOL_GROUPS: ToolGroup[] = [
       { to: '/cron', label: 'Cron Explainer', desc: 'Explain cron expressions', icon: 'clock' },
       { to: '/meta-tags', label: 'Meta Tag Generator', desc: 'SEO, Open Graph & Twitter tags', icon: 'globe' },
       { to: '/url-parser', label: 'URL Parser', desc: 'Break down & edit URLs', icon: 'link' },
+      { to: '/robots-txt', label: 'robots.txt Generator', desc: 'Build a robots.txt file', icon: 'shield' },
     ],
   },
   {

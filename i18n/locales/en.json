@@ -659,5 +659,29 @@
       "username": "Username",
       "password": "Password"
     }
+  },
+  "robotsTxt": {
+    "metaTitle": "robots.txt Generator — Build & Copy robots.txt | Neatly",
+    "metaDesc": "Generate a robots.txt file with per-user-agent Allow/Disallow rules, crawl-delay, sitemap and host. Presets for allow-all, block-all and blocking AI crawlers.",
+    "badge": "robots.txt generator",
+    "titleA": "Generate your",
+    "titleHl": "robots.txt",
+    "lead": "Build a robots.txt with per-crawler Allow/Disallow rules, crawl-delay, sitemaps and host — with handy presets, all in your browser.",
+    "presets": "Presets",
+    "preset": {
+      "allowAll": "Allow all",
+      "blockAll": "Block everything",
+      "blockCommon": "Block common paths",
+      "blockAi": "Block AI crawlers"
+    },
+    "group": "Group",
+    "addGroup": "Add user-agent group",
+    "removeGroup": "Remove group",
+    "userAgent": "User-agent",
+    "disallow": "Disallow (one path per line)",
+    "allow": "Allow (one path per line)",
+    "crawlDelay": "Crawl-delay (seconds)",
+    "sitemaps": "Sitemaps (one URL per line)",
+    "host": "Host (optional)"
   }
 }

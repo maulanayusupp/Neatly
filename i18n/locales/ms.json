@@ -659,5 +659,29 @@
       "username": "Nama pengguna",
       "password": "Kata laluan"
     }
+  },
+  "robotsTxt": {
+    "metaTitle": "Penjana robots.txt — Bina & Salin robots.txt | Neatly",
+    "metaDesc": "Jana fail robots.txt dengan peraturan Allow/Disallow setiap user-agent, crawl-delay, peta laman dan hos. Pratetap untuk benarkan semua, sekat semua, dan sekat perayap AI.",
+    "badge": "Penjana robots.txt",
+    "titleA": "Jana",
+    "titleHl": "robots.txt anda",
+    "lead": "Bina robots.txt dengan peraturan Allow/Disallow setiap perayap, crawl-delay, peta laman dan hos — dengan pratetap mudah, semua dalam pelayar anda.",
+    "presets": "Pratetap",
+    "preset": {
+      "allowAll": "Benarkan semua",
+      "blockAll": "Sekat semua",
+      "blockCommon": "Sekat laluan biasa",
+      "blockAi": "Sekat perayap AI"
+    },
+    "group": "Kumpulan",
+    "addGroup": "Tambah kumpulan user-agent",
+    "removeGroup": "Buang kumpulan",
+    "userAgent": "User-agent",
+    "disallow": "Disallow (satu laluan sebaris)",
+    "allow": "Allow (satu laluan sebaris)",
+    "crawlDelay": "Crawl-delay (saat)",
+    "sitemaps": "Peta laman (satu URL sebaris)",
+    "host": "Hos (pilihan)"
   }
 }

@@ -24,6 +24,7 @@ Repo: `github.com/maulanayusupp/Neatly` (branch `main`, SSH remote `origin`).
 | `/text-tools`      | Client-only text utilities: word/char/line/sentence/paragraph counts, sort/dedupe/reverse/trim lines, add line numbers, change case, collapse spaces, find & replace (regex). |
 | `/meta-tags`       | Client-only SEO/Open Graph/Twitter meta-tag generator with live Google, Facebook and Twitter card previews. |
 | `/url-parser`      | Client-only URL parser: split a URL into protocol/host/port/path/query/fragment, edit query params, and rebuild the link (`URL` API). |
+| `/robots-txt`      | Client-only robots.txt generator: per-user-agent Allow/Disallow rules, crawl-delay, sitemaps, host; presets (allow/block all, block AI crawlers). |
 | `/diff`, `/color`, `/regex`, `/json-to-typescript` | Client-only: text diff (`diff`), color converter + WCAG contrast, regex tester, JSON→TS (`json-to-ts`). |
 | `/minify-<lang>`, `/beautify-<lang>` | 10 generated SEO landing pages (`[slug].vue` + `shared/utils/landing.ts`). |
 | `/tools`           | Directory of all tools (grouped cards). Linked from the Tools dropdown ("View all tools") and sitemap. |
