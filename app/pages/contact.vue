@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const NAME = 'Maulana'
+const NAME = 'Maulana Yusup Abdullah'
 const EMAIL = 'maulanayusupp@gmail.com'
 const GITHUB = 'https://github.com/maulanayusupp'
 const PORTFOLIO = 'https://maulanayusupp.github.io'
@@ -37,10 +37,10 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/contact
 
     <section class="container contact__inner">
       <header class="contact__hero">
-        <span class="contact__avatar">M</span>
-        <h1 class="contact__name">{{ NAME }}</h1>
+        <span class="contact__avatar">N</span>
+        <h1 class="contact__name">Neatly</h1>
         <p class="contact__role">
-          {{ $t('contact.role') }} <span class="text-gradient">Neatly</span>
+          {{ $t('contact.role') }} <span class="contact__maker">{{ NAME }}</span>
         </p>
         <p class="contact__bio">{{ $t('contact.bio') }}</p>
         <div class="contact__cta">
@@ -148,6 +148,11 @@ useHead({ link: [{ rel: 'canonical', href: 'https://neatlyapp.vercel.app/contact
   font-size: $text-lg;
   font-weight: 600;
   color: var(--color-text-muted);
+}
+
+.contact__maker {
+  color: var(--color-text);
+  font-weight: 700;
 }
 
 .contact__bio {
