@@ -70,6 +70,7 @@ export const TOOL_GROUPS: ToolGroup[] = [
       { to: '/hash', label: 'Hash', desc: 'SHA-1 / 256 / 384 / 512', icon: 'hash' },
       { to: '/uuid', label: 'UUID', desc: 'Generate v4 UUIDs', icon: 'fingerprint' },
       { to: '/timestamp', label: 'Timestamp', desc: 'Epoch ↔ date', icon: 'clock' },
+      { to: '/timezone', label: 'Timezone Converter', desc: 'Compare times across zones', icon: 'globe' },
       { to: '/password', label: 'Password', desc: 'Strong random passwords', icon: 'lock' },
       { to: '/number-base', label: 'Number Base', desc: 'Bin · Oct · Dec · Hex', icon: 'hash' },
       { to: '/image-to-base64', label: 'Image to Base64', desc: 'Image → data URI', icon: 'image' },

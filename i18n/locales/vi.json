@@ -586,5 +586,22 @@
     "caseLabel": "Bỏ qua hoa/thường",
     "replaceBtn": "Thay tất cả",
     "placeholder": "Nhập hoặc dán văn bản của bạn vào đây…"
+  },
+  "timezoneTool": {
+    "metaTitle": "Chuyển đổi múi giờ — So sánh thời gian giữa các múi giờ | Neatly",
+    "metaDesc": "Chuyển đổi thời gian giữa các múi giờ và so sánh nhiều thành phố cùng lúc. Tự động xử lý DST và chạy hoàn toàn trong trình duyệt của bạn.",
+    "badge": "Chuyển đổi múi giờ",
+    "titleA": "Chuyển thời gian giữa các",
+    "titleHl": "múi giờ",
+    "lead": "Chọn một thời điểm ở một múi giờ và xem ngay ở nhiều múi giờ khác — DST được xử lý tự động, tất cả trong trình duyệt của bạn.",
+    "dateTime": "Ngày & giờ",
+    "sourceZone": "Từ múi giờ",
+    "now": "Bây giờ",
+    "addZone": "Thêm múi giờ",
+    "add": "Thêm",
+    "pick": "Chọn múi giờ…",
+    "local": "Địa phương",
+    "remove": "Xóa",
+    "loading": "Đang tải bộ chuyển đổi…"
   }
 }

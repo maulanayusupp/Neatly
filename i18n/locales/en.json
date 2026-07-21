@@ -586,5 +586,22 @@
     "caseLabel": "Ignore case",
     "replaceBtn": "Replace all",
     "placeholder": "Type or paste your text here…"
+  },
+  "timezoneTool": {
+    "metaTitle": "Timezone Converter — Compare Times Across Zones | Neatly",
+    "metaDesc": "Convert a time between time zones and compare it across several cities at once. Handles DST automatically and runs entirely in your browser.",
+    "badge": "Timezone converter",
+    "titleA": "Convert time across",
+    "titleHl": "time zones",
+    "lead": "Pick a moment in one zone and see it instantly in as many others as you like — daylight saving handled for you, all in your browser.",
+    "dateTime": "Date & time",
+    "sourceZone": "From time zone",
+    "now": "Now",
+    "addZone": "Add a time zone",
+    "add": "Add",
+    "pick": "Select a time zone…",
+    "local": "Local",
+    "remove": "Remove",
+    "loading": "Loading converter…"
   }
 }

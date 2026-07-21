@@ -586,5 +586,22 @@
     "caseLabel": "Abai huruf",
     "replaceBtn": "Ganti semua",
     "placeholder": "Taip atau tampal teks anda di sini…"
+  },
+  "timezoneTool": {
+    "metaTitle": "Penukar Zon Waktu — Bandingkan Waktu Antara Zon | Neatly",
+    "metaDesc": "Tukar waktu antara zon dan bandingkan di beberapa bandar sekaligus. Mengendalikan DST secara automatik dan berjalan sepenuhnya dalam pelayar anda.",
+    "badge": "Penukar zon waktu",
+    "titleA": "Tukar waktu merentas",
+    "titleHl": "zon waktu",
+    "lead": "Pilih satu masa dalam satu zon dan lihat serta-merta dalam seberapa banyak zon lain — DST dikendalikan untuk anda, semua dalam pelayar anda.",
+    "dateTime": "Tarikh & masa",
+    "sourceZone": "Dari zon waktu",
+    "now": "Sekarang",
+    "addZone": "Tambah zon waktu",
+    "add": "Tambah",
+    "pick": "Pilih zon waktu…",
+    "local": "Tempatan",
+    "remove": "Buang",
+    "loading": "Memuatkan penukar…"
   }
 }

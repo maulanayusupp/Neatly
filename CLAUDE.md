@@ -20,6 +20,7 @@ Repo: `github.com/maulanayusupp/Neatly` (branch `main`, SSH remote `origin`).
 | `/scan`            | **Client-only** QR + barcode scanner (camera / upload / paste) via `@zxing/browser`. No backend. |
 | `/qr-generator`    | **Client-only** QR + barcode generator (`qrcode`, `jsbarcode`); URL/text/Wi-Fi/email/phone/vCard, PNG+SVG export. |
 | `/base64`, `/url-encode`, `/jwt-decoder`, `/hash`, `/uuid`, `/timestamp` | Client-only dev tools (Base64, URL, JWT decode, SHA hashes via Web Crypto, UUID v4, epoch converter). |
+| `/timezone`        | Client-only timezone converter (Intl APIs): convert a moment across many zones at once, DST-aware, add/remove zones. Interactive part wrapped in `<ClientOnly>` (depends on the visitor's local zone). |
 | `/text-tools`      | Client-only text utilities: word/char/line/sentence/paragraph counts, sort/dedupe/reverse/trim lines, add line numbers, change case, collapse spaces, find & replace (regex). |
 | `/diff`, `/color`, `/regex`, `/json-to-typescript` | Client-only: text diff (`diff`), color converter + WCAG contrast, regex tester, JSON→TS (`json-to-ts`). |
 | `/minify-<lang>`, `/beautify-<lang>` | 10 generated SEO landing pages (`[slug].vue` + `shared/utils/landing.ts`). |

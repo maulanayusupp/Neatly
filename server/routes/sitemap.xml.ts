@@ -26,6 +26,7 @@ export default defineEventHandler((event) => {
     'hash',
     'uuid',
     'timestamp',
+    'timezone',
     'password',
     'number-base',
     'image-to-base64',

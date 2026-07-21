@@ -20,6 +20,7 @@ Deferred items to pick up later (not done yet).
 - [ ] **JSON → Go / Python / Java / C# / Kotlin** — extend the JSON→TypeScript engine to more target languages.
 - [ ] **Mock / fake data generator** — names, emails, addresses, dates, UUIDs; output JSON/CSV/SQL insert, choose row count.
 - [x] **Text utilities** (`/text-tools`) — counts, sort/dedupe/reverse/trim lines, case, find & replace.
+- [x] **Timezone converter** (`/timezone`) — convert a moment across many zones, DST-aware.
 - [ ] **CSS generators** — box-shadow, gradient, border-radius, cubic-bezier (visual, shareable).
 - [ ] **JWT builder / encoder** — sign HS256 client-side via Web Crypto (complements the decoder).
 - [ ] **HTML entity encode/decode** + **string escape** (JSON/JS) — fills the encoding gap.

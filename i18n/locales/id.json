@@ -586,5 +586,22 @@
     "caseLabel": "Abaikan huruf",
     "replaceBtn": "Ganti semua",
     "placeholder": "Ketik atau tempel teks Anda di sini…"
+  },
+  "timezoneTool": {
+    "metaTitle": "Konverter Zona Waktu — Bandingkan Waktu Antar Zona | Neatly",
+    "metaDesc": "Konversi waktu antar zona dan bandingkan di beberapa kota sekaligus. Menangani DST otomatis dan berjalan sepenuhnya di browser Anda.",
+    "badge": "Konverter zona waktu",
+    "titleA": "Konversi waktu antar",
+    "titleHl": "zona waktu",
+    "lead": "Pilih satu waktu di suatu zona dan lihat langsung di zona lain sebanyak yang Anda mau — DST ditangani otomatis, semua di browser Anda.",
+    "dateTime": "Tanggal & waktu",
+    "sourceZone": "Dari zona waktu",
+    "now": "Sekarang",
+    "addZone": "Tambah zona waktu",
+    "add": "Tambah",
+    "pick": "Pilih zona waktu…",
+    "local": "Lokal",
+    "remove": "Hapus",
+    "loading": "Memuat konverter…"
   }
 }

@@ -586,5 +586,22 @@
     "caseLabel": "Huwag pansinin ang case",
     "replaceBtn": "Palitan lahat",
     "placeholder": "Mag-type o mag-paste ng teksto dito…"
+  },
+  "timezoneTool": {
+    "metaTitle": "Timezone Converter — Ihambing ang Oras sa Iba't ibang Zona | Neatly",
+    "metaDesc": "I-convert ang oras sa iba't ibang time zone at ihambing sa maraming lungsod nang sabay. Awtomatikong hinahawakan ang DST at buong tumatakbo sa iyong browser.",
+    "badge": "Timezone converter",
+    "titleA": "I-convert ang oras sa",
+    "titleHl": "iba't ibang zona",
+    "lead": "Pumili ng oras sa isang zona at makikita agad ito sa kahit ilang iba pa — awtomatiko ang DST, lahat sa iyong browser.",
+    "dateTime": "Petsa at oras",
+    "sourceZone": "Mula sa time zone",
+    "now": "Ngayon",
+    "addZone": "Magdagdag ng time zone",
+    "add": "Idagdag",
+    "pick": "Pumili ng time zone…",
+    "local": "Lokal",
+    "remove": "Alisin",
+    "loading": "Naglo-load ng converter…"
   }
 }
