@@ -79,7 +79,8 @@
     "output": "Đầu ra",
     "from": "Từ",
     "to": "Sang",
-    "examples": "Ví dụ"
+    "examples": "Ví dụ",
+    "faq": "Câu hỏi thường gặp"
   },
   "convert": {
     "metaTitle": "Chuyển đổi JSON sang YAML, CSV & XML — Công cụ chuyển đổi dữ liệu trực tuyến miễn phí · Neatly",

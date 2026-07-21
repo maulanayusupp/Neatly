@@ -79,7 +79,8 @@
     "output": "Output",
     "from": "Daripada",
     "to": "Kepada",
-    "examples": "Contoh"
+    "examples": "Contoh",
+    "faq": "Soalan lazim"
   },
   "convert": {
     "metaTitle": "Penukar JSON ke YAML, CSV & XML — Penukar Data Dalam Talian Percuma · Neatly",

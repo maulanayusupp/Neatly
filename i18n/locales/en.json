@@ -79,7 +79,8 @@
     "output": "Output",
     "from": "From",
     "to": "To",
-    "examples": "Examples"
+    "examples": "Examples",
+    "faq": "Frequently asked questions"
   },
   "convert": {
     "metaTitle": "JSON to YAML, CSV & XML Converter — Free Online Data Converter · Neatly",

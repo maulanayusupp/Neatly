@@ -79,7 +79,8 @@
     "output": "Output",
     "from": "Mula sa",
     "to": "Papunta sa",
-    "examples": "Mga halimbawa"
+    "examples": "Mga halimbawa",
+    "faq": "Mga madalas itanong"
   },
   "convert": {
     "metaTitle": "JSON to YAML, CSV & XML Converter — Libreng Online Data Converter · Neatly",

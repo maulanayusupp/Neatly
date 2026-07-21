@@ -79,7 +79,8 @@
     "output": "Keluaran",
     "from": "Dari",
     "to": "Ke",
-    "examples": "Contoh"
+    "examples": "Contoh",
+    "faq": "Pertanyaan umum"
   },
   "convert": {
     "metaTitle": "Konverter JSON ke YAML, CSV & XML — Konverter Data Online Gratis · Neatly",
