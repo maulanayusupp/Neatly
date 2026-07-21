@@ -80,7 +80,8 @@
     "from": "Daripada",
     "to": "Kepada",
     "examples": "Contoh",
-    "faq": "Soalan lazim"
+    "faq": "Soalan lazim",
+    "relatedTools": "Alat berkaitan"
   },
   "convert": {
     "metaTitle": "Penukar JSON ke YAML, CSV & XML — Penukar Data Dalam Talian Percuma · Neatly",

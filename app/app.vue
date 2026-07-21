@@ -22,6 +22,7 @@ useHead({
     <AppHeader />
     <main class="app-main">
       <NuxtPage />
+      <RelatedTools />
       <ToolFaq />
     </main>
     <AppFooter />

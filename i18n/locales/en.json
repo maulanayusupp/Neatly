@@ -80,7 +80,8 @@
     "from": "From",
     "to": "To",
     "examples": "Examples",
-    "faq": "Frequently asked questions"
+    "faq": "Frequently asked questions",
+    "relatedTools": "Related tools"
   },
   "convert": {
     "metaTitle": "JSON to YAML, CSV & XML Converter — Free Online Data Converter · Neatly",
