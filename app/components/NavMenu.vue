@@ -113,12 +113,13 @@ onBeforeUnmount(() => {
 }
 
 .nav-menu__panel {
-  position: absolute;
-  top: calc(100% + 10px);
-  right: 0;
+  // Mobile: anchor to the viewport so the wide menu can never clip off-screen.
+  position: fixed;
+  top: calc(#{$header-height} + spacing(2));
+  left: spacing(3);
+  right: spacing(3);
   z-index: $z-overlay;
-  width: min(94vw, 600px);
-  max-height: min(72vh, 640px);
+  max-height: calc(100dvh - #{$header-height} - spacing(6));
   overflow-y: auto;
   padding: spacing(4);
   border-radius: $radius-lg;
@@ -126,6 +127,16 @@ onBeforeUnmount(() => {
   background: var(--color-surface);
   box-shadow: var(--shadow-lg);
   @include custom-scrollbar;
+
+  // Desktop: drop down from the trigger.
+  @include respond('md') {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    left: auto;
+    width: min(94vw, 600px);
+    max-height: min(72vh, 640px);
+  }
 }
 
 .nav-menu__grid {
@@ -133,7 +144,7 @@ onBeforeUnmount(() => {
   gap: spacing(4);
   grid-template-columns: 1fr;
 
-  @include respond('sm') {
+  @include respond('md') {
     grid-template-columns: 1fr 1fr;
   }
 }
