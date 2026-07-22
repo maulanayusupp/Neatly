@@ -115,6 +115,8 @@ export default defineNuxtConfig({
         { name: 'theme-color', content: '#6366f1' },
         { name: 'application-name', content: siteName },
         { name: 'author', content: siteName },
+        // Google Search Console (URL-prefix property verification).
+        { name: 'google-site-verification', content: 'F2KymLMORrC560w-JNyiW2zmYSOLdgOVwKsrwM91-wM' },
         // Open Graph (used by WhatsApp, Facebook, LinkedIn, etc.)
         { property: 'og:type', content: 'website' },
         { property: 'og:site_name', content: siteName },
