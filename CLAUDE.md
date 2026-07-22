@@ -5,7 +5,7 @@ Guidance for AI assistants (and humans) working in this repo.
 ## Project
 
 **Neatly** — a modern developer-tools site built with **Nuxt 4** (Vue 3, Nitro).
-Tagline: _"Make your code neat, instantly."_ Deployed at `neatlyapp.vercel.app`.
+Tagline: _"Make your code neat, instantly."_ Deployed at `withneatly.com`.
 Repo: `github.com/maulanayusupp/Neatly` (branch `main`, SSH remote `origin`).
 
 ## Tools / pages

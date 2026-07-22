@@ -4,7 +4,7 @@ import { highlightCode } from '~/utils/highlight'
 const { t } = useI18n()
 const toast = useToast()
 
-const SAMPLE = '# Neatly\n\n**Markdown** to HTML with a *live* preview.\n\n- Fast\n- Private\n- Free\n\n> Paste Markdown, copy clean HTML.\n\n```js\nconsole.log("hello")\n```\n\n[Visit Neatly](https://neatlyapp.vercel.app)'
+const SAMPLE = '# Neatly\n\n**Markdown** to HTML with a *live* preview.\n\n- Fast\n- Private\n- Free\n\n> Paste Markdown, copy clean HTML.\n\n```js\nconsole.log("hello")\n```\n\n[Visit Neatly](https://withneatly.com)'
 
 const input = ref('')
 const tab = ref<'preview' | 'html'>('preview')

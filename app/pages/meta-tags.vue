@@ -27,8 +27,8 @@ function loadExample() {
   Object.assign(cfg, {
     title: 'Neatly — Free Online Developer Tools',
     description: 'Beautify, minify, convert and validate code — plus 25+ handy dev tools. Fast, private, and free.',
-    url: 'https://neatlyapp.vercel.app',
-    image: 'https://neatlyapp.vercel.app/og-image.png',
+    url: 'https://withneatly.com',
+    image: 'https://withneatly.com/og-image.png',
     siteName: 'Neatly',
     type: 'website',
     twitterCard: 'summary_large_image',

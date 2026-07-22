@@ -11,7 +11,7 @@ const scssAbstracts = fileURLToPath(
 // NUXT_PUBLIC_SITE_URL (e.g. set it in Vercel when moving to a custom domain);
 // everything else — canonical, og:url, og:image, sitemap, robots, JSON-LD —
 // derives from this, so switching domains is a one-value change.
-const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://neatlyapp.vercel.app'
+const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://withneatly.com'
 const siteName = 'Neatly'
 const siteTitle = 'Neatly — Free Online Developer Tools'
 const siteDescription

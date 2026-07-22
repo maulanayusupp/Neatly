@@ -15,10 +15,10 @@ function convert(text: string, mode: 'forward' | 'backward') {
 }
 
 const examples: { label: string, mode: 'forward' | 'backward', value: string }[] = [
-  { label: 'Search URL', mode: 'forward', value: 'https://neatlyapp.vercel.app/search?q=hello world&lang=id' },
+  { label: 'Search URL', mode: 'forward', value: 'https://withneatly.com/search?q=hello world&lang=id' },
   { label: 'Form data', mode: 'forward', value: 'name=John Doe&email=john@example.com&note=100% sure!' },
   { label: 'Path with spaces', mode: 'forward', value: '/files/my report final.pdf' },
-  { label: 'Decode URL', mode: 'backward', value: 'https%3A%2F%2Fneatlyapp.vercel.app%2Fsearch%3Fq%3Dhello%20world%26lang%3Did' },
+  { label: 'Decode URL', mode: 'backward', value: 'https%3A%2F%2Fwithneatly.com%2Fsearch%3Fq%3Dhello%20world%26lang%3Did' },
   { label: 'Decode form data', mode: 'backward', value: 'name%3DJohn%20Doe%26email%3Djohn%40example.com' },
 ]
 </script>

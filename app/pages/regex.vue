@@ -20,7 +20,7 @@ const flagsStr = computed(() =>
 
 const examples = [
   { label: 'Email', pattern: '\\b[\\w.+-]+@[\\w-]+\\.[\\w.-]+\\b', flags: 'gi', test: 'Reach us at ann@example.com or BOB@Neatly.dev today.' },
-  { label: 'URL', pattern: 'https?:\\/\\/[^\\s]+', flags: 'g', test: 'Docs at https://neatlyapp.vercel.app and http://example.org/x?y=1.' },
+  { label: 'URL', pattern: 'https?:\\/\\/[^\\s]+', flags: 'g', test: 'Docs at https://withneatly.com and http://example.org/x?y=1.' },
   { label: 'IPv4', pattern: '\\b(?:\\d{1,3}\\.){3}\\d{1,3}\\b', flags: 'g', test: 'Hosts 192.168.0.1, 10.0.0.255 and 8.8.8.8 responded.' },
   { label: 'Phone', pattern: '\\+?\\d[\\d ()-]{7,}\\d', flags: 'g', test: 'Call +1 (555) 123-4567 or 555-987-6543.' },
   { label: 'Date (ISO)', pattern: '\\b\\d{4}-\\d{2}-\\d{2}\\b', flags: 'g', test: 'Opened 2026-07-20, due 2026-08-01.' },

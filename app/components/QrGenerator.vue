@@ -8,7 +8,7 @@ const kind = ref<'qr' | 'barcode'>('qr')
 // QR state
 const qType = ref<QrType>('url')
 const text = ref('')
-const url = ref('https://neatlyapp.vercel.app')
+const url = ref('https://withneatly.com')
 const phone = ref('')
 const email = reactive({ addr: '', subject: '', body: '' })
 const wifi = reactive({ ssid: '', password: '', encryption: 'WPA', hidden: false })
