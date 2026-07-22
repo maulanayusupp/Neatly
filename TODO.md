@@ -60,7 +60,12 @@ Deferred items to pick up later (not done yet).
 - [ ] Impressum / legal notice — only if targeting Germany.
 - [ ] Accessibility statement + audit (nice to have).
 - [ ] Content-Security-Policy (needs nonces for inline theme script + JSON-LD).
-- [ ] Cookie consent banner — only when analytics/tracking is added.
+- [ ] **Rate limiting** on `/api/transform` & `/api/convert` (per-IP). Not a
+      cost risk on Vercel Hobby (no paid overage — abuse just risks hitting free
+      quota / a temporary pause), but cheap insurance for uptime once traffic
+      grows. Do before upgrading to Pro (where overages cost money).
+- [ ] Cookie consent banner — not needed today (only functional storage +
+      cookieless Vercel Web Analytics); revisit only if cookie-based tracking is added.
 
 ## Quality
 - [x] Unit tests for utils (json-compare, colors, encoding, json-tools) — Vitest, `npm test`.
