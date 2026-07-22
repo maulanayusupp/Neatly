@@ -59,6 +59,11 @@ Repo: `github.com/maulanayusupp/Neatly` (branch `main`, SSH remote `origin`).
 - **PWA** via `@vite-pwa/nuxt` (`pwa` config in `nuxt.config`): installable
   manifest + service worker (autoUpdate) with runtime caching. `<InstallButton>`
   shows the install prompt. `error.vue` is the custom 404/500 page.
+- **Shareable links**: `app/utils/share.ts` (`buildShareUrl`/`readShareUrl`) encodes
+  tool state into the URL hash (`#s=…`, deflate-compressed, no server/DB, 16KB cap).
+  `useShareLink({ getState, applyState, canShare })` wires a Share button + on-mount
+  restore for a page. Used by `/` and `/sql`, `/yaml`, `/regex`, `/text-tools`,
+  `/json-viewer`.
 - **SEO / growth**: each page sets its own `useSeoMeta` + canonical; `app.vue`
   sets `og:url`/`twitter:url` from the current route (overriding the homepage
   defaults) and injects **Vercel Web Analytics** (`/_vercel/insights/script.js`,

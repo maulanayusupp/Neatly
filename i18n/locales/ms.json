@@ -685,5 +685,11 @@
     "crawlDelay": "Crawl-delay (saat)",
     "sitemaps": "Peta laman (satu URL sebaris)",
     "host": "Hos (pilihan)"
+  },
+  "share": {
+    "button": "Kongsi",
+    "copied": "Pautan disalin ke papan keratan",
+    "tooLarge": "Input terlalu besar untuk dikongsi sebagai pautan.",
+    "empty": "Isi dahulu sesuatu untuk dikongsi."
   }
 }

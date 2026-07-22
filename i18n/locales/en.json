@@ -685,5 +685,11 @@
     "crawlDelay": "Crawl-delay (seconds)",
     "sitemaps": "Sitemaps (one URL per line)",
     "host": "Host (optional)"
+  },
+  "share": {
+    "button": "Share",
+    "copied": "Link copied to clipboard",
+    "tooLarge": "Input is too large to share as a link.",
+    "empty": "Add something to share first."
   }
 }

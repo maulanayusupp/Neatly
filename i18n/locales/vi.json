@@ -685,5 +685,11 @@
     "crawlDelay": "Crawl-delay (giây)",
     "sitemaps": "Sitemap (mỗi URL một dòng)",
     "host": "Host (tùy chọn)"
+  },
+  "share": {
+    "button": "Chia sẻ",
+    "copied": "Đã sao chép liên kết",
+    "tooLarge": "Dữ liệu quá lớn để chia sẻ dưới dạng liên kết.",
+    "empty": "Hãy nhập nội dung để chia sẻ trước."
   }
 }

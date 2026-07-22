@@ -35,6 +35,17 @@ function download() {
   }
 }
 
+const { share } = useShareLink({
+  getState: () => ({ input: input.value, dialect: dialect.value, keywordCase: keywordCase.value, tabWidth: tabWidth.value }),
+  applyState: (s) => {
+    if (typeof s.input === 'string') input.value = s.input
+    if (s.dialect) dialect.value = s.dialect as SqlDialect
+    if (s.keywordCase) keywordCase.value = s.keywordCase as KeywordCase
+    if (typeof s.tabWidth === 'number') tabWidth.value = s.tabWidth
+  },
+  canShare: () => !!input.value.trim(),
+})
+
 useSeoMeta({
   title: () => t('sqlTool.metaTitle'),
   description: () => t('sqlTool.metaDesc'),
@@ -97,6 +108,7 @@ useSeoMeta({
           :empty-text="$t('sqlTool.empty')"
         >
           <template #actions>
+            <BaseButton size="sm" variant="ghost" icon="share" @click="share">{{ $t('share.button') }}</BaseButton>
             <BaseButton size="sm" variant="ghost" :icon="copied ? 'check' : 'copy'" :disabled="!result.out" @click="copy">{{ copied ? $t('common.copied') : $t('common.copy') }}</BaseButton>
             <BaseButton size="sm" variant="ghost" icon="download" :disabled="!result.out" @click="download">{{ $t('common.download') }}</BaseButton>
           </template>

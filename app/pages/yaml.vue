@@ -47,6 +47,12 @@ async function copyJson() {
   if (result.value.ok && await copyText(JSON.stringify(result.value.value, null, 2)))
     toast.success('Copied as JSON')
 }
+
+const { share } = useShareLink({
+  getState: () => ({ input: input.value }),
+  applyState: (s) => { if (typeof s.input === 'string') input.value = s.input },
+  canShare: () => hasInput.value,
+})
 </script>
 
 <template>
@@ -70,6 +76,7 @@ async function copyJson() {
           <BaseButton size="sm" icon="beautify" :disabled="!result.ok || !hasInput" @click="format">{{ $t('yamlTool.format') }}</BaseButton>
           <BaseButton size="sm" variant="ghost" icon="copy" :disabled="!result.ok || !hasInput" @click="copyFormatted">{{ $t('yamlTool.copyYaml') }}</BaseButton>
           <BaseButton size="sm" variant="ghost" icon="braces" :disabled="!result.ok || !hasInput" @click="copyJson">{{ $t('yamlTool.copyJson') }}</BaseButton>
+          <BaseButton size="sm" variant="ghost" icon="share" :disabled="!hasInput" @click="share">{{ $t('share.button') }}</BaseButton>
         </div>
         <div class="yv__toolbar-group">
           <BaseButton size="sm" variant="ghost" icon="sparkles" @click="loadSample">{{ $t('common.example') }}</BaseButton>

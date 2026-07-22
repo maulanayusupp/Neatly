@@ -90,6 +90,12 @@ async function copy() {
     toast.success(t('common.copied'))
 }
 
+const { share } = useShareLink({
+  getState: () => ({ text: text.value }),
+  applyState: (s) => { if (typeof s.text === 'string') text.value = s.text },
+  canShare: () => !!text.value.trim(),
+})
+
 useSeoMeta({
   title: () => t('textTools.metaTitle'),
   description: () => t('textTools.metaDesc'),
@@ -161,6 +167,7 @@ useSeoMeta({
         <div class="tt__bar">
           <BaseButton size="sm" variant="ghost" icon="sparkles" @click="text = SAMPLE">{{ $t('common.example') }}</BaseButton>
           <BaseButton size="sm" variant="ghost" icon="copy" :disabled="!text" @click="copy">{{ $t('common.copy') }}</BaseButton>
+          <BaseButton size="sm" variant="ghost" icon="share" :disabled="!text" @click="share">{{ $t('share.button') }}</BaseButton>
           <BaseButton size="sm" variant="ghost" icon="trash" :disabled="!text" @click="text = ''">{{ $t('common.clear') }}</BaseButton>
         </div>
       </div>

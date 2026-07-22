@@ -40,6 +40,21 @@ function applyExample(i: number) {
   testStr.value = ex.test
 }
 
+const { share } = useShareLink({
+  getState: () => ({ pattern: pattern.value, flags: flagsStr.value, test: testStr.value }),
+  applyState: (s) => {
+    if (typeof s.pattern === 'string') pattern.value = s.pattern
+    if (typeof s.flags === 'string') {
+      flags.g = s.flags.includes('g')
+      flags.i = s.flags.includes('i')
+      flags.m = s.flags.includes('m')
+      flags.s = s.flags.includes('s')
+    }
+    if (typeof s.test === 'string') testStr.value = s.test
+  },
+  canShare: () => !!pattern.value,
+})
+
 const compiled = computed<{ re: RegExp | null, error: string }>(() => {
   if (!pattern.value) return { re: null, error: '' }
   try {
@@ -115,6 +130,7 @@ useSeoMeta({
           <label v-for="f in flagList" :key="f.key" class="rx__flag">
             <input v-model="flags[f.key]" type="checkbox"><code>{{ f.key }}</code><span>{{ $t(`regex.${f.labelKey}`) }}</span>
           </label>
+          <BaseButton size="sm" variant="ghost" icon="share" class="rx__share" :disabled="!pattern" @click="share">{{ $t('share.button') }}</BaseButton>
         </div>
 
         <p v-if="compiled.error" class="rx__error"><BaseIcon name="alert" :size="16" /> {{ compiled.error }}</p>
@@ -205,7 +221,12 @@ useSeoMeta({
   margin-top: spacing(4);
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: spacing(3);
+}
+
+.rx__share {
+  margin-left: auto;
 }
 
 .rx__flag {

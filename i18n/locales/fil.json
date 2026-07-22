@@ -685,5 +685,11 @@
     "crawlDelay": "Crawl-delay (segundo)",
     "sitemaps": "Sitemaps (isang URL bawat linya)",
     "host": "Host (opsyonal)"
+  },
+  "share": {
+    "button": "Ibahagi",
+    "copied": "Nakopya ang link sa clipboard",
+    "tooLarge": "Masyadong malaki ang input para ibahagi bilang link.",
+    "empty": "Maglagay muna ng ibabahagi."
   }
 }

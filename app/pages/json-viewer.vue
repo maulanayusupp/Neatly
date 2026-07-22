@@ -44,6 +44,12 @@ async function copyTree() {
     toast.success('Copied formatted JSON')
   }
 }
+
+const { share } = useShareLink({
+  getState: () => ({ input: input.value }),
+  applyState: (s) => { if (typeof s.input === 'string') input.value = s.input },
+  canShare: () => !!input.value.trim(),
+})
 </script>
 
 <template>
@@ -70,6 +76,7 @@ async function copyTree() {
         </div>
         <div class="jv__toolbar-group">
           <BaseButton size="sm" variant="ghost" icon="sparkles" @click="loadSample">{{ $t('jsonViewer.sample') }}</BaseButton>
+          <BaseButton size="sm" variant="ghost" icon="share" :disabled="!input" @click="share">{{ $t('share.button') }}</BaseButton>
           <BaseButton size="sm" variant="ghost" icon="trash" :disabled="!input" @click="clear">{{ $t('common.clear') }}</BaseButton>
         </div>
       </div>
