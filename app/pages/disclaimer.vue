@@ -9,7 +9,7 @@ useSeoMeta({
   <LegalArticle
     title="Disclaimer"
     intro="Please read this before relying on any output from Neatly."
-    updated="20 July 2026"
+    updated="22 July 2026"
   >
     <h2>Accuracy of results</h2>
     <p>
@@ -37,11 +37,11 @@ useSeoMeta({
     <h2>Third-party libraries</h2>
     <p>
       Neatly relies on well-established open-source libraries (such as Terser,
-      clean-css, html-minifier-terser, js-beautify, js-yaml, PapaParse,
-      fast-xml-parser, @zxing/browser, qrcode, JsBarcode, marked, DOMPurify, diff,
-      json-to-ts, sql-formatter, cronstrue and cron-parser). Those libraries are
-      provided under their own licenses and warranties, and their behaviour is outside
-      our control.
+      clean-css, html-minifier-terser, js-beautify, minify-xml, js-yaml, PapaParse,
+      fast-xml-parser, highlight.js, @zxing/browser, qrcode, JsBarcode, marked,
+      DOMPurify, diff, json-to-ts, sql-formatter, cronstrue and cron-parser). Those
+      libraries are provided under their own licenses and warranties, and their
+      behaviour is outside our control.
     </p>
 
     <h2>Related</h2>

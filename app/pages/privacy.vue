@@ -9,7 +9,7 @@ useSeoMeta({
   <LegalArticle
     title="Privacy Policy"
     intro="Neatly is built to be private by default. This explains what we do — and don't do — with your data."
-    updated="20 July 2026"
+    updated="22 July 2026"
   >
     <h2>Summary</h2>
     <p>
@@ -48,9 +48,18 @@ useSeoMeta({
     <p>
       All of this stays on your device and can be cleared any time from your browser
       settings. Shareable links encode the state you choose to share inside the URL
-      itself; nothing is stored on our side. The Service does not use analytics or
-      tracking; if privacy-respecting analytics are added later, this policy will be
-      updated first.
+      itself; nothing is stored on our side.
+    </p>
+
+    <h2>Analytics</h2>
+    <p>
+      We use <strong>Vercel Web Analytics</strong>, a privacy-friendly,
+      <strong>cookieless</strong> analytics service, to understand aggregate usage —
+      such as which pages are visited, referring sites, approximate country, and
+      device or browser type. It does <strong>not</strong> use cookies, does
+      <strong>not</strong> track you across other websites, and does <strong>not</strong>
+      build an advertising profile of you. The content you enter into the tools is
+      never collected by analytics.
     </p>
 
     <h2>Server logs</h2>

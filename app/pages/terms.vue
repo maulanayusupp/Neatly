@@ -9,7 +9,7 @@ useSeoMeta({
   <LegalArticle
     title="Terms of Service"
     intro="These terms govern your use of Neatly. By using the site you agree to them."
-    updated="20 July 2026"
+    updated="22 July 2026"
   >
     <h2>1. The service</h2>
     <p>
@@ -70,7 +70,8 @@ useSeoMeta({
 
     <h2>8. Contact</h2>
     <p>
-      Questions about these terms can be raised through the project's public repository.
+      Questions about these terms can be sent to the operator of Neatly at
+      <a href="mailto:maulanayusupp@gmail.com">maulanayusupp@gmail.com</a>.
     </p>
   </LegalArticle>
 </template>
