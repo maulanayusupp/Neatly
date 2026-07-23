@@ -177,7 +177,13 @@ useSeoMeta({
 
 .rb__field { display: flex; flex-direction: column; gap: spacing(2); }
 
-.rb__row { display: grid; grid-template-columns: 1fr 1fr; gap: spacing(3); }
+.rb__row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: spacing(3);
+
+  @include respond('sm') { grid-template-columns: 1fr 1fr; }
+}
 
 .rb__label { font-size: $text-xs; font-weight: 600; color: var(--color-text-muted); }
 

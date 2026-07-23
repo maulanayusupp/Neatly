@@ -223,7 +223,13 @@ useSeoMeta({
 
 .mt__field { display: flex; flex-direction: column; gap: spacing(2); }
 
-.mt__row { display: grid; grid-template-columns: 1fr 1fr; gap: spacing(3); }
+.mt__row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: spacing(3);
+
+  @include respond('sm') { grid-template-columns: 1fr 1fr; }
+}
 
 .mt__label {
   display: flex;
